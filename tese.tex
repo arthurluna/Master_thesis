@@ -1,0 +1,317 @@
+\documentclass[brazil,12pt,a4paper,openany]{book}
+\usepackage{anysize}
+\usepackage[latin1]{inputenc}
+\usepackage[portuges,brazilian]{babel}
+\usepackage[ruled,chapter]{algorithm}
+\usepackage{makeidx}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{simplewick}
+\usepackage{latexsym}
+\usepackage[all]{xy}
+\usepackage{eufrak}
+\usepackage{euscript}
+\usepackage{enumerate}
+\usepackage{dsfont}
+\usepackage{slashed}
+\usepackage[plainpages=false,pagebackref=true,pdftex]{hyperref}
+
+\makeindex
+
+\marginsize{25mm}{25mm}{25mm}{25mm}
+
+\hypersetup{pdfpagelabels,hyperindex,colorlinks=true,breaklinks=true,bookmarks=true,linkcolor=black,citecolor=black,
+urlcolor=black}
+
+
+\begin{document}
+
+\setlength{\abovecaptionskip}{0.0cm}
+\setlength{\belowcaptionskip}{0.0cm}
+\setlength{\baselineskip}{24pt}
+
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\fancypagestyle{plain}
+{
+	\fancyhf{}
+	\lhead{}
+	\chead{}
+	\rhead{\thepage}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}
+}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Capa %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frontmatter 
+
+\thispagestyle{empty}
+
+\begin{figure}[h]
+	\includegraphics[scale=0.8]{logo_ufrj.jpg}
+\end{figure}
+
+\vspace{15pt}
+
+\begin{center}
+
+\textbf{UNIVERSIDADE FEDERAL DO RIO DE JANEIRO}
+
+\textbf{INSTITUTO DE FÍSICA}
+
+\vspace{30pt}
+
+{\Large \bf Título da Tese (ou Dissertação)}
+
+\vspace{25pt}
+
+{\large \bf Nome do Estudante}
+
+\vspace{35pt}
+
+\begin{flushright}
+\parbox{10.3cm}{Tese de Doutorado apresentada ao Programa de Pós-Graduação em Física do Instituto de Física da Universidade Federal do Rio de Janeiro - UFRJ, como parte dos requisitos necessários à obtenção do título de Doutor em Ciências (Física).
+
+\vspace{18pt}
+
+{\large \bf Orientador: Nome do Orientador}
+
+\vspace{12pt}
+
+{\large \bf Coorientador: Nome do Coorientador}}
+\end{flushright}
+
+\vspace{90pt}
+
+\textbf{Rio de Janeiro}
+
+\textbf{Março de 2013}
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%% Folha de Assinaturas da Banca %%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\thispagestyle{empty}
+
+\noindent
+
+%\begin{figure}[h]
+%  \begin{center}
+%	\includegraphics[scale=0.45]{assinaturas.png}
+%  \end{center}
+%\end{figure}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Ficha Catalográfica %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\mbox{}\vspace{5cm}
+
+\begin{center}
+\begin{tabular}{|c|}
+\hline\\
+\begin{minipage}{15cm}
+\rule{15cm}{0pt} \flushright
+
+
+\begin{minipage}{12.5cm}
+\hspace{-2cm} P436 \hspace{0,68cm} Pereira, Rômulo Cesar Rougemont
+
+\hspace{2cm} Abordagem de Julia-Toulouse para condensação de correntes topológicas e aplicações / Rômulo Cesar Rougemont Pereira - Rio de Janeiro: UFRJ/IF, 2013.
+
+\hspace{2cm} xiv, 154f.
+
+\hspace{2cm} Orientador: Clóvis José Wotzasek
+
+\hspace{2cm} Coorientador: Marcelo Santos Guimarães
+
+\hspace{2cm} Tese (doutorado) - UFRJ / Instituto de Física / Programa de Pós-graduação em Física, 2013.
+
+\hspace{2cm} Referências Bibliográficas: f. 124-145.
+
+\hspace{2cm}
+1. Confinamento. 2. Defeitos topológicos. 3. Dualidade eletromagnética. 4. Mecanismos de geração de massa. 5. Teorias de calibre. 6. Teorias efetivas. I. Wotzasek, Clóvis José. II. Guimarães, Marcelo Santos. III. Universidade Federal do Rio de Janeiro, Instituto de Física, Programa de Pós-graduação em Física. IV. Abordagem de Julia-Toulouse para condensação de correntes topológicas e aplicações.
+
+\bigskip
+\end{minipage}
+\end{minipage}
+\\
+\hline
+\end{tabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Resumo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\noindent
+
+\vspace*{20pt}
+\begin{center}
+{\LARGE\bf Resumo}\\
+\vspace{15pt}
+{\Large\bf Título da Tese}\\
+\vspace{6pt}
+{\bf Nome do Estudante}\\
+\vspace{12pt}
+{\bf Orientador: Nome do Orientador}\\
+{\bf Coorientador: Nome do Coorientador}\\
+\vspace{20pt}
+\parbox{14cm}{Resumo da Tese de Doutorado apresentada ao Programa de Pós-Graduação em Física do Instituto de Física da Universidade Federal do Rio de Janeiro - UFRJ, como parte dos requisitos necessários à obtenção do título de Doutor em Ciências (Física).}
+\end{center}
+\vspace*{35pt}
+
+Resumo da tese.
+
+\vspace{15pt}
+
+\textbf{Palavras-chave:} Insira as palavras-chave aqui.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Abstract %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\noindent
+
+\vspace*{20pt}
+\begin{center}
+{\LARGE\bf Abstract}\\
+\vspace{15pt}
+{\Large\bf Title of the Thesis}\\
+\vspace{6pt}
+{\bf Name of the Student}\\
+\vspace{12pt}
+{\bf Orientador: Name of the Advisor}\\
+{\bf Coorientador: Name of the Coadvisor}\\
+\vspace{20pt}
+\parbox{14cm}{\emph{Abstract} da Tese de Doutorado apresentada ao Programa de Pós-Graduação em Física do Instituto de Física da Universidade Federal do Rio de Janeiro - UFRJ, como parte dos requisitos necessários à obtenção do título de Doutor em Ciências (Física).} % ATENÇÃO: esse trecho fica em português mesmo!
+\end{center}
+\vspace*{35pt}
+
+Abstract in English.
+
+\vspace{15pt}
+
+\textbf{Keywords:} Insert the keywords here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Agradecimentos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\noindent
+
+\vspace*{20pt}
+
+\begin{center}
+
+{\LARGE\bf Agradecimentos}
+
+\end{center}
+
+\vspace*{40pt}
+
+Listar agradecimentos aqui, inclusive à agência de fomento que concedeu a bolsa de pós-graduação.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Sumário}
+\tableofcontents
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Lista de Figuras}
+\listoffigures
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Lista de Tabelas}
+\listoftables
+
+\mainmatter
+\input{capitulo1.tex}
+\input{capitulo2.tex}
+\input{capitulo3.tex}
+\input{capitulo4.tex}
+\input{capitulo5.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliografia %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Referências Bibliográficas}
+\begin{thebibliography}{99}
+
+% ATENÇÃO: precisa pular linhas entre as referências!
+
+\bibitem{ref1} Xiao-Gang Wen, \emph{Topological orders and edge excitations in fractional quantum Hall states}, Adv. in Phys. \textbf{44}, 405 (1995), [\href{http://arxiv.org/abs/cond-mat/9506066}{arXiv:cond-mat/9506066}].
+
+\bibitem{ref2} J. Maldacena, \emph{The Large $N$ Limit of Superconformal Field Theories and Supergravity}, Adv. Theor. Math. Phys. \textbf{2}, 231 (1998), [\href{http://arxiv.org/abs/hep-th/9711200}{arXiv:hep-th/9711200}].
+
+\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Apêndices %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+\input{apendicea.tex}
+\input{apendiceb.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
