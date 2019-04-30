@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.24)  29 APR 2019 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  30 APR 2019 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,7 +564,7 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 31.
 Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 31.
 
-No file tese.aux.
+(./tese.aux)
 \openout1 = `tese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -585,7 +585,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count137
 \scratchdimen=\dimen177
@@ -692,10 +692,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 34.
 LaTeX Info: Redefining \pageref on input line 34.
 LaTeX Info: Redefining \nameref on input line 34.
+ (./tese.out)
+(./tese.out)
 \@outlinefile=\write5
 \openout5 = `tese.out'.
 
-<logo_ufrj.jpg, id=4, 113.67468pt x 135.50626pt>
+<logo_ufrj.jpg, id=48, 113.67468pt x 135.50626pt>
 File: logo_ufrj.jpg Graphic file (type jpg)
 <use logo_ufrj.jpg>
 Package pdftex.def Info: logo_ufrj.jpg  used on input line 70.
@@ -712,19 +714,19 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] [4] [5]
+[3] [4] [5] (./tese.toc)
 \tf@toc=\write6
 \openout6 = `tese.toc'.
 
  [6
 
-]
+] (./tese.lof)
 \tf@lof=\write7
 \openout7 = `tese.lof'.
 
  [7
 
-]
+] (./tese.lot)
 \tf@lot=\write8
 \openout8 = `tese.lot'.
 
@@ -751,12 +753,11 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 ) [5
 
-]
-No file tese.brf.
+] (./tese.brf)
 \tf@brf=\write9
 \openout9 = `tese.brf'.
 
-(./apendicea.tex [6
+ (./apendicea.tex [6
 
 ]
 Ap\^endice A.
@@ -780,25 +781,20 @@ Package rerunfilecheck Warning: File `tese.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `tese.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  6E22FF825E06CC6DBB3F3C84DBD3143C;679.
-
-Package rerunfilecheck Warning: File `tese.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tese.brf':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Before: 6E22FF825E06CC6DBB3F3C84DBD3143C;679
+(rerunfilecheck)             After:  A52E81A9609EE1F90FD630A21C06E89D;865.
+Package rerunfilecheck Info: File `tese.brf' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 317.
  ) 
 Here is how much of TeX's memory you used:
- 11605 strings out of 492616
- 163966 string characters out of 6135177
- 318140 words of memory out of 5000000
- 15222 multiletter control sequences out of 15000+600000
+ 11634 strings out of 492616
+ 164254 string characters out of 6135177
+ 319140 words of memory out of 5000000
+ 15234 multiletter control sequences out of 15000+600000
  13623 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,43p,3234b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -806,10 +802,10 @@ Here is how much of TeX's memory you used:
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (16 pages, 74822 bytes).
+Output written on tese.pdf (16 pages, 78064 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 35 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
