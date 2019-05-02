@@ -5,11 +5,11 @@
 \contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{1}{chapter.1}% 
 \contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{2}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{2}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Espalhamento}{2}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Intera\c c\~ao Spin-\'Orbita.}{2}{section.2.3}% 
-\contentsline {chapter}{\numberline {3}T\IeC {\'\i }tulo do Terceiro Cap\IeC {\'\i }tulo}{3}{chapter.3}% 
-\contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Quarto Cap\IeC {\'\i }tulo}{4}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{5}{chapter.5}% 
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{6}{section*.8}% 
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{7}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{8}{appendix.B}% 
+\contentsline {section}{\numberline {2.2}Espalhamento}{3}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Intera\c c\~ao Spin-\'Orbita.}{3}{section.2.3}% 
+\contentsline {chapter}{\numberline {3}T\IeC {\'\i }tulo do Terceiro Cap\IeC {\'\i }tulo}{4}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Quarto Cap\IeC {\'\i }tulo}{5}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{6}{chapter.5}% 
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{7}{section*.8}% 
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{8}{appendix.A}% 
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{9}{appendix.B}% 
