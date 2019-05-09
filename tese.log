@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  8 MAY 2019 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.9)  9 MAY 2019 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,7 +746,13 @@ Underfull \vbox (badness 1412) has occurred while \output is active []
 
 ]
 
+LaTeX Warning: Citation `jackson' on page 3 undefined on input line 18.
+
+
 LaTeX Warning: Citation `mazolli' on page 3 undefined on input line 25.
+
+
+LaTeX Warning: Citation `rafael' on page 3 undefined on input line 25.
 
 ) (./capitulo3.tex [3]
 Cap\'{\i }tulo 3.
@@ -784,7 +790,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: 5BB53636B3F109EEE4A35455EE60D362;869.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: 084110594F3C539FB4580A85BA84A55A;46.
+(rerunfilecheck)             Checksum: C9FF7D3FB399558AC92C08269965C9B4;134.
 
 
 LaTeX Warning: There were undefined references.
@@ -792,11 +798,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 317.
  ) 
 Here is how much of TeX's memory you used:
- 11642 strings out of 492616
- 164338 string characters out of 6135177
+ 11656 strings out of 492616
+ 164473 string characters out of 6135178
  320140 words of memory out of 5000000
- 15240 multiletter control sequences out of 15000+600000
- 13623 words of font info for 57 fonts, out of 8000000 for 9000
+ 15248 multiletter control sequences out of 15000+600000
+ 14244 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,43p,3234b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
@@ -805,10 +811,10 @@ ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (17 pages, 107151 bytes).
+Output written on tese.pdf (17 pages, 108368 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
