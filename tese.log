@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  10 MAY 2019 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  13 MAY 2019 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,7 +564,11 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 31.
 Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 31.
 
-(./tese.aux)
+(./tese.aux
+
+LaTeX Warning: Label `EM_3' multiply defined.
+
+)
 \openout1 = `tese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -746,10 +750,13 @@ Underfull \vbox (badness 1412) has occurred while \output is active []
 
 ]
 
-LaTeX Warning: Citation `mazolli' on page 3 undefined on input line 25.
+LaTeX Warning: Citation `rafael' on page 3 undefined on input line 27.
 
 
-LaTeX Warning: Citation `rafael' on page 3 undefined on input line 25.
+LaTeX Warning: Reference `EM_3a' on page 3 undefined on input line 46.
+
+
+LaTeX Warning: Reference `EM_4a' on page 3 undefined on input line 46.
 
 ) (./capitulo3.tex [3]
 Cap\'{\i }tulo 3.
@@ -786,22 +793,27 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: 5BB53636B3F109EEE4A35455EE60D362;869.
-Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: 90928C28492772FC5209EEFEE3985BF3;91.
 
+
+Package rerunfilecheck Warning: File `tese.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `tese.brf':
+(rerunfilecheck)             Before: C9FF7D3FB399558AC92C08269965C9B4;134
+(rerunfilecheck)             After:  53FE144D7CE7D2C472F399B965F0447C;180.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 11660 strings out of 492616
- 164528 string characters out of 6135177
+ 11662 strings out of 492616
+ 164544 string characters out of 6135177
  320140 words of memory out of 5000000
- 15251 multiletter control sequences out of 15000+600000
+ 15253 multiletter control sequences out of 15000+600000
  14244 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,43p,3234b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -810,11 +822,12 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (17 pages, 110239 bytes).
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on tese.pdf (17 pages, 118457 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
+ 214 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
  45 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
