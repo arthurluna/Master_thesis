@@ -24,28 +24,37 @@ O cálculo da força em uma amostra na pinça ótica é feito através de\cite{jackson
 
 onde
 
-Para tal, precisamos calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). Os detalhes de tais cálculos podem ser encontrados em \cite{mazolli} e \cite{rafael}, e não estarão no presente trabalho para evitar repetição. Começaremos, então, pelas equações de Maxwell em meios materiais \cite{jackson}, na ausência de correntes e cargas. Assumimos também que os campos sejam harmônicos no tempo, ou seja, sua dependência é dada por $e^{-i\omega t}$.
+Para tal, precisamos calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). Os detalhes de tais cálculos podem ser encontrados em \cite{mazolli} e \cite{rafael}, e não estarão no presente trabalho para evitar repetição. Começaremos, então, pelas equações de Maxwell em meios materiais \cite{jackson}, na ausência de correntes e cargas. Assumimos também que os campos sejam harmônicos no tempo, ou seja, sua dependência é dada por $e^{-i\omega t}$. As equações tomam a seguinte forma:
 
 \begin{equation}
-\nabla \cdot {\mathbf D} = 0
+\nabla \cdot {\mathbf D} = 0,
 \label{EM_1}
 \end{equation}
 \begin{equation}
-\nabla \cdot {\mathbf B} = 0 
+\nabla \cdot {\mathbf B} = 0,
 \label{EM_2}
 \end{equation}
 \begin{equation}
-\nabla \times {\mathbf E} = -\frac{\partial {\mathbf B} }{\partial t} 
+\nabla \times {\mathbf E} = -\frac{\partial {\mathbf B} }{\partial t},
 \label{EM_3}
 \end{equation}
 \begin{equation}
-\nabla \times {\mathbf H} = \frac{\partial {\mathbf D} }{\partial t} 
+\nabla \times {\mathbf H} = \frac{\partial {\mathbf D} }{\partial t}.
 \label{EM_4}
 \end{equation}
 
-com ${\mathbf D}=\epsilon {\mathbf E}$ e ${\mathbf B}=\mu {\mathbf H}$. Procuramos soluções de ${\mathbf E}$ e ${\mathbf H}$ que sejam harmônicos no tmepo, ou seja, sua dependência é dada por $e^{-i\omega t}$. Assim, \ref{EM_3a} e \ref{EM_4a} ficam:
+As equações de onda para os campos podem ser obtidas tomando o rotacional ($\nabla \times$) das equações \ref{EM_3} e \ref{EM_4} e usando as relações para meios lineares ${\mathbf D}=\epsilon {\mathbf E}$ e ${\mathbf B}=\mu {\mathbf H}$. Substituindo também \ref{EM_1} e \ref{EM_2}, obtemos:
 
+\begin{equation}
+(\nabla ^{2} - \mu \epsilon \frac{\partial ^{2} }{\partial t^{2} }){\mathbf E} = 0,
+\label{EO_1}
+\end{equation}
+\begin{equation}
+(\nabla ^{2} - \mu \epsilon \frac{\partial ^{2} }{\partial t^{2} }){\mathbf H} = 0.
+\label{EO_2}
+\end{equation}
 
+Por fim, obtemos a equação de Helmholtz
 
 
 
