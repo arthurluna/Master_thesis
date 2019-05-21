@@ -22,9 +22,9 @@ O cálculo da força em uma amostra na pinça ótica é feito através de\cite{jackson
 \label{2_F}
 \end{equation}
 
-onde
+onde $\sigma$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
-Para tal, precisamos calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). Os detalhes de tais cálculos podem ser encontrados em \cite{mazolli} e \cite{rafael}, e não estarão no presente trabalho para evitar repetição. Começaremos, então, pelas equações de Maxwell em meios materiais \cite{jackson}, na ausência de correntes e cargas. Assumimos também que os campos sejam harmônicos no tempo, ou seja, sua dependência é dada por $e^{-i\omega t}$. As equações tomam a seguinte forma:
+O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). Os detalhes de tais cálculos podem ser encontrados em \cite{mazolli} e \cite{rafael}, e não estarão no presente trabalho para evitar repetição. Começaremos, então, pelas equações de Maxwell em meios materiais \cite{jackson}, na ausência de correntes e cargas. Assumimos também que os campos sejam harmônicos no tempo, ou seja, sua dependência é dada por $e^{-i\omega t}$. As equações tomam a seguinte forma:
 
 \begin{equation}
 \nabla \cdot {\mathbf D} = 0,
@@ -61,13 +61,43 @@ Por fim, obtemos a equação de Helmholtz:
 \label{helmholtzV}
 \end{equation}
 
-onde ${\mathbf V}$ é um dos campos vetoriais ${\mathbf E}$ ou ${\mathbf B}$. Como estamos lidando com campos vetoriais de divergência nula(\ref{EM_1} e \ref{EM_2}), pode-se mostrar que ${\mathbf r} \cdot {\mathbf V}$ é solução da equação de Helmholtz escalar:
+onde ${\mathbf V}$ é um dos campos vetoriais ${\mathbf E}$ ou ${\mathbf H}$. Como estamos lidando com campos vetoriais de divergência nula(\ref{EM_1} e \ref{EM_2}), pode-se mostrar que ${\mathbf r}\cdot{\mathbf V}$ é solução da equação de Helmholtz escalar\cite{mazolli}:
 
 \begin{equation}
-(\nabla ^{2} + \omega^2 \mu \epsilon )\psi = 0
+(\nabla ^{2} + \omega^2 \mu \epsilon )\psi = 0 .
 \label{helmholtzE}
 \end{equation}
 
+Assim, uma vez encontradas as soluções escalares, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$,$\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k}) \propto \nabla_{\mathbf k}$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{vec_fourier}
+\caption{Operadores vetoriais no espaço de Fourier usados para encontrar as soluções vetoriais.}
+\label{vet_fourier}
+\end{center}
+\end{figure}
+
+Levando em conta que o centro espalhador no nosso problema é uma microesfera, vamos fazer uma descrição dos campos escalares de forma a aproveitar tal simetria. Assumiremos uma solução de ondas planas para o campo elétrico, de polarização circular (direita ou esquerda) e se propagando na direção $z$:
+
+\begin{equation}
+{\mathbf E}=E_0(\hat{x}\pm i \hat{y})e^{ikz-i\omega t} .
+\label{onda_plana}
+\end{equation}
+
+Obtemos ${\mathbf H}$ levando \ref{onda_plana} em \ref{EM_3}:
+
+\begin{equation}
+{\mathbf H}=\frac{n_1}{\mu c}E_0(\hat{y}\mp i \hat{x})e^{ikz-i\omega t}=\frac{n_1}{\mu c}(\mp i){\mathbf E} ,
+\label{onda_plana_H}
+\end{equation}
+
+onde $n_1$ é o índice de refração do meio ao redor da amostra. Definimos os potenciais de Debye como:
+
+\begin{equation}
+\Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
+\label{debye_def}
+\end{equation}
 
 
 \section{Interação Spin-Órbita.}
