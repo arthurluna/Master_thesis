@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  21 MAY 2019 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  21 MAY 2019 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,6 +740,9 @@ Cap\'{\i }tulo 1.
 ]
 Cap\'{\i }tulo 2.
 
+LaTeX Warning: Citation `bliokh' on page 2 undefined on input line 11.
+
+
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
  [2
@@ -794,7 +797,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: 26E21B1F50F91228DF1CCDE0271852F6;869.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: 02E340958EAA4255C1080D9F96467B13;226.
+(rerunfilecheck)             Checksum: DDD2A050D7C1AC2D753A58BE38D47AD4;268.
 
 
 LaTeX Warning: There were undefined references.
@@ -802,10 +805,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 11685 strings out of 492616
- 164864 string characters out of 6135177
+ 11686 strings out of 492616
+ 164873 string characters out of 6135177
  322140 words of memory out of 5000000
- 15264 multiletter control sequences out of 15000+600000
+ 15265 multiletter control sequences out of 15000+600000
  14244 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,43p,3234b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -818,7 +821,7 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti12.pfb>
-Output written on tese.pdf (19 pages, 168810 bytes).
+Output written on tese.pdf (19 pages, 168878 bytes).
 PDF statistics:
  258 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams
