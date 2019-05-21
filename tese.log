@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  14 MAY 2019 13:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  21 MAY 2019 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,12 +748,6 @@ Underfull \vbox (badness 1412) has occurred while \output is active []
 
 LaTeX Warning: Citation `rafael' on page 3 undefined on input line 27.
 
-
-LaTeX Warning: Citation `EM_1' on page 3 undefined on input line 46.
-
-
-LaTeX Warning: Citation `EM_2' on page 3 undefined on input line 46.
-
 [3]) (./capitulo3.tex [4]
 Cap\'{\i }tulo 3.
 ) (./capitulo4.tex [5
@@ -789,24 +783,22 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: 5BB53636B3F109EEE4A35455EE60D362;869.
+Package rerunfilecheck Info: File `tese.brf' has not changed.
+(rerunfilecheck)             Checksum: 53FE144D7CE7D2C472F399B965F0447C;180.
 
-
-Package rerunfilecheck Warning: File `tese.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tese.brf':
-(rerunfilecheck)             Before: 53FE144D7CE7D2C472F399B965F0447C;180
-(rerunfilecheck)             After:  F3D28EC3AB09B1C2599584D218B7D82D;266.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 11665 strings out of 492616
- 164577 string characters out of 6135177
- 320140 words of memory out of 5000000
- 15253 multiletter control sequences out of 15000+600000
+ 11669 strings out of 492616
+ 164629 string characters out of 6135177
+ 321140 words of memory out of 5000000
+ 15255 multiletter control sequences out of 15000+600000
  14244 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,43p,3234b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -818,10 +810,10 @@ mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (18 pages, 126433 bytes).
+Output written on tese.pdf (18 pages, 128208 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
