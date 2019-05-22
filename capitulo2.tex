@@ -99,6 +99,35 @@ onde $n_1$ é o índice de refração do meio ao redor da amostra. Definimos os pote
 \label{debye_def}
 \end{equation}
 
+Onde o somatório em $J$ significa que estaremos expandindo nossa onda plana em ondas esféricas (parciais), e cada um dos termos possui um potencial de Debye correspondente. Assim, nossa solução \ref{onda_plana}, junto com \ref{debye_def}, ficará na forma\cite{mazolli}:
+
+\begin{equation}
+\Pi^E=\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}{\inf}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}}Y^{\pm 1}_J(\theta,\phi),
+\label{ondas_par}
+\end{equation}
+
+enquanto o potencial magnético será:
+
+\begin{equation}
+\Pi^M=\frac{n_1}{\mu c}(\mp i)\Pi^E.
+\label{ondas_par_mag}
+\end{equation} 
+
+Obtemos, até então, os potenciais de ondas planas incidentes na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular nos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. A relação
+
+\begin{equation}
+Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) D^{J}_{M',M}(\alpha, \beta, \gamma)
+\label{harm_esf_rot}
+\end{equation}
+
+representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $D^{J}_{M',M}$ é o elemento da matriz de rotação $D(\alpha,\beta,\gamma)$ de Wigner e $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A matriz $D^{J}_{M',M}$ tem a forma:
+
+\begin{equation}
+D^{J}_{M',M}(\alpha ,\beta ,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z},
+\label{matriz_D}
+\end{equation}
+
+Como os harmonicos esféricos são autofunções de $J_z$, podemos projetar a matriz 
 
 \section{Interação Spin-Órbita.}
 blablabla...

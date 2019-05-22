@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  21 MAY 2019 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  22 MAY 2019 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,33 +761,33 @@ Package pdftex.def Info: vec_fourier.png  used on input line 75.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4]) (./capitulo3.tex [5 <./vec_fourier.png>]
+[4] [5 <./vec_fourier.png>]) (./capitulo3.tex [6]
 Cap\'{\i }tulo 3.
-) (./capitulo4.tex [6
+) (./capitulo4.tex [7
 
 ]
 Cap\'{\i }tulo 4.
-) (./capitulo5.tex [7
+) (./capitulo5.tex [8
 
 ]
 Cap\'{\i }tulo 5.
-) [8
+) [9
 
 ] (./tese.brf)
 \tf@brf=\write9
 \openout9 = `tese.brf'.
 
- (./apendicea.tex [9
+ (./apendicea.tex [10
 
 ]
 Ap\^endice A.
-) (./apendiceb.tex [10
+) (./apendiceb.tex [11
 
 ]
 Ap\^endice B.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
- [11
+ [12
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
@@ -797,18 +797,21 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: 26E21B1F50F91228DF1CCDE0271852F6;869.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: DDD2A050D7C1AC2D753A58BE38D47AD4;268.
+(rerunfilecheck)             Checksum: CA37490D526CE283B7B764594A4B01A5;315.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 11686 strings out of 492616
- 164873 string characters out of 6135177
+ 11695 strings out of 492616
+ 164990 string characters out of 6135177
  322140 words of memory out of 5000000
- 15265 multiletter control sequences out of 15000+600000
+ 15269 multiletter control sequences out of 15000+600000
  14244 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,43p,3234b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -816,15 +819,16 @@ Here is how much of TeX's memory you used:
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti12.pfb>
-Output written on tese.pdf (19 pages, 168878 bytes).
+mmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on tese.pdf (20 pages, 189925 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
