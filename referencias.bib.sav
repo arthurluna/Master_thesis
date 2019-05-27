@@ -1,0 +1,16 @@
+% Encoding: UTF-8
+
+@Article{Ashkin1977,
+  author    = {A. Ashkin and J. M. Dziedzic},
+  title     = {{Observation of Resonances in the Radiation Pressure on Dielectric Spheres}},
+  journal   = {Physical Review Letters},
+  year      = {1977},
+  volume    = {38},
+  number    = {23},
+  pages     = {1351--1354},
+  month     = {jun},
+  doi       = {10.1103/physrevlett.38.1351},
+  publisher = {American Physical Society ({APS})},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

@@ -1,16 +1,15 @@
+\backcite {ashkin_1986}{{2}{2.1}{section.2.1}}
+\backcite {Ashkin1977}{{2}{2.1}{section.2.1}}
+\backcite {ashkin_1970}{{2}{2.1}{section.2.1}}
 \backcite {mn_pamn_2000}{{2}{2.1}{section.2.1}}
 \backcite {am_mn_pamn_2003}{{2}{2.1}{section.2.1}}
 \backcite {dutra_2007}{{2}{2.1}{section.2.1}}
-\backcite {viana_2007}{{2}{2.1}{section.2.1}}
-\backcite {dutra_2014}{{2}{2.1}{section.2.1}}
-\backcite {viana_2006}{{3}{2.1}{section.2.1}}
-\backcite {kaina}{{3}{2.1}{section.2.1}}
-\backcite {mazolli}{{3}{2.1}{section.2.1}}
-\backcite {rafael}{{3}{2.1}{section.2.1}}
+\backcite {viana_2007}{{3}{2.1}{section.2.1}}
+\backcite {dutra_2014}{{3}{2.1}{section.2.1}}
+\backcite {viana_2006, kaina}{{3}{2.1}{section.2.1}}
+\backcite {mazolli, rafael}{{3}{2.1}{section.2.1}}
 \backcite {bliokh}{{3}{2.1}{section.2.1}}
+\backcite {mazolli}{{3}{2.2}{section.2.2}}
+\backcite {rafael}{{3}{2.2}{section.2.2}}
 \backcite {jackson}{{3}{2.2}{section.2.2}}
-\backcite {mazolli}{{4}{2.2}{equation.2.2.1}}
-\backcite {rafael}{{4}{2.2}{equation.2.2.1}}
-\backcite {jackson}{{4}{2.2}{equation.2.2.1}}
-\backcite {mazolli}{{5}{2.2}{equation.2.2.8}}
-\backcite {mazolli}{{6}{2.2}{equation.2.2.12}}
+\backcite {mazolli}{{6}{2.2}{equation.2.2.6}}
