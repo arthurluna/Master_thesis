@@ -52,9 +52,17 @@ com
 \label{onda_plana}
 \end{equation}
 %
-onde $n_1$ é o índice de refração do meio ao redor da amostra. Tais potenciais serão úteis para resolver o problem do espalhamento Mie. 
+onde $n_1$ é o índice de refração do meio ao redor da amostra. Tais potenciais serão úteis para resolver o problem do espalhamento Mie. Estes decompõem os campos em dois modos, um deles com o campo ${\mathbf E}$ paralelo à superfície do objeto espalhador ($\Pi^{M}$, modo transversal elétrico) e outra perpendicular ($\Pi^{E}$, modo transversal magnético). Essa decomposição forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Os coeficientes de Mie para o espalhamento são:
 
-Assim, uma vez encontradas as soluções escalares, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$,$\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k}) \propto \nabla_{\mathbf k}$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
+\begin{equation}
+a_J=\frac{\psi_J(\beta)\psi'_J(\alpha)-N\psi'_J(\beta)\psi_J(\alpha)}{\zeta^{(1)}_J(\beta)\psi'_J(\alpha)-N\zeta'^{(1)}_J(\beta)\psi_J(\alpha)} \qquad e\qquad
+b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1)}_J(\beta)\psi_J(\alpha)-N\zeta^{(1)}_J(\beta)\psi'_J(\alpha)},
+\label{mie}
+\end{equation} 
+%
+onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera, $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente.
+
+Assim, uma vez encontradas as soluções escalares para os campos espalhados e incidentes, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$,$\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k}) \propto \nabla_{\mathbf k}$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
 %
 \begin{figure}[h]
 \begin{center}
@@ -64,65 +72,14 @@ Assim, uma vez encontradas as soluções escalares, temos que reobter os campos ve
 \end{center}
 \end{figure}
 %
-
-Levando em conta que o centro espalhador no nosso problema é uma microesfera, vamos fazer uma descrição dos campos escalares de forma a aproveitar tal simetria. Assumiremos uma solução de ondas planas para o campo elétrico, de polarização circular (direita ou esquerda) e se propagando na direção $z$:
-
-\begin{equation}
-{\mathbf E}=E_0(\hat{x}\pm i \hat{y})e^{ikz-i\omega t} .
-\label{onda_plana}
-\end{equation}
-%
-Obtemos ${\mathbf H}$ levando \ref{onda_plana} em \ref{EM_3}:
+Obtemos, até então, os potenciais de ondas planas incidentes na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
 
 \begin{equation}
-{\mathbf H}=\frac{n_1}{\mu c}E_0(\hat{y}\mp i \hat{x})e^{ikz-i\omega t}=\frac{n_1}{\mu c}(\mp i){\mathbf E} ,
-\label{onda_plana_H}
-\end{equation}
-%
-onde $n_1$ é o índice de refração do meio ao redor da amostra. Definimos os potenciais de Debye como:
-
-\begin{equation}
-\Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
-\label{debye_def}
-\end{equation}
-%
-Onde o somatório em $J$ significa que estaremos expandindo nossa onda plana em ondas esféricas (parciais), e cada um dos termos possui um potencial de Debye correspondente. Assim, nossa solução \ref{onda_plana}, junto com \ref{debye_def}, ficará na forma\cite{mazolli}:
-
-\begin{equation}
-\Pi^E=\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\inf}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}}Y^{\pm 1}_J(\theta,\phi),
-\label{ondas_par}
-\end{equation}
-%
-enquanto o potencial magnético será:
-
-\begin{equation}
-\Pi^M=\frac{n_1}{\mu c}(\mp i)\Pi^E.
-\label{ondas_par_mag}
-\end{equation} 
-%
-
-Obtemos, até então, os potenciais de ondas planas incidentes na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular nos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. A relação
-
-\begin{equation}
-Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) D^{J}_{M',M}(\alpha, \beta, \gamma)
+Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha M'+\gamma M)} d^J_{M'M}(\beta),
 \label{harm_esf_rot}
 \end{equation}
 %
-representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $D^{J}_{M',M}$ é o elemento da matriz de rotação $D(\alpha,\beta,\gamma)$ de Wigner e $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. Os elementos $D^{J}_{M',M}$ tomam a forma:
-
-\begin{equation}
-D^{J}_{M',M}(\alpha ,\beta ,\gamma)= \bra{JM'}D(\alpha,\beta,\gamma)\ket{JM} = \bra{JM'}e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}\ket{JM},
-\label{matriz_D}
-\end{equation}
-%
-onde podemos substituir os autovalores de $J_z$: $M$ e $M'$. Substituindo tambem $\bra{JM'}e^{-i\beta J_y}\ket{JM}$ por $d^J_{M'M}(\beta)$, a equação\ref{harm_esf_rot} fica:
-
-\begin{equation}
-Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha M'+\gamma M)} d^J_{M'M}(\beta).
-\label{harm_esf_rot2}
-\end{equation}
-%
-A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam:
+que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz-$d$ de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam:
 
 \begin{equation}
 \Pi^E =\pm \frac{E_0 e^-i\omega t}{k}\sum \limits_{J=1}{\inf}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
