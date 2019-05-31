@@ -107,6 +107,7 @@ onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe. O cone sól
 \begin{split}
 \Pi^E=\int\limits_0^{\theta_0}d\theta_k \sin\theta_k \Pi^E_{\theta_k}, \\
 \Pi^M=\int\limits_0^{\theta_0}d\theta_k \sin\theta_k \Pi^M_{\theta_k},
+\label{integral_theta}
 \end{split}
 \end{equation}
 %
@@ -116,18 +117,37 @@ Para derivar a força na microesfera em função da sua posição relativa ao foco do
 
 \begin{equation}
 \begin{split}
-\int\limits_0^{2\pi} d\phi_k e^{-i{\mathbf k}\cdot{\mathbf R}} e^{-i\phi_k(M'\mp1)}=e^{-ik z\thinspace \cos\theta_k} 2\pi(-i)^{M'\mp1}J_{M'\mp1}\left(k\sin\theta_k\sqrt{q_x^2+q_y^2}\right)e^{-i(M'\mp1)\phi}
+\int\limits_0^{2\pi} d\phi_k e^{-i{\mathbf k}\cdot{\mathbf R}} e^{-i\phi_k(M'\mp1)}=e^{-ik z\thinspace \cos\theta_k} 2\pi(-i)^{M'\mp1}J_{M'\mp1}\left(k\sin\theta_k\sqrt{q_x^2+q_y^2}\right)e^{-i(M'\mp1)\phi}.
 \end{split}
 \end{equation}
 %
 
-Finalmente, podemos obter os campos espalhados e incidentes aplicando os operadores $-i\nabla\times{\mathbf L}$ e $-i{\mathbf L}$:
+Uma vez determinados os potenciais de Debye incidentes e espalhados, podemos obter os campos aplicando os operadores $-i\nabla\times{\mathbf L}$ e $-i{\mathbf L}$:
 
 \begin{equation}
 \begin{split}
-{\mathbf E}_T={\mathbf E}_{IN}+{\mathbf E}_{S}=-i\nabla\times{\mathbf L}(\Pi^E_{IN}+\Pi^E_S)+i \omega \mu(-i){\mathbf L}(\Pi^M_{IN}+\Pi^M_S) \\
-{\mathbf H}_T={\mathbf H}_{IN}+{\mathbf H}_{S}=-i\nabla\times{\mathbf L}(\Pi^M_{IN}+\Pi^M_S)-i \omega \epsilon(-i){\mathbf L}(\Pi^E_{IN}+\Pi^E_S)
+{\mathbf E}_T={\mathbf E}_{IN}+{\mathbf E}_{S}=-i\nabla\times{\mathbf L}(\Pi^E_{IN}+\Pi^E_S)+i \omega \mu(-i){\mathbf L}(\Pi^M_{IN}+\Pi^M_S), \\
+{\mathbf H}_T={\mathbf H}_{IN}+{\mathbf H}_{S}=-i\nabla\times{\mathbf L}(\Pi^M_{IN}+\Pi^M_S)-i \omega \epsilon(-i){\mathbf L}(\Pi^E_{IN}+\Pi^E_S).
 \end{split}
+\end{equation}
+%
+
+Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de um campo cônico e com perfil de instensidade constante antes de entrar na objetiva. Essa integral pode ser resolvida tomando a superfície $\sigma$ como uma esfera (com centro na orígem) com raio tendendo a infinito. Isso faz com que as componentes radiais do campo sejam desprezadas no cálculo, pois caem com $\frac{1}{r^2}$, comparado às componentes tangenciais que caem com $\frac{1}{r}$. Temos, então:
+
+\begin{equation}
+{\mathbf F}=\frac{-1}{2}r\left( \int d\Omega (\epsilon E^2_{tan}{\mathbf r}) + \int d\Omega (\mu H^2_{tan}{\mathbf r}) \right),
+\end{equation}
+%
+onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $Real({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produtos dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa de perda de momento do campo incidente para o centro espalhador. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
+
+A expressão para a força será mostrada na seção seguinte, pois só então serão levados em conta os feixes de interesse na entrada da objetiva. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que são usados nas expressões da força.
+
+\section{BLA}
+Nessa seção serão discutidos os efeitos do perfil gaussiano no feixe e da polarização da luz. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
+
+\begin{equation}
+asd
+\label{3_F}
 \end{equation}
 
 \section{Interação Spin-Órbita.}
