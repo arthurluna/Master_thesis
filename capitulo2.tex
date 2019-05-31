@@ -5,7 +5,7 @@
 
 \section{Introdução}
 
-\hspace{5 mm}A presente dissertação é um resultado do trabalho do grupo de pinças óticas da UFRJ, que tem sido desenvolvido há quase duas décadas. Os trabalhos de teoria do grupo têm como objetivo descrever o aparato de pinças óticas, descoberta por Arthur Ashkin em 1986\cite{Ashkin1986} \cite{Ashkin1977}. Suas contribuições para o ramo de armadilhamento ótico vêm desde 1970, com seu primeiro artigo publicado sobre o assunto\cite{Ashkin1970}.
+\hspace{5 mm}A presente dissertação é um resultado do trabalho do grupo de pinças óticas da UFRJ, que tem sido desenvolvido há quase duas décadas {\bf rever com Paulo->reclamou dessa frase}. Os trabalhos de teoria do grupo têm como objetivo descrever o aparato de pinças óticas, descoberta por Arthur Ashkin em 1986\cite{Ashkin1986} \cite{Ashkin1977}. Suas contribuições para o ramo de armadilhamento ótico vêm desde 1970, com seu primeiro artigo publicado sobre o assunto\cite{Ashkin1970}.
 Em 2018, seus trabalhos sobre a pinça ótica e toda a sua importancia para aplicação em biologia lhe renderam o prêmio Nobel de 2018. 
 
 A importância desse aparato exigiu uma descrição teórica satisfatória. Os primeiros modelos que tentam descrever as forças da pinça ótica fazem uso de diversas aproximações para descrever o feixe que sai da objetiva e a interação da esfera com o campo. Falarei brevemente destes na próxima seção.
@@ -29,7 +29,7 @@ O modelo MD levam em conta um efeito que a princípio não se apresenta com clarez
 
 \hspace{5 mm}Discutiremos brevemente nessa seção o modelo MDSA+. Os detalhes de tais cálculos podem ser encontrados em \cite{mazolli} e \cite{rafael}, e não estarão no presente trabalho para evitar repetição. 
 
-Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótica (\cite{jackson}):
+Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótica \cite{jackson}:
 
 \begin{equation}
 \vec{F} = \oint_{\sigma} \hat{n} \cdot T d \sigma - \mu \epsilon \frac{d}{dt} \int_{\nu} \vec{S} d \nu,
@@ -38,7 +38,7 @@ Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótic
 
 onde $\sigma$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
-O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). O campo incidente na amostra trata-se de um campo com formato cônico (focado). Montaremos esse campo superpondo ondas planas. Para tanto, começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolo (ondas esféricas ou ondas parciais). Outros casos de polarização serão discutidos adiante. A base de multipolos é a ideal para problemas com simetria esférica, pois são compostas pelos harmônicos esféricos na parte radial, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, que serão definidos a seguir: 
+O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). O campo incidente na amostra tem formato cônico sólido, gerado pela objetiva. Montaremos esse campo superpondo ondas planas. Para tanto, começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolo (ondas esféricas ou ondas parciais). Outros casos de polarização serão discutidos adiante. A base de multipolos é a ideal para problemas com simetria esférica, pois são compostas pelos harmônicos esféricos na parte radial, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, que serão definidos a seguir: 
 
 \begin{equation}
 \Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
@@ -60,7 +60,7 @@ b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1
 \label{mie}
 \end{equation} 
 %
-onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera, $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente.
+onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera, $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
 
 Assim, uma vez encontradas as soluções escalares para os campos espalhados e incidentes, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$,$\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k}) \propto \nabla_{\mathbf k}$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
 %
@@ -72,7 +72,7 @@ Assim, uma vez encontradas as soluções escalares para os campos espalhados e inc
 \end{center}
 \end{figure}
 %
-Obtemos, até então, os potenciais de ondas planas incidentes na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
+Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
 
 \begin{equation}
 Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha M'+\gamma M)} d^J_{M'M}(\beta),
@@ -82,15 +82,54 @@ Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha
 que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz-$d$ de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam:
 
 \begin{equation}
-\Pi^E =\pm \frac{E_0 e^-i\omega t}{k}\sum \limits_{J=1}{\inf}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
+\Pi^E =\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
 \label{debyeE_rot}
 \end{equation}
 e
 \begin{equation}
-\Pi^M =\frac{H_0 e^-i\omega t}{k}\sum \limits_{J=1}{\inf}(i)^{J}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi).
+\Pi^M =\frac{H_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi).
 \label{debyeM_rot}
 \end{equation}
 %
+
+O próximo passo é integrar no ângulo solido do cone. Começando pela varável $\phi_k$ (ou seja, componente $\phi$ da direção do vetor de onda ${\mathbf k}$; notação que será usada para $\theta_k$ também), obtemos:
+
+\begin{equation}
+\begin{split}
+\Pi^E_{\theta_k} =\pm \frac{E_0 e^{-i\omega t}}{k}\sqrt{\cos(\theta_k)}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \times \\ \times \sum\limits_{M'=-J}^J d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi) \int\limits_0^{2\pi} d\phi_k e^{-i\phi_k(M'\mp1)} ,
+\label{pi_phi}
+\end{split}
+\end{equation}
+%
+onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe. O cone sólido se obtem integrando em $\theta_k$:
+
+\begin{equation}
+\begin{split}
+\Pi^E=\int\limits_0^{\theta_0}d\theta_k \sin\theta_k \Pi^E_{\theta_k}, \\
+\Pi^M=\int\limits_0^{\theta_0}d\theta_k \sin\theta_k \Pi^M_{\theta_k},
+\end{split}
+\end{equation}
+%
+onde $\theta_0$ é a meia abertura do feixe.
+
+Para derivar a força na microesfera em função da sua posição relativa ao foco do feixe, temos que calcular os campos deslocados em relação ao centro do objeto espalhador, ou seja, a orígem. Fazemos isso usando o gerador de translações no espaço ${\mathbf k}$, com o operador $e^{-i{\mathbf k}\cdot{\mathbf R}}$, onde ${\mathbf R}=q_x\hat{x}+q_y\hat{y}+q_z\hat{z}$ é o vetor de deslocamento. Multiplicamos esse operador em cada coeficiente de multipolo, e dessa forma, o operador fica dentro da integral em $\phi_k$, que leva ao seguinte resultado:
+
+\begin{equation}
+\begin{split}
+\int\limits_0^{2\pi} d\phi_k e^{-i{\mathbf k}\cdot{\mathbf R}} e^{-i\phi_k(M'\mp1)}=e^{-ik z\thinspace \cos\theta_k} 2\pi(-i)^{M'\mp1}J_{M'\mp1}\left(k\sin\theta_k\sqrt{q_x^2+q_y^2}\right)e^{-i(M'\mp1)\phi}
+\end{split}
+\end{equation}
+%
+
+Finalmente, podemos obter os campos espalhados e incidentes aplicando os operadores $-i\nabla\times{\mathbf L}$ e $-i{\mathbf L}$:
+
+\begin{equation}
+\begin{split}
+{\mathbf E}_T={\mathbf E}_{IN}+{\mathbf E}_{S}=-i\nabla\times{\mathbf L}(\Pi^E_{IN}+\Pi^E_S)+i \omega \mu(-i){\mathbf L}(\Pi^M_{IN}+\Pi^M_S) \\
+{\mathbf H}_T={\mathbf H}_{IN}+{\mathbf H}_{S}=-i\nabla\times{\mathbf L}(\Pi^M_{IN}+\Pi^M_S)-i \omega \epsilon(-i){\mathbf L}(\Pi^E_{IN}+\Pi^E_S)
+\end{split}
+\end{equation}
+
 \section{Interação Spin-Órbita.}
 blablabla...
 
