@@ -143,12 +143,18 @@ onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai
 A expressão para a força será mostrada na seção seguinte, pois só então serão levados em conta os feixes de interesse na entrada da objetiva. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que são usados nas expressões da força.
 
 \section{BLA}
+
 Nessa seção serão discutidos os efeitos do perfil gaussiano no feixe e da polarização da luz. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
 
+Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a altura da cintura mínima coincidente com a entrada da objetiva. Isso nos permite tratar-lo como um feixe cilíndrico (de raio de curvartura infinito). {\bf colocar discussão sobre feixe paraxial em algum apendice, e fazer a referencia aqui.} O campo fica:
+
 \begin{equation}
-asd
-\label{3_F}
+{\mathbf E}_{IN}^{antes}(\vec{r},t)=E_0 e^{ikz} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}(\hat{{\mathbf x}}\pm i\hat{{\mathbf y}}) e^{i\omega t},
+\label{campo_ent}
 \end{equation}
+%
+onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{RICHARDSeWOLF}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$.
+
 
 \section{Interação Spin-Órbita.}
 blablabla...
