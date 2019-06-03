@@ -140,11 +140,11 @@ Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de u
 %
 onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $Real({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produtos dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa de perda de momento do campo incidente para o centro espalhador. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
 
-A expressão para a força será mostrada na seção seguinte, pois só então serão levados em conta os feixes de interesse na entrada da objetiva. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que são usados nas expressões da força.
+A expressão para a força será mostrada depois de introduzirmos o perfil do feixe e a polarização, uma vez que tanto os campos mudam, quanto as expressões da força ganham termos adicionais. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que carregam as informações de aberrações e do perfil de intensidade.
 
-\section{BLA}
+\section{Efeito do perfil gaussiano}
 
-Nessa seção serão discutidos os efeitos do perfil gaussiano no feixe e da polarização da luz. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
+O efeitos do perfil gaussiano no feixe. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
 
 Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a altura da cintura mínima coincidente com a entrada da objetiva. Isso nos permite tratar-lo como um feixe cilíndrico (de raio de curvartura infinito). {\bf colocar discussão sobre feixe paraxial em algum apendice, e fazer a referencia aqui.} O campo fica:
 
@@ -155,14 +155,17 @@ Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feix
 %
 onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{RICHARDSeWOLF}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos \ref{integral_theta} são alteradas.
 
+\section{Efeitos da polarização}
+
 Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais.O único procedimento que muda em relação ao caso de polarização circular é na hora de tomar os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações (separadas por causa dos potenciais de Debye). Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiencia vetorial, também chamado de força normalizada, para o feixe de polarização linear:
 
 \begin{equation}
 {\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= \frac{1}{2}{\mathbf Q}^{(\sigma +)} + \frac{1}{2}{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross})}
 \end{equation}
 %
-onde $\left<{\mathbf F}\right>$ é a média temporal da força, $c$ é a velocidade da luz no vácuo e P é a potencia do feixe incidente na amostra. Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda. O termo ${\mathbf Q}^{({\it cross})}$ é o que chamamos de cruzado. Para uma polarização arbitrária ()
+onde $\left<{\mathbf F}\right>$ é a média temporal da força, $c$ é a velocidade da luz no vácuo e P é a potencia do feixe incidente na amostra. Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda. O termo ${\mathbf Q}^{({\it cross})}$ é o que chamamos de cruzado. 
 
+A força exercida por uma polarização elípitica pode ser obtida introduzindo a dependência com o ângulo da placa de quarto de onda (PQO, ou QWP) no feixe paraxial incidente na entrada da objetva. 
 
 
 \section{Interação Spin-Órbita.}
