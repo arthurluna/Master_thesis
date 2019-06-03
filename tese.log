@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  31 MAY 2019 19:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.9)  2 JUN 2019 21:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -759,9 +759,6 @@ LaTeX Warning: Citation `Rafael' on page 3 undefined on input line 19.
 LaTeX Warning: Citation `mazolli' on page 3 undefined on input line 30.
 
 
-LaTeX Warning: Citation `rafael' on page 3 undefined on input line 30.
-
-
 LaTeX Warning: Citation `jackson' on page 3 undefined on input line 32.
 
 [3] [4]
@@ -770,41 +767,48 @@ File: vec_fourier.png Graphic file (type png)
 <use vec_fourier.png>
 Package pdftex.def Info: vec_fourier.png  used on input line 69.
 (pdftex.def)             Requested size: 231.86568pt x 184.18767pt.
- [5 <./vec_fourier.png>]
-Underfull \vbox (badness 2285) has occurred while \output is active []
 
- [6]
-[7] [8]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+ [6 <./vec_fourier.png>] [7] [8]
 
 LaTeX Warning: Citation `RICHARDSeWOLF' on page 9 undefined on input line 156.
 
-) (./capitulo3.tex [9]
+
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+ [9])
+(./capitulo3.tex [10]
 Cap\'{\i }tulo 3.
-) (./capitulo4.tex [10
+) (./capitulo4.tex [11
 
 ]
 Cap\'{\i }tulo 4.
-) (./capitulo5.tex [11
+) (./capitulo5.tex [12
 
 ]
 Cap\'{\i }tulo 5.
-) [12
+) [13
 
 ] (./tese.bbl (./tese.brf)
 \tf@brf=\write9
 \openout9 = `tese.brf'.
 
- [13
+ [14
 
-]) (./apendicea.tex [14]
+]) (./apendicea.tex [15]
 Ap\^endice A.
-) (./apendiceb.tex [15
+) (./apendiceb.tex [16
 
 ]
 Ap\^endice B.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
- [16
+ [17
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
@@ -813,25 +817,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: 5F0EB6A513BB6590EA806A6CA2704105;850.
+Package rerunfilecheck Info: File `tese.brf' has not changed.
+(rerunfilecheck)             Checksum: 3AEB5CA5752AFF189F6D225F7BDC4392;653.
 
-
-Package rerunfilecheck Warning: File `tese.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tese.brf':
-(rerunfilecheck)             Before: B6BB398AE650EF9EC33ABC373AC475D5;642
-(rerunfilecheck)             After:  472C84135CCF0278F7DCF26AABCAF805;695.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 11764 strings out of 492616
- 165892 string characters out of 6135177
+ 11770 strings out of 492616
+ 165959 string characters out of 6135178
  324175 words of memory out of 5000000
- 15322 multiletter control sequences out of 15000+600000
- 14244 words of font info for 59 fonts, out of 8000000 for 9000
+ 15324 multiletter control sequences out of 15000+600000
+ 14945 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,17n,43p,3234b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
@@ -844,11 +843,12 @@ t/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tese.pdf (24 pages, 221314 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti8.pfb>
+Output written on tese.pdf (25 pages, 231244 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 262 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
