@@ -155,9 +155,9 @@ Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feix
 %
 onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{RICHARDSeWOLF}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos \ref{integral_theta} são alteradas.
 
-\section{Efeitos da polarização}
+\section{Efeitos de polarização}
 
-Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais.O único procedimento que muda em relação ao caso de polarização circular é na hora de tomar os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações (separadas por causa dos potenciais de Debye). Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiencia vetorial, também chamado de força normalizada, para o feixe de polarização linear:
+Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiencia vetorial, também chamado de força normalizada, para o feixe de polarização linear:
 
 \begin{equation}
 {\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= \frac{1}{2}{\mathbf Q}^{(\sigma +)} + \frac{1}{2}{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross})}
@@ -168,9 +168,22 @@ onde $\left<{\mathbf F}\right>$ é a média temporal da força, $c$ é a velocidade 
 A força exercida por uma polarização elípitica pode ser obtida introduzindo a dependência com o ângulo da placa de quarto de onda (PQO, ou QWP) no feixe paraxial incidente na entrada da objetva:
 
 \begin{equation}
-{\mathbf E}^{ent}(\rho,\phi,z) = E_{centro} e^{ik_0z} e^{\frac{-\rho^2}{w_0^2}} \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \theta}}{2} \hat{\bf{\epsilon}}_\sigma
+{\mathbf E}^{ent}(\rho,\phi,z) = E_{centro} e^{ik_0z} e^{\frac{-\rho^2}{w_0^2}} \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \theta}}{2} \hat{\bf{\epsilon}}_\sigma .
 \label{l}
 \end{equation}
+%
+Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da placa de quarto de onda. Podemos, então, identificar 4 tipos de termos nas forças: diretos ou puros devidos as polarizações $\sigma_\pm$, e termos cruzados com os produtos $\sigma_\pm^*\cdot\sigma_\mp$.
+
+\section{Aberração esférica}
+
+A aberração esférica surge sempre que há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Isso é fácil de mostrar em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n_1$ que incidem na interface com ângulo $\theta_1$, por refração, são transmitidos com um ângulo $\theta_2$ no meio com índice de refração $n_2$, de forma a respeitar a lei de Snell:
+
+\begin{equation}
+n_1\sin\theta_1=n_2\sin\theta_2.
+\label{snell}
+\end{equation}
+%
+
 
 
 \section{Interação Spin-Órbita.}
