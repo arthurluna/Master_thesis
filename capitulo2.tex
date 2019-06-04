@@ -144,7 +144,7 @@ A expressão para a força será mostrada depois de introduzirmos o perfil do feixe
 
 \section{Efeito do perfil gaussiano}
 
-O efeitos do perfil gaussiano no feixe. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
+\hspace{5 mm}O efeitos do perfil gaussiano no feixe. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
 
 Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a altura da cintura mínima coincidente com a entrada da objetiva. Isso nos permite tratar-lo como um feixe cilíndrico (de raio de curvartura infinito). {\bf colocar discussão sobre feixe paraxial em algum apendice, e fazer a referencia aqui.} O campo fica:
 
@@ -157,7 +157,7 @@ onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela con
 
 \section{Efeitos de polarização}
 
-Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiencia vetorial, também chamado de força normalizada, para o feixe de polarização linear:
+\hspace{5 mm}Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiencia vetorial, também chamado de força normalizada, para o feixe de polarização linear:
 
 \begin{equation}
 {\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= \frac{1}{2}{\mathbf Q}^{(\sigma +)} + \frac{1}{2}{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross})}
@@ -176,19 +176,24 @@ Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da p
 
 \section{Aberração esférica}
 
-A aberração esférica surge sempre que há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Isso é fácil de mostrar em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n_1$ que incidem na interface com ângulo $\theta_1$, por refração, são transmitidos com um ângulo $\theta_2$ no meio com índice de refração $n_2$, de forma a respeitar a lei de Snell:
+\hspace{5 mm}A aberração esférica surge sempre que há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Isso é fácil de mostrar em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
 
 \begin{equation}
-n_1\sin\theta_1=n_2\sin\theta_2.
+n\sin\theta=n_1\sin\theta_1.
 \label{snell}
 \end{equation}
 %
+Fica claro, então, que em um feixe focalizado, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais se encontram no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima da interface ({\bf inserir figura}). Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
 
+Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de cada componente ${\mathbf k}$ do campo, dada por:
+
+\begin{equation}
+T(\theta)=\fac{2\cos\theta}{\cos\theta + N\cos\theta_1}
+\end{equation}
 
 
 \section{Interação Spin-Órbita.}
-blablabla...
 
-blablabla...
+YADA
 
 \end{chapter}
