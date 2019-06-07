@@ -6,15 +6,6 @@
 \contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{2}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{2}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Modelo Mie-Debye}{3}{section.2.2}% 
-<<<<<<< HEAD
-\contentsline {section}{\numberline {2.3}Efeitos da Polariza\c c\~ao e do Perfil Gaussiano.}{8}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Intera\c c\~ao Spin-\'Orbita.}{10}{section.2.4}% 
-\contentsline {chapter}{\numberline {3}T\IeC {\'\i }tulo do Terceiro Cap\IeC {\'\i }tulo}{11}{chapter.3}% 
-\contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Quarto Cap\IeC {\'\i }tulo}{12}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{13}{chapter.5}% 
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{16}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{17}{appendix.B}% 
-=======
 \contentsline {section}{\numberline {2.3}Efeito do perfil gaussiano}{8}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Efeitos de polariza\c c\~ao}{9}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Aberra\c c\~ao esf\'erica}{10}{section.2.5}% 
@@ -24,4 +15,3 @@
 \contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{14}{chapter.5}% 
 \contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{17}{appendix.A}% 
 \contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{18}{appendix.B}% 
->>>>>>> 1e7e2fc8fe6868f3f63ad5cf3608a290bfcd3f55
