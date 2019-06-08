@@ -142,6 +142,11 @@ onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai
 
 A expressão para a força será mostrada depois de introduzirmos o perfil do feixe e a polarização, uma vez que tanto os campos mudam, quanto as expressões da força ganham termos adicionais. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que carregam as informações de aberrações e do perfil de intensidade.
 
+%
+%
+%%%%%  Seção 2  %%%%%
+%
+%
 \section{Efeito do perfil gaussiano}
 
 \hspace{5 mm}O efeitos do perfil gaussiano no feixe. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
@@ -155,6 +160,11 @@ Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feix
 %
 onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{RICHARDSeWOLF}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos \ref{integral_theta} são alteradas.
 
+%
+%
+%%%%%  Seção 3  %%%%%
+%
+%
 \section{Efeitos de polarização}
 
 \hspace{5 mm}Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiencia vetorial, também chamado de força normalizada, para o feixe de polarização linear:
@@ -174,6 +184,11 @@ A força exercida por uma polarização elípitica pode ser obtida introduzindo a de
 %
 Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da placa de quarto de onda. Podemos, então, identificar 4 tipos de termos nas forças de extinção e de espalhamento: diretos ou puros devidos as polarizações $\sigma_\pm$, e termos cruzados com os produtos $\sigma_\pm^*\cdot\sigma_\mp$.
 
+%
+%
+%%%%%  Seção 4  %%%%%
+%
+%
 \section{Aberração esférica}
 
 \hspace{5 mm}A aberração esférica surge sempre que há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Isso é fácil de mostrar em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
@@ -199,7 +214,18 @@ onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$, com $N=\frac{n_
 \label{faseSA}
 \end{equation}
 %
-é a função de aberração esférica.
+é a função de aberração esférica. No experimento, essa aberração aparece depois que o feixe é focalizado pela objetiva de imersão em óleo (que tem o mesmo índice de refração do vidro), onde o feixe passa pela interface vidro-água
+
+%
+%
+%%%%%  Seção 5  %%%%%
+%
+%
+\section{Astigmatismo}
+
+\hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
+
+O formalismo de Zernike, que será apresentado nessa seção, é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Nele, 
 
 
 \section{Interação Spin-Órbita.}

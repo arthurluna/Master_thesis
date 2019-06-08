@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.2)  7 JUN 2019 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.2)  7 JUN 2019 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,7 +776,7 @@ Underfull \vbox (badness 1337) has occurred while \output is active []
 
  [6 <./vec_fourier.png>] [7] [8]
 
-LaTeX Warning: Citation `RICHARDSeWOLF' on page 9 undefined on input line 156.
+LaTeX Warning: Citation `RICHARDSeWOLF' on page 9 undefined on input line 161.
 
 [9] [10]) (./capitulo3.tex [11]
 Cap\'{\i }tulo 3.
@@ -813,14 +813,9 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: 56E2AD71DAE673235F6A7B6ABAB2548E;1022.
+Package rerunfilecheck Info: File `tese.brf' has not changed.
+(rerunfilecheck)             Checksum: 4A3C761803C77EFAEB949A922C372EB2;703.
 
-
-Package rerunfilecheck Warning: File `tese.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tese.brf':
-(rerunfilecheck)             Before: 885C6A1BA68167EF026D44FB524DE485;703
-(rerunfilecheck)             After:  4A3C761803C77EFAEB949A922C372EB2;703.
 
 LaTeX Warning: There were undefined references.
 
@@ -846,7 +841,7 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (26 pages, 237917 bytes).
+Output written on tese.pdf (26 pages, 238082 bytes).
 PDF statistics:
  341 PDF objects out of 1000 (max. 8388607)
  293 compressed objects within 3 object streams
