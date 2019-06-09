@@ -10,7 +10,7 @@ Em 2018, seus trabalhos sobre a pinça ótica e toda a sua importancia para aplica
 
 A importância desse aparato exigiu uma descrição teórica satisfatória. Os primeiros modelos que tentam descrever as forças da pinça ótica fazem uso de diversas aproximações para descrever o feixe que sai da objetiva e a interação da esfera com o campo. Falarei brevemente destes na próxima seção.
 
-O primeiro artigo publicado pelo grupo que diz respeito a teoria de pinças óticas foi em 2000 \cite{Neto2000}, e deriva a força axial (na direção $z$) na microesfera em cima do eixo para um feixe de polarização circular. Resultados seguintes estendem o anterior para uma posição arbitrária da microesfera em relação ao foco do feixe e derivam forças nas demais direções (em coordenadas cilíndricas: azimutal e radial) \cite{Mazolli2003}. O caso da polarização linear é discutido em \cite{Dutra2007}. Posteriormente, eles também inserem correções à aberração esférica em \cite{Viana2007} (para interface vidro-água no porta-amostra) e ao astigmatismo e coma em \cite{Dutra2014}.
+O primeiro artigo publicado pelo grupo que diz respeito a teoria de pinças óticas foi em 2000 \cite{Neto2000}, e deriva a força axial (na direção $z$) na microesfera em cima do eixo para um feixe de polarização circular. Resultados seguintes estendem o anterior para uma posição arbitrária da microesfera em relação ao foco do feixe e derivam forças nas demais direções (em coordenadas cilíndricas: azimutal e radial) \cite{Mazolli2003}. O caso da polarização linear é discutido em \cite{Dutra2007}. Posteriormente, eles também inserem correções à aberração esférica \cite{Viana2007} (para interface vidro-água no porta-amostra) e para aberrações do feixe antes da objetiva (como astigmatismo e coma) \cite{Dutra2014}.
 
 Na seção {\bf inserir seção}, discutirei brevemente o modelo desenvolvido pelo grupo (MDSA+, do inglês Mie-Debye Spherical Aberration, com correção de outras aberrações). Este foi usado para obter os resultados da presente dissertação. Ele leva em conta diversos efeitos [CITAR EXEMPLOS] que são ignorados pelos demais, além de ser válido para um espectro maior de razões entre o comprimento de onda $\lambda$ e o raio $a$ (também chamado de parâmetro de tamanho, ou $\beta$).
 
@@ -214,19 +214,24 @@ onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$, com $N=\frac{n_
 \label{faseSA}
 \end{equation}
 %
-é a função de aberração esférica. No experimento, essa aberração aparece depois que o feixe é focalizado pela objetiva de imersão em óleo (que tem o mesmo índice de refração do vidro), onde o feixe passa pela interface vidro-água
+é a função de aberração esférica. No experimento, essa aberração aparece depois que o feixe é focalizado pela objetiva de imersão em óleo (que tem o mesmo índice de refração do vidro) e passa pela interface vidro-água.
 
 %
 %
 %%%%%  Seção 5  %%%%%
 %
 %
-\section{Astigmatismo}
+\section{Aberrações Óticas}
 
-\hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
+\hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
 
-O formalismo de Zernike, que será apresentado nessa seção, é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Nele, 
+O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. É importante ressaltar que a aberração esférica em questão trata de aberrações antes da objetiva, causada por lentes com imperfeições ({\bf checar com paulo ou rafael}).
 
+Podemos introduzir essas aberrações no modelo colocando a fase (adicional) nos campos na entrada da objetiva \ref{l}:
+
+\begin{equation}
+\Phi_{adicional}(\theta,\phi)
+\end{equation}
 
 \section{Interação Spin-Órbita.}
 
