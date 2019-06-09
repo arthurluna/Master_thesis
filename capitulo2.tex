@@ -227,10 +227,10 @@ onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$, com $N=\frac{n_
 
 O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. É importante ressaltar que a aberração esférica em questão trata de aberrações antes da objetiva, causada por lentes com imperfeições ({\bf checar com paulo ou rafael}).
 
-Podemos introduzir essas aberrações no modelo colocando a fase (adicional) nos campos na entrada da objetiva \ref{l}:
+Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\Phi_{adicional}(\theta,\phi)}$ nos campos na entrada da objetiva (modificando a equação \ref{l}), com:
 
 \begin{equation}
-\Phi_{adicional}(\theta,\phi)
+\Phi_{adicional}(\theta,\phi) = 2\pi \left[ A'_{sa}\left( \frac{\sin\theta}{\sin\theta_0} \right)^4 + A'_{c}\left( \frac{\sin\theta}{\sin\theta_0} \right)^3\cos(\phi - \varphi_c) + A'_{a}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos^2(\phi - \varphi_a) \right].
 \end{equation}
 
 \section{Interação Spin-Órbita.}
