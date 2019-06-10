@@ -118,6 +118,7 @@ Para derivar a força na microesfera em função da sua posição relativa ao foco do
 \begin{equation}
 \begin{split}
 \int\limits_0^{2\pi} d\phi_k e^{-i{\mathbf k}\cdot{\mathbf R}} e^{-i\phi_k(M'\mp1)}=e^{-ik z\thinspace \cos\theta_k} 2\pi(-i)^{M'\mp1}J_{M'\mp1}\left(k\sin\theta_k\sqrt{q_x^2+q_y^2}\right)e^{-i(M'\mp1)\phi}.
+\label{int_phi}
 \end{split}
 \end{equation}
 %
@@ -167,7 +168,7 @@ onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela con
 %
 \section{Efeitos de polarização}
 
-\hspace{5 mm}Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiencia vetorial, também chamado de força normalizada, para o feixe de polarização linear:
+\hspace{5 mm}Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiência vetorial, também chamado de força normalizada, para o feixe de polarização linear:
 
 \begin{equation}
 {\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= \frac{1}{2}{\mathbf Q}^{(\sigma +)} + \frac{1}{2}{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross})}
@@ -198,9 +199,9 @@ n\sin\theta=n_1\sin\theta_1.
 \label{snell}
 \end{equation}
 %
-Fica claro, então, que para um feixe focalizado incidindo perpendiculamente à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais se encontram no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface ({\bf inserir figura}). Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
+Fica claro, então, que para um feixe focalizado incidindo perpendiculamente à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface ({\bf inserir figura}). Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
 
-Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de cada componente ${\mathbf k}$ do campo, dada por \cite{Viana2007}:
+Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por \cite{Viana2007}:
 
 \begin{equation}
 T(\theta)=\frac{2\cos\theta}{\cos\theta + N\cos\theta_1} ,
@@ -214,7 +215,7 @@ onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$, com $N=\frac{n_
 \label{faseSA}
 \end{equation}
 %
-é a função de aberração esférica. No experimento, essa aberração aparece depois que o feixe é focalizado pela objetiva de imersão em óleo (que tem o mesmo índice de refração do vidro) e passa pela interface vidro-água.
+é a função de aberração esférica. No experimento, essa aberração aparece depois que o feixe é focalizado pela objetiva de imersão em óleo (que tem o mesmo índice de refração do vidro) e passa pela interface vidro-água para dentro do porta-amostra.
 
 %
 %
@@ -235,7 +236,30 @@ Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\P
 %
 Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
 
-Uma breve explicação das aberrações será feita a seguir, baseada em trabalhos do grupo \cite{Dutra2014, Dutra, Diniz2019}
+Uma breve explicação das aberrações será feita a seguir,({\bf talvez colocar a explicação das aberrações em um apêndice. Posso fazer isso depois, com tempo e calma para produzir imagens ilustrativas. Vou dar foco às equações que usei na simulação.}) baseada em trabalhos do grupo \cite{Dutra, Diniz2019, Dutra2014}, onde detalhes do seguinte desenvolvimento podem ser encontrados. 
+
+Considemos agora o problema prático: os experimentos que serviram de base comparatória para as simulações desenvolvidas não possuem coma e os efeitos de aberração esférica podem ser negligenciados. Portanto, somente o astigmatismo será levado em conta nas equações apresentadas. Como a fase referente ao astigmatismo possui uma dependência em $\phi$, podemos concluir que a integral da equação \ref{int_phi} será modificada. 
+
+Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as expressões para força em termos dos coeficientes de multipolo.
+
+\section{Expressões para força.}
+
+\hspace{5 mm}Como dito no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. A forma mais fácil de faze-lo é tomando a superfície $\sigma$ no infinito, já que a escolha dessa é arbitrária. Podemos argumentar também que a integral envolvendo o vetor de Poynting é zero. No limite que tal superfície está no infinito, usamos as expressões assintóticas das funções de Bessel (com dependência em $kr$) dentro dos potencias de Debye. 
+
+Portanto, o resultado para o fator de eficiência em coordenadas cilíndricas (${\mathbf Q}=Q_\rho \hat{\rho} + Q_\phi \hat{\phi} + Q_z \hat{z}$), para uma polarização qualquer, corrigida para aberração esférica e astigmatismo, tem a forma:
+
+\begin{equation}
+Q_z(\rho,\phi,z) = -\frac{}
+\end{equation}
+%
+\begin{equation}
+
+\end{equation}
+%
+\begin{equation}
+
+\end{equation}
+
 
 \section{Interação Spin-Órbita.}
 
