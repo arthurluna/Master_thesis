@@ -16,7 +16,7 @@ Na seção {\bf inserir seção}, discutirei brevemente o modelo desenvolvido pelo g
 
 %A importância de um modelo teórico derivado de primeiros principios é enorme para se entender com clareza a física de um experimento ou fenômeno. Portanto, comparar teoria e experimento é de extrema necessidade para validar tal teoria. 
 %
-Ajustes de dados experimentais com o modelo MDSA foram feitos e publicados pelo grupo \cite{viana_2006, kaina}. Uma vez demonstrada que a teoria tem boa concordância com o experimento, podemos tentar prever parâmetros experimentais a partir dela. Esse é um dos objetivos do presente trabalho, e, para tal, discutiremos nas próximas seções um pouco sobre o modelo Mie-Debye e suas extensões. Esse tema ja foi abordado em teses de doutorado de ex-alunos do grupo \cite{Mazolli, Rafael}, que tomaremos e recomendamos como referência para este texto.
+Ajustes de dados experimentais com o modelo MDSA foram feitos e publicados pelo grupo \cite{Viana2006, Diniz2019}. Uma vez demonstrada que a teoria tem boa concordância com o experimento, podemos tentar prever parâmetros experimentais a partir dela. Esse é um dos objetivos do presente trabalho, e, para tal, discutiremos nas próximas seções um pouco sobre o modelo Mie-Debye e suas extensões. Esse tema ja foi abordado em teses de doutorado de ex-alunos do grupo \cite{Mazolli, Dutra}, que tomaremos e recomendamos como referência para este texto.
 
 O modelo MD levam em conta um efeito que a princípio não se apresenta com clareza: a interação de momento angular de spin e orbital do feixe. A alta abertura numérica da objetiva e o espalhamento Mie são dois elementos importantes levados em consideração e que são responsáveis por efeitos de conversão de momentos angulares\cite{Bliokh2015}. Faremos uma breve discussão nesse capítulo sobre esses efeitos, a fim de elucidar não só os mesmos, mas os resultados obtidos nas simulações e no experimento. ({\bf rever esse paragrafo})
 
@@ -27,9 +27,9 @@ O modelo MD levam em conta um efeito que a princípio não se apresenta com clarez
 %
 \section{Modelo Mie-Debye}
 
-\hspace{5 mm}Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{mazolli}, e não estarão no presente trabalho para evitar repetição. 
+\hspace{5 mm}Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
-Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótica \cite{jackson}:
+Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótica \cite{Jackson1998}:
 
 \begin{equation}
 \vec{F} = \oint_{\sigma} \hat{n} \cdot T d \sigma - \mu \epsilon \frac{d}{dt} \int_{\nu} \vec{S} d \nu,
@@ -158,7 +158,7 @@ Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feix
 \label{campo_ent}
 \end{equation}
 %
-onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{RICHARDSeWOLF}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos \ref{integral_theta} são alteradas.
+onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{1959a}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos \ref{integral_theta} são alteradas.
 
 %
 %
@@ -191,7 +191,7 @@ Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da p
 %
 \section{Aberração esférica}
 
-\hspace{5 mm}A aberração esférica surge sempre que há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Isso é fácil de mostrar em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
+\hspace{5 mm}Uma das formas que a aberração esférica pode aparecer é quando há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Essa não é a única aberração ótica presente no aparato de pinça ótica. Antes mesmo do feixe ser focalizado, este pode conter aberração esférica, como veremos na próxima seção. Para o caso do feixe focalizado passando por uma interface, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
 
 \begin{equation}
 n\sin\theta=n_1\sin\theta_1.
@@ -225,13 +225,17 @@ onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$, com $N=\frac{n_
 
 \hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
 
-O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. É importante ressaltar que a aberração esférica em questão trata de aberrações antes da objetiva, causada por lentes com imperfeições ({\bf checar com paulo ou rafael}).
+O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. Estamos tratando aqui de aberrações antes da objetiva, ou seja, a aberração esférica tratada aqui tem orígem diferente da descrita na sessão anterior, apesar de serem o mesmo fenômeno físico.
 
 Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\Phi_{adicional}(\theta,\phi)}$ nos campos na entrada da objetiva (modificando a equação \ref{l}), com:
 
 \begin{equation}
 \Phi_{adicional}(\theta,\phi) = 2\pi \left[ A'_{sa}\left( \frac{\sin\theta}{\sin\theta_0} \right)^4 + A'_{c}\left( \frac{\sin\theta}{\sin\theta_0} \right)^3\cos(\phi - \varphi_c) + A'_{a}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos^2(\phi - \varphi_a) \right].
 \end{equation}
+%
+Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
+
+Uma breve explicação das aberrações será feita a seguir, baseada em trabalhos do grupo \cite{Dutra2014, Dutra, Diniz2019}
 
 \section{Interação Spin-Órbita.}
 

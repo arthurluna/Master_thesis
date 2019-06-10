@@ -131,7 +131,53 @@
 @PhdThesis{Mazolli,
   author = {A. Mazolli},
   title  = {Teoria das Pin\c{c}as {\'{O}}ticas},
+  school = {Universidade Federal do Rio de Janeiro},
   year   = {2003},
+}
+
+@PhdThesis{Dutra,
+  author = {Rafael de Sousa Dutra},
+  title  = {Parametrizando uma Pin\c{c}a \'{O}tica: Efeitos de Aberra\c{c}\~{o}es e Absor\c{c}\~{a}o},
+  school = {Universidade Federal do Rio de Janeiro},
+  year   = {2011},
+}
+
+@Article{Diniz2019,
+  author    = {K. Diniz and R. S. Dutra and L. B. Pires and N. B. Viana and H. M. Nussenzveig and P. A. Maia Neto},
+  title     = {Negative optical torque on a microsphere in optical tweezers},
+  journal   = {Optics Express},
+  year      = {2019},
+  volume    = {27},
+  number    = {5},
+  pages     = {5905},
+  month     = {feb},
+  doi       = {10.1364/oe.27.005905},
+  publisher = {The Optical Society},
+}
+
+@Book{Jackson1998,
+  title     = {Classical Electrodynamics},
+  publisher = {John Wiley \& Sons Inc},
+  year      = {1998},
+  author    = {Jackson, John David},
+  isbn      = {047130932X},
+  date      = {1998-07-27},
+  ean       = {9780471309321},
+  pagetotal = {832},
+  url       = {https://www.ebook.de/de/product/3240907/john_david_jackson_classical_electrodynamics.html},
+}
+
+@Article{1959a,
+  author    = {B. Richards and E. Wolf},
+  title     = {Electromagnetic diffraction in optical systems, {II}. Structure of the image field in an aplanatic system},
+  journal   = {Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences},
+  year      = {1959},
+  volume    = {253},
+  number    = {1274},
+  pages     = {358--379},
+  month     = {dec},
+  doi       = {10.1098/rspa.1959.0200},
+  publisher = {The Royal Society},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
