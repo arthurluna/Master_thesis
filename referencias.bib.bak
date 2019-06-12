@@ -180,4 +180,16 @@
   publisher = {The Royal Society},
 }
 
+@Book{2007,
+  title     = {Optical Trapping and Manipulation of Neutral Particles Using Lasers: A Reprint Volume with Commentaries},
+  publisher = {WORLD SCIENTIFIC PUB CO INC},
+  year      = {2007},
+  author    = {Arthur Ashkin},
+  isbn      = {9810240589},
+  date      = {2007-04-01},
+  ean       = {9789810240585},
+  pagetotal = {914},
+  url       = {https://www.ebook.de/de/product/3762039/optical_trapping_and_manipulation_of_neutral_particles_using_lasers_a_reprint_volume_with_commentaries.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
