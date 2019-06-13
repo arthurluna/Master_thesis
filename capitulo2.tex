@@ -233,22 +233,37 @@ Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as
 
 \section{Expressões para força.}
 
-\hspace{5 mm}Como dito no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. A forma mais fácil de faze-lo é tomando a superfície $\sigma$ no infinito, já que a escolha dessa é arbitrária. Podemos argumentar também que a integral envolvendo o vetor de Poynting é zero. No limite que tal superfície está no infinito, usamos as expressões assintóticas das funções de Bessel (com dependência em $kr$) dentro dos potencias de Debye. 
+\hspace{5 mm}Como dito no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. A forma mais fácil de faze-lo é tomando a superfície $\sigma$ no infinito, já que a escolha dessa é arbitrária. Podemos argumentar também que a integral envolvendo o vetor de Poynting é zero. No limite que tal superfície está no infinito, usamos as expressões assintóticas das funções de Bessel (com dependência em $kr$) dentro dos potenciais de Debye. 
 
-Portanto, o resultado para o fator de eficiência em coordenadas cilíndricas (${\mathbf Q}=Q_\rho \hat{\rho} + Q_\phi \hat{\phi} + Q_z \hat{z}$), para uma polarização qualquer, corrigida para aberração esférica e astigmatismo, tem a forma:
+Portanto, o resultado para o fator de eficiência em coordenadas cilíndricas (${\mathbf Q}=(Q_{s\rho} + Q_{e\rho}) \hat{\rho} + (Q_{s\phi} + Q_{e\phi}) \hat{\phi} + (Q_{sz} + Q_{ez}) \hat{z}$), para uma polarização qualquer, corrigida para aberração esférica e astigmatismo, tem a forma \cite{Diniz2019}:
 
 \begin{equation}
-Q_z(\rho,\phi,z) = -\frac{a}{a}
+\begin{split}
+Q_{sz}(\rho,\phi,z) = -\frac{4\gamma^2}{AN}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m}(1-\sigma\sin2\theta) + (a_ja^*_{j+1}-b_jb^*_{j+1})\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m}\cos2\theta e^{i2\sigma(\phi-\theta)} \Big{)} + \\ \frac{2j+1}{j(j+1)} \Big{]}
+\end{split}
+\end{equation}
+\begin{equation}
+Q_{ez}(\rho,\phi,z) = -\frac{a}{a}
 \end{equation}
 %
 \begin{equation}
-a
+\begin{split}
+Q_{s\phi}(\rho,\phi,z) = -\frac{a}{a}
+\end{split}
+\end{equation}
+\begin{equation}
+Q_{e\phi}(\rho,\phi,z) = -\frac{a}{a}
 \end{equation}
 %
 \begin{equation}
-b
+\begin{split}
+Q_{s\rho}(\rho,\phi,z) = -\frac{a}{a}
+\end{split}
 \end{equation}
-
+\begin{equation}
+Q_{e\rho}(\rho,\phi,z) = -\frac{a}{a}
+\end{equation}
+{\bf separar as equações e colocar no apêndice? Vale a pena: posso reescrever as equações com a dependência em $\theta$ separada, como fiz no código.}
 
 \section{Interação Spin-Órbita.}
 
