@@ -3,8 +3,9 @@
 \contentsline {chapter}{Lista de Figuras}{viii}{section*.4}% 
 \contentsline {chapter}{Lista de Tabelas}{ix}{section*.6}% 
 \contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{1}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{2}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{2}{section.2.1}% 
+\contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{1}{section.1.1}% 
+\contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Introdu\c c\~ao}{3}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Modelo Mie-Debye}{3}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}Efeito do perfil gaussiano}{8}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Efeitos de polariza\c c\~ao}{9}{section.2.4}% 
