@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.2)  16 JUN 2019 05:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.2)  16 JUN 2019 05:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -824,10 +824,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 11850 strings out of 492616
- 166941 string characters out of 6135178
+ 11851 strings out of 492616
+ 166949 string characters out of 6135178
  324632 words of memory out of 5000000
- 15370 multiletter control sequences out of 15000+600000
+ 15371 multiletter control sequences out of 15000+600000
  15240 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,19n,48p,3234b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -844,7 +844,7 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (32 pages, 265322 bytes).
+Output written on tese.pdf (32 pages, 265992 bytes).
 PDF statistics:
  441 PDF objects out of 1000 (max. 8388607)
  385 compressed objects within 4 object streams
