@@ -13,7 +13,8 @@
 \contentsline {section}{\numberline {2.6}Aberra\c c\~oes \'Oticas}{11}{section.2.6}% 
 \contentsline {section}{\numberline {2.7}Express\~oes para for\c ca.}{13}{section.2.7}% 
 \contentsline {section}{\numberline {2.8}Intera\c c\~ao Spin-\'Orbita.}{14}{section.2.8}% 
-\contentsline {chapter}{\numberline {3}T\IeC {\'\i }tulo do Terceiro Cap\IeC {\'\i }tulo}{15}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}Experimento e Simula\c c\~ao}{15}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}M\'etodo Experimental.}{15}{section.3.1}% 
 \contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Quarto Cap\IeC {\'\i }tulo}{16}{chapter.4}% 
 \contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{17}{chapter.5}% 
 \contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{20}{appendix.A}% 
