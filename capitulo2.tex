@@ -4,18 +4,21 @@
 %\hspace{5 mm} BLABLABLA
 
 \section{Introdução}
+%
+\hspace{5 mm}Essa seção será dedicada a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão revisados, . 
 
+Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto do modelo MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os momentos angulares\cite{Bliokh2015}.
 
-Nessa secção, discutirei brevemente o modelo Mie-Debye (MD) para o experimento de pinça ótica. Este foi usado para obter os resultados da presente dissertação. Os primeiros modelos que tentam descrever as forças da pinça ótica fazem uso de diversas aproximações para descrever o feixe que passa pela objetiva e a interação da esfera com o campo. Esse modelo, por outro lado, descreve o feixe de forma exata, de acordo com o formalismo de Richards-Wolf para um feixe fortemente focalizado. Ele leva em conta diversos efeitos que são ignorados pelos demais, além de ser válido para um espectro maior de relações entre o comprimento de onda $\lambda$ e o raio $a$.
-
-As simulações feitas baseadas no modelo MD levam em conta um efeito que a principio não se apresenta com claridade: a interação de momento angular de spin e orbital do feixe. A alta abertura numérica da objetiva e o espalhamento Mie são dois elementos importantes levados em consideração neste modelo e que são responsáveis por efeitos de conversão de momentos angulares\cite{bliokh}. Faremos uma breve discussão nesse capítulo sobre esses efeitos, a fim de elucidar não só os mesmos, mas os resultados obtidos nas simulações e no experimento.
-
-Uma breve descrição de duas aberrações presentes no experimento também será feita nesse capítulo: aberração esférica e astigmatismo. Enquanto a aberração esférica é um efeito controlado, o astigmatismo é gerado por desalinhamentos no sistema. Por isso, a simulação depende dos parâmetros de astigmatismo para ser coerente com o experimento. Usaremos esse fato para fazer um ajuste de um desses parâmetros comparando os dados experimentais e resultados de várias simulações.
-
+%
+%
+%%%%%  Seção  %%%%%
+%
+%
 \section{Modelo Mie-Debye}
 
+\hspace{5 mm}Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
-O cálculo da força em uma amostra na pinça ótica é feito através de\cite{jackson}:
+Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótica \cite{Jackson1998}:
 
 \begin{equation}
 \vec{F} = \oint_{\sigma} \hat{n} \cdot T d \sigma - \mu \epsilon \frac{d}{dt} \int_{\nu} \vec{S} d \nu,
@@ -24,51 +27,31 @@ O cálculo da força em uma amostra na pinça ótica é feito através de\cite{jackson
 
 onde $\sigma$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
-O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). Os detalhes de tais cálculos podem ser encontrados em \cite{mazolli} e \cite{rafael}, e não estarão no presente trabalho para evitar repetição. Começaremos, então, pelas equações de Maxwell em meios materiais \cite{jackson}, na ausência de correntes e cargas. Assumimos também que os campos sejam harmônicos no tempo, ou seja, sua dependência é dada por $e^{-i\omega t}$. As equações tomam a seguinte forma:
+O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). O campo incidente na amostra tem formato cônico sólido, gerado pela objetiva. Montaremos esse campo superpondo ondas planas. Para tanto, começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolo (ondas esféricas ou ondas parciais). Outros casos de polarização serão discutidos adiante. A base de multipolos é a ideal para problemas com simetria esférica, pois são compostas pelos harmônicos esféricos na parte radial, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, que serão definidos a seguir: 
 
 \begin{equation}
-\nabla \cdot {\mathbf D} = 0,
-\label{EM_1}
-\end{equation}
-\begin{equation}
-\nabla \cdot {\mathbf B} = 0,
-\label{EM_2}
-\end{equation}
-\begin{equation}
-\nabla \times {\mathbf E} = -\frac{\partial {\mathbf B} }{\partial t},
-\label{EM_3}
-\end{equation}
-\begin{equation}
-\nabla \times {\mathbf H} = \frac{\partial {\mathbf D} }{\partial t}.
-\label{EM_4}
-\end{equation}
-
-As equações de onda para os campos podem ser obtidas tomando o rotacional ($\nabla \times$) das equações \ref{EM_3} e \ref{EM_4} e usando as relações para meios lineares ${\mathbf D}=\epsilon {\mathbf E}$ e ${\mathbf B}=\mu {\mathbf H}$. Substituindo também \ref{EM_1} e \ref{EM_2}, obtemos:
-
-\begin{equation}
-(\nabla ^{2} - \mu \epsilon \frac{\partial ^{2} }{\partial t^{2} }){\mathbf E} = 0,
-\label{EO_1}
-\end{equation}
-\begin{equation}
-(\nabla ^{2} - \mu \epsilon \frac{\partial ^{2} }{\partial t^{2} }){\mathbf H} = 0.
-\label{EO_2}
+\Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
+\label{debye_def}
 \end{equation}
 %
-Por fim, obtemos a equação de Helmholtz:
+com
 
 \begin{equation}
-(\nabla ^{2} + \omega^2 \mu \epsilon ){\mathbf V} = 0
-\label{helmholtzV}
+{\mathbf E}=E_0(\hat{x}\pm i \hat{y})e^{ikz-i\omega t} \qquad e\qquad {\mathbf H}=\frac{n_1}{\mu c}(\mp i){\mathbf E}.
+\label{onda_plana}
 \end{equation}
 %
-onde ${\mathbf V}$ é um dos campos vetoriais ${\mathbf E}$ ou ${\mathbf H}$. Como estamos lidando com campos vetoriais de divergência nula(\ref{EM_1} e \ref{EM_2}), pode-se mostrar que ${\mathbf r}\cdot{\mathbf V}$ é solução da equação de Helmholtz escalar\cite{mazolli}:
+onde $n_1$ é o índice de refração do meio ao redor da amostra. Tais potenciais serão úteis para resolver o problem do espalhamento Mie. Estes decompõem os campos em dois modos, um deles com o campo ${\mathbf E}$ paralelo à superfície do objeto espalhador ($\Pi^{M}$, modo transversal elétrico) e outra perpendicular ($\Pi^{E}$, modo transversal magnético). Essa decomposição forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Os coeficientes de Mie para o espalhamento são:
 
 \begin{equation}
-(\nabla ^{2} + \omega^2 \mu \epsilon )\psi = 0 .
-\label{helmholtzE}
-\end{equation}
+a_J=\frac{\psi_J(\beta)\psi'_J(\alpha)-N\psi'_J(\beta)\psi_J(\alpha)}{\zeta^{(1)}_J(\beta)\psi'_J(\alpha)-N\zeta'^{(1)}_J(\beta)\psi_J(\alpha)} \qquad e\qquad
+b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1)}_J(\beta)\psi_J(\alpha)-N\zeta^{(1)}_J(\beta)\psi'_J(\alpha)},
+\label{mie}
+\end{equation} 
 %
-Assim, uma vez encontradas as soluções escalares, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$,$\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k}) \propto \nabla_{\mathbf k}$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
+onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera, $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
+
+Assim, uma vez encontradas as soluções escalares para os campos espalhados e incidentes, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$,$\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k}) \propto \nabla_{\mathbf k}$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
 %
 \begin{figure}[h]
 \begin{center}
@@ -78,79 +61,212 @@ Assim, uma vez encontradas as soluções escalares, temos que reobter os campos ve
 \end{center}
 \end{figure}
 %
-
-Levando em conta que o centro espalhador no nosso problema é uma microesfera, vamos fazer uma descrição dos campos escalares de forma a aproveitar tal simetria. Assumiremos uma solução de ondas planas para o campo elétrico, de polarização circular (direita ou esquerda) e se propagando na direção $z$:
-
-\begin{equation}
-{\mathbf E}=E_0(\hat{x}\pm i \hat{y})e^{ikz-i\omega t} .
-\label{onda_plana}
-\end{equation}
-%
-Obtemos ${\mathbf H}$ levando \ref{onda_plana} em \ref{EM_3}:
+Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
 
 \begin{equation}
-{\mathbf H}=\frac{n_1}{\mu c}E_0(\hat{y}\mp i \hat{x})e^{ikz-i\omega t}=\frac{n_1}{\mu c}(\mp i){\mathbf E} ,
-\label{onda_plana_H}
-\end{equation}
-%
-onde $n_1$ é o índice de refração do meio ao redor da amostra. Definimos os potenciais de Debye como:
-
-\begin{equation}
-\Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
-\label{debye_def}
-\end{equation}
-%
-Onde o somatório em $J$ significa que estaremos expandindo nossa onda plana em ondas esféricas (parciais), e cada um dos termos possui um potencial de Debye correspondente. Assim, nossa solução \ref{onda_plana}, junto com \ref{debye_def}, ficará na forma\cite{mazolli}:
-
-\begin{equation}
-\Pi^E=\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}{\inf}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}}Y^{\pm 1}_J(\theta,\phi),
-\label{ondas_par}
-\end{equation}
-%
-enquanto o potencial magnético será:
-
-\begin{equation}
-\Pi^M=\frac{n_1}{\mu c}(\mp i)\Pi^E.
-\label{ondas_par_mag}
-\end{equation} 
-%
-
-Obtemos, até então, os potenciais de ondas planas incidentes na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular nos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. A relação
-
-\begin{equation}
-Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) D^{J}_{M',M}(\alpha, \beta, \gamma)
+Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha M'+\gamma M)} d^J_{M'M}(\beta),
 \label{harm_esf_rot}
 \end{equation}
 %
-representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $D^{J}_{M',M}$ é o elemento da matriz de rotação $D(\alpha,\beta,\gamma)$ de Wigner e $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. Os elementos $D^{J}_{M',M}$ tomam a forma:
+que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz-$d$ de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam:
 
 \begin{equation}
-D^{J}_{M',M}(\alpha ,\beta ,\gamma)= \bra{JM'}D(\alpha,\beta,\gamma)\ket{JM} = \bra{JM'}e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}\ket{JM},
-\label{matriz_D}
-\end{equation}
-%
-onde podemos substituir os autovalores de $J_z$: $M$ e $M'$. Substituindo também $\bra{JM'}e^{-i\beta J_y}\ket{JM}$ por $d^J_{M'M}(\beta)$, a equação\ref{harm_esf_rot} fica:
-
-\begin{equation}
-Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha M'+\gamma M)} d^J_{M'M}(\beta).
-\label{harm_esf_rot2}
-\end{equation}
-%
-A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam:
-
-\begin{equation}
-\Pi^E =\pm \frac{E_0 e^-i\omega t}{k}\sum \limits_{J=1}{\inf}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
+\Pi^E =\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
 \label{debyeE_rot}
 \end{equation}
 e
 \begin{equation}
-\Pi^M =\frac{H_0 e^-i\omega t}{k}\sum \limits_{J=1}{\inf}(i)^{J}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi).
+\Pi^M =\frac{H_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi).
 \label{debyeM_rot}
 \end{equation}
 %
-\section{Interação Spin-Órbita.}
-blablabla...
 
-blablabla...
+O próximo passo é integrar no ângulo solido do cone. Começando pela varável $\phi_k$ (ou seja, componente $\phi$ da direção do vetor de onda ${\mathbf k}$; notação que será usada para $\theta_k$ também), obtemos:
+
+\begin{equation}
+\begin{split}
+\Pi^E_{\theta_k} =\pm \frac{E_0 e^{-i\omega t}}{k}\sqrt{\cos(\theta_k)}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \times \\ \times \sum\limits_{M'=-J}^J d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi) \int\limits_0^{2\pi} d\phi_k e^{-i\phi_k(M'\mp1)} ,
+\label{pi_phi}
+\end{split}
+\end{equation}
+%
+onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe. O cone sólido se obtem integrando em $\theta_k$:
+
+\begin{equation}
+\begin{split}
+\Pi^E=\int\limits_0^{\theta_0}d\theta_k \sin\theta_k \Pi^E_{\theta_k}, \\
+\Pi^M=\int\limits_0^{\theta_0}d\theta_k \sin\theta_k \Pi^M_{\theta_k},
+\label{integral_theta}
+\end{split}
+\end{equation}
+%
+onde $\theta_0$ é a meia abertura do feixe.
+
+Para derivar a força na microesfera em função da sua posição relativa ao foco do feixe, temos que calcular os campos deslocados em relação ao centro do objeto espalhador, ou seja, a orígem. Fazemos isso usando o gerador de translações no espaço ${\mathbf k}$, com o operador $e^{-i{\mathbf k}\cdot{\mathbf R}}$, onde ${\mathbf R}=q_x\hat{x}+q_y\hat{y}+q_z\hat{z}$ é o vetor de deslocamento. Multiplicamos esse operador em cada coeficiente de multipolo, e dessa forma, o operador fica dentro da integral em $\phi_k$, que leva ao seguinte resultado:
+
+\begin{equation}
+\begin{split}
+\int\limits_0^{2\pi} d\phi_k e^{-i{\mathbf k}\cdot{\mathbf R}} e^{-i\phi_k(M'\mp1)}=e^{-ik z\thinspace \cos\theta_k} 2\pi(-i)^{M'\mp1}J_{M'\mp1}\left(k\sin\theta_k\sqrt{q_x^2+q_y^2}\right)e^{-i(M'\mp1)\phi}.
+\label{int_phi}
+\end{split}
+\end{equation}
+%
+
+Uma vez determinados os potenciais de Debye incidentes e espalhados, podemos obter os campos aplicando os operadores $-i\nabla\times{\mathbf L}$ e $-i{\mathbf L}$:
+
+\begin{equation}
+\begin{split}
+{\mathbf E}_T={\mathbf E}_{IN}+{\mathbf E}_{S}=-i\nabla\times{\mathbf L}(\Pi^E_{IN}+\Pi^E_S)+i \omega \mu(-i){\mathbf L}(\Pi^M_{IN}+\Pi^M_S), \\
+{\mathbf H}_T={\mathbf H}_{IN}+{\mathbf H}_{S}=-i\nabla\times{\mathbf L}(\Pi^M_{IN}+\Pi^M_S)-i \omega \epsilon(-i){\mathbf L}(\Pi^E_{IN}+\Pi^E_S).
+\end{split}
+\end{equation}
+%
+
+Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de um campo cônico e com perfil de instensidade constante antes de entrar na objetiva. Essa integral pode ser resolvida tomando a superfície $\sigma$ como uma esfera (com centro na orígem) com raio tendendo a infinito. Isso faz com que as componentes radiais do campo sejam desprezadas no cálculo, pois caem com $\frac{1}{r^2}$, comparado às componentes tangenciais que caem com $\frac{1}{r}$. Temos, então:
+
+\begin{equation}
+{\mathbf F}=\frac{-1}{2}r\left( \int d\Omega (\epsilon E^2_{tan}{\mathbf r}) + \int d\Omega (\mu H^2_{tan}{\mathbf r}) \right),
+\end{equation}
+%
+onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $Real({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produtos dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa de perda de momento do campo incidente para o centro espalhador. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
+
+A expressão para a força será mostrada depois de introduzirmos o perfil do feixe e a polarização, uma vez que tanto os campos mudam, quanto as expressões da força ganham termos adicionais. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que carregam as informações de aberrações e do perfil de intensidade.
+
+%
+%
+%%%%%  Seção 2  %%%%%
+%
+%
+\section{Efeito do perfil gaussiano}
+
+\hspace{5 mm}O efeitos do perfil gaussiano no feixe. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
+
+Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a altura da cintura mínima coincidente com a entrada da objetiva. Isso nos permite tratar-lo como um feixe cilíndrico (de raio de curvartura infinito). {\bf colocar discussão sobre feixe paraxial em algum apendice, e fazer a referencia aqui.} O campo fica:
+
+\begin{equation}
+{\mathbf E}_{IN}^{antes}(\vec{r},t)=E_0 e^{ikz} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}(\hat{{\mathbf x}}\pm i\hat{{\mathbf y}}) e^{i\omega t},
+\label{campo_ent}
+\end{equation}
+%
+onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{1959a}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos \ref{integral_theta} são alteradas.
+
+%
+%
+%%%%%  Seção 3  %%%%%
+%
+%
+\section{Efeitos de polarização}
+
+\hspace{5 mm}Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiência vetorial, também chamado de força normalizada, para o feixe de polarização linear:
+
+\begin{equation}
+{\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= \frac{1}{2}{\mathbf Q}^{(\sigma +)} + \frac{1}{2}{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross})}
+\end{equation}
+%
+onde $\left<{\mathbf F}\right>$ é a média temporal da força, $c$ é a velocidade da luz no vácuo e P é a potência do feixe incidente na amostra. Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda (tanto de espalhamento quanto de extinção). O termo ${\mathbf Q}^{({\it cross})}$ é o que chamamos de cruzado, pois contem produtos de campos com polarizações opostas: . 
+
+A força exercida por uma polarização elípitica pode ser obtida introduzindo a dependência com o ângulo da placa de quarto de onda (PQO, ou QWP) no feixe paraxial incidente na entrada da objetva:
+
+\begin{equation}
+{\mathbf E}^{ent}(\rho,\phi,z) = E_{centro} e^{ik_0z} e^{\frac{-\rho^2}{w_0^2}} \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \theta}}{2} \hat{\bf{\epsilon}}_\sigma .
+\label{l}
+\end{equation}
+%
+Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da placa de quarto de onda. Podemos, então, identificar 4 tipos de termos nas forças de extinção e de espalhamento: diretos ou puros devidos as polarizações $\sigma_\pm$, e termos cruzados com os produtos $\sigma_\pm^*\cdot\sigma_\mp$.
+
+%
+%
+%%%%%  Seção 4  %%%%%
+%
+%
+\section{Aberração esférica}
+
+\hspace{5 mm}Uma das formas que a aberração esférica pode aparecer é quando há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Essa não é a única aberração ótica presente no aparato de pinça ótica. Antes mesmo do feixe ser focalizado, este pode conter aberração esférica, como veremos na próxima seção. Para o caso do feixe focalizado passando por uma interface, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
+
+\begin{equation}
+n\sin\theta=n_1\sin\theta_1.
+\label{snell}
+\end{equation}
+%
+Fica claro, então, que para um feixe focalizado incidindo perpendiculamente à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface ({\bf inserir figura}). Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
+
+Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por \cite{Viana2007}:
+
+\begin{equation}
+T(\theta)=\frac{2\cos\theta}{\cos\theta + N\cos\theta_1} ,
+\label{transmitancia}
+\end{equation}
+%
+onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$, com $N=\frac{n_1}{n}$. Ao serem refratadas, as componetes de onda-plana ganham também uma fase $e^{i\Psi(z, \theta)}$, onde
+
+\begin{equation}
+\Psi(z,\theta)=k\left( -\frac{L}{N^2}\cos\theta +(L+z)\cos\theta_1 \right) 
+\label{faseSA}
+\end{equation}
+%
+é a função de aberração esférica. No experimento, essa aberração aparece depois que o feixe é focalizado pela objetiva de imersão em óleo (que tem o mesmo índice de refração do vidro) e passa pela interface vidro-água para dentro do porta-amostra.
+
+%
+%
+%%%%%  Seção 5  %%%%%
+%
+%
+\section{Aberrações Óticas}
+
+\hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
+
+O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. Estamos tratando aqui de aberrações antes da objetiva, ou seja, a aberração esférica tratada aqui tem orígem diferente da descrita na sessão anterior, apesar de serem o mesmo fenômeno físico.
+
+Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\Phi_{adicional}(\theta,\phi)}$ nos campos na entrada da objetiva (modificando a equação \ref{l}), com:
+
+\begin{equation}
+\Phi_{adicional}(\theta,\phi) = 2\pi \left[ A'_{sa}\left( \frac{\sin\theta}{\sin\theta_0} \right)^4 + A'_{c}\left( \frac{\sin\theta}{\sin\theta_0} \right)^3\cos(\phi - \varphi_c) + A'_{a}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos^2(\phi - \varphi_a) \right].
+\end{equation}
+%
+Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
+
+Uma breve explicação das aberrações será feita a seguir,({\bf talvez colocar a explicação das aberrações em um apêndice. Posso fazer isso depois, com tempo e calma para produzir imagens ilustrativas. Vou dar foco às equações que usei na simulação.}) baseada em trabalhos do grupo \cite{Dutra, Diniz2019, Dutra2014}, onde detalhes do seguinte desenvolvimento podem ser encontrados. 
+
+Considemos agora o problema prático: os experimentos que serviram de base comparatória para as simulações desenvolvidas não possuem coma e os efeitos de aberração esférica podem ser negligenciados. Portanto, somente o astigmatismo será levado em conta nas equações apresentadas. Como a fase referente ao astigmatismo possui uma dependência em $\phi$, podemos concluir que a integral da equação \ref{int_phi} será modificada. 
+
+Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as expressões para força em termos dos coeficientes de multipolo.
+
+\section{Expressões para força.}
+
+\hspace{5 mm}Como dito no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. A forma mais fácil de faze-lo é tomando a superfície $\sigma$ no infinito, já que a escolha dessa é arbitrária. Podemos argumentar também que a integral envolvendo o vetor de Poynting é zero. No limite que tal superfície está no infinito, usamos as expressões assintóticas das funções de Bessel (com dependência em $kr$) dentro dos potenciais de Debye. 
+
+Portanto, o resultado para o fator de eficiência em coordenadas cilíndricas (${\mathbf Q}=(Q_{s\rho} + Q_{e\rho}) \hat{\rho} + (Q_{s\phi} + Q_{e\phi}) \hat{\phi} + (Q_{sz} + Q_{ez}) \hat{z}$), para uma polarização qualquer, corrigida para aberração esférica e astigmatismo, tem a forma \cite{Diniz2019}:
+
+\begin{equation}
+\begin{split}
+Q_{sz}(\rho,\phi,z) = -\frac{4\gamma^2}{AN}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m}(1-\sigma\sin2\theta) + (a_ja^*_{j+1}-b_jb^*_{j+1})\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m}\cos2\theta e^{i2\sigma(\phi-\theta)} \Big{)} + \\ \frac{2j+1}{j(j+1)} \Big{]}
+\end{split}
+\end{equation}
+\begin{equation}
+Q_{ez}(\rho,\phi,z) = -\frac{a}{a}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+Q_{s\phi}(\rho,\phi,z) = -\frac{a}{a}
+\end{split}
+\end{equation}
+\begin{equation}
+Q_{e\phi}(\rho,\phi,z) = -\frac{a}{a}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+Q_{s\rho}(\rho,\phi,z) = -\frac{a}{a}
+\end{split}
+\end{equation}
+\begin{equation}
+Q_{e\rho}(\rho,\phi,z) = -\frac{a}{a}
+\end{equation}
+{\bf separar as equações e colocar no apêndice? Vale a pena: posso reescrever as equações com a dependência em $\theta$ separada, como fiz no código.}
+
+\section{Interação Spin-Órbita.}
+
+YADA
 
 \end{chapter}
