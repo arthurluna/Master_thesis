@@ -3,7 +3,7 @@
 
 \hspace{5 mm}Neste capítulo vamos apresentar o experimento que foi simulado com a teoria MDSA+ para obter os resultados da presente dissertação, bem como os procedimentos de tal simulação. 
 
-\section{Método Experimental.}
+\section{Aparato Experimental.}
 
 \hspace{5 mm} O aparato que descreverei nessa seção mede a transferência de momento angular da luz na pinça ótica. O experimento foi realizado em 2018 por Diniz {\it et al.} \cite{Diniz2019}, e foi também resultado do mestrado do mesmo \cite{Diniz}. Detalhes do procedimento experimental, do material e das ferramentas usadas nesse experimento podem ser encontradas em sua tese e no artigo citado, e não serão abordados nesse trabalho.
 
@@ -13,7 +13,7 @@ Primeiramente, trataremos do feixe paraxial: trata-se de um laser com perfil gau
 
 O feixe de laser, logo após ser gerado, incide sobre um divisor de feixe que o polariza linearmente. A direção de polarização é paralela à mesa, e quando o feixe de polarização linear entra no microscópio onde o porta-amostra se encontra, a direção de polarização passa a definir o eixo $x$ das nossas coordenadas. É com esse eixo que vamos medir o ângulo $\phi$ das coordenadas cilíndricas da microesfera e o ângulo $\varphi_a$ do eixo do astigmatismo. Como ja foi explicado, o astigmatismo gera um alongamento no perfil do feixe, fazendo com que o {\it spot} tenha um formato elipsoidal ao invés de circular. O ângulo entre a direção do alongamento e o eixo de polarização linear ($x$) é o ângulo $\varphi_a$. Dessa forma, medir esse ângulo é realizado de forma muito fácil uma vez que se obtenha a imagem do perfil do feixe. O valor medido e usado na simulação foi $\varphi_a=(1\pm1)$.
 
-A largura da cintura $\omega_0$ do feixe é essencial para garantir a condição de aprisionamento da microesfera, pois se esta for muito menor que a entrada da objetiva, teremos o que se chama de {\it underfilling}, que faz com que o fator de eficiência da pinça seja muito reduzida. Por outro lado, {\bf conferir isso com paulo ou rafael} preencher a entrada da objetiva pode fazer com que a meia abertura do feixe focalizado alcance ângulos que produziriam reflexão total na interface entre a lamínula (vidro) e a água {\bf falar antes da solução? aberração esférica foi tratada no cap anterior}. Isso significa que ondas evanescentes são produzidas, e podem alterar a força ótica quando a microesfera estiver perto da lamínula. Como o feixe que sai diretamente do laser tem uma cintura muito fina, usa-se um expansor de feixes , que consiste em um par de lentes, sendo uma delas biconvexas e a outra convexa, para se ampliar o perfil deste.
+A largura da cintura $\omega_0$ do feixe é essencial para garantir a condição de aprisionamento da microesfera, pois se esta for muito menor que a entrada da objetiva, teremos o que se chama de {\it underfilling}, que faz com que o fator de eficiência da pinça seja muito reduzida. Como o feixe que sai diretamente do laser tem uma cintura muito fina, usa-se um expansor de feixes , que consiste em um par de lentes, sendo uma delas biconvexas e a outra convexa, para se ampliar o perfil deste.
 
 A cintura mínima é medida fazendo o feixe passar por uma pupila e medindo-se a potência média transmitida. Como o campo tem perfil gaussiano e a potência é proporcional ao quadrado do campo, a potência transmitida deve obedecer
 
@@ -23,9 +23,22 @@ P(R)=P_i(1-e^{\frac{-2R}{\omega_0}}),
 %
 onde $R$ é o raio da pupila e $P_i$ é a potência do laser. O ajuste dessa função com valores medidos da potência fornece o valor da cintura mínima $\omega_0=5.82\pm0.08$.
 
-Antes de entrar no microscópio, o feixe passa por uma placa de quarto de onda. Essa placa tem um eixo dito "rápido" que faz um ângulo $\psi$ ($\theta$ na equação \ref{l})
+Antes de entrar no microscópio, o feixe passa por uma placa de quarto de onda (QWP). O eixo rápido da placa faz um ângulo $\psi$ com a direção de polarização linear (eixo $x$), como dito na seção \ref{Efeitos de polarizacao} e mostrado na equação \ref{l}. 
 
-O feixe se propaga na diração do eixo $z$ com sentido positivo ao entrar no microscópio.
-Ao entrar no microscópio, o feixe entra na objetiva de imersão em óleo. A objetiva tem abertura numérica nominal de $NA=1.4$.
+O feixe se propaga na diração do eixo $z$ com sentido positivo ao entrar no microscópio e entra na objetiva de imersão em óleo. A objetiva tem abertura numérica nominal de $NA=1.4$. Como a abertura numérica é maior que o índice de refração da água ($n_1=1.332$), o ângulo de abertura do feixe incidente sobre a microesfera será $\theta_0=\arcsin(n_1/n)$, onde $n=1.51$ é o índice de refração do vidro. Isso acontece porque parte do feixe que sai da objetiva incide sobre a interface vidro-água com ângulos maiores que o ângulo crítico, gerando reflexão interna total e ondas evanescentes dentro do porta-amostra. A contribuição para a força das ondas evanescentes não são levadas em conta no modelo teórico, pois assumimos que o centro espalhador está a alguns comprimentos de onda de distância da interface.
+
+Assim, o feixe com a polarização determinada pela QWP entra no microscópio, sendo refletida por um espelho dicróico e incidindo na objetiva. O espelho dicróico reflete a luz com comprimento de onda igual do laser, mas transmite comprimentos de onda de luz visível (um pouco menor que o do laser). Isso permite que uma luz colocada na outra extremidade do porta amostra ilumine o mesmo e possamos ver através do espelho dicróico. Usando uma câmera podemos fazer filmes e obter as imagens de onde serão tirados os dados.
+
+A solução dentro do porta-amostra é composta por microesferas de poliestireno dispersas em água deionizada. A concentração dessa solução é de grande importância para o experimento. Tal concentração não pode ser muito baixa, pois dificulta-se encontrar e aprisionar as microesferas. Por outro lado, se a concentração for alta, torna-se possível que outras microesferas se aproximem da aprisionada, estragando o experimento.
+
+Uma vez que o feixe entre no porta-amostra, um procedimento é feito para definir a posição do foco no eixo $z$ e a posição do {\it spot} no plano $xy$ visulizado pela câmera. Isso é feito antes de colocar a solução com microesferas, pois assim é possível observar o feixe com a câmera.
+
+Após saber a posição do foco, é colocada a solução e a lamínula superior. Com o controle manual do estágio do microscópio pode-se mover a posição do foco e buscar esferas para serem aprisionadas. 
+
+\section{Procedimento Experimental.}
+\label{Procedimento Experimental}
+
+\hspace{5 mm}Após o aprisionamento da microesfera, é feito um procedimento para determinar a posição de equilíbrio no eixo $z$. Definimos a distância $L$ entre o centro da microesfera e a interface vidro-água. No momento em que a microesfera toca a lamínula de vidro, $L=a$, ou 1 unidade de raio, que é a forma como vamos tratar dimensões de distância nas simulações.
+
 
 \end{chapter}
