@@ -3,7 +3,12 @@
 
 \hspace{5 mm}Neste capítulo vamos apresentar o experimento que foi simulado com a teoria MDSA+ para obter os resultados da presente dissertação, bem como os procedimentos de tal simulação. 
 
-\section{Aparato Experimental.}
+%
+%
+%%%%%  Seção 1  %%%%%
+%
+%
+\section{Aparato Experimental}
 
 \hspace{5 mm} O aparato que descreverei nessa seção mede a transferência de momento angular da luz na pinça ótica. O experimento foi realizado em 2018 por Diniz {\it et al.} \cite{Diniz2019}, e foi também resultado do mestrado do mesmo \cite{Diniz}. Detalhes do procedimento experimental, do material e das ferramentas usadas nesse experimento podem ser encontradas em sua tese e no artigo citado, e não serão abordados nesse trabalho.
 
@@ -23,7 +28,7 @@ P(R)=P_i(1-e^{\frac{-2R}{\omega_0}}),
 %
 onde $R$ é o raio da pupila e $P_i$ é a potência do laser. O ajuste dessa função com valores medidos da potência fornece o valor da cintura mínima $\omega_0=5.82\pm0.08$.
 
-Antes de entrar no microscópio, o feixe passa por uma placa de quarto de onda (QWP). O eixo rápido da placa faz um ângulo $\psi$ com a direção de polarização linear (eixo $x$), como dito na seção \ref{Efeitos de polarizacao} e mostrado na equação \ref{l}. 
+Antes de entrar no microscópio, o feixe passa por uma placa de quarto de onda (QWP). O eixo rápido da placa faz um ângulo $\psi$ com a direção de polarização linear (eixo $x$), como dito na seção \ref{Efeitos de polarizacao} e mostrado na equação \ref{l}. Inicialmente o feixe tem polarização linear, ou seja, $\psi=0$.
 
 O feixe se propaga na diração do eixo $z$ com sentido positivo ao entrar no microscópio e entra na objetiva de imersão em óleo. A objetiva tem abertura numérica nominal de $NA=1.4$. Como a abertura numérica é maior que o índice de refração da água ($n_1=1.332$), o ângulo de abertura do feixe incidente sobre a microesfera será $\theta_0=\arcsin(n_1/n)$, onde $n=1.51$ é o índice de refração do vidro. Isso acontece porque parte do feixe que sai da objetiva incide sobre a interface vidro-água com ângulos maiores que o ângulo crítico, gerando reflexão interna total e ondas evanescentes dentro do porta-amostra. A contribuição para a força das ondas evanescentes não são levadas em conta no modelo teórico, pois assumimos que o centro espalhador está a alguns comprimentos de onda de distância da interface.
 
@@ -35,10 +40,22 @@ Uma vez que o feixe entre no porta-amostra, um procedimento é feito para definir
 
 Após saber a posição do foco, é colocada a solução e a lamínula superior. Com o controle manual do estágio do microscópio pode-se mover a posição do foco e buscar esferas para serem aprisionadas. 
 
-\section{Procedimento Experimental.}
+%
+%
+%%%%%  Seção 2  %%%%%
+%
+%
+\section{Procedimento Experimental}
 \label{Procedimento Experimental}
 
-\hspace{5 mm}Após o aprisionamento da microesfera, é feito um procedimento para determinar a posição de equilíbrio no eixo $z$. Definimos a distância $L$ entre o centro da microesfera e a interface vidro-água. No momento em que a microesfera toca a lamínula de vidro, $L=a$, ou 1 unidade de raio, que é a forma como vamos tratar dimensões de distância nas simulações.
+\hspace{5 mm}Após o aprisionamento de uma microesfera, é feito um procedimento para determinar a posição de equilíbrio no eixo $z$. Para isso, vamos definir as coordenadas que estamos usando e que será usada na simulação. O eixo $Z$ tem como orígem o foco paraxial (note a diferença em relação ao modelo teórico, em que a orígem se encontra no centro da microesfera) e a coordenada $z$ será a posição do centro da microesfera. A coordenada da interface será, para fins práticos, $-L\hat{z}$, com $L$ sendo o módulo da distância entre o plano focal e o plano da interface. %Se a coordenada da interface for maior que $-a$, não esperamos que haja pinçamento.
 
+No procedimento, deslocamos a microesfera aprisionada até que ela toque a lamínula de vidro. Nesse momento temos o vínculo $z_{eq}=a-L_0$, ou seja, a posição de equilíbrio estável da microesfera define uma distância inicial entre o foco e a interface ($L_0$). Por causa do efeito de aberração esférica, discutido na seção \ref{Aberracao esferica}, a posição de equilíbrio tende a ser um pouco abaixo do plano focal, e por isso, usualmente temos $z_{eq}<0$. 
+
+Esse detalhe é muito importante para a simulação, pois este vínculo torna possível determinar essa distância incial $L_0$. Depois de encostada a microesfera na lamínula, deslocamos o o estágio do microscópio $3 \mu m$ para baixo. O foco tem um deslocamento efetivo de $3\frac{n_1}{n} \mu m$, por causa da diferença de caminho ótico.
+
+Uma vez que a microesfera esteja longe da lamínula, observamos seu movimento browniano ao redor da posição do {\it spot} do laser.
+
+\section{simulação}
 
 \end{chapter}

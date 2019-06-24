@@ -1,17 +1,13 @@
 \begin{chapter}{Teoria da Pinça Ótica}
 \label{cap2}
 
-%\hspace{5 mm} BLABLABLA
-
-\section{Introdução}
-%
 \hspace{5 mm}Essa seção será dedicada a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão revisados, . 
 
 Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto do modelo MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os momentos angulares\cite{Bliokh2015}.
 
 %
 %
-%%%%%  Seção  %%%%%
+%%%%%  Seção 1 %%%%%
 %
 %
 \section{Modelo Mie-Debye}
@@ -181,6 +177,7 @@ Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da p
 %
 %
 \section{Aberração esférica}
+\label{Aberracao esferica}
 
 \hspace{5 mm}Uma das formas que a aberração esférica pode aparecer é quando há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Essa não é a única aberração ótica presente no aparato de pinça ótica. Antes mesmo do feixe ser focalizado, este pode conter aberração esférica, como veremos na próxima seção. Para o caso do feixe focalizado passando por uma interface, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
 
@@ -232,6 +229,11 @@ Considemos agora o problema prático: os experimentos que serviram de base compar
 
 Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as expressões para força em termos dos coeficientes de multipolo.
 
+%
+%
+%%%%%  Seção 6  %%%%%
+%
+%
 \section{Expressões para força.}
 
 \hspace{5 mm}Como dito no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. A forma mais fácil de faze-lo é tomando a superfície $\sigma$ no infinito, já que a escolha dessa é arbitrária. Podemos argumentar também que a integral envolvendo o vetor de Poynting é zero. No limite que tal superfície está no infinito, usamos as expressões assintóticas das funções de Bessel (com dependência em $kr$) dentro dos potenciais de Debye. 
