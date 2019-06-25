@@ -54,8 +54,20 @@ No procedimento, deslocamos a microesfera aprisionada até que ela toque a lamínu
 
 Esse detalhe é muito importante para a simulação, pois este vínculo torna possível determinar essa distância incial $L_0$. Depois de encostada a microesfera na lamínula, deslocamos o o estágio do microscópio $3 \mu m$ para baixo. O foco tem um deslocamento efetivo de $3\frac{n_1}{n} \mu m$, por causa da diferença de caminho ótico.
 
-Uma vez que a microesfera esteja longe da lamínula, observamos seu movimento browniano ao redor da posição do {\it spot} do laser.
+Com a microesfera longe da lamínula, observamos seu movimento browniano ao redor da posição do {\it spot} do laser. A seguir, o estágio do microscópio é movido na direção $x$ com o controle piezo-elétrico. O deslocamento tem uma velocidade de $v_1=250\mu m/s$. Faz-se, em seguida, um movimento no sentido contrário com mesma velocidade, e repete-se todo esse procedimento mais duas vezes, na primeira com velocidade de $v_2=150\mu m/s$ e na segunda $v_3=62.5\mu m/s$.
 
-\section{simulação}
+Cada um desses movimentos arrasta o fluido dentro do porta-amostra, e portanto faz com que o fluido ao redor da esfera se desloque também. Dessa forma, a microesfera sofre um força de arrasto chamada força de Stokes, dada pela lei de Stokes-Faxen:
+
+\begin{equation}
+\vec{F_s} = \beta \vec{v},
+\end{equation}
+%
+onde $\vec{v}$ é a velocidade do porta-amostra e $\beta$ é uma constante que depende da viscosidade do meio e da razão entre o raio da microesfera e a distância entre seu centro de massa e a interface.
+
+Essa força de arrasto desloca a microesfera da posição de equilíbro da pinça ótica (do centro do {\it spot}). Uma nova posição de equilíbrio é obtida com $\vec{F_\phi}+\vec{F_\rho}=-\vec{F_s}$. Uma vez que $\vec{F_s}=F_s\hat{x}$, podemos projetar $\vec{F_\phi}$ e $\vec{F_\rho}$ no eixo $x$ e encontrar a condição de equilíbrio: $F_s=F_\rho \cos\phi + F_\phi \sin\phi$.
+
+Como vimos anteriormente, as forças óticas $\vec{F_\phi}$ e $\vec{F_\rho}$ são lineares em $\rho$
+
+\section{Simulação}
 
 \end{chapter}

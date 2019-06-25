@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.2)  24 JUN 2019 06:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.6.2)  24 JUN 2019 21:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -770,11 +770,7 @@ m/it/12 ^^Y [] :
 Cap\'{\i }tulo 3.
 [15
 
-] [16] [17]) (./capitulo4.tex
-Underfull \vbox (badness 6445) has occurred while \output is active []
-
- [18]
-[19]
+] [16] [17] [18]) (./capitulo4.tex [19]
 Cap\'{\i }tulo 4.
 ) (./capitulo5.tex [20
 
@@ -810,21 +806,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: E2EC6C6AB16F2289367BE47053007EEA;1367.
+(rerunfilecheck)             Checksum: 22747AE8687E901CC218B04F37A8BA3A;1367.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: B9ED3F6DEEAC24D6EC551CC459EB08A1;991.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 11860 strings out of 492616
- 167079 string characters out of 6135178
+ 11861 strings out of 492616
+ 167093 string characters out of 6135178
  323780 words of memory out of 5000000
  15375 multiletter control sequences out of 15000+600000
  15240 words of font info for 62 fonts, out of 8000000 for 9000
@@ -843,10 +836,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (35 pages, 273525 bytes).
+Output written on tese.pdf (35 pages, 275169 bytes).
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 404 compressed objects within 5 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 465 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
  179 words of extra memory for PDF output out of 10000 (max. 10000000)
 
