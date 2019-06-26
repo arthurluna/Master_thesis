@@ -89,4 +89,16 @@ A simulação do experimento leva em conta alguns processos que não foram explicad
 
 A forma como são tratadas medidas de distância no programa é por unidades de raio. Dessa forma as distâncias ficam adimensionais, e portanto mais fáceis de se interpretar. A distância entre o foco e a interface fica definida a menos do deslocamento inicial (de $3\mu m$): $L=L_0+3\frac{n_1/n}{a}$ (com $a$ em $\mu m$ e $L$ e $L_0$ em unidades de raio).
 
+Após esse cálculo podemos procurar a posição de equilíbrio estável da microesfera em função da sua posição relativa ao plano focal. Fazemos $\rho=0$ e calculamos $Q_z$ para vários valores de $z$. Buscamos os pontos em que cruzam o eixo $Q_z=0$, de forma que $Q_z(z_i)>0$ e $Q_z(i+1)<0$. Essa é a condição para posição de equilíbrio estável.
+
+Com esses dois pontos podemos traçar uma reta, e como a força é linear ao redor da posição de equilíbrio, o valor de $z$ em que $Q_z=0$ pode ser calculado com:
+%
+\begin{equation}
+z_{eq}=-\frac{B}{A},
+\end{equation}
+%
+onde $A$ e $B$ são os coeficientes de ajuste da reta $Q_z(z)=A z + B$.
+
+No experimento, a posição de equilíbrio não é diretamente medida, mas sabe-se que ela varia quando a polarização do feixe incidente muda. Levar isso em conta no código implica em calcular $Q_z$ várias vezes até que o valor desse mude de sinal como descrito anteriormente. Para isso 
+
 \end{chapter}
