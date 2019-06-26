@@ -38,7 +38,7 @@ A solução dentro do porta-amostra é composta por microesferas de poliestireno di
 
 Uma vez que o feixe entre no porta-amostra, um procedimento é feito para definir a posição do foco no eixo $z$ e a posição do {\it spot} no plano $xy$ visulizado pela câmera. Isso é feito antes de colocar a solução com microesferas, pois assim é possível observar o feixe com a câmera.
 
-Após saber a posição do foco, é colocada a solução e a lamínula superior. Com o controle manual do estágio do microscópio pode-se mover a posição do foco e buscar esferas para serem aprisionadas. 
+Após saber a posição do foco, é colocada a solução e a lamínula superior. Com o controle manual do estágio do microscópio pode-se mover a posição do plano focal e buscar esferas para serem aprisionadas. 
 
 %
 %
@@ -50,7 +50,7 @@ Após saber a posição do foco, é colocada a solução e a lamínula superior. Com o 
 
 \hspace{5 mm}Após o aprisionamento de uma microesfera, é feito um procedimento para determinar a posição de equilíbrio no eixo $z$. Para isso, vamos definir as coordenadas que estamos usando e que será usada na simulação. O eixo $Z$ tem como orígem o foco paraxial (note a diferença em relação ao modelo teórico, em que a orígem se encontra no centro da microesfera) e a coordenada $z$ será a posição do centro da microesfera. A coordenada da interface será, para fins práticos, $-L\hat{z}$, com $L$ sendo o módulo da distância entre o plano focal e o plano da interface. %Se a coordenada da interface for maior que $-a$, não esperamos que haja pinçamento.
 
-No procedimento, deslocamos a microesfera aprisionada até que ela toque a lamínula de vidro. Nesse momento temos o vínculo $z_{eq}=a-L_0$, ou seja, a posição de equilíbrio estável da microesfera define uma distância inicial entre o foco e a interface ($L_0$). Por causa do efeito de aberração esférica, discutido na seção \ref{Aberracao esferica}, a posição de equilíbrio tende a ser um pouco abaixo do plano focal, e por isso, usualmente temos $z_{eq}<0$. 
+No procedimento, deslocamos a microesfera aprisionada até que ela toque a lamínula de vidro. Nesse momento temos o vínculo $z_{eq}=a-L_0$, ou seja, a posição de equilíbrio estável da microesfera define uma distância inicial entre o plano focal e a interface ($L_0$). Por causa do efeito de aberração esférica, discutido na seção \ref{Aberracao esferica}, a posição de equilíbrio tende a ser um pouco abaixo do plano focal, e por isso, usualmente temos $z_{eq}<0$. 
 
 Esse detalhe é muito importante para a simulação, pois este vínculo torna possível determinar essa distância incial $L_0$. Depois de encostada a microesfera na lamínula, deslocamos o o estágio do microscópio $3 \mu m$ para baixo. O foco tem um deslocamento efetivo de $3\frac{n_1}{n} \mu m$, por causa da diferença de caminho ótico.
 
@@ -66,8 +66,27 @@ onde $\vec{v}$ é a velocidade do porta-amostra e $\beta$ é uma constante que dep
 
 Essa força de arrasto desloca a microesfera da posição de equilíbro da pinça ótica (do centro do {\it spot}). Uma nova posição de equilíbrio é obtida com $\vec{F_\phi}+\vec{F_\rho}=-\vec{F_s}$. Uma vez que $\vec{F_s}=F_s\hat{x}$, podemos projetar $\vec{F_\phi}$ e $\vec{F_\rho}$ no eixo $x$ e encontrar a condição de equilíbrio: $F_s=F_\rho \cos\phi + F_\phi \sin\phi$.
 
-Como vimos anteriormente, as forças óticas $\vec{F_\phi}$ e $\vec{F_\rho}$ são lineares em $\rho$
+Como vimos anteriormente, as forças óticas $\vec{F_\phi}$ e $\vec{F_\rho}$ são lineares em $\rho$ quando próximas da posição de equilíbrio. Como a força de arrasto não desloca a microesfera da pinça o suficiente para que a força não seja mais linear, o que esperamos é que o ângulo $\phi$ seja constante para qualquer velocidade imposta pelo piezo-elétrico.
+
+Dessa forma, cada velocidade determina uma posição de equilíbrio, ao redor da qual a microesfera apresenta movimento browniano. As posições médias de cada velocidade formam uma reta que determinam $\phi$. 
+
+É importante observar que esse ângulo será muito pequeno. Podemos aproveitar esse fato e aproximar a projeção das forças no eixo $y$ $F_\rho\sin\phi = F_\phi\cos\phi$ como:
+\begin{equation}
+\frac{F_\phi}{F_\rho} = \tan\phi \approx \phi.
+\end{equation}
+%
+Com a linearidade da força $F_\phi/F_\phi = \kappa_\phi \rho/\kappa_\rho \rho$, temos:
+%
+\begin{equation}
+\frac{\kappa_\phi}{\kappa_\rho} \approx \phi.
+\end{equation}
+
+Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. Espera-se que com deslocamentos ao longo da direção $x$ (de polarização linear) não haja rotação em torno da pinça. Se o deslocamento fosse em outras direções, poderíamos esperar uma força de gradiente na direção $\phi$ causada por assimetrias no feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no spot. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$.
 
 \section{Simulação}
+
+A simulação do experimento leva em conta alguns processos que não foram explicados na seção anterior. Começamos por definir a posição inicial do foco em relação a lamínula. O fator de eficiência $Q_z$ é calculado para várias posições onde o vínculo $z=a-L$ é válido, com $L-a$ como {\it input} para a posição $z$ onde é calculada a força e $L$ para a distância entre o plano focal e a interface. {\bf inserir gráfico} No experimento, esse primeiro passo é feito com $\psi=0$.
+
+A forma como são tratadas medidas de distância no programa é por unidades de raio. Dessa forma as distâncias ficam adimensionais, e portanto mais fáceis de se interpretar. A distância entre o foco e a interface fica definida a menos do deslocamento inicial (de $3\mu m$): $L=L_0+3\frac{n_1/n}{a}$ (com $a$ em $\mu m$ e $L$ e $L_0$ em unidades de raio).
 
 \end{chapter}
