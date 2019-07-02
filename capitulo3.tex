@@ -99,6 +99,12 @@ z_{eq}=-\frac{B}{A},
 %
 onde $A$ e $B$ são os coeficientes de ajuste da reta $Q_z(z)=A z + B$.
 
-No experimento, a posição de equilíbrio não é diretamente medida, mas sabe-se que ela varia quando a polarização do feixe incidente muda. Levar isso em conta no código implica em calcular $Q_z$ várias vezes até que o valor desse mude de sinal como descrito anteriormente. Para isso 
+No experimento, a posição de equilíbrio não é diretamente medida, mas sabe-se que ela varia quando a polarização do feixe incidente muda. Levar isso em conta no código implica em calcular $Q_z$ várias vezes até que o valor desse mude de sinal como descrito anteriormente. 
+
+Calcular tal posição de equilíbrio para cada polarização do feixe incidente seria computacionalmente muito custoso. Dessa forma, a dependência com o ângulo $\psi$ da placa de quarto de onda é explicitada e o fator de eficiência $Q_z$ para várias posições $z$ da microesfera pode ser calculado para qualquer polarização uma vez só. Uma vez tendo os valores de $Q_z(z)$ e $z$, podemos calcular a posição de equilíbrio em função do ângulo da placa de onda.
+
+É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Constatações experimentais nos levam a definir tal intervalo, como por exemplo, se vemos a microesfera focalizada na câmera, ela só pode estar frações de unidades de raio ($a\approx 0.5\mu m$) de distância do foco paraxial. Portanto, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para os parâmetros de entrada não são satisfeitos. Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.7$).
+
+
 
 \end{chapter}
