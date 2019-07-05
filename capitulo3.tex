@@ -83,7 +83,7 @@ Com a linearidade da força $F_\phi/F_\phi = \kappa_\phi \rho/\kappa_\rho \rho$, 
 
 Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. Espera-se que com deslocamentos ao longo da direção $x$ (de polarização linear) não haja rotação em torno da pinça. Se o deslocamento fosse em outras direções, poderíamos esperar uma força de gradiente na direção $\phi$ causada por assimetrias no feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no spot. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$.
 
-\section{Simulação}
+\section{Simulação do experimento de transferência de momento angular.}
 
 A simulação do experimento leva em conta alguns processos que não foram explicados na seção anterior. Começamos por definir a posição inicial do foco em relação a lamínula. O fator de eficiência $Q_z$ é calculado para várias posições onde o vínculo $z=a-L$ é válido, com $L-a$ como {\it input} para a posição $z$ onde é calculada a força e $L$ para a distância entre o plano focal e a interface. {\bf inserir gráfico} No experimento, esse primeiro passo é feito com $\psi=0$.
 
@@ -108,5 +108,10 @@ Calcular tal posição de equilíbrio para cada polarização do feixe incidente seri
 Com as posições de equilíbrio para cada $\psi$ do experimento e a posição inicial $L_0$ podemos calcular $ \kappa_\phi /\kappa_\rho $ numericamente. Assim, toda vez que a posição de equilíbrio mude, todo o cálculo tem que ser feito novamente. Por esse motivo, as posições de equilíbrio são arredondadas até a 4ª casa decimal dos valores em unidades de raio, que corresponderia a considerar variações menores que $1nm$. De fato, o movimento browniano da microesfera tem amplitudes muito maiores que $1nm$, que significa que fazer tal aproximação não deve mudar o resultado final. Valores exatos da posição de equilíbrio fornecidos pelo código que diferem por um valor menor ou igual a $10^{-5}$ serão arredondados para o mesmo valor, e o cálculo de $ \kappa_\phi /\kappa_\rho $ será feito uma vez só.
 
 Reproduzimos todo esse procedimento para vários valores do parâmetro de astigmatismo e comparamos o valor obtido de $ \kappa_\phi /\kappa_\rho $ com o ângulo $\phi$ de rotação do experimento. Para determinar qual valor de $A_{ast}$ melhor descreve o experimento, utilizamos o método de mínimos quadrados: subtraimos o valor de $\phi$ e de $ \kappa_\phi /\kappa_\rho $ e tomamos o quadrado dessa diferença. Quanto menor for o valor desse quadrado, maior a verossimilhança com as medidas do experimento.
+
+\section{Restrições sobre parâmetros físicos.}
+
+Outro uso para o modelo MDSA é testar condições de pinçamento baseado nas obsevações experimentais. Sabemos que microesferas são aprisionadas próximas ao foco, com a distância entre seus centros e os planos focais variando de zero (na ausência de aberrações óticas e absorção pela microesfera) até poucos raios da microesfera. A microesfera pode ser aprisionada antes do foco (com sentido da propagação do laser sendo positiva) na presença de aberração esférica.
+
 
 \end{chapter}
