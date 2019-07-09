@@ -15,7 +15,7 @@ Começamos pelo caso mais simples: quando a ponta da casca do cone, ou a posição 
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=1.]{geom_lateralII}
+\includegraphics[scale=.8]{geom_foco_coincII}
 \caption{Foco coincidente ao centro da esfera. Essa corresponde a posição de equilíbrio estável da esfera.}
 \label{foco_coinc}
 \end{center}
@@ -33,9 +33,17 @@ Quando deslocamos a posição do foco em relação ao centro da microesfera, a lei d
 \end{center}
 \end{figure}
 %
-
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.8]{geom_lateralII}
+\caption{Centro da microesfera (ponto vermelho) no eixo do cone, acima (esquerda) e abaixo (direita) da posição do foco (ponto azul).}
+\label{foco_axial}
+\end{center}
+\end{figure}
+%
 
 \section{Modelo Mie-Debye.}
+\label{MD}
 
 \hspace{5 mm}Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
@@ -72,7 +80,7 @@ b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1
 %
 onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera, $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
 
-Assim, uma vez encontradas as soluções escalares para os campos espalhados e incidentes, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$,$\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k}) \propto \nabla_{\mathbf k}$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
+Assim, uma vez encontradas as soluções escalares para os campos espalhados e incidentes, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$, $\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k})$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
 %
 \begin{figure}[h]
 \begin{center}
@@ -294,9 +302,27 @@ Explicitar essa soma é de grande importância para os cálculos numéricos, pois po
 \section{Interação Spin-Órbita.}
 \label{interacao_so}
 
-\hspace{5 mm}
+\hspace{5 mm}Uma das características da pinça ótica que faz com que a modelagem teórica seja tão difícil é o fato de que o feixe que emerge da objetiva é muito focalizado, e portanto não paraxial. Um dos efeitos resultantes da focalização do feixe é a conversão de momento angular de spin do feixe, associado a polarização (ou helicidade) do campo, em momento angular orbital \cite{Bliokh2015}. O momento angular orbital insere uma fase com dependência na variável cilindrica $\phi$.
 
-YADA
+De uma forma simples, podemos entender essa transferência de momento angular considerando um cone de ondas planas circularmente polarizdas com angulo de meia abertura $\theta$, da mesma forma que fizemos no começo da seção \ref{MD}. 
+
+Suas componentes de spin apontam para as respectivas direções de propagação {\bf colocar referência}. Assumindo que o momento angular (intrínsico) total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam. Se ${\mathbf P}$ é o momento angular total do feixe e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
+%
+\begin{equation}
+{\mathbf S}=\sigma\cos\theta{\mathbf P}, \quad\quad {\mathbf L}=\sigma(1-\cos\theta){\mathbf P}.
+\end{equation}
+%
+
+Na seção \ref{MD} rotacionamos os potenciais de Debye, que representam ondas paciais, utilizando um operador de rotação. Podemos, ao inves disso, rotacionar o campo vetorial ${\mathbf E}$ diretamente. Essa rotação pode ser representada na base de polarização circular $\ket{\sigma +}$, $\ket{\sigma -}$ e $\ket{z}$ com a seguinte transformação (unitária):
+%
+\begin{equation}
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{pmatrix}
+\end{equation}
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.8]{Kphi_Artigo_Kaina}
