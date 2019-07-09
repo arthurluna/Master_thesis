@@ -306,22 +306,35 @@ Explicitar essa soma é de grande importância para os cálculos numéricos, pois po
 
 De uma forma simples, podemos entender essa transferência de momento angular considerando um cone de ondas planas circularmente polarizdas com angulo de meia abertura $\theta$, da mesma forma que fizemos no começo da seção \ref{MD}. 
 
-Suas componentes de spin apontam para as respectivas direções de propagação {\bf colocar referência}. Assumindo que o momento angular (intrínsico) total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam. Se ${\mathbf P}$ é o momento angular total do feixe e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
+Suas componentes de spin apontam para as respectivas direções de propagação, com o sentido definido pelo sentido da polarização circular {\bf colocar referência}. Assumindo que o momento angular (intrínsico) total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam. Se ${\mathbf P}$ é o momento angular total do feixe e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
 %
 \begin{equation}
 {\mathbf S}=\sigma\cos\theta{\mathbf P}, \quad\quad {\mathbf L}=\sigma(1-\cos\theta){\mathbf P}.
 \end{equation}
 %
 
-Na seção \ref{MD} rotacionamos os potenciais de Debye, que representam ondas paciais, utilizando um operador de rotação. Podemos, ao inves disso, rotacionar o campo vetorial ${\mathbf E}$ diretamente. Essa rotação pode ser representada na base de polarização circular $\ket{\sigma +}$, $\ket{\sigma -}$ e $\ket{z}$ com a seguinte transformação (unitária):
+Na seção \ref{MD} rotacionamos os potenciais de Debye, que representam ondas paciais, utilizando um operador de rotação. Podemos, ao invés disso, rotacionar o campo vetorial ${\mathbf E}$ diretamente. Essa rotação pode ser representada na base de polarização circular $\ket{\sigma +}$, $\ket{\sigma -}$ e $\ket{z}$ com a seguinte transformação unitária \cite{Bliokh2011}:
 %
 \begin{equation}
 \begin{pmatrix}
-1 & 2 & 3 \\
-4 & 5 & 6 \\
-7 & 8 & 9
+\braket{\sigma+|E'} \\
+\braket{\sigma-|E'} \\
+\braket{z|E'} 
 \end{pmatrix}
+=
+\begin{pmatrix}
+a & be^{-i2\phi} & \sqrt{2ab}e^{-i\phi} \\
+-be^{i2\phi} & a & \sqrt{2ab}e^{i\phi} \\
+-\sqrt{2ab}e^{i\phi} & -\sqrt{2ab}e^{-i\phi} & a-b
+\end{pmatrix}
+\begin{pmatrix}
+\braket{\sigma+|E} \\
+\braket{\sigma-|E} \\
+\braket{z|E} 
+\end{pmatrix}.
 \end{equation}
+%
+A dependência com o ângulo $\phi$ também aparece nas expressões dos campos rotacionados (equação \ref{pi_phi}), ao rotacionarmos os harmônicos esféricos (equação \ref{harm_esf_rot}) com $\alpha=-\gamma=\phi_k$.
 
 \begin{figure}[h]
 \begin{center}
