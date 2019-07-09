@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  8 JUL 2019 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.8)  8 JUL 2019 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -42,16 +42,16 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ))
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
+Package: babel 2019/04/03 3.29 The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
+File: switch.def 2019/04/03 3.29 Babel switching mechanism
 )
 (/usr/share/texmf-dist/tex/generic/babel-portuges/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
+File: babel.def 2019/04/03 3.29 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen107
 
@@ -448,10 +448,6 @@ Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
@@ -772,11 +768,11 @@ File: geom_foco_axialII.png Graphic file (type png)
 Package pdftex.def Info: geom_foco_axialII.png  used on input line 30.
 (pdftex.def)             Requested size: 445.6656pt x 300.52315pt.
  [4 <./geom_lateralII.png>] [5 <./geom_foco_axialII.png>] [6]
-<vec_fourier.png, id=263, 463.7325pt x 368.37625pt>
+<vec_fourier.png, id=263, 419.31656pt x 391.4625pt>
 File: vec_fourier.png Graphic file (type png)
 <use vec_fourier.png>
 Package pdftex.def Info: vec_fourier.png  used on input line 79.
-(pdftex.def)             Requested size: 231.86568pt x 184.18767pt.
+(pdftex.def)             Requested size: 209.65776pt x 195.73076pt.
  [7 <./vec_fourier.png>]
 Underfull \vbox (badness 2285) has occurred while \output is active []
 
@@ -823,11 +819,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 86.
 File: Regiao_de_pincamento.png Graphic file (type png)
 <use Regiao_de_pincamento.png>
 Package pdftex.def Info: Regiao_de_pincamento.png  used on input line 120.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-Overfull \hbox (7.28275pt too wide) in paragraph at lines 120--121
- [] 
- []
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -867,24 +859,30 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (./tese.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
-Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: D6DBC14BB6BC5474F31D10FCAC7CBA47;1613.
+
+
+Package rerunfilecheck Warning: File `tese.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tese.out':
+(rerunfilecheck)             Before: D6DBC14BB6BC5474F31D10FCAC7CBA47;1613
+(rerunfilecheck)             After:  4E0A371D8D4618FA2D23E58F2EE757C8;1617.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
 (rerunfilecheck)             Checksum: FCAAE57B31C04D7642BDEAE40B4CAAC9;1045.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 11908 strings out of 492616
- 167942 string characters out of 6135177
- 325232 words of memory out of 5000000
- 15404 multiletter control sequences out of 15000+600000
+ 11913 strings out of 492623
+ 168031 string characters out of 6135670
+ 325352 words of memory out of 5000000
+ 15410 multiletter control sequences out of 15000+600000
  15240 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,19n,49p,3234b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,19n,49p,3234b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -898,7 +896,7 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (41 pages, 396587 bytes).
+Output written on tese.pdf (41 pages, 443097 bytes).
 PDF statistics:
  535 PDF objects out of 1000 (max. 8388607)
  459 compressed objects within 5 object streams
