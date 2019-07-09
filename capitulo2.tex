@@ -211,7 +211,7 @@ n\sin\theta=n_1\sin\theta_1.
 \label{snell}
 \end{equation}
 %
-Fica claro, então, que para um feixe focalizado incidindo perpendiculamente à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface ({\bf inserir figura}). Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
+Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface ({\bf inserir figura}). Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
 
 Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por \cite{Viana2007}:
 
@@ -257,7 +257,7 @@ Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esf
 \end{figure}
 %
 
-Uma breve explicação das aberrações será feita a seguir,({\bf talvez colocar a explicação das aberrações em um apêndice. Posso fazer isso depois, com tempo e calma para produzir imagens ilustrativas. Vou dar foco às equações que usei na simulação.}) baseada em trabalhos do grupo \cite{Dutra, Diniz2019, Dutra2014}, onde detalhes do seguinte desenvolvimento podem ser encontrados. 
+Uma breve explicação das aberrações será feita a seguir, baseada em trabalhos do grupo \cite{Dutra, Diniz2019, Dutra2014}, onde detalhes do seguinte desenvolvimento podem ser encontrados. 
 
 Considemos agora o problema prático: os experimentos que serviram de base comparatória para as simulações desenvolvidas não possuem coma e os efeitos de aberração esférica podem ser negligenciados. Portanto, somente o astigmatismo será levado em conta nas equações apresentadas. Como a fase referente ao astigmatismo possui uma dependência em $\phi$, podemos concluir que a integral da equação \ref{int_phi} será modificada. 
 
@@ -276,22 +276,30 @@ Portanto, a expressão para as contribuições de espalhamento e extinção do fator 
 
 \begin{equation}
 \begin{split}
-Q_{sz}(\rho,\phi,z) = -\frac{4\gamma^2}{AN}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m}(1-\sigma\sin2\theta) + (a_ja^*_{j+1}-b_jb^*_{j+1})\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m}\cos2\theta e^{i2\sigma(\phi-\theta)} \Big{)} + \\ \frac{2j+1}{j(j+1)} \Big{]}
+Q_{sz}(\rho,\phi,z) = -\frac{4\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \Big{)} + \\ \frac{2j+1}{j(j+1)} m\sigma a_jb^*_j\big{(} |\G^{(\sigma)}_{j,m}|^2(1-\sigma\sin2\psi)-\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \big{)} \Big{]},
 \end{split}
 \end{equation}
+%
 \begin{equation}
-Q_{ez}(\rho,\phi,z) = -\frac{a}{a}
+Q_{ez}(\rho,\phi,z) = \frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} (2j+1)\G^{(\sigma)}_{j,m} \Big{[} (a_j+b_j) \G^{C,(\sigma)*}_{j,m}(1-\sigma\sin 2\psi) + (a_j-b_j) \G^{C,(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\varphi_c-\psi)} \big{]}.
 \end{equation}
 %
 
+O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e a cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} as expressões para os coeficiente de multipolo $\G^{(\sigma)}_{j,m}$ e $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
 
+Os somatórios em $j$ e $m$ são feitos da mesma forma que na expressão \ref{pi_phi}: $j$ vai de $0$ a $\infty$, e $m$ de $-j$ a $j$. Os valores da soma de $\sigma$ são $\pm1$, como na equação \ref{l}. O importante de observarmos aqui é a dependência de $Q_z$ com $\psi$, que será um parâmtero livre no experimento e portanto na simulação. Podemos identificar nas expressões 4 tipos de termos: com multipolos com mesmo índice de polarização $\G^{(+1)}\G^{(+1)*}$ e $\G^{(-1)}\G^{(-1)*}$, e com índices invertidos $\G^{(+1)}\G^{(-1)*}$ e $\G^{(-1)}\G^{(+1)*}$. Os dois primeiros termos são proporciais, respectivamente, a $(1-\sin2\psi)$ e $(1+\sin2\psi)$, e os dois últimos, a $\cos2\psi e^{i2\psi}$ e $\cos2\psi e^{-i2\psi}$.
+
+Explicitar essa soma é de grande importância para os cálculos numéricos, pois podemos calcular esses 4 termos de forma independente, e teremos o valor de $Q_z$ para qualquer ângulo da placa de quarto de onda.
 
 \section{Interação Spin-Órbita.}
+\label{interacao_so}
+
+\hspace{5 mm}
 
 YADA
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=1.]{Kphi_Artigo_Kaina}
+\includegraphics[scale=.8]{Kphi_Artigo_Kaina}
 \caption{.}
 \label{foco_coinc}
 \end{center}

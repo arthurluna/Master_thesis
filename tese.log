@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  8 JUL 2019 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  9 JUL 2019 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,42 +795,54 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 3460) has occurred while \output is active []
 
  [15 <./feixe_astig.png>]
-<Kphi_Artigo_Kaina.png, id=345, 462.528pt x 346.896pt>
-File: Kphi_Artigo_Kaina.png Graphic file (type png)
-<use Kphi_Artigo_Kaina.png>
-Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 294.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-Overfull \hbox (7.28275pt too wide) in paragraph at lines 294--295
- [] 
+Overfull \hbox (47.14159pt too wide) detected at line 285
+[]\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n
+/12 ) = [] [] [](2\OML/cmm/m/it/12 j \OT1/cmr/m/n/12 + 1)\OMS/cmsy/m/n/12 G[][]
+\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b[]\OT
+1/cmr/m/n/12 )\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \OML/
+cmm/m/it/12 ^^[ [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ) + (\OML
+/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 )\OMS
+/cmsy/m/n/12 G[] [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  e[][]:
  []
 
-) (./capitulo3.tex [16 <./Kphi_Artigo_Kaina.png>]
-Cap\'{\i }tulo 3.
-[17
+<Kphi_Artigo_Kaina.png, id=348, 462.528pt x 346.896pt>
+File: Kphi_Artigo_Kaina.png Graphic file (type png)
+<use Kphi_Artigo_Kaina.png>
+Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 302.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
 
-] [18] [19] [20]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./capitulo3.tex [16] [17 <./Kphi_Artigo_Kaina.png>]
+Cap\'{\i }tulo 3.
+[18
+
+] [19] [20] [21]
 
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 86.
 
 
-[21] [22] [23]
-<Regiao_de_pincamento.png, id=394, 462.528pt x 346.896pt>
+[22] [23] [24]
+<Regiao_de_pincamento.png, id=401, 462.528pt x 346.896pt>
 File: Regiao_de_pincamento.png Graphic file (type png)
 <use Regiao_de_pincamento.png>
 Package pdftex.def Info: Regiao_de_pincamento.png  used on input line 120.
-(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (7.28275pt too wide) in paragraph at lines 120--121
+ [] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./capitulo4.tex [24] [25 <./Regiao_de_pincamento.png>]
+) (./capitulo4.tex [25] [26 <./Regiao_de_pincamento.png>]
 Cap\'{\i }tulo 4.
-) (./capitulo5.tex [26
+) (./capitulo5.tex [27
 
 ]
 Cap\'{\i }tulo 5.
-) [27
+) [28
 
 ] (./tese.bbl (./tese.brf)
 \tf@brf=\write9
@@ -842,44 +854,38 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
- [28
+ [29
 
-]) (./apendicea.tex [29]
+]) (./apendicea.tex [30]
 Ap\^endice A.
-) (./apendiceb.tex [30
+) (./apendiceb.tex [31
 
 ]
 Ap\^endice B.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
- [31
+ [32
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (./tese.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
-
-
-Package rerunfilecheck Warning: File `tese.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `tese.out':
-(rerunfilecheck)             Before: 4E0A371D8D4618FA2D23E58F2EE757C8;1617
-(rerunfilecheck)             After:  D6DBC14BB6BC5474F31D10FCAC7CBA47;1613.
+Package rerunfilecheck Info: File `tese.out' has not changed.
+(rerunfilecheck)             Checksum: D6DBC14BB6BC5474F31D10FCAC7CBA47;1613.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: FCAAE57B31C04D7642BDEAE40B4CAAC9;1045.
+(rerunfilecheck)             Checksum: FF16F0D1E7DB860D41740BCB69F6415A;1045.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 11913 strings out of 492623
- 168031 string characters out of 6135670
+ 11915 strings out of 492623
+ 168052 string characters out of 6135670
  326447 words of memory out of 5000000
- 15410 multiletter control sequences out of 15000+600000
+ 15411 multiletter control sequences out of 15000+600000
  15240 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,19n,49p,3234b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -896,10 +902,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (41 pages, 443207 bytes).
+Output written on tese.pdf (42 pages, 447132 bytes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
- 120 named destinations out of 1000 (max. 500000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 121 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 
