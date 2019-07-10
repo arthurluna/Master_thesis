@@ -3,7 +3,7 @@
 
 \hspace{5 mm}Essa seção será dedicada a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão revisados, . 
 
-Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto do modelo MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os momentos angulares\cite{Bliokh2015}.
+Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto da teoria MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os momentos angulares\cite{Bliokh2015}.
 
 \section{Ótica geométrica e limite de Rayleigh.}
 
@@ -157,7 +157,7 @@ Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de u
 {\mathbf F}=\frac{-1}{2}r\left( \int d\Omega (\epsilon E^2_{tan}{\mathbf r}) + \int d\Omega (\mu H^2_{tan}{\mathbf r}) \right),
 \end{equation}
 %
-onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $Real({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produtos dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa de perda de momento do campo incidente para o centro espalhador. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
+onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produtos dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa de perda de momento do campo incidente para o centro espalhador. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
 
 A expressão para a força será mostrada depois de introduzirmos o perfil do feixe e a polarização, uma vez que tanto os campos mudam, quanto as expressões da força ganham termos adicionais. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que carregam as informações de aberrações e do perfil de intensidade.
 
@@ -293,7 +293,22 @@ Q_{ez}(\rho,\phi,z) = \frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma
 \end{equation}
 %
 
-O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e a cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} as expressões para os coeficiente de multipolo $\G^{(\sigma)}_{j,m}$ e $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
+O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e a cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} as expressões para os coeficiente de multipolo $\G^{(\sigma)}_{j,m}$ e $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_\phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
+
+No capítulo \ref{cap3} serão descritas as medidas feitas com o aparato da pinça ótica. As forças não são medidas diretamente: como as microesferas estão em movimento browniano na solução, quando pinçadas elas passam flutuar ao redor da posição de equilíbrio na pinça. Seus movimento pode ser descrito por meio de um potencial harmônico, que permite uma expansão de Taylor da força em $\rho$, e uma constante elástica associada a pinça. Temos, então, a constante transversa $\kappa_\rho$ de rigidez dada por\cite{Viana2007}:
+%
+\begin{equation}
+\kappa_\rho=-\frac{n_1 P}{c}\frac{\partial Q_\rho}{\partial \rho}\Big{|}_{\rho=0, \thinspace z=z_{eq}},
+\label{kphi}
+\end{equation}
+%
+onde $P$ é a potência do laser; e a constante de torção \cite{Diniz2019}:
+%
+\begin{equation}
+\kappa_\phi=-\frac{n_1 P}{c}\frac{\partial Q_\phi}{\partial \rho}\Big{|}_{\rho=0, \thinspace z=z_{eq}}.
+\label{kphi}
+\end{equation}
+%
 
 Os somatórios em $j$ e $m$ são feitos da mesma forma que na expressão \ref{pi_phi}: $j$ vai de $0$ a $\infty$, e $m$ de $-j$ a $j$. Os valores da soma de $\sigma$ são $\pm1$, como na equação \ref{l}. O importante de observarmos aqui é a dependência de $Q_z$ com $\psi$, que será um parâmtero livre no experimento e portanto na simulação. Podemos identificar nas expressões 4 tipos de termos: com multipolos com mesmo índice de polarização $\G^{(+1)}\G^{(+1)*}$ e $\G^{(-1)}\G^{(-1)*}$, e com índices invertidos $\G^{(+1)}\G^{(-1)*}$ e $\G^{(-1)}\G^{(+1)*}$. Os dois primeiros termos são proporciais, respectivamente, a $(1-\sin2\psi)$ e $(1+\sin2\psi)$, e os dois últimos, a $\cos2\psi e^{i2\psi}$ e $\cos2\psi e^{-i2\psi}$.
 
@@ -304,12 +319,14 @@ Explicitar essa soma é de grande importância para os cálculos numéricos, pois po
 
 \hspace{5 mm}Uma das características da pinça ótica que faz com que a modelagem teórica seja tão difícil é o fato de que o feixe que emerge da objetiva é muito focalizado, e portanto não paraxial. Um dos efeitos resultantes da focalização do feixe é a conversão de momento angular de spin do feixe, associado a polarização (ou helicidade) do campo, em momento angular orbital \cite{Bliokh2015}. O momento angular orbital insere uma fase com dependência na variável cilindrica $\phi$.
 
+Evidências experimentais apontam que o campo espalhado por uma microesfera no aparato de pinça ótica pode carregar mais momento angular do que o campo incidente. Usamos o efeito de conversão de momento angular de spin para orbital junto com a teoria MD para pinça ótica para trazer luz a esse fenômeno.
+
 De uma forma simples, podemos entender essa transferência de momento angular considerando um cone de ondas planas circularmente polarizdas com angulo de meia abertura $\theta$, da mesma forma que fizemos no começo da seção \ref{MD}. 
 
 Suas componentes de spin apontam para as respectivas direções de propagação, com o sentido definido pelo sentido da polarização circular {\bf colocar referência}. Assumindo que o momento angular (intrínsico) total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam. Se ${\mathbf P}$ é o momento angular total do feixe e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
 %
 \begin{equation}
-{\mathbf S}=\sigma\cos\theta{\mathbf P}, \quad\quad {\mathbf L}=\sigma(1-\cos\theta){\mathbf P}.
+{\mathbf S}=\sigma\cos\theta{\mathbf P}\thinspace, \quad\quad {\mathbf L}=\sigma(1-\cos\theta){\mathbf P}.
 \end{equation}
 %
 
@@ -336,13 +353,23 @@ a & be^{-i2\phi} & \sqrt{2ab}e^{-i\phi} \\
 %
 A dependência com o ângulo $\phi$ também aparece nas expressões dos campos rotacionados (equação \ref{pi_phi}), ao rotacionarmos os harmônicos esféricos (equação \ref{harm_esf_rot}) com $\alpha=-\gamma=\phi_k$.
 
+Uma vez que haja momento angular orbital incidindo na microesfera, podemos fazer um paralelo com a transferência de momento linear para explicar o excesso de momento angular no campo espalhado.
+
+Como discutido na seção \ref{MD}, os termos de extinção representa a quantidade de momento que é transferida do campo incidente à microesfera; enquanto o termo de espalhamento está relacionado à transferência de momento para o campo espalhado. Podemos entender que, na região de pequenos raios, o termo que domina na expressão da força é o de extinção, pois se o raio da esfera é muito menor que o comprimento de onda do laser, pode-se concluir que o campo não será tão afetado por esse centro espalhador (${\mathbf E}_S$ é muito pequeno e $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$ domina sobre ${\mathbf E}_S\cdot{\mathbf E}_S^*$). 
+
+Quanto maior for o centro espalhador, mais afetado o campo será, e a partir de um certo raio, o termo de espalhamento da força domina. A imagem \ref{Kphi_raio} mostra o comportamento da constante de torção $\kappa_\phi$.
+
+Podemos observar que na região em que o raio $a$ é menor que $0,15 \mu m$, a constante de torção é positiva, e o torque indica um ganho de momento angular na mesma direção ao de spin do campo incidente. Sendo essa a região onde o termo de extinção domina, podemos inferir que o campo está cedendo momento angular para a microesfera, e esta não está espalhando momento angular o suficiente para sofrer torque negativo.
+%
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.8]{Kphi_Artigo_Kaina}
-\caption{.}
-\label{foco_coinc}
+\includegraphics[scale=.7]{Kphi_Artigo_Kaina}
+\caption{{\bf acertar dimensões(kappa c / P n1), trocar titulo, colocar informações sobre os dados (comp de onda, aberração esferica, ausencia de astig, polarização, etc.).}}
+\label{Kphi_raio}
 \end{center}
 \end{figure}
+%s
 
+Quando o raio aumenta, a componente de espalhamento da força começa a dominar, e efeitos de torque negativos a prevalecer. Podemos concluir que o campo espalhado carrega momento angular em excesso. Como a componente de spin do campo espalhado não podem ser maior que do incidente, por esta última já ser máxima, o excesso de momento angular tem que ser de origem orbital. 
 
 \end{chapter}
