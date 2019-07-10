@@ -56,7 +56,9 @@ Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótic
 
 onde $\sigma$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
-O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). O campo incidente na amostra tem formato cônico sólido, gerado pela objetiva. Montaremos esse campo superpondo ondas planas. Para tanto, começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolo (ondas esféricas ou ondas parciais). Outros casos de polarização serão discutidos adiante. A base de multipolos é a ideal para problemas com simetria esférica, pois são compostas pelos harmônicos esféricos na parte radial, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, que serão definidos a seguir: 
+O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). O campo incidente na amostra tem formato cônico sólido, gerado pela objetiva. Montaremos esse campo superpondo ondas planas. Para tanto, começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolo (ondas esféricas ou ondas parciais). Outros casos de polarização serão discutidos adiante. 
+
+A base de multipolos é a ideal para problemas com simetria esférica, pois são compostas pelos harmônicos esféricos na parte radial, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, que serão definidos a seguir: 
 
 \begin{equation}
 \Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
@@ -70,15 +72,17 @@ com
 \label{onda_plana}
 \end{equation}
 %
-onde $n_1$ é o índice de refração do meio ao redor da amostra. Tais potenciais serão úteis para resolver o problem do espalhamento Mie. Estes decompõem os campos em dois modos, um deles com o campo ${\mathbf E}$ paralelo à superfície do objeto espalhador ($\Pi^{M}$, modo transversal elétrico) e outra perpendicular ($\Pi^{E}$, modo transversal magnético). Essa decomposição forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Os coeficientes de Mie para o espalhamento são:
+onde $n_1$ é o índice de refração do meio ao redor da amostra, $k$  e $\omega$ são o vetor de onda e a frequência angular do feixe, sendo $\omega/k=c$ a velocidade da luz no vácuo. Tais potenciais serão úteis para resolver o problem do espalhamento Mie. Estes decompõem os campos em dois modos, um deles com o campo ${\mathbf E}$ paralelo à superfície do objeto espalhador ($\Pi^{M}$, modo transversal elétrico) e outra perpendicular ($\Pi^{E}$, modo transversal magnético). 
+
+Essa decomposição forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Os coeficientes de Mie para o espalhamento são:
 
 \begin{equation}
-a_J=\frac{\psi_J(\beta)\psi'_J(\alpha)-N\psi'_J(\beta)\psi_J(\alpha)}{\zeta^{(1)}_J(\beta)\psi'_J(\alpha)-N\zeta'^{(1)}_J(\beta)\psi_J(\alpha)} \qquad e\qquad
+a_J=\frac{\psi_J(\beta)\psi'_J(\alpha)-N\psi'_J(\beta)\psi_J(\alpha)}{\zeta^{(1)}_J(\beta)\psi'_J(\alpha)-N\zeta'^{(1)}_J(\beta)\psi_J(\alpha)} \qquad ,\qquad
 b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1)}_J(\beta)\psi_J(\alpha)-N\zeta^{(1)}_J(\beta)\psi'_J(\alpha)},
 \label{mie}
 \end{equation} 
 %
-onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera, $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
+onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera e $N$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
 
 Assim, uma vez encontradas as soluções escalares para os campos espalhados e incidentes, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$, $\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k})$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
 %
@@ -194,7 +198,7 @@ onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela con
 \label{fatoref_forca}
 \end{equation}
 %
-onde $\left<{\mathbf F}\right>$ é a média temporal da força, $c$ é a velocidade da luz no vácuo e P é a potência do feixe incidente na amostra. Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda (tanto de espalhamento quanto de extinção). O termo ${\mathbf Q}^{({\it cross})}$ é o que chamamos de cruzado, pois contem produtos de campos com polarizações opostas. 
+onde $\left<{\mathbf F}\right>$ é a média temporal da força e P é a potência do feixe incidente na amostra. Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda (tanto de espalhamento quanto de extinção). O termo ${\mathbf Q}^{({\it cross})}$ é o que chamamos de cruzado, pois contem produtos de campos com polarizações opostas. 
 
 A força exercida por uma polarização elípitica pode ser obtida introduzindo a dependência com o ângulo $\psi$ do eixo rápido da placa de quarto de onda (PQO, ou QWP) no feixe paraxial incidente na entrada da objetva:
 
@@ -259,7 +263,7 @@ Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esf
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.5]{feixe_astig}
+\includegraphics[scale=.7]{feixe_astig}
 \caption{Feixe com astigmatismo.}
 \label{feixe_astig}
 \end{center}
