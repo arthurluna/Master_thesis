@@ -111,18 +111,30 @@ Com as posições de equilíbrio para cada $\psi$ do experimento e a posição inicia
 
 Reproduzimos todo esse procedimento para vários valores do parâmetro de astigmatismo e comparamos o valor obtido de $ \kappa_\phi /\kappa_\rho $ com o ângulo $\phi$ de rotação do experimento. Para determinar qual valor de $A_{ast}$ melhor descreve o experimento, utilizamos o método de mínimos quadrados: subtraimos o valor de $\phi$ e de $ \kappa_\phi /\kappa_\rho $ e tomamos o quadrado dessa diferença. Quanto menor for o valor desse quadrado, maior a verossimilhança com as medidas do experimento.
 
-\section{Restrições sobre parâmetros físicos.}
+\section{Condições de Pinçamento.}
 
-Outro uso para o modelo MDSA é testar condições de pinçamento baseado nas obsevações experimentais. Sabemos que microesferas são aprisionadas próximas ao foco, com a distância entre seus centros e os planos focais variando de zero (na ausência de aberrações óticas e absorção pela microesfera) até poucos raios da microesfera. A microesfera pode ser aprisionada antes do foco (com sentido da propagação do laser sendo positiva) na presença de aberração esférica.
+\hspace{5 mm}Outro uso para o modelo MDSA é testar condições de pinçamento baseado nas obsevações experimentais. Sabemos que microesferas são aprisionadas próximas ao foco, coincidindo com esse na ausência de aberrações e absorção. Podemos usar o modelo para calcular o fator de eficiência $Q_z$ nessa vizinhança e enteder o comportamento da força perto do foco.
+
+O simples fato de existir um ponto onde $Q_z$ mude de sinal de positivo para negativo (equilíbrio estável) não é sificiente. Como foi dito anteriormente, a microesfera apresenta movimento browniano perto da posição de equilíbrio. Flutuações térmicas podem ser suficientes para a microesfera fugir do aprisionamento, que ocorre quando a barreira de potencial ótico não é grande o suficiente.
+
+Para determinar o potencial que a microesfera está inserida, fazemos uma integral da força ao redor da sua posição de equilíbrio. Usando a equação \ref{fatoref_forca}, obtemos:
+%
+\begin{equation}
+V(z)=-\int\limits_{z_0}^{z} \frac{n_1P}{c} Q_z dz + V(z_0).
+\end{equation}
+
+O que nos importa de fato é o tamanho da barreira potencial. Por isso, podemos fazer $z_0=z_{eq}$ e buscar o máximo local mais próximo. Usualmente, ela vai ser para um valor de $z$ maior que $z_{eq}$, com sentido de $z$ positivo na mesma direção de propagação do feixe. O critério para haver pinçamento é que a barreira potencial seja maior que $3k_BT$.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=1.]{Regiao_de_pincamento}
-\caption{Região onde a condição de pinçamento é satisfeita: há uma posição de equilíbrio estável a pelo menos 3 unidades de raio de distância do foco. Efeitos de aberração esférica e astigatismo não são levados em conta nessa simulação.}
-\label{foco_coinc}
+\includegraphics[scale=.7]{Regiao_de_pincamento}
+\caption{Região onde há uma posição de equilíbrio estável a pelo menos 3 unidades de raio de distância do foco. A absorção de luz pela microesfera faz com que a posição de equilíbrio se afaste do foco. Efeitos de aberração esférica e astigatismo não são levados em conta nessa simulação.}
+\label{reg_eq}
 \end{center}
 \end{figure}
 
+A parte iamginária do índice de refração é responsável pelo efeito de absorção de luz pela microesfera. A região descrita na figura \ref{reg_eq} sugere a região onde haverá pinçamento pelo critério da barreira de potencial. O interesse em estudar essa região de pinçamento é determinar um limite superior para a parte imaginária do índice de refração do material da microesfera. 
 
+O efeito de absorção desemprenha um papel muito mais importante nos experimentos com esferas de raios maiores, da ordem de $8\mu m$. Microesferas com esse raio foram aprisionadas no laboratório, porém simulações que levam absorção em conta não conseguem encontrar um ponto em que $Q_z$ seja menor que zero ao longo do eixo $z$.
 
 \end{chapter}
