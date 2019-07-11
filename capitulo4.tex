@@ -5,6 +5,27 @@
 
 \section{Transferência de momento angular}
 
+\hspace{5 mm}Primeiramente, devemos observar que o efeito de torque negativo é dependente de aberrações óticas. O astigmatismo desempenha um papel de atenuar esse efeito, podendo até trocar o sinal de $\kappa_\phi$\cite{Diniz2019}. No nosso caso, os ângulos de rotação da microesfera ao redor da posição de equilíbrio ($\phi$) são simplesmente diminuídos. Isso nos possibilita tentar ajustar uma curva simulada com o modelo MDSA+ com o parâmetro de astigmatismo $A_{ast}$ como variável livre. 
+
+Usamos um método de mínimos quadrados para realizar esse ajuste. Dado o conjunto de pontos experimentais $\phi_i^{exp}$, calculamos a função erro $E$ do conjunto de pontos simulados $\phi_i^{sim}$, onde cada índice $i$ corresponde a um ângulo $\psi$ na placa de quarto de onda. A função erro é definida como:
+%
+\begin{equation}
+E(A_{ast})=\sum \limits_i \big{[} \phi_i^{exp} - \phi_i^{sim}(A_{ast}) \big{]}^2.
+\label{erro}
+\end{equation}
+
+A figura \ref{alpha_024} mostra o conjunto de pontos que minimizam a função erro. 
+%
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.8]{Kphi_rho_Aast024II}
+\caption{}
+\label{alpha_024}
+\end{center}
+\end{figure}
+%
+
+Podemos ver que as contribuições mais importante para o ajuste são os pontos em volta dos ângulos $60º$ e $120º$.
 
 
 \end{chapter}
