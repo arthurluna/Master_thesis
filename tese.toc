@@ -1,7 +1,7 @@
 \babel@toc {brazilian}{}
 \contentsline {chapter}{Sum\'ario}{vi}{section*.2}% 
 \contentsline {chapter}{Lista de Figuras}{viii}{section*.4}% 
-\contentsline {chapter}{Lista de Tabelas}{ix}{section*.6}% 
+\contentsline {chapter}{Lista de Tabelas}{x}{section*.6}% 
 \contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{1}{section.1.1}% 
 \contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{3}{chapter.2}% 

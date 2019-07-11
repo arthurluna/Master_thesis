@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  10 JUL 2019 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  10 JUL 2019 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,15 +734,17 @@ res-ponde a posi^^Xc~ao de equil^^S^^Pbrio
 \tf@lof=\write7
 \openout7 = `tese.lof'.
 
+
+Underfull \vbox (badness 1616) has occurred while \output is active []
+
  [8
 
-] (./tese.lot)
+]
+[9] (./tese.lot)
 \tf@lot=\write8
 \openout8 = `tese.lot'.
 
- [9
-
-] [10
+ [10
 
 ] (./capitulo1.tex
 Cap\'{\i }tulo 1.
@@ -751,23 +753,24 @@ Underfull \vbox (badness 2245) has occurred while \output is active []
 
  [1
 
+
 ])
 (./capitulo2.tex [2]
 Cap\'{\i }tulo 2.
 [3
 
 ]
-<geom_foco_coincII.png, id=248, 257.46187pt x 314.67563pt>
+<geom_foco_coincII.png, id=252, 257.46187pt x 314.67563pt>
 File: geom_foco_coincII.png Graphic file (type png)
 <use geom_foco_coincII.png>
 Package pdftex.def Info: geom_foco_coincII.png  used on input line 18.
 (pdftex.def)             Requested size: 205.96976pt x 251.74083pt.
-<geom_foco_axialII.png, id=251, 557.08125pt x 375.65344pt>
+<geom_foco_axialII.png, id=255, 557.08125pt x 375.65344pt>
 File: geom_foco_axialII.png Graphic file (type png)
 <use geom_foco_axialII.png>
 Package pdftex.def Info: geom_foco_axialII.png  used on input line 30.
 (pdftex.def)             Requested size: 445.6656pt x 300.52315pt.
-<geom_lateralII.png, id=252, 205.5178pt x 366.61969pt>
+<geom_lateralII.png, id=256, 205.5178pt x 366.61969pt>
 File: geom_lateralII.png Graphic file (type png)
 <use geom_lateralII.png>
 Package pdftex.def Info: geom_lateralII.png  used on input line 38.
@@ -786,7 +789,7 @@ Underfull \vbox (badness 8038) has occurred while \output is active []
 Underfull \vbox (badness 1383) has occurred while \output is active []
 
  [6 <./geom_lateralII.png>]
-<vec_fourier.png, id=277, 419.31656pt x 391.4625pt>
+<vec_fourier.png, id=280, 419.31656pt x 391.4625pt>
 File: vec_fourier.png Graphic file (type png)
 <use vec_fourier.png>
 Package pdftex.def Info: vec_fourier.png  used on input line 91.
@@ -796,7 +799,7 @@ Underfull \vbox (badness 5274) has occurred while \output is active []
 
  [11]
 [12]
-<aberracao_esf.png, id=330, 322.20375pt x 255.95625pt>
+<aberracao_esf.png, id=333, 322.20375pt x 255.95625pt>
 File: aberracao_esf.png Graphic file (type png)
 <use aberracao_esf.png>
 Package pdftex.def Info: aberracao_esf.png  used on input line 231.
@@ -807,7 +810,7 @@ Overfull \hbox (25.95111pt too wide) detected at line 269
 m/it/12 ^^Y [] :
  []
 
-<feixe_astig.png, id=348, 671.50874pt x 311.66437pt>
+<feixe_astig.png, id=351, 671.50874pt x 311.66437pt>
 File: feixe_astig.png Graphic file (type png)
 <use feixe_astig.png>
 Package pdftex.def Info: feixe_astig.png  used on input line 275.
@@ -835,11 +838,11 @@ cmm/m/it/12 ^^[ [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ) + (\OML
 Underfull \vbox (badness 2865) has occurred while \output is active []
 
  [18]
-<Kphi_Artigo_Kaina.png, id=394, 462.528pt x 346.896pt>
+<Kphi_Artigo_Kaina.png, id=397, 462.22687pt x 347.04657pt>
 File: Kphi_Artigo_Kaina.png Graphic file (type png)
 <use Kphi_Artigo_Kaina.png>
-Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 380.
-(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 378.
+(pdftex.def)             Requested size: 392.89468pt x 294.99097pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -853,7 +856,7 @@ Cap\'{\i }tulo 3.
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 21.
 
 
-<fig/setup.jpg, id=414, 1129.21875pt x 760.8425pt>
+<fig/setup.jpg, id=417, 1129.21875pt x 760.8425pt>
 File: fig/setup.jpg Graphic file (type jpg)
 <use fig/setup.jpg>
 Package pdftex.def Info: fig/setup.jpg  used on input line 25.
@@ -862,7 +865,7 @@ Package pdftex.def Info: fig/setup.jpg  used on input line 25.
 Underfull \vbox (badness 7869) has occurred while \output is active []
 
  [22 <./fig/setup.jpg>]
-<fig/QWP.jpg, id=422, 377.41pt x 375.4025pt>
+<fig/QWP.jpg, id=425, 377.41pt x 375.4025pt>
 File: fig/QWP.jpg Graphic file (type jpg)
 <use fig/QWP.jpg>
 Package pdftex.def Info: fig/QWP.jpg  used on input line 46.
@@ -871,7 +874,7 @@ Package pdftex.def Info: fig/QWP.jpg  used on input line 46.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-<fig/pos_eq_phi.jpg, id=436, 816.04875pt x 490.83376pt>
+<fig/pos_eq_phi.jpg, id=439, 816.04875pt x 490.83376pt>
 File: fig/pos_eq_phi.jpg Graphic file (type jpg)
 <use fig/pos_eq_phi.jpg>
 Package pdftex.def Info: fig/pos_eq_phi.jpg  used on input line 80.
@@ -886,7 +889,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 111
 .
 
 [27] [28] [29]
-<Regiao_de_pincamento.png, id=463, 462.528pt x 346.896pt>
+<Regiao_de_pincamento.png, id=466, 462.528pt x 346.896pt>
 File: Regiao_de_pincamento.png Graphic file (type png)
 <use Regiao_de_pincamento.png>
 Package pdftex.def Info: Regiao_de_pincamento.png  used on input line 155.
@@ -946,7 +949,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
 Here is how much of TeX's memory you used:
  11970 strings out of 492623
  168880 string characters out of 6135670
- 327284 words of memory out of 5000000
+ 328501 words of memory out of 5000000
  15444 multiletter control sequences out of 15000+600000
  15240 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -964,10 +967,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (48 pages, 782746 bytes).
+Output written on tese.pdf (48 pages, 794234 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 529 compressed objects within 6 object streams
+ 623 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
  138 named destinations out of 1000 (max. 500000)
  245 words of extra memory for PDF output out of 10000 (max. 10000000)
 
