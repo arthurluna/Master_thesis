@@ -224,7 +224,16 @@ n\sin\theta=n_1\sin\theta_1.
 \label{snell}
 \end{equation}
 %
-Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface ({\bf inserir figura}). Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
+Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface. Isso faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface, o que pode ser entendido como um efeito de força de gradiente.
+%
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1.]{aberracao_esf}
+\caption{}
+\label{ab_esf}
+\end{center}
+\end{figure}
+%
 
 Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por \cite{Viana2007}:
 
@@ -233,7 +242,7 @@ T(\theta)=\frac{2\cos\theta}{\cos\theta + N\cos\theta_1} ,
 \label{transmitancia}
 \end{equation}
 %
-onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$, com $N=\frac{n_1}{n}$. Ao serem refratadas, as componetes de onda-plana ganham também uma fase $e^{i\Psi(z, \theta)}$, onde
+onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$. Ao serem refratadas, as componetes de onda-plana ganham também uma fase $e^{i\Psi(z, \theta)}$, onde
 
 \begin{equation}
 \Psi(z,\theta)=k\left( -\frac{L}{N^2}\cos\theta +(L+z)\cos\theta_1 \right) 
