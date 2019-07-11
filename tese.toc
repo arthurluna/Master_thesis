@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{1}{section.1.1}% 
 \contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{3}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}\'Otica geom\'etrica e limite de Rayleigh.}{3}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Modelo Mie-Debye.}{5}{section.2.2}% 
+\contentsline {section}{\numberline {2.2}Modelo Mie-Debye.}{6}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}Efeito do perfil gaussiano.}{11}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Efeitos de polariza\c c\~ao.}{12}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Aberra\c c\~ao esf\'erica.}{13}{section.2.5}% 
@@ -16,9 +16,9 @@
 \contentsline {chapter}{\numberline {3}Experimento e Simula\c c\~ao}{21}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Aparato Experimental}{21}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Procedimento Experimental}{25}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Simula\c c\~ao do experimento de transfer\^encia de momento angular.}{27}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Condi\c c\~oes de Pin\c camento.}{29}{section.3.4}% 
-\contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Quarto Cap\IeC {\'\i }tulo}{32}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{33}{chapter.5}% 
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{37}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{38}{appendix.B}% 
+\contentsline {section}{\numberline {3.3}Simula\c c\~ao do experimento de transfer\^encia de momento angular.}{28}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Condi\c c\~oes de Pin\c camento.}{31}{section.3.4}% 
+\contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Quarto Cap\IeC {\'\i }tulo}{33}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{34}{chapter.5}% 
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{38}{appendix.A}% 
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{39}{appendix.B}% 
