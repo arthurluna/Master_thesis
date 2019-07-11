@@ -7,9 +7,11 @@ Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efe
 
 \section{Ótica geométrica e limite de Rayleigh.}
 
-\hspace{5 mm}Uma forma intuitiva de entender o aprisionamento ótico de objetos esféricos e transparentes é no regime em que estes possuem um raio muito maior que o comprimento de onda do feixe incidente. Este limite é chamado de ótica geométrica, ou ótica de raios, no qual feixes podem ser tratados de forma geométrica definindo-se sua trajetória. 
+\hspace{5 mm}Uma forma intuitiva de entender o aprisionamento ótico de objetos esféricos e transparentes é no regime em que estes possuem um raio muito maior que o comprimento de onda do feixe incidente. Este limite é chamado de ótica geométrica, ou ótica de raios, no qual feixes podem ser tratados de forma geométrica definindo-se sua trajetória.
 
-O feixe presente em uma pinça ótica tem a forma de um cone sólido com um perfil de intensidade radial, geralmente gaussiano. Nessa explicação, vamos olhar o comportamento de uma casca desse cone sólido com angulo de abertura $\theta$ fixo. Dependendo de como os vetores de momento $p$ diametralmente opostos mudarão ao passar pela esfera, podemos inferir a força que ela sofrerá pela variação dos pares desses vetores. Como só estamos interessados em ver o comportamento de aprisionamento da esfera pelo feixe, vamos ignorar efeitos de absorção e reflexão. 
+Por outro lado, no limite em que o raio é muito menor que o comprimento de onda, temos o limite de Rayleigh, em que nós podemos aproximar a microesfera por um dipolo elétrico.
+
+O feixe presente em uma pinça ótica tem a forma de um cone sólido com um perfil de intensidade radial. Nessa explicação, vamos olhar o comportamento de uma casca desse cone sólido com angulo de abertura $\theta$ fixo. Dependendo de como os vetores de momento $p$ diametralmente opostos mudarão ao passar pela esfera, podemos inferir a força que ela sofrerá pela variação dos pares desses vetores. Como só estamos interessados em ver o comportamento de aprisionamento da esfera pelo feixe, vamos ignorar efeitos de absorção e reflexão. 
 
 Começamos pelo caso mais simples: quando a ponta da casca do cone, ou a posição focal do feixe, coincide com o centro da esfera (figura \ref{foco_coinc}). Nesse caso, o ângulo de incidência dos raios é normal a superfície da esfera, e o ângulo de transmissão é igual ao de incidência pela lei de Snell.
 %
@@ -28,19 +30,23 @@ Quando deslocamos a posição do foco em relação ao centro da microesfera, a lei d
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.8]{geom_foco_axialII}
-\caption{Centro da microesfera (ponto vermelho) no eixo do cone, acima (esquerda) e abaixo (direita) da posição do foco (ponto azul).}
+\caption{Centro da microesfera (ponto vermelho) no eixo do cone, acima (esquerda) e abaixo (direita) da posição do foco (ponto azul). O momento que a esfera adquire ${\mathbf\delta P}$ é $-({\mathbf \it P'}-{\mathbf \it P}$), que é menos a variação de momento do campo, por conservação.}
 \label{foco_axial}
 \end{center}
 \end{figure}
+
+De forma análoga ao caso anterior, ao deslocar verticalmente o foco em relação ao centro da esfera, o momento que a esfera recebe do feixe aponta para o centro deste.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.8]{geom_lateralII}
-\caption{Centro da microesfera (ponto vermelho) no eixo do cone, acima (esquerda) e abaixo (direita) da posição do foco (ponto azul).}
-\label{foco_axial}
+\includegraphics[scale=.7]{geom_lateralIII}
+\caption{Centro de massa da microesfera ganha momento na direção do foco do feixe.}
+\label{foco_lateral}
 \end{center}
 \end{figure}
 %
+
+Para os casos em que há reflexão e absorção, o efeito resultante é sempre uma força na direção da propagação do feixe. O motivo é que feixes que são refletidos têm sua componente de momento perpendicular à superfície reflexora invertidas. Por conservação de momento, a esfera ganha o dobro de momento nessa direção. No caso da absorção é ainda mais simples: a esfera ganha todo o momento da parte do feixe absorvido.
 
 \section{Modelo Mie-Debye.}
 \label{MD}
