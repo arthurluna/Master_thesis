@@ -68,18 +68,19 @@ Após saber a posição do foco, é colocada a solução e a lamínula superior. Com o 
 \section{Procedimento Experimental}
 \label{Procedimento Experimental}
 
-\hspace{5 mm}Após o aprisionamento de uma microesfera, é feito um procedimento para determinar a posição de equilíbrio no eixo $z$. Para isso, vamos definir as coordenadas que estamos usando e que será usada na simulação. O eixo $z$ tem como origem o foco paraxial (note a diferença em relação ao modelo teórico, em que a origem se encontra no centro da microesfera) e a coordenada $z$ será a posição do centro da microesfera. A coordenada da interface será, para fins práticos, $-L\hat{z}$, com $L$ sendo o módulo da distância entre o plano focal e o plano da interface (ver figura \ref{ab_esf}). %Se a coordenada da interface for maior que $-a$, não esperamos que haja pinçamento.
+\hspace{5 mm}Após o aprisionamento de uma microesfera, é feito um procedimento para determinar a posição de equilíbrio no eixo $z$. Para isso, vamos definir as coordenadas que estamos usando e que será usada na simulação. O eixo $z$ tem como origem o foco paraxial (note a diferença em relação ao modelo teórico, em que a origem se encontra no centro da microesfera) e a coordenada $z$ será a posição do centro da microesfera. A coordenada da interface será, para fins práticos, $-L\hat{z}$, com $L$ sendo o módulo da distância entre o plano focal e o plano da interface (como definido na figura \ref{ab_esf}). %Se a coordenada da interface for maior que $-a$, não esperamos que haja pinçamento.
 
 No procedimento, deslocamos a microesfera aprisionada até que ela toque a lamínula de vidro. Nesse momento temos o vínculo $z_{eq}=a-L_0$, ou seja, a posição de equilíbrio estável da microesfera define uma distância inicial entre o plano focal e a interface ($L_0$). Por causa do efeito de aberração esférica, discutido na seção \ref{Aberracao esferica}, a posição de equilíbrio tende a ser um pouco abaixo do plano focal, e por isso, usualmente temos $z_{eq}<0$. 
 
 Esse detalhe é muito importante para a simulação, pois este vínculo torna possível determinar essa distância incial $L_0$. Depois de encostada a microesfera na lamínula, deslocamos o o estágio do microscópio $3 \mu m$ para baixo. O foco tem um deslocamento efetivo de $3\frac{n_1}{n} \mu m$, por causa da diferença de caminho ótico{\bf(perguntar pro paulo sobre referencia)}.
 
 Com a microesfera longe da lamínula, observamos seu movimento browniano ao redor da posição do {\it spot} do laser. A seguir, o estágio do microscópio é movido na direção $x$ com o controle piezo-elétrico. O deslocamento tem uma velocidade de $v_1=250\mu m/s$. Faz-se, em seguida, um movimento no sentido contrário com mesma velocidade, e repete-se todo esse procedimento mais duas vezes, na primeira com velocidade de $v_2=150\mu m/s$ e na segunda $v_3=62.5\mu m/s$.
+%
 \begin{figure}
 \begin{center}
-\includegraphics[scale=.5]{fig/pos_eq_phi}
+\includegraphics[scale=.4]{fig/forcas_estagio}
 \caption{}
-\label{pos_eq_phi}
+\label{forcas_estagio}
 \end{center}
 \end{figure}
 
@@ -93,9 +94,18 @@ onde $\vec{v}$ é a velocidade do porta-amostra e $\beta$ é uma constante que dep
 
 Essa força de arrasto desloca a microesfera da posição de equilíbro da pinça ótica (do centro do {\it spot}). Uma nova posição de equilíbrio é obtida com $\vec{F_\phi}+\vec{F_\rho}=-\vec{F_s}$. Uma vez que $\vec{F_s}=F_s\hat{x}$, podemos projetar $\vec{F_\phi}$ e $\vec{F_\rho}$ no eixo $x$ e encontrar a condição de equilíbrio: $F_s=F_\rho \cos\phi + F_\phi \sin\phi$.
 
-Como vimos anteriormente, as forças óticas $\vec{F_\phi}$ e $\vec{F_\rho}$ são lineares em $\rho$ quando próximas da posição de equilíbrio. Como a força de arrasto não desloca a microesfera da pinça o suficiente para que a força não seja mais linear, o que esperamos é que o ângulo $\phi$ seja constante para qualquer velocidade imposta pelo piezo-elétrico.
+Como vimos anteriormente, as forças óticas $\vec{F_\phi}$ e $\vec{F_\rho}$ são lineares em $\rho$ quando próximas da posição de equilíbrio. Como a força de arrasto não desloca a microesfera da pinça o suficiente para que a força não seja mais linear, o que esperamos é que o ângulo $\phi$ seja constante para qualquer velocidade imposta pelo piezo-elétrico (como mostrado na figura \ref{pos_eq_phi}).
 
-Dessa forma, cada velocidade determina uma posição de equilíbrio, ao redor da qual a microesfera apresenta movimento browniano. As posições médias de cada velocidade formam uma reta que determinam $\phi$. 
+Dessa forma, cada velocidade determina uma posição de equilíbrio, ao redor da qual a microesfera apresenta movimento browniano. As posições médias da esfera para cada velocidade formam uma reta que determinam $\phi$. 
+%
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.5]{fig/pos_eq_phi}
+\caption{Pontos experimentais do experimento. São mostradas várias baterias de dados, cada uma representada por uma velocidade. Podemos ver o efeito do movimento browniano ao redor das posições de equilíbrio. {\bf deixo um agradecimento/referencia para o Kainã?} }
+\label{pos_eq_phi}
+\end{center}
+\end{figure}
+%
 
 É importante observar que esse ângulo será muito pequeno. Podemos aproveitar esse fato e aproximar a projeção das forças no eixo $y$ $F_\rho\sin\phi = F_\phi\cos\phi$ como:
 \begin{equation}
@@ -108,7 +118,7 @@ Com a linearidade da força $F_\phi/F_\phi = \kappa_\phi \rho/\kappa_\rho \rho$, 
 \frac{\kappa_\phi}{\kappa_\rho} \approx \phi.
 \end{equation}
 
-Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. Espera-se que com deslocamentos ao longo da direção $x$ (de polarização linear) não haja rotação em torno da pinça. Se o deslocamento fosse em outras direções, poderíamos esperar uma força de gradiente na direção $\phi$ causada por assimetrias no feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no spot. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$.
+Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. Espera-se que deslocamentos ao longo da direção $x$ (de polarização linear) não produzam rotação em torno do eixo do feixe, que é o caso de (a) na figura \ref{forcas_estagio}. Se o deslocamento fosse em outras direções, poderíamos esperar uma força de gradiente na direção $\phi$ causada por assimetrias no feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no spot. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$.
 
 \section{Simulação do experimento de transferência de momento angular.}
 
@@ -129,6 +139,15 @@ onde $A$ e $B$ são os coeficientes de ajuste da reta $Q_z(z)=A z + B$.
 No experimento, a posição de equilíbrio não é diretamente medida, mas sabe-se que ela varia quando a polarização do feixe incidente muda. Levar isso em conta no código implica em calcular $Q_z$ várias vezes até que o valor desse mude de sinal como descrito anteriormente. 
 
 Calcular tal posição de equilíbrio para cada polarização do feixe incidente seria computacionalmente muito custoso. Dessa forma, a dependência com o ângulo $\psi$ da placa de quarto de onda é explicitada e o fator de eficiência $Q_z$ para várias posições $z$ da microesfera pode ser calculado para qualquer polarização uma vez só. Uma vez tendo os valores de $Q_z(z)$ e $z$, podemos calcular a posição de equilíbrio em função do ângulo da placa de onda.
+%
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.8]{zeq_psi_ast25II}
+\caption{Comportamento da posição de equilíbrio em função do ângulo da placa de quarto de onda $\psi$. O valor do parâmetro de astigmatismo para essas posições é de $A_{ast}=0.25$}
+\label{zeq_psi}
+\end{center}
+\end{figure}
+%
 
 É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Constatações experimentais nos levam a definir tal intervalo, como por exemplo, se vemos a microesfera focalizada na câmera, ela só pode estar frações de unidades de raio ($a\approx 0.5\mu m$) de distância do foco paraxial. Portanto, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para os parâmetros de entrada não são satisfeitos. Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.7$). {\bf rever esse paragrafo, pois nao tenho nenhuma imagem ou medida: o programa retorna erro quando busca por posicoes de eq acima desse valor de $A_{ast}$, justamente por nao achar dentro do intervalo de 4 unidades de raio, por volta de $2\mu m$}
 
@@ -152,8 +171,8 @@ O que nos importa de fato é o tamanho da barreira potencial. Por isso, podemos f
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.7]{Regiao_de_pincamento}
-\caption{Região onde há uma posição de equilíbrio estável a pelo menos 3 unidades de raio de distância do foco. A absorção de luz pela microesfera faz com que a posição de equilíbrio se afaste do foco. Efeitos de aberração esférica e astigatismo não são levados em conta nessa simulação.}
+\includegraphics[scale=.8]{Regiao_de_pincamento}
+\caption{Região onde há uma posição de equilíbrio estável a pelo menos 3 unidades de raio de distância do foco. O aumento da absorção de luz pela microesfera faz com que a posição de equilíbrio se desloque no sentido positivo do eixo $z$ (sentido de propagação). Efeitos de aberração esférica e astigatismo não são levados em conta nessa simulação.}
 \label{reg_eq}
 \end{center}
 \end{figure}
@@ -161,5 +180,6 @@ O que nos importa de fato é o tamanho da barreira potencial. Por isso, podemos f
 A parte iamginária do índice de refração é responsável pelo efeito de absorção de luz pela microesfera. A região descrita na figura \ref{reg_eq} sugere a região onde haverá pinçamento pelo critério da barreira de potencial. O interesse em estudar essa região de pinçamento é determinar um limite superior para a parte imaginária do índice de refração do material da microesfera. 
 
 O efeito de absorção desemprenha um papel muito mais importante nos experimentos com esferas de raios maiores, da ordem de $8\mu m$. Microesferas com esse raio foram aprisionadas no laboratório, porém simulações que levam absorção em conta não conseguem encontrar um ponto em que $Q_z$ seja menor que zero ao longo do eixo $z$.
+
 
 \end{chapter}
