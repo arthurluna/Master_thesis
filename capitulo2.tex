@@ -1,7 +1,7 @@
 \begin{chapter}{Teoria da Pinça Ótica}
 \label{cap2}
 
-\hspace{5 mm}Essa seção será dedicada a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão revisados, . 
+\hspace{5 mm}Esse capítulo será dedicado a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão instroduzidos, com a finalidade de gerar uma intuição acerca do assunto. 
 
 Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto da teoria MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os momentos angulares\cite{Bliokh2015}.
 
@@ -273,6 +273,7 @@ Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\P
 \begin{equation}
 \Phi_{adicional}(\theta,\phi) = 2\pi \left[ A'_{sa}\left( \frac{\sin\theta}{\sin\theta_0} \right)^4 + A'_{c}\left( \frac{\sin\theta}{\sin\theta_0} \right)^3\cos(\phi - \varphi_c) + A'_{a}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos^2(\phi - \varphi_a) \right].
 \end{equation}
+{\bf atenção aqui! tese do Rafael$->$ cos do $A_{ast}$ é diferente (2(angulo), elevado ao quad), no artigo do Kaina, essa fase é referida como fase de Zernike, e tirei da tese do Rafa como fase de Seidel. }
 %
 Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
 %
