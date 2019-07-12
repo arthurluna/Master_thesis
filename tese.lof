@@ -4,10 +4,10 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Foco coincidente ao centro da esfera. Essa corresponde a posi\c c\~ao de equil\IeC {\'\i }brio est\'avel da esfera.\relax }}{4}{figure.caption.8}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Centro da microesfera (ponto vermelho) no eixo do cone, acima (esquerda) e abaixo (direita) da posi\c c\~ao do foco (ponto azul). O momento que a esfera adquire ${\mathbf \delta P}$ \'e $-({\mathbf \it P'}-{\mathbf \it P}$), que \'e menos a varia\c c\~ao de momento do campo, por conserva\c c\~ao.\relax }}{5}{figure.caption.9}% 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Centro de massa da microesfera ganha momento na dire\c c\~ao do foco do feixe.\relax }}{6}{figure.caption.10}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Operadores vetoriais no espa\c co de Fourier usados para encontrar as solu\c c\~oes vetoriais.\relax }}{8}{figure.caption.11}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Operadores vetoriais no espa\c co de Fourier usados para encontrar as solu\c c\~oes vetoriais.\relax }}{9}{figure.caption.11}% 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces \relax }}{14}{figure.caption.12}% 
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Feixe com astigmatismo.\relax }}{16}{figure.caption.13}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Constante de tor\c c\~ao $\kappa _\phi $ em fun\c c\~ao do raio da microesfera. O comprimento de onda do laser \'e de $1064 nm$, a dist\^ancia $L$ entre o foco e a lam\IeC {\'\i }nula \'e de $4,5$ unidades de raio e a polariza\c c\~ao $\sigma +$. Astigmatismo n\~ao \'e levado em conta nessa simula\c c\~ao. {\bf colocar informa\c c\~oes sobre os dados (comp de onda, aberra\c c\~ao esferica, ausencia de astig, polariza\c c\~ao, etc.).}\relax }}{20}{figure.caption.14}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Constante de tor\c c\~ao $\kappa _\phi $ em fun\c c\~ao do raio da microesfera. O comprimento de onda do laser \'e de $1064 nm$, a dist\^ancia $L$ entre o foco e a lam\IeC {\'\i }nula \'e de $4,5$ unidades de raio e a polariza\c c\~ao $\sigma +$. Astigmatismo n\~ao \'e levado em conta nessa simula\c c\~ao. {\bf colocar informa\c c\~oes sobre os dados (comp de onda, aberra\c c\~ao esferica, ausencia de astig, polariza\c c\~ao, etc.).}\relax }}{21}{figure.caption.14}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces \relax }}{23}{figure.caption.15}% 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \relax }}{24}{figure.caption.16}% 
@@ -19,7 +19,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Simula\c c\~ao com $A_{ast}=0$ (\`a esquerda) e $A_{ast}=0.36$ (\`a dureita).\relax }}{36}{figure.caption.22}% 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Valores da fun\c c\~ao erro (equa\c c\~ao \ref {erro}) em fun\c c\~ao do par\^ametro de astigmatismo $A_{ast}$. O m\IeC {\'\i }nimo se encontra aproximadamente em $A_{ast}=0.24$.\relax }}{37}{figure.caption.23}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Pontos te\'oricos em azul, com o par\^ametro $A_{ast}=0.24$, ajustado como m\IeC {\'\i }nimo da fun\c c\~ao erro.\relax }}{37}{figure.caption.24}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pontos te\'oricos em azul, com o par\^ametro $A_{ast}=0.24$, ajustado como m\IeC {\'\i }nimo da fun\c c\~ao erro.\relax }}{38}{figure.caption.24}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
