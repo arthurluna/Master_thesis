@@ -14,29 +14,41 @@ E(A_{ast})=\sum \limits_i \big{[} \phi_i^{exp} - \phi_i^{sim}(A_{ast}) \big{]}^2
 \label{erro}
 \end{equation}
 
-A figura \ref{alpha_0} mostra o conjunto de pontos experimentais (em vermelho) e os pontos para a teoria MDSA sem astigmatismo (em azul). 
+A figura \ref{alpha_0036} mostra o conjunto de pontos experimentais em vermelho e os pontos para a teoria MDSA+ com parâmetros de astigmatismo diferentes em azul. Podemos ver que a ausência de correções para o astigmatismo superestima o efeito de torque negativo (figura da esquerda), enquanto o valor de $A_{ast}=0.36$, considerado alto, superestima o efeito.
+
+Ao considerar parâmetros de astigmatismo altos, começamos a ter problemas para achar uma posição de equilíbrio para a microesfera, e os ângulos de rotação simulados passam a ser muito menores que os valores obtidos experimentalmente.
 %
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.8]{Kphi_rho_Aast0II}
-\caption{}
-\label{alpha_0}
+\includegraphics[scale=.56]{Kphi_rho_Aast0036}
+\caption{Simulação com $A_{ast}=0$ (à esquerda) e $A_{ast}=0.36$ (à dureita).}
+\label{alpha_0036}
 \end{center}
 \end{figure}
 %
 
-
+A simulação dos vários parâmetros de astigmatismo mostraram que o valor que minimiza a função erro é $A_{ast}=0.24\pm0.1$ (figura \ref{erro_astig}). A incerteza foi estimada tomando $20\%$ do valor da função erro no mínimo $E(0.24)=2.65$, e acrescendo a esse valor. Obtemos, então, a tolerância do erro $E_{tol}=3.18$. Os valores da função erro para $A_{ast}=0.23,0.25$ são, respectivamente, $2.96$ e $3.14$. Como são menores que $E_{tol}$, assumimos que estão dentro da barra de erro. Valores do parâmetro de astigmatismo maiores que $0.26$ e menores que $0.22$ geram erros maiores que $4$, indicando que $A_{ast}=0.24$ é um mínimo global.
 %
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.8]{Kphi_rho_Aast024II}
-\caption{}
-\label{alpha_024}
+\includegraphics[scale=.7]{erro_astig}
+\caption{Valores da função erro (equação \ref{erro}) em função do parâmetro de astigmatismo $A_{ast}$. O mínimo se encontra aproximadamente em $A_{ast}=0.24$.}
+\label{erro_astig}
 \end{center}
 \end{figure}
 %
 
 Podemos ver que as contribuições mais importante para o ajuste são os pontos em volta dos ângulos $60º$ e $120º$.
+%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.7]{Kphi_rho_Aast024II}
+\caption{Pontos teóricos em azul, com o parâmetro $A_{ast}=0.24$, ajustado como mínimo da função erro.}
+\label{alpha_024}
+\end{center}
+\end{figure}
+%
+
 
 
 \end{chapter}
