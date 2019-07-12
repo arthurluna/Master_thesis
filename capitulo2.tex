@@ -48,6 +48,21 @@ De forma análoga ao caso anterior, ao deslocar verticalmente o foco em relação a
 
 Para os casos em que há reflexão e absorção, o efeito resultante é sempre uma força na direção da propagação do feixe. O motivo é que feixes que são refletidos têm sua componente de momento perpendicular à superfície reflexora invertidas. Por conservação de momento, a esfera ganha o dobro de momento nessa direção. No caso da absorção é ainda mais simples: a esfera ganha todo o momento da parte do feixe absorvido.
 
+No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo ${\mathbf p}$ será dada por \cite{Mazolli}:
+%
+\begin{equation}
+{\mathbf F} = \nabla({\mathbf p}\cdot{\mathbf E}),
+\end{equation}
+%
+com ${\mathbf p}$ sendo dado por \cite{Jackson1998}:
+%
+\begin{equation}
+{\mathbf p} = 4\pi\epsilon_0 \frac{\epsilon-1}{\epsilon-2}a^3{\mathbf E}.
+\end{equation}
+%
+
+Podemos concluir que a força vai ser proporcional a ${\mathbf E}^2$, que é proporcional por sua vez à intensidade do campo. Se ${\mathbf E}$ e ${\mathbf p}$ têm o mesmo sentido, a força apontará sempre para a região de maior intensidade. Isso ocorre desde que $\epsilon>1$. Essa é a força que chamamos de força de gradiente.
+
 \section{Modelo Mie-Debye.}
 \label{MD}
 
@@ -378,7 +393,7 @@ Uma vez que haja momento angular orbital incidindo na microesfera, podemos fazer
 
 Como discutido na seção \ref{MD}, os termos de extinção representa a quantidade de momento que é transferida do campo incidente à microesfera; enquanto o termo de espalhamento está relacionado à transferência de momento para o campo espalhado. Podemos entender que, na região de pequenos raios, o termo que domina na expressão da força é o de extinção, pois se o raio da esfera é muito menor que o comprimento de onda do laser, pode-se concluir que o campo não será tão afetado por esse centro espalhador (${\mathbf E}_S$ é muito pequeno e $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$ domina sobre ${\mathbf E}_S\cdot{\mathbf E}_S^*$). 
 
-Quanto maior for o centro espalhador, mais afetado o campo será, e a partir de um certo raio, o termo de espalhamento da força domina. A imagem \ref{Kphi_raio} mostra o comportamento da constante de torção $\kappa_\phi$.
+Quanto maior for o centro espalhador, mais afetado o campo será, e a partir de um certo raio, o termo de espalhamento da força domina \cite{}{\bf encontrar referência}. A imagem \ref{Kphi_raio} mostra o comportamento da constante de torção $\kappa_\phi$.
 %
 \begin{figure}[h]
 \begin{center}
