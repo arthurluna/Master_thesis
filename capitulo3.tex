@@ -63,7 +63,7 @@ A direção e sentido de propagação do feixe definem o eixo $z$ do nosso sistema d
 
 Assim, o feixe com a polarização determinada pela QWP entra no microscópio, sendo refletida por um espelho dicróico e incidindo na objetiva. O espelho dicróico reflete a luz com comprimento de onda igual do laser, mas transmite comprimentos de onda de luz visível (um pouco menor que o do laser). Isso permite que uma luz ilumine o porta-amostra e possamos ver a imagem da solução no microscópio através do espelho dicróico. Usando uma câmera podemos fazer filmes e obter as imagens de onde serão tirados os dados.
 
-A solução dentro do porta-amostra é composta por microesferas de poliestireno dispersas em água deionizada. A parte real do índice de refração do poliestireno é de $\operatorname{Re}(n_2)=1.576$, e a parte imaginária, reponsável pela absorção de luz por esse material, é de $\operatorname{Im}(n_2)=0.0011$ \cite{}. %A concentração dessa solução é de grande importância para o experimento. Tal concentração não pode ser muito baixa, pois dificulta-se encontrar e aprisionar as microesferas. Por outro lado, se a concentração for alta, torna-se possível que outras microesferas se aproximem da aprisionada, estragando o experimento.
+A solução dentro do porta-amostra é composta por microesferas de poliestireno dispersas em água deionizada. A parte real do índice de refração do poliestireno é de $\operatorname{Re}(n_2)=1.576$, e a parte imaginária, reponsável pela absorção de luz por esse material, é de $\operatorname{Im}(n_2)=0.0011$ \cite{Ma2003}. %A concentração dessa solução é de grande importância para o experimento. Tal concentração não pode ser muito baixa, pois dificulta-se encontrar e aprisionar as microesferas. Por outro lado, se a concentração for alta, torna-se possível que outras microesferas se aproximem da aprisionada, estragando o experimento.
 
 Uma vez que o feixe entre no porta-amostra, um procedimento é feito para definir a posição do foco no eixo $z$ e a posição do {\it spot} no plano $xy$ visulizado pela câmera \cite{Diniz}. Isso é feito antes de colocar a solução com microesferas, pois assim é possível observar o feixe com a câmera.
 
@@ -149,18 +149,22 @@ No experimento, a posição de equilíbrio não é diretamente medida, mas sabe-se qu
 
 Calcular tal posição de equilíbrio para cada polarização do feixe incidente seria computacionalmente muito custoso. Dessa forma, a dependência com o ângulo $\psi$ da placa de quarto de onda é explicitada e o fator de eficiência $Q_z$ para várias posições $z$ da microesfera pode ser calculado para qualquer polarização uma vez só. Uma vez tendo os valores de $Q_z(z)$ e $z$, podemos calcular a posição de equilíbrio em função do ângulo da placa de onda.
 %
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.8]{zeq_psi_ast25II}
+\includegraphics[scale=.7]{zeq_psi_ast25II}
 \caption{Comportamento da posição de equilíbrio em função do ângulo da placa de quarto de onda $\psi$. O valor do parâmetro de astigmatismo para essas posições é de $A_{ast}=0.25$}
 \label{zeq_psi}
 \end{center}
 \end{figure}
 %
 
-É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Constatações experimentais nos levam a definir tal intervalo, como por exemplo, se vemos a microesfera focalizada na câmera, ela só pode estar frações de unidades de raio ($a\approx 0.5\mu m$) de distância do foco paraxial. Portanto, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para os parâmetros de entrada não são satisfeitos. Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.7$). {\bf rever esse paragrafo, pois nao tenho nenhuma imagem ou medida: o programa retorna erro quando busca por posicoes de eq acima desse valor de $A_{ast}$, justamente por nao achar dentro do intervalo de 4 unidades de raio, por volta de $2\mu m$}
+É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Constatações experimentais nos levam a definir tal intervalo, como por exemplo, se vemos a microesfera focalizada na câmera, ela só pode estar frações de unidades de raio ($a\approx 0.5\mu m$) de distância do foco paraxial. Portanto, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para os parâmetros de entrada não são satisfeitos. 
 
-Com as posições de equilíbrio para cada $\psi$ do experimento e a posição inicial $L_0$ podemos calcular $ \kappa_\phi /\kappa_\rho $ numericamente. Assim, toda vez que a posição de equilíbrio mude, todo o cálculo tem que ser feito novamente. Por esse motivo, as posições de equilíbrio são arredondadas até a 4ª casa decimal dos valores em unidades de raio, que corresponderia a considerar variações menores que $1nm$. De fato, o movimento browniano da microesfera tem amplitudes muito maiores que $1nm$, que significa que fazer tal aproximação não deve mudar o resultado final. Valores exatos da posição de equilíbrio fornecidos pelo código que diferem por um valor menor ou igual a $10^{-5}$ serão arredondados para o mesmo valor, e o cálculo de $ \kappa_\phi /\kappa_\rho $ será feito uma vez só.
+Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.4$). {\bf rever esse paragrafo, pois nao tenho nenhuma imagem ou medida: o programa retorna erro quando busca por posicoes de eq acima desse valor de $A_{ast}$, justamente por nao achar dentro do intervalo de 4 unidades de raio, por volta de $2\mu m$}
+
+Com as posições de equilíbrio para cada $\psi$ do experimento e a posição inicial $L_0$ podemos calcular $ \kappa_\phi /\kappa_\rho $ numericamente. Assim, toda vez que a posição de equilíbrio mude, todo o cálculo tem que ser feito novamente. Por esse motivo, as posições de equilíbrio são arredondadas até a 4ª casa decimal dos valores em unidades de raio, que corresponderia a considerar variações menores que $1nm$. 
+
+De fato, o movimento browniano da microesfera tem amplitudes muito maiores que $1nm$, que significa que fazer tal aproximação não deve mudar o resultado final. Valores exatos da posição de equilíbrio fornecidos pelo código que diferem por um valor menor ou igual a $10^{-5}$ serão arredondados para o mesmo valor, e o cálculo de $ \kappa_\phi /\kappa_\rho $ será feito uma vez só.
 
 Reproduzimos todo esse procedimento para vários valores do parâmetro de astigmatismo e comparamos o valor obtido de $ \kappa_\phi /\kappa_\rho $ com o ângulo $\phi$ de rotação do experimento. Para determinar qual valor de $A_{ast}$ melhor descreve o experimento, utilizamos o método de mínimos quadrados: subtraimos o valor de $\phi$ e de $ \kappa_\phi /\kappa_\rho $ e tomamos o quadrado dessa diferença. Quanto menor for o valor desse quadrado, maior a verossimilhança com as medidas do experimento.
 

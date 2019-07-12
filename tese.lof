@@ -15,10 +15,11 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces \relax }}{28}{figure.caption.18}% 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Pontos experimentais do experimento. S\~ao mostradas v\'arias baterias de dados, cada uma representada por uma velocidade. Podemos ver o efeito do movimento browniano ao redor das posi\c c\~oes de equil\IeC {\'\i }brio. {\bf deixo um agradecimento/referencia para o Kain\~a?} \relax }}{29}{figure.caption.19}% 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Comportamento da posi\c c\~ao de equil\IeC {\'\i }brio em fun\c c\~ao do \^angulo da placa de quarto de onda $\psi $. O valor do par\^ametro de astigmatismo para essas posi\c c\~oes \'e de $A_{ast}=0.25$\relax }}{31}{figure.caption.20}% 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Regi\~ao onde h\'a uma posi\c c\~ao de equil\IeC {\'\i }brio est\'avel a pelo menos 3 unidades de raio de dist\^ancia do foco. O aumento da absor\c c\~ao de luz pela microesfera faz com que a posi\c c\~ao de equil\IeC {\'\i }brio se desloque no sentido positivo do eixo $z$ (sentido de propaga\c c\~ao). Efeitos de aberra\c c\~ao esf\'erica e astigatismo n\~ao s\~ao levados em conta nessa simula\c c\~ao.\relax }}{34}{figure.caption.21}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Regi\~ao onde h\'a uma posi\c c\~ao de equil\IeC {\'\i }brio est\'avel a pelo menos 3 unidades de raio de dist\^ancia do foco. O aumento da absor\c c\~ao de luz pela microesfera faz com que a posi\c c\~ao de equil\IeC {\'\i }brio se desloque no sentido positivo do eixo $z$ (sentido de propaga\c c\~ao). Efeitos de aberra\c c\~ao esf\'erica e astigatismo n\~ao s\~ao levados em conta nessa simula\c c\~ao.\relax }}{33}{figure.caption.21}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax }}{36}{figure.caption.22}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax }}{36}{figure.caption.23}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Simula\c c\~ao com $A_{ast}=0$ (\`a esquerda) e $A_{ast}=0.36$ (\`a dureita).\relax }}{36}{figure.caption.22}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Valores da fun\c c\~ao erro (equa\c c\~ao \ref {erro}) em fun\c c\~ao do par\^ametro de astigmatismo $A_{ast}$. O m\IeC {\'\i }nimo se encontra aproximadamente em $A_{ast}=0.24$.\relax }}{37}{figure.caption.23}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pontos te\'oricos em azul, com o par\^ametro $A_{ast}=0.24$, ajustado como m\IeC {\'\i }nimo da fun\c c\~ao erro.\relax }}{37}{figure.caption.24}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
