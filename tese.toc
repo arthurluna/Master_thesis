@@ -16,10 +16,11 @@
 \contentsline {chapter}{\numberline {3}Experimento e Simula\c c\~ao}{22}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Aparato Experimental}{22}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Procedimento Experimental}{26}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Simula\c c\~ao do experimento de transfer\^encia de momento angular.}{29}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Condi\c c\~oes de Pin\c camento.}{32}{section.3.4}% 
+\contentsline {section}{\numberline {3.3}Simula\c c\~ao do experimento de transfer\^encia de momento angular}{29}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Condi\c c\~oes de Pin\c camento}{32}{section.3.4}% 
 \contentsline {chapter}{\numberline {4}Resultados}{35}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular}{35}{section.4.1}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{39}{chapter.5}% 
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{43}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{44}{appendix.B}% 
+\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{35}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao da amostra na pin\c ca \'otica}{38}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{40}{chapter.5}% 
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{44}{appendix.A}% 
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{45}{appendix.B}% 
