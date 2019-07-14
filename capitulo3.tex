@@ -129,7 +129,7 @@ Com a linearidade da força $F_\phi/F_\phi = \kappa_\phi \rho/\kappa_\rho \rho$, 
 
 Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. Espera-se que deslocamentos ao longo da direção $x$ (de polarização linear) não produzam rotação em torno do eixo do feixe, que é o caso de (a) na figura \ref{forcas_estagio}. Se o deslocamento fosse em outras direções, poderíamos esperar uma força de gradiente na direção $\phi$ causada por assimetrias no feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no spot. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$.
 
-\section{Simulação do experimento de transferência de momento angular.}
+\section{Simulação do experimento de transferência de momento angular}
 
 \hspace{5 mm}A simulação do experimento leva em conta alguns processos que não foram explicados na seção anterior. Começamos por definir a posição inicial do foco em relação a lamínula. O fator de eficiência $Q_z$ é calculado para várias posições onde o vínculo $z=a-L$ é válido, com $L-a$ como {\it input} para a posição $z$ onde é calculada a força e $L$ para a distância entre o plano focal e a interface. {\bf inserir gráfico} No experimento, esse primeiro passo é feito com $\psi=0$.
 
@@ -168,13 +168,13 @@ De fato, o movimento browniano da microesfera tem amplitudes muito maiores que $
 
 Reproduzimos todo esse procedimento para vários valores do parâmetro de astigmatismo e comparamos o valor obtido de $ \kappa_\phi /\kappa_\rho $ com o ângulo $\phi$ de rotação do experimento. Para determinar qual valor de $A_{ast}$ melhor descreve o experimento, utilizamos o método de mínimos quadrados: subtraimos o valor de $\phi$ e de $ \kappa_\phi /\kappa_\rho $ e tomamos o quadrado dessa diferença. Quanto menor for o valor desse quadrado, maior a verossimilhança com as medidas do experimento.
 
-\section{Condições de Pinçamento.}
+\section{Condições de Pinçamento}
 
 \hspace{5 mm}Outro uso para o modelo MDSA é testar condições de pinçamento baseado nas obsevações experimentais. Sabemos que microesferas são aprisionadas próximas ao foco, coincidindo com esse na ausência de aberrações e absorção. Podemos usar o modelo para calcular o fator de eficiência $Q_z$ nessa vizinhança e enteder o comportamento da força perto do foco.
 
 O simples fato de existir um ponto onde $Q_z$ mude de sinal de positivo para negativo (equilíbrio estável) não é sificiente. Como foi dito anteriormente, a microesfera apresenta movimento browniano perto da posição de equilíbrio. Flutuações térmicas podem ser suficientes para a microesfera fugir do aprisionamento, que ocorre quando a barreira de potencial ótico não é grande o suficiente.
 
-Para determinar o potencial que a microesfera está inserida, fazemos uma integral da força ao redor da sua posição de equilíbrio. Usando a equação \ref{fatoref_forca}, obtemos:
+Apesar da força ótica não ser conservativa, no caso em que estamos confinados ao eixo do feixe ($\rho=0$) podemos definir um potencial ótico a partir do trabalho realizado entre dois pontos do eixo. Usando a equação \ref{fatoref_forca}, obtemos:
 %
 \begin{equation}
 V(z)=-\int\limits_{z_0}^{z} \frac{n_1P}{c} Q_z dz + V(z_0).
@@ -192,7 +192,8 @@ O que nos importa de fato é o tamanho da barreira potencial. Por isso, podemos f
 
 A parte iamginária do índice de refração é responsável pelo efeito de absorção de luz pela microesfera. A região descrita na figura \ref{reg_eq} sugere a região onde haverá pinçamento pelo critério da barreira de potencial. O interesse em estudar essa região de pinçamento é determinar um limite superior para a parte imaginária do índice de refração do material da microesfera. 
 
-O efeito de absorção desemprenha um papel muito mais importante nos experimentos com esferas de raios maiores, da ordem de $8\mu m$. Microesferas com esse raio foram aprisionadas no laboratório, porém simulações que levam absorção em conta não conseguem encontrar um ponto em que $Q_z$ seja menor que zero ao longo do eixo $z$.
+O efeito de absorção desemprenha um papel muito mais importante nos experimentos com esferas de raios maiores, da ordem de $8\mu m$. Microesferas com esse raio foram aprisionadas no laboratório, porém simulações que levam absorção em conta não conseguem encontrar um ponto em que $Q_z$ seja menor que zero ao longo do eixo $z$. 
 
+Por outro lado, fazer simulações com esferas grandes em relação ao comprimento de onda é muito custoso do ponto de vista computacional. Uma vez determinado um limite superior para a parte imaginária do índice de refração, podemos buscar condições de pinçamento para esferas menores via simulação e buscar um valor para este.
 
 \end{chapter}
