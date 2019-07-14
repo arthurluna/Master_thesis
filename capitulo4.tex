@@ -25,7 +25,6 @@ Ao considerar parâmetros de astigmatismo altos, começamos a ter problemas para a
 \label{alpha_0036}
 \end{center}
 \end{figure}
-%
 
 A simulação dos vários parâmetros de astigmatismo mostraram que o valor que minimiza a função erro é $A_{ast}=0.24\pm0.1$ (figura \ref{erro_astig}). A incerteza foi estimada tomando $20\%$ do valor da função erro no mínimo $E(0.24)=2.65$, e acrescendo a esse valor. Obtemos, então, a tolerância do erro $E_{tol}=3.18$. Os valores da função erro para $A_{ast}=0.23,0.25$ são, respectivamente, $2.96$ e $3.14$. Como são menores que $E_{tol}$, assumimos que estão dentro da barra de erro. Valores do parâmetro de astigmatismo maiores que $0.26$ e menores que $0.22$ geram erros maiores que $4$, indicando que $A_{ast}=0.24$ é um mínimo global.
 %
@@ -36,7 +35,6 @@ A simulação dos vários parâmetros de astigmatismo mostraram que o valor que mini
 \label{erro_astig}
 \end{center}
 \end{figure}
-%
 
 Podemos ver que as contribuições mais importantes para o ajuste são os pontos em volta dos ângulos $60º$ e $120º$. As predições do modelo para as regiões entre $0º$ e $30º$ e entre $150º$ e $180º$ são de torque positivo, enquanto o experimento apresenta torque negativo para qualquer polarização que não seja linear. De acordo com a teoria, os termos de polarização cruzada da força são os responsáveis pelo torque nessa região, o que pode indicar que essa contribuição está sendo superestimada. %{\bf explicação no artigo está boa, mas confusa: ver essa parte com Paulo depois.}
 %
@@ -47,7 +45,6 @@ Podemos ver que as contribuições mais importantes para o ajuste são os pontos em
 \label{alpha_024}
 \end{center}
 \end{figure}
-%
 
 Podemos notar que a região ao redor de $60º$ e $120º$ na figura \ref{alpha_024} está com um bom acordo com a teoria. Comparando com o gráfico à esquerda da figura \ref{alpha_0036}, correspodente ao caso sem astigmatismo, fica claro que a região que prediz torque positivo também é atenuada, e não interfere de forma negativa com o ajuste.
 
@@ -56,26 +53,25 @@ Por fim, podemos comparar o resultado obtido com o ajuste pela simulação com o r
 
 \section{Caracterização da amostra na pinça ótica}
 
-\hspace{5 mm}Os gráficos do fator de eficiência $Q_z$ por $z$ foram feitos para alguns valores de $\operatorname{Im}(n_1)$ e para alguns raios diferentes. O valor nominal do raio das microesferas pinçadas é de $a=7.9\pm0.1$, e o valor encontrado na literatura para $\operatorname{Im}(n_1)$ é $1.1\times10^{-3}$. Foram feitas simulações para raios entre $7.8$ e $8$, e $\operatorname{Im}(n_1)$ tão pequenos quanto $3\times10^{-4}$.
+\hspace{5 mm}Os gráficos do fator de eficiência $Q_z$ por $z$ foram feitos para alguns valores de $\operatorname{Im}(n_2)$ e para alguns raios diferentes. O valor nominal do raio das microesferas pinçadas é de $a=7.9\pm0.1$, e o valor encontrado na literatura para $\operatorname{Im}(n_2)$ é $1.1\times10^{-3}$. Foram feitas simulações para raios entre $7.8$ e $8$, e $\operatorname{Im}(n_2)$ tão pequenos quanto $3\times10^{-4}$.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.5]{Qz_z_1e-3_79}
-\caption{Componente axial do fator de eficiência ($Q_z$) em função de $z$. O raio da esfera é $a=7.9\mu m$, o índice de refração $n_1=1.576+10^{-3}i$, o parâmetro de astigmatismo $A_{ast}=0.1$ e a distância entre o plano focal e a interface com a lamínula $L=2 a$. Podemos ver no gráfico à esquerda que não ha valor de $Q_z$ menor que zero, ou seja, a microesfera não pode ser pinçada. Á direita, o zoom da região do plano focal.}
+\includegraphics[scale=.55]{Qz_z_1e-3_79}
+\caption{Componente axial do fator de eficiência ($Q_z$) em função de $z$. O raio da esfera é $a=7.9\mu m$, o índice de refração $n_2=1.576+10^{-3}i$, o parâmetro de astigmatismo $A_{ast}=0.1$ e a distância entre o plano focal e a interface com a lamínula $L=2 a$. Podemos ver no gráfico à esquerda que não ha valor de $Q_z$ menor que zero, ou seja, a microesfera não pode ser pinçada. Á direita, o zoom da região do plano focal.}
 \label{Qz_experimento}
 \end{center}
 \end{figure}
-%
 
-Fazendo simulações com os parâmetros experimentais do sistema, não encontramos nenhuma posição de equilíbrio estável, como podemos ver na figura \ref{Qz_experimento}. Nas simulações para valores de $\operatorname{Im}(n_1)$ menores, encontramos regiões suficientemente próximas do eixo $Q_z=0$ para assumir aprisionamento. No caso, podemos assumir que efeitos gravitacionais desemprenham um papel significativo para esferas maiores, possibilitando o equilíbrio de forças no eixo.
+Fazendo simulações com os parâmetros experimentais do sistema, não encontramos nenhuma posição de equilíbrio estável, como podemos ver na figura \ref{Qz_experimento}. Nas simulações para valores de $\operatorname{Im}(n_2)$ menores, encontramos regiões suficientemente próximas do eixo $Q_z=0$ para assumir aprisionamento. No caso, podemos assumir que efeitos gravitacionais desempenham um papel significativo para esferas maiores, possibilitando o equilíbrio de forças no eixo.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.5]{Qz_z_1e-34}
-\caption{O parâmetro de astigmatismo e a distância entre o foco e interface são iguais ao caso anterior. À esquerda, $\operatorname{Im}(n_1)=3\times10^{-4}$, a direita, $\operatorname{Im}(n_1)=4\times10^{-4}$.}
+\includegraphics[scale=.55]{Qz_z_1e-34}
+\caption{O parâmetro de astigmatismo e a distância entre o foco e interface são iguais ao caso anterior. À esquerda, $\operatorname{Im}(n_2)=3\times10^{-4}$, a direita, $\operatorname{Im}(n_2)=4\times10^{-4}$.}
 \label{alpha_024}
 \end{center}
 \end{figure}
-%
+
 
 \end{chapter}
