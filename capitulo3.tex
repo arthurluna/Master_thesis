@@ -180,8 +180,18 @@ Apesar da força ótica não ser conservativa, no caso em que estamos confinados ao
 V(z)=-\int\limits_{z_0}^{z} \frac{n_1P}{c} Q_z dz + V(z_0).
 \end{equation}
 
-O que nos importa de fato é o tamanho da barreira potencial. Por isso, podemos fazer $z_0=z_{eq}$ e buscar o máximo local mais próximo. Usualmente, ela vai ser para um valor de $z$ maior que $z_{eq}$, com sentido de $z$ positivo na mesma direção de propagação do feixe. O critério para haver pinçamento é que a barreira potencial seja maior que $3k_BT$.
+O que nos importa de fato é o tamanho da barreira potencial. Por isso, podemos fazer $z_0=z_{eq}$ e buscar o próximo ponto em que $Q_z>0$, que será o máximo local do potencial. Esse valor de $z$ será maior que $z_{eq}$, com sentido de $z$ positivo na mesma direção de propagação do feixe, como podemos ver na figura \ref{Qz_tipico}. O critério para haver pinçamento é que a barreira potencial seja maior que $3k_BT$.
+%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.8]{Qz_tipico}
+\caption{Comportamento do fator de eficiência axial em função de $z$. O ponto $z_{eq}$ indicado no gráfico corresponde à posição de equilíbrio estável na direção $z$, enquanto o ponto $z_{inst}$ corresponde a um ponto de equilíbrio instável. Esse último também será o ponto em que $V(z)$ será um máximo local.}
+\label{Qz_tipico}
+\end{center}
+\end{figure}
 
+A parte iamginária do índice de refração é responsável pelo efeito de absorção de luz pela microesfera. A região descrita na figura \ref{reg_eq} sugere a região onde haverá pinçamento pelo critério da barreira de potencial. O interesse em estudar essa região de pinçamento é determinar um limite superior para a parte imaginária do índice de refração do material da microesfera. 
+%
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.8]{Regiao_de_pincamento}
@@ -189,8 +199,6 @@ O que nos importa de fato é o tamanho da barreira potencial. Por isso, podemos f
 \label{reg_eq}
 \end{center}
 \end{figure}
-
-A parte iamginária do índice de refração é responsável pelo efeito de absorção de luz pela microesfera. A região descrita na figura \ref{reg_eq} sugere a região onde haverá pinçamento pelo critério da barreira de potencial. O interesse em estudar essa região de pinçamento é determinar um limite superior para a parte imaginária do índice de refração do material da microesfera. 
 
 O efeito de absorção desemprenha um papel muito mais importante nos experimentos com esferas de raios maiores, da ordem de $8\mu m$. Microesferas com esse raio foram aprisionadas no laboratório, porém simulações que levam absorção em conta não conseguem encontrar um ponto em que $Q_z$ seja menor que zero ao longo do eixo $z$. 
 
