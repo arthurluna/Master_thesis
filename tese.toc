@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {2.4}Efeitos de polariza\c c\~ao.}{12}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Aberra\c c\~ao esf\'erica.}{13}{section.2.5}% 
 \contentsline {section}{\numberline {2.6}Aberra\c c\~oes \'oticas.}{15}{section.2.6}% 
-\contentsline {section}{\numberline {2.7}Express\~oes para for\c ca.}{17}{section.2.7}% 
+\contentsline {section}{\numberline {2.7}For\c ca \'otica em termos da expans\~ao em multipolos.}{17}{section.2.7}% 
 \contentsline {section}{\numberline {2.8}Intera\c c\~ao Spin-\'Orbita.}{18}{section.2.8}% 
 \contentsline {chapter}{\numberline {3}Experimento e Simula\c c\~ao}{22}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Aparato Experimental}{22}{section.3.1}% 
@@ -21,6 +21,6 @@
 \contentsline {chapter}{\numberline {4}Resultados}{35}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{35}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao da amostra na pin\c ca \'otica}{38}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{41}{chapter.5}% 
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{45}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{46}{appendix.B}% 
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{42}{chapter.5}% 
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo do Primeiro Ap\^endice}{46}{appendix.A}% 
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo do Segundo Ap\^endice}{47}{appendix.B}% 
