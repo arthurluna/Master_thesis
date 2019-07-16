@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  15 JUL 2019 04:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  16 JUL 2019 03:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,35 +721,33 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] [4] [5] (./tese.toc [6
+[3] [4] [5] [6] (./tese.toc [7
 
 ])
 \tf@toc=\write6
 \openout6 = `tese.toc'.
 
- [7] (./tese.lof
+ [8] (./tese.lof
 Overfull \hbox (7.0007pt too wide) in paragraph at lines 4--4
  [][] [][][]\OT1/cmr/m/n/12 Foco coin-ci-dente ao cen-tro da es-fera. Essa cor-
 res-ponde a posi^^Xc~ao de equil^^S^^Pbrio 
  []
 
-[8
+[9
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9])
+ [10])
 \tf@lof=\write7
 \openout7 = `tese.lof'.
 
 
-[10] (./tese.lot)
+[11] (./tese.lot)
 \tf@lot=\write8
 \openout8 = `tese.lot'.
 
- [11
-
-] [12
+ [12
 
 ] (./capitulo1.tex
 Cap\'{\i }tulo 1.
@@ -757,6 +755,7 @@ Cap\'{\i }tulo 1.
 Underfull \vbox (badness 2245) has occurred while \output is active []
 
  [1
+
 
 ])
 (./capitulo2.tex [2]
@@ -1051,14 +1050,14 @@ Ap\^endice A.
 ]
 Ap\^endice B.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
  [47
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (./tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: C419A20424925DCFA9757F8B487F4D72;1824.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
@@ -1067,7 +1066,7 @@ Package rerunfilecheck Info: File `tese.brf' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
  12078 strings out of 492623
@@ -1090,7 +1089,7 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (59 pages, 1609179 bytes).
+Output written on tese.pdf (59 pages, 1610422 bytes).
 PDF statistics:
  783 PDF objects out of 1000 (max. 8388607)
  659 compressed objects within 7 object streams
