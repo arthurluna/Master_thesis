@@ -5,7 +5,7 @@
 
 Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto da teoria MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os momentos angulares\cite{Bliokh2015}.
 
-\section{Ótica geométrica e limite de Rayleigh.}
+\section{Ótica geométrica e limite de Rayleigh}
 
 \hspace{5 mm}Uma forma intuitiva de entender o aprisionamento ótico de objetos esféricos e transparentes é no regime em que estes possuem um raio muito maior que o comprimento de onda do feixe incidente. Este limite é chamado de ótica geométrica, ou ótica de raios, no qual feixes podem ser tratados de forma geométrica definindo-se sua trajetória.
 
@@ -63,7 +63,7 @@ com ${\mathbf p}$ sendo dado por \cite{Jackson1998}:
 
 Podemos concluir que a força vai ser proporcional a ${\mathbf E}^2$, que é proporcional por sua vez à intensidade do campo. Se ${\mathbf E}$ e ${\mathbf p}$ têm o mesmo sentido, a força apontará sempre para a região de maior intensidade. Isso ocorre desde que $\epsilon>1$. Essa é a força que chamamos de força de gradiente.
 
-\section{Modelo Mie-Debye.}
+\section{Modelo Mie-Debye}
 \label{MD}
 
 \hspace{5 mm}Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
@@ -191,7 +191,7 @@ A expressão para a força será mostrada depois de introduzirmos o perfil do feixe
 %%%%%  Seção 2  %%%%%
 %
 %
-\section{Efeito do perfil gaussiano.}
+\section{Efeito do perfil gaussiano}
 
 \hspace{5 mm}O efeitos do perfil gaussiano no feixe. Faremos isso analisando o campo paraxial na entrada da obejtiva. Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
 
@@ -209,7 +209,7 @@ onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela con
 %%%%%  Seção 3  %%%%%
 %
 %
-\section{Efeitos de polarização.}
+\section{Efeitos de polarização}
 \label{Efeitos de polarizacao}
 
 \hspace{5 mm}Entender o caso de polarização linear vai tornar possível a compreensão do caso de polarização elíptica. Começamos modelando o feixe como uma superposição de polarização circular a direita a e esquerda, com pesos iguais. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiência vetorial, também chamado de força normalizada, para o feixe de polarização linear:
@@ -235,7 +235,7 @@ Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da p
 %%%%%  Seção 4  %%%%%
 %
 %
-\section{Aberração esférica.}
+\section{Aberração esférica}
 \label{Aberracao esferica}
 
 \hspace{5 mm}Uma das formas que a aberração esférica pode aparecer é quando há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Essa não é a única aberração ótica presente no aparato de pinça ótica. Antes mesmo do feixe ser focalizado, este pode conter aberração esférica, como veremos na próxima seção. Para o caso do feixe focalizado passando por uma interface, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
@@ -277,7 +277,7 @@ onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$. Ao serem refrat
 %%%%%  Seção 5  %%%%%
 %
 %
-\section{Aberrações óticas.}
+\section{Aberrações óticas}
 
 \hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
 
@@ -312,7 +312,7 @@ Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as
 %%%%%  Seção 6  %%%%%
 %
 %
-\section{Força ótica em termos da expansão em multipolos.}
+\section{Força ótica em termos da expansão em multipolos}
 
 \hspace{5 mm}Como apresentado no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. A forma mais fácil de faze-lo é tomando a superfície $\sigma$ no infinito, já que a escolha dessa é arbitrária. Podemos argumentar também que a integral envolvendo o vetor de Poynting é zero. No limite que tal superfície está no infinito, usamos as expressões assintóticas das funções de Bessel (com dependência em $kr$) dentro dos potenciais de Debye. 
 
@@ -350,7 +350,7 @@ Os somatórios em $j$ e $m$ são feitos da mesma forma que na expressão \ref{pi_ph
 
 Explicitar essa soma é de grande importância para os cálculos numéricos, pois podemos calcular esses 4 termos de forma independente, e teremos o valor de $Q_z$ para qualquer ângulo da placa de quarto de onda.
 
-\section{Interação Spin-Órbita.}
+\section{Interação Spin-Órbita}
 \label{interacao_so}
 
 \hspace{5 mm}Uma das características da pinça ótica que faz com que a modelagem teórica seja tão difícil é o fato de que o feixe que emerge da objetiva é muito focalizado, e portanto não paraxial. Um dos efeitos resultantes da focalização do feixe é a conversão de momento angular de spin do feixe, associado a polarização (ou helicidade) do campo, em momento angular orbital \cite{Bliokh2015}. O momento angular orbital insere uma fase com dependência na variável cilindrica $\phi$.
