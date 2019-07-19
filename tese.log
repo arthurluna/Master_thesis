@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  19 JUL 2019 05:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  19 JUL 2019 05:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,12 +1055,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47
 
-])
-(./apendiceb.tex [48]
+]
+Overfull \hbox (27.36427pt too wide) detected at line 45
+[]\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n
+/12 ) = [][] \OML/cmm/m/it/12 d^^R[] [] ^^R[] [] ^^R[][] e[]T\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (\OML
+/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cm
+m/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[]
+ []
+
+
+Overfull \hbox (26.51875pt too wide) detected at line 50
+[]\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n
+/12 ) = [][] \OML/cmm/m/it/12 d^^R[] [] ^^R[] [] ^^R[][] e[]T\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (\OML
+/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cm
+m/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[]
+ []
+
+) (./apendiceb.tex [48] [49]
 Ap\^endice B.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
- [49
+ [50
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
@@ -1078,9 +1095,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
- 12085 strings out of 492623
- 170745 string characters out of 6135670
- 335165 words of memory out of 5000000
+ 12089 strings out of 492623
+ 170794 string characters out of 6135670
+ 337165 words of memory out of 5000000
  15513 multiletter control sequences out of 15000+600000
  15240 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1098,10 +1115,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (61 pages, 1617523 bytes).
+Output written on tese.pdf (62 pages, 1618957 bytes).
 PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 676 compressed objects within 7 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 810 PDF objects out of 1000 (max. 8388607)
+ 683 compressed objects within 7 object streams
+ 177 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
