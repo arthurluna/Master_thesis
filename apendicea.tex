@@ -7,18 +7,29 @@ Começando pelas componentes de espalhamento:
 %
 \begin{equation}
 \begin{split}
-Q_{s\rho}(\rho,\phi,z) = \frac{2\gamma^2}{AN}\operatorname{Im}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j+m+2)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \big{(}\G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m+1} + \G^{(\sigma)}_{j,-m}\G^{(\sigma)*}_{j+1,-(m+1)}\big{)}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\times \\ \big{(}\big{(}\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m+1} + \G^{(\sigma)}_{j,-m}\G^{(-\sigma)*}_{j+1,-(m+1)}\big{)} \cos2\psi e^{i2\sigma(\phi-\psi)} \Big{)} + %\\ \frac{2j+1}{j(j+1)} m\sigma a_jb^*_j\big{(} |\G^{(\sigma)}_{j,m}|^2(1-\sigma\sin2\psi)-\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \big{)} \Big{]},
+Q_{s\rho}(\rho,\phi,z) = \frac{2\gamma^2}{AN}\operatorname{Im}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j+m+2)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \big{(}\G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m+1} + \G^{(\sigma)}_{j,-m}\G^{(\sigma)*}_{j+1,-(m+1)}\big{)}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\times \qquad \quad \\ \big{(}\big{(}\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m+1} + \G^{(\sigma)}_{j,-m}\G^{(-\sigma)*}_{j+1,-(m+1)}\big{)} \cos2\psi e^{i2\sigma(\phi-\psi)} \Big{)} \Big{]}- \qquad \qquad \qquad\\-\frac{4\gamma^2}{AN}\sum\limits_{jm\sigma}  \Big{[} \frac{2j+1}{j(j+1)} \sigma \sqrt{(j-m)(j+m+1)}\Big{(}\operatorname{Re}(a_jb^*_j) \operatorname{Im}\big{(}\G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j,m+1}(1-\sigma\sin2\psi)\big{)} + \\ +\operatorname{Im}(a_jb^*_j)\operatorname{Re}\big{(}\G^{(\sigma)}_{j,m+1}\G^{(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)}\big{)} \Big{)}, \qquad \qquad \qquad \qquad
 \end{split}
 \end{equation}
 %
 \begin{equation}
 \begin{split}
-%Q_{s\rho}(\rho,\phi,z) = -\frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \Big{)} + \\ \frac{2j+1}{j(j+1)} m\sigma a_jb^*_j\big{(} |\G^{(\sigma)}_{j,m}|^2(1-\sigma\sin2\psi)-\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \big{)} \Big{]},
+Q_{s\phi}(\rho,\phi,z) = -\frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \big{(}\G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m+1} - \G^{(\sigma)}_{j,-m}\G^{(\sigma)*}_{j+1,-(m+1)}\big{)}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\times \qquad \quad \\ \big{(}\big{(}\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m+1} - \G^{(\sigma)}_{j,-m}\G^{(-\sigma)*}_{j+1,-(m+1)}\big{)} \cos2\psi \> e^{i2\sigma(\phi-\psi)} \Big{)} \Big{]}+ \qquad \qquad \qquad\\+\frac{4\gamma^2}{AN}\sum\limits_{jm\sigma}  \Big{[} \frac{2j+1}{j(j+1)} \sigma \sqrt{(j-m)(j+m+1)}\Big{(}\operatorname{Re}(a_jb^*_j) \operatorname{Re}\big{(}\G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j,m+1}(1-\sigma\sin2\psi)\big{)} + \\ +\operatorname{Im}(a_jb^*_j)\operatorname{Im}\big{(}\G^{(\sigma)}_{j,m+1}\G^{(-\sigma)*}_{j,m}\cos2\psi \> e^{i2\sigma(\phi-\psi)}\big{)} \Big{)}. \qquad \qquad \qquad \qquad
+\end{split}
+\end{equation}
+%
+
+As componentes de extinção nas direções $\rho$ e $\phi$ são:
+
+\begin{equation}
+\begin{split}
+Q_{e\rho}(\rho,\phi,z) = \frac{\gamma^2}{AN}\operatorname{Im}\sum\limits_{jm\sigma} (2j+1)\G^{(\sigma)}_{j,m} \Big{[} (a_j+b_j) \Big{(}\G^{-,(\sigma)*}_{j,m+1}-\G^{+,(\sigma)*}_{j,m-1}\Big{)}(1-\sigma\sin 2\psi) + \\ +(a_j-b_j) \Big{(}\G^{-,(-\sigma)*}_{j,m+1}-\G^{+,(-\sigma)*}_{j,m-1}\Big{)}\cos2\psi \> e^{i2\sigma(\phi-\psi)} \big{]},\qquad \qquad \qquad 
 \end{split}
 \end{equation}
 %
 \begin{equation}
-Q_{e\rho}(\rho,\phi,z) = \frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} (2j+1)\G^{(\sigma)}_{j,m} \Big{[} (a_j+b_j) \G^{C,(\sigma)*}_{j,m}(1-\sigma\sin 2\psi) + (a_j-b_j) \G^{C,(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\varphi_c-\psi)} \big{]}.
+\begin{split}
+Q_{e\rho}(\rho,\phi,z) = -\frac{\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} (2j+1)\G^{(\sigma)}_{j,m} \Big{[} (a_j+b_j) \Big{(}\G^{-,(\sigma)*}_{j,m+1}+\G^{+,(\sigma)*}_{j,m-1}\Big{)}(1-\sigma\sin 2\psi) + \\ +(a_j-b_j) \Big{(}\G^{-,(-\sigma)*}_{j,m+1}+\G^{+,(-\sigma)*}_{j,m-1}\Big{)}\cos2\psi \> e^{i2\sigma(\phi-\psi)} \big{]},\qquad \qquad \qquad 
+\end{split}
 \end{equation}
 %
 
