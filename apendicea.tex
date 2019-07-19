@@ -1,11 +1,19 @@
 \begin{chapter}{Fator de eficiência e coeficientes de multipolo}
 \label{apendicea}
 
-\hspace{5 mm} Nesse apêndice são mostradas as expressões para as componentes cilindricas azimutal e radial do fator de eficiência. Dividimos a força em componentes de extinção e expalhamento, como na seção \ref{forcaotica}. Também são mostrados os coeficientes de multipolo $\G^{(\sigma)}_{j,m}$, $\G^{C,(\sigma)}_{j,m}$ e $\G^{\pm,(\sigma)}_{j,m}$
+\hspace{5 mm} Nesse apêndice são mostradas as expressões para as componentes cilindricas azimutal e radial do fator de eficiência. Dividimos a força em componentes de extinção e expalhamento, como na seção \ref{forcaotica}. Também são mostrados os coeficientes de multipolo $\G^{(\sigma)}_{j,m}$, $\G^{C,(\sigma)}_{j,m}$ e $\G^{\pm,(\sigma)}_{j,m}$.
 
+Começando pelas componentes de espalhamento:
+%
 \begin{equation}
 \begin{split}
-Q_{s\rho}(\rho,\phi,z) = -\frac{4\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \Big{)} + \\ \frac{2j+1}{j(j+1)} m\sigma a_jb^*_j\big{(} |\G^{(\sigma)}_{j,m}|^2(1-\sigma\sin2\psi)-\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \big{)} \Big{]},
+Q_{s\rho}(\rho,\phi,z) = \frac{2\gamma^2}{AN}\operatorname{Im}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j+m+2)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \big{(}\G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m+1} + \G^{(\sigma)}_{j,-m}\G^{(\sigma)*}_{j+1,-(m+1)}\big{)}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\times \\ \big{(}\big{(}\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m+1} + \G^{(\sigma)}_{j,-m}\G^{(-\sigma)*}_{j+1,-(m+1)}\big{)} \cos2\psi e^{i2\sigma(\phi-\psi)} \Big{)} + %\\ \frac{2j+1}{j(j+1)} m\sigma a_jb^*_j\big{(} |\G^{(\sigma)}_{j,m}|^2(1-\sigma\sin2\psi)-\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \big{)} \Big{]},
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+%Q_{s\rho}(\rho,\phi,z) = -\frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma} \Big{[} \frac{\sqrt{j(j+2)(j+m+1)(j-m+1)}}{j+1} \Big{(} (a_ja^*_{j+1}+b_jb^*_{j+1})\times \\ \G^{(\sigma)}_{j,m}\G^{(\sigma)*}_{j+1,m}(1-\sigma\sin2\psi) + (a_ja^*_{j+1}-b_jb^*_{j+1})\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j+1,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \Big{)} + \\ \frac{2j+1}{j(j+1)} m\sigma a_jb^*_j\big{(} |\G^{(\sigma)}_{j,m}|^2(1-\sigma\sin2\psi)-\G^{(\sigma)}_{j,m}\G^{(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)} \big{)} \Big{]},
 \end{split}
 \end{equation}
 %
