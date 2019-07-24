@@ -1,7 +1,7 @@
 \begin{chapter}{Fator de eficiência e coeficientes de multipolo}
 \label{apendicea}
 
-\hspace{5 mm} Nesse apêndice são mostradas as expressões para as componentes cilindricas azimutal e radial do fator de eficiência. Dividimos a força em componentes de extinção e expalhamento, como na seção \ref{forcaotica}. Também são mostrados os coeficientes de multipolo $\G^{(\sigma)}_{j,m}$, $\G^{C,(\sigma)}_{j,m}$ e $\G^{\pm,(\sigma)}_{j,m}$.
+\hspace{5 mm} Nesse apêndice são mostradas as expressões para as componentes cilindricas azimutal e radial do fator de eficiência. Dividimos a força em componentes de extinção e expalhamento, como na seção \ref{forcaotica}. Também são mostrados os coeficientes de multipolo $\G^{(\sigma)}_{j,m}$, $\G^{C,(\sigma)}_{j,m}$ e $\G^{\pm,(\sigma)}_{j,m}$ e as funções $f^{(\sigma)}(\rho,\phi,z)$.
 
 As componentes de extinção da força nas direções $\rho$ e $\phi$ são:
 
@@ -36,19 +36,33 @@ Q_{s\phi}(\rho,\phi,z) = -\frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\s
 Os coeficientes de multipolo são:
 
 \begin{equation}
-\G^{(\sigma)}_{j,m} (\rho,\phi,z) = \int_0^{\theta_0} d\theta_k \sin\theta_k \sqrt{\cos\theta_k}\>e^{\gamma^2\sin^2\theta_k} T(\theta_k) d^j_{m,\sigma}(\theta_w)f^{(\sigma)}_m(\rho,\phi,z)\>e^{\Phi_{g-w}(\theta_k)+k_wz\cos\theta_w}
+\G^{(\sigma)}_{j,m} (\rho,\phi,z) = \int_0^{\theta_0} d\theta_k \sin\theta_k \sqrt{\cos\theta_k}\>e^{\gamma^2\sin^2\theta_k} T(\theta_k) d^j_{m,\sigma}(\theta_w)f^{(\sigma)}_m(\rho,\phi,z)\>e^{\Phi_{g-w}(\theta_k)+k_wz\cos\theta_w},
 \end{equation}
 %
 
 \begin{equation}
-\G^{C,(\sigma)}_{j,m} (\rho,\phi,z) = \int_0^{\theta_0} d\theta_k \sin\theta_k \cos\theta_w \sqrt{\cos\theta_k}\>e^{\gamma^2\sin^2\theta_k} T(\theta_k) d^j_{m,\sigma}(\theta_w)f^{(\sigma)}_m(\rho,\phi,z)\>e^{\Phi_{g-w}(\theta_k)+k_wz\cos\theta_w}
+\G^{C,(\sigma)}_{j,m} (\rho,\phi,z) = \int_0^{\theta_0} d\theta_k \sin\theta_k \cos\theta_w \sqrt{\cos\theta_k}\>e^{\gamma^2\sin^2\theta_k} T(\theta_k) d^j_{m,\sigma}(\theta_w)f^{(\sigma)}_m(\rho,\phi,z)\>e^{\Phi_{g-w}(\theta_k)+k_wz\cos\theta_w},
 \end{equation}
 %
 
 \begin{equation}
-\G^{\pm,(\sigma)}_{j,m} (\rho,\phi,z) = \int_0^{\theta_0} d\theta_k \sin\theta_k \sin\theta_w \sqrt{\cos\theta_k}\>e^{\gamma^2\sin^2\theta_k} T(\theta_k) d^j_{m,\sigma}(\theta_w)f^{(\sigma)}_m(\rho,\phi,z)\>e^{\Phi_{g-w}(\theta_k)+k_wz\cos\theta_w}
+\G^{\pm,(\sigma)}_{j,m} (\rho,\phi,z) = \int_0^{\theta_0} d\theta_k \sin\theta_k \sin\theta_w \sqrt{\cos\theta_k}\>e^{\gamma^2\sin^2\theta_k} T(\theta_k) d^j_{m,\sigma}(\theta_w)f^{(\sigma)}_m(\rho,\phi,z)\>e^{\Phi_{g-w}(\theta_k)+k_wz\cos\theta_w}.
 \end{equation}
 %
 
 {\bf Falta double check e procurar as definições de cada termo ao longo da dissertação. Falta definir a função $f$}
+
+A função $f^{(\sigma)}(\rho,\phi,z)$ usada nos coeficientes acima são:
+
+\begin{equation}
+f^{(\sigma)}(\rho,\phi,z)=\sum\limits_{s=-\infty}^{\infty}(-i)^sJ_s\Big{(}2\pi A_{ast} \frac{\sin^2\theta_k}{\sin^2\theta_0} \Big{)} J_{2s+m-\sigma}(k\rho\sin\theta_k) \>e^{i2s(\varphi_a-\phi)}.
+\label{ap_f}
+\end{equation}
+
+Nesta função, o parâmetro $A_{ast}$ é o parâmetro de astigmatismo no formalismo de Zernike, que é brevemente discutido no apêndice \ref{apendiceb}. Temos também as funções $J_m$, que são funções de Bessel cilindricas do primeiro tipo. 
+
+Como podemos ver, a equação \ref{ap_f} apresenta um somatório que pode ser desafiador de ser resolver numericamente. Evitamos esse problema restringindo nossos cálculos ao caso em que $\rho=0$, o que faz com que somente um termo da soma não seja igual a 0. Como a única função de Bessel que é diferente de 0 na orígem é $J_0(x)$, o único índice $s$ que corresponde a um termo não nulo é $s=\sigma-m$.
+
+De fato isso não implica em problema algum para as simulações, pois para calcular as posições de equilíbrio, calculamos $Q_z$ em cima do eixo, ou seja, com $\rho=0$. O cálculo das constantes elásticas da pinça também não sofrem com essa condição, pois a derivada de $f^{(\sigma)}(\rho,\phi,z)$ em relação a $\rho$ é calculada na posição de equilíbrio, também com $\rho=0$.
+
 \end{chapter}
