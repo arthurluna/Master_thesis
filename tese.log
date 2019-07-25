@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.5)  21 JUL 2019 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.24)  25 JUL 2019 04:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -763,27 +763,27 @@ Cap\'{\i }tulo 2.
 [3
 
 ]
-<geom_foco_coincII.png, id=319, 257.46187pt x 314.67563pt>
-File: geom_foco_coincII.png Graphic file (type png)
-<use geom_foco_coincII.png>
-Package pdftex.def Info: geom_foco_coincII.png  used on input line 20.
-(pdftex.def)             Requested size: 205.96976pt x 251.74083pt.
-<geom_foco_axialII.png, id=322, 557.08125pt x 375.65344pt>
-File: geom_foco_axialII.png Graphic file (type png)
-<use geom_foco_axialII.png>
-Package pdftex.def Info: geom_foco_axialII.png  used on input line 32.
-(pdftex.def)             Requested size: 445.6656pt x 300.52315pt.
- [4 <./geom_foco_coincII.png>]
-<geom_lateralIII.png, id=328, 335.66727pt x 322.52727pt>
-File: geom_lateralIII.png Graphic file (type png)
-<use geom_lateralIII.png>
-Package pdftex.def Info: geom_lateralIII.png  used on input line 42.
-(pdftex.def)             Requested size: 234.96548pt x 225.76753pt.
+<geom_foco_coincIII.png, id=319, 207.25363pt x 300.42818pt>
+File: geom_foco_coincIII.png Graphic file (type png)
+<use geom_foco_coincIII.png>
+Package pdftex.def Info: geom_foco_coincIII.png  used on input line 20.
+(pdftex.def)             Requested size: 165.80312pt x 240.34286pt.
+<geom_foco_axialIII.png, id=322, 522.61363pt x 405.54819pt>
+File: geom_foco_axialIII.png Graphic file (type png)
+<use geom_foco_axialIII.png>
+Package pdftex.def Info: geom_foco_axialIII.png  used on input line 32.
+(pdftex.def)             Requested size: 418.09146pt x 324.43898pt.
+ [4 <./geom_foco_coincIII.png>]
+<geom_lateralIV.png, id=328, 363.14182pt x 341.64pt>
+File: geom_lateralIV.png Graphic file (type png)
+<use geom_lateralIV.png>
+Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
+(pdftex.def)             Requested size: 268.72627pt x 252.81485pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./geom_foco_axialII.png>] [6 <./geom_lateralIII.png>] [7]
+[5 <./geom_foco_axialIII.png>] [6 <./geom_lateralIV.png>] [7]
 <vec_fourier.png, id=356, 419.31656pt x 391.4625pt>
 File: vec_fourier.png Graphic file (type png)
 <use vec_fourier.png>
@@ -797,18 +797,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 2237) has occurred while \output is active []
 
  [8]
-[9 <./vec_fourier.png>] [10] [11]
-Underfull \vbox (badness 1635) has occurred while \output is active []
+[9 <./vec_fourier.png>] [10]
+Underfull \vbox (badness 1609) has occurred while \output is active []
 
- [12]
-[13]
+ [11]
+[12] [13]
 <aberracao_esf.png, id=405, 322.20375pt x 255.95625pt>
 File: aberracao_esf.png Graphic file (type png)
 <use aberracao_esf.png>
 Package pdftex.def Info: aberracao_esf.png  used on input line 257.
 (pdftex.def)             Requested size: 322.20296pt x 255.95561pt.
- [14 <./aberracao_esf.png>] [15]
-Overfull \hbox (25.95111pt too wide) detected at line 295
+ [14] [15 <./aberracao_esf.png>]
+Overfull \hbox (25.95111pt too wide) detected at line 299
 []\OT1/cmr/m/n/12 ^^H[](\OML/cmm/m/it/12 ^^R; ^^^\OT1/cmr/m/n/12 ) = 2\OML/cmm/
 m/it/12 ^^Y [] :
  []
@@ -816,15 +816,18 @@ m/it/12 ^^Y [] :
 <feixe_astig.png, id=423, 671.50874pt x 311.66437pt>
 File: feixe_astig.png Graphic file (type png)
 <use feixe_astig.png>
-Package pdftex.def Info: feixe_astig.png  used on input line 302.
+Package pdftex.def Info: feixe_astig.png  used on input line 306.
 (pdftex.def)             Requested size: 470.05292pt x 218.16356pt.
 
-Overfull \hbox (14.8088pt too wide) in paragraph at lines 302--303
+Overfull \hbox (14.8088pt too wide) in paragraph at lines 306--307
  [] 
  []
 
-[16 <./feixe_astig.png>]
-Overfull \hbox (42.80061pt too wide) detected at line 335
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16] [17 <./feixe_astig.png>]
+Overfull \hbox (42.80061pt too wide) detected at line 339
 []\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n
 /12 ) = [] [] [](2\OML/cmm/m/it/12 j \OT1/cmr/m/n/12 + 1)\OMS/cmsy/m/n/12 G[][]
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b[]\OT
@@ -834,20 +837,17 @@ cmm/m/it/12 ^^[ [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ) + (\OML
 /cmsy/m/n/12 G[] [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  e[][]:
  []
 
-[17] [18]
-Underfull \vbox (badness 2865) has occurred while \output is active []
-
- [19]
-<Kphi_Artigo_Kaina.png, id=470, 462.22687pt x 347.04657pt>
+[18] [19]
+<Kphi_Artigo_Kaina.png, id=469, 462.22687pt x 347.04657pt>
 File: Kphi_Artigo_Kaina.png Graphic file (type png)
 <use Kphi_Artigo_Kaina.png>
-Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 406.
+Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 410.
 (pdftex.def)             Requested size: 392.89468pt x 294.99097pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./capitulo3.tex [20] [21 <./Kphi_Artigo_Kaina.png>]
+[20]) (./capitulo3.tex [21 <./Kphi_Artigo_Kaina.png>]
 Cap\'{\i }tulo 3.
 [22
 
@@ -1090,22 +1090,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (./tese.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
+Package rerunfilecheck Info: File `tese.out' has not changed.
+(rerunfilecheck)             Checksum: 3BE564C3471A9E21AE2C4824841839F0;1913.
+Package rerunfilecheck Info: File `tese.brf' has not changed.
+(rerunfilecheck)             Checksum: 14AE901FB9701A39F8D2500160B13DCF;1695.
 
-
-Package rerunfilecheck Warning: File `tese.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `tese.out':
-(rerunfilecheck)             Before: 8F9DA67694234291DEE9FD0557233AB8;1907
-(rerunfilecheck)             After:  3BE564C3471A9E21AE2C4824841839F0;1913.
-
-Package rerunfilecheck Warning: File `tese.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tese.brf':
-(rerunfilecheck)             Before: E8E01F3A5054282084FD15F312922B61;1697
-(rerunfilecheck)             After:  556013818D6D31E4F0DCDD8F3FDD0C81;1697.
 
 LaTeX Warning: There were undefined references.
 
@@ -1115,10 +1104,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
- 12092 strings out of 492623
- 170816 string characters out of 6135670
- 337467 words of memory out of 5000000
- 15515 multiletter control sequences out of 15000+600000
+ 12099 strings out of 492623
+ 170917 string characters out of 6135669
+ 337550 words of memory out of 5000000
+ 15522 multiletter control sequences out of 15000+600000
  15240 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,19n,51p,3234b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1135,10 +1124,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmu10.pfb>
-Output written on tese.pdf (62 pages, 1621990 bytes).
+Output written on tese.pdf (62 pages, 1636543 bytes).
 PDF statistics:
- 812 PDF objects out of 1000 (max. 8388607)
- 685 compressed objects within 7 object streams
+ 814 PDF objects out of 1000 (max. 8388607)
+ 687 compressed objects within 7 object streams
  178 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 

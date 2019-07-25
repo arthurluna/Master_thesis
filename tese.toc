@@ -7,7 +7,7 @@
 \contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{3}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}\'Otica geom\'etrica e limite de Rayleigh}{3}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Modelo Mie-Debye}{6}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Efeito do perfil gaussiano}{11}{section.2.3}% 
+\contentsline {section}{\numberline {2.3}Efeito do perfil gaussiano}{12}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Efeitos de polariza\c c\~ao}{12}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Aberra\c c\~ao esf\'erica produzida por refra\c c\~ao na interface com o porta-amostra}{13}{section.2.5}% 
 \contentsline {section}{\numberline {2.6}Aberra\c c\~oes \'oticas}{15}{section.2.6}% 
