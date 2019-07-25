@@ -1,9 +1,9 @@
 \begin{chapter}{Teoria da Pinça Ótica}
 \label{cap2}
 
-\hspace{5 mm}Esse capítulo será dedicado a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão instroduzidos, com a finalidade de gerar uma intuição acerca do assunto. 
+\hspace{5 mm}Esse capítulo será dedicado a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão introduzidos, com a finalidade de gerar uma intuição acerca do assunto. 
 
-Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto da teoria MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os momentos angulares\cite{Bliokh2015}.
+Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto da teoria MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os dois tipos de momento angular\cite{Bliokh2015}.
 
 \section{Ótica geométrica e limite de Rayleigh}
 
@@ -11,13 +11,13 @@ Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efe
 
 Por outro lado, no limite em que o raio é muito menor que o comprimento de onda, temos o limite de Rayleigh, em que nós podemos aproximar a microesfera por um dipolo elétrico.
 
-O feixe presente em uma pinça ótica tem a forma de um cone sólido com um perfil de intensidade radial. Nessa explicação, vamos olhar o comportamento de uma casca desse cone sólido com angulo de abertura $\theta$ fixo. Dependendo de como os vetores de momento $p$ diametralmente opostos mudarão ao passar pela esfera, podemos inferir a força que ela sofrerá pela variação dos pares desses vetores. Como só estamos interessados em ver o comportamento de aprisionamento da esfera pelo feixe, vamos ignorar efeitos de absorção e reflexão. 
+O feixe presente em uma pinça ótica tem a forma de um cone sólido com um perfil de intensidade radial. Nessa explicação, vamos olhar o comportamento de uma casca desse cone sólido com ângulo de abertura $\theta$ fixo. Dependendo de como os vetores de momento ${\mathbf p}$ diametralmente opostos mudarão ao passar pela esfera, podemos inferir a força que ela sofrerá pela variação dos pares desses vetores. Como só estamos interessados em ver o comportamento de aprisionamento da esfera pelo feixe, vamos ignorar efeitos de absorção e reflexão. 
 
 Começamos pelo caso mais simples: quando a ponta da casca do cone, ou a posição focal do feixe, coincide com o centro da esfera (figura \ref{foco_coinc}). Nesse caso, o ângulo de incidência dos raios é normal a superfície da esfera, e o ângulo de transmissão é igual ao de incidência pela lei de Snell.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.8]{geom_foco_coincII}
+\includegraphics[scale=.8]{geom_foco_coincIII}
 \caption{Foco coincidente ao centro da esfera. Essa corresponde a posição de equilíbrio estável da esfera.}
 \label{foco_coinc}
 \end{center}
@@ -29,8 +29,8 @@ Quando deslocamos a posição do foco em relação ao centro da microesfera, a lei d
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.8]{geom_foco_axialII}
-\caption{Centro da microesfera (ponto vermelho) no eixo do cone, acima (esquerda) e abaixo (direita) da posição do foco (ponto azul). O momento que a esfera adquire ${\mathbf\delta P}$ é $-({\mathbf \it P'}-{\mathbf \it P}$), que é menos a variação de momento do campo, por conservação.}
+\includegraphics[scale=.8]{geom_foco_axialIII}
+\caption{Centro da microesfera (indicado pelo "x") no eixo do cone, acima (esquerda) e abaixo (direita) da posição do foco (indicado pelo centro do círculo, para onde o vetor $\delta{\mathbf p}$ aponta). O momento que a esfera adquire ${\mathbf\delta P}$ é $-({\mathbf \it P'}-{\mathbf \it P}$), que é menos a variação de momento do campo, por conservação.}
 \label{foco_axial}
 \end{center}
 \end{figure}
@@ -39,7 +39,7 @@ De forma análoga ao caso anterior, ao deslocar verticalmente o foco em relação a
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.7]{geom_lateralIII}
+\includegraphics[scale=.74]{geom_lateralIV}
 \caption{Centro de massa da microesfera ganha momento na direção do foco do feixe.}
 \label{foco_lateral}
 \end{center}
