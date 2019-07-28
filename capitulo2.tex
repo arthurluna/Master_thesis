@@ -18,19 +18,19 @@ Começamos pelo caso mais simples: quando o vértice do cone, ou a posição focal d
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.8]{geom_foco_coincIII}
-\caption{Centro da esfera na posição do foco do feixe ótico aprisionador. Não há transferência de momento por refração, mas há transferência de momento por absorção e reflexão.}
+\caption{Centro da esfera (indicado pelo $\times$) na posição do foco do feixe ótico aprisionador (indicado pelo centro do círculo). Não há transferência de momento por refração, mas há transferência de momento por absorção e reflexão.}
 \label{foco_coinc}
 \end{center}
 \end{figure}
 %
-Assim como ao entrar na esfera, o raio que sai da esfera também incide normalmente à superfície de dentro. Não há mudança na direção do vetor momento, e portanto não há força sendo exercida na esfera por efeito da refração. Por simetria, não esperamos que as outras componentes do cone sólido façam força sobre a esfera.
+Assim como ao entrar na esfera, o raio que sai da esfera também incide normalmente à superfície de dentro. Não há mudança na direção do vetor momento, e portanto não há força sendo exercida sobre a esfera por efeito da refração. Por simetria, não esperamos que as outras componentes do cone sólido façam força sobre a esfera.
 
-Quando deslocamos a posição do foco em relação ao centro da microesfera, a lei de Snell preve que os raios serão refratados. Começamos deslocando na direção axial, ou seja, com o centro da esfera sobre o eixo de simetria do cone (eixo ótico), como ilustra a figura \ref{foco_axial}.
+Quando deslocamos a posição do foco em relação ao centro da microesfera, a lei de Snell prevê que os raios serão refratados. Começamos deslocando na direção axial, ou seja, com o centro da esfera sobre o eixo de simetria do cone (eixo ótico), como ilustra a figura \ref{foco_axial}.
 %
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.8]{geom_foco_axialIII}
-\caption{Centro da microesfera (indicado pelo ``x") no eixo do cone, abaixo (esquerda) e acima (direita) da posição do foco (indicado pelo centro do círculo, para onde o vetor $\delta{\mathbf p}$ aponta). O momento que a esfera adquire $\delta{\mathbf P}$ é $-({\mathbf P'}-{\mathbf P}$), que é menos a variação de momento do campo, por conservação.}
+\caption{Centro da microesfera sobre o eixo de simetria do cone, abaixo (esquerda) e acima (direita) da posição do foco , para onde o vetor $\delta{\mathbf p}$ aponta. O momento que a esfera adquire $\delta{\mathbf P}$ é $-({\mathbf P'}-{\mathbf P}$), que é menos a variação de momento do campo, por conservação.}
 \label{foco_axial}
 \end{center}
 \end{figure}
@@ -40,7 +40,7 @@ De forma análoga ao caso anterior, ao deslocar verticalmente o foco em relação a
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.74]{geom_lateralIV}
-\caption{Centro de massa da microesfera ganha momento na direção do foco do feixe.}
+\caption{Centro de massa da microesfera ganha momento na direção do foco do feixe por causa da refração.}
 \label{foco_lateral}
 \end{center}
 \end{figure}
@@ -58,9 +58,9 @@ A contribuição da reflexão é a transferência de momento na direção normal ao pla
 %
 O efeito de absorção é devido a uma parte imaginária do índice de refração, como veremos mais adiante. Podemos entende-la assumindo que uma fração ${\mathbf p}$ do raio é absorvida, e por consevação, a esfera ganha o momento dessa fração do raio com mesma direção e sentido.
 
-Um modelo proposto por Ashkin \cite{Ashkin1992} usa a taxa de mudança do momento de uma raio de luz no regime de ótica geométrica para obter a força ótica exercida por esse raio sobre a esfera. Nesse modelo, no entanto, múltiplas reflexões internas do raio são levadas em conta, o que não fizemos na explicação acima. Soma-se então os vários raios que compõem o feixe gaussiano TEM$_{00}$. Nesse artigo de 1992, também é feito o cálculo para o modo Laguerre-Gaussiano TEM$_{01}$, porém a condição do seno de Abbe não é levada em conta em nenhum dos casos \cite{Viana2007}.
+Um modelo proposto por Ashkin \cite{Ashkin1992} usa a taxa de mudança do momento de uma raio de luz no regime de ótica geométrica para obter a força ótica exercida por esse raio sobre a esfera. Nesse modelo, no entanto, múltiplas reflexões internas do raio são levadas em conta, o que não fizemos na explicação acima. Soma-se então os vários raios que compõem o feixe gaussiano TEM$_{00}$, e também é feito o cálculo para o modo Laguerre-Gaussiano TEM$_{01}$. A condição do seno de Abbe, à qual as objetivas de alta abertura numérica satisfazem, não é levada em conta em nenhum dos casos \cite{Viana2007}.
 
-No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo ${\mathbf p}$ será dada por:
+No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo induzido ${\mathbf p}$ será dada por:
 %
 \begin{equation}
 {\mathbf F} = \frac{1}{2}\nabla({\mathbf p}\cdot{\mathbf E}),
