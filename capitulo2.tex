@@ -46,20 +46,34 @@ De forma análoga ao caso anterior, ao deslocar verticalmente o foco em relação a
 \end{figure}
 %
 
-Para os casos em que há reflexão e absorção, o efeito resultante é sempre uma força na direção da propagação do feixe. O motivo é que feixes que são refletidos têm sua componente de momento perpendicular à superfície reflexora invertidas. Por conservação de momento, a esfera ganha o dobro de momento nessa direção. No caso da absorção é ainda mais simples: a esfera ganha todo o momento da parte do feixe absorvido.
+A contribuição da reflexão é a transferência de momento na direção normal ao plano tangente à esfera onde o raio de luz é refletido, como mostra a imagem \ref{reflex_absor}. Os raios refletidos têm sua componente de momento perpendicular à superfície reflexora (tangente) invertidas. Por conservação de momento, a esfera ganha o dobro de momento nessa direção. 
+%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.4]{reflex_absor}
+\caption{Ilustração dos efeitos de reflexão (esquerda) e absorção (direita). O momento que a esfera ganha é $\delta {\mathbf p}$, enquanto ${\mathbf p}$ é a fração do raio incidente que é refletido ou absorvido, e ${\mathbf p'}$ é o raio refletido.}
+\label{reflex_absor}
+\end{center}
+\end{figure}
+%
+O efeito de absorção é devido a uma parte imaginária do índice de refração, como veremos mais adiante. Podemos entende-la assumindo que uma fração ${\mathbf p}$ do raio é absorvida, e por consevação, a esfera ganha o momento dessa fração do raio com mesma direção e sentido.
 
-No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo ${\mathbf p}$ será dada por \cite{Mazolli}:
+Um modelo proposto por Ashkin \cite{Ashkin1992} usa a taxa de mudança do momento de uma raio de luz no regime de ótica geométrica para obter a força ótica exercida por esse raio sobre a esfera. Nesse modelo, no entanto, múltiplas reflexões internas do raio são levadas em conta, o que não fizemos na explicação acima. Soma-se então os vários raios que compõem o feixe gaussiano TEM$_{00}$. Nesse artigo de 1992, também é feito o cálculo para o modo Laguerre-Gaussiano TEM$_{01}$, porém a condição do seno de Abbe não é levada em conta em nenhum dos casos \cite{Viana2007}.
+
+No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo ${\mathbf p}$ será dada por:
 %
 \begin{equation}
-{\mathbf F} = \nabla({\mathbf p}\cdot{\mathbf E}),
+{\mathbf F} = \frac{1}{2}\nabla({\mathbf p}\cdot{\mathbf E}),
 \end{equation}
 %
 com ${\mathbf p}$ sendo dado por \cite{Jackson1998}:
 %
 \begin{equation}
-{\mathbf p} = 4\pi\epsilon_0 \frac{\epsilon-1}{\epsilon-2}a^3{\mathbf E}.
+{\mathbf p} = \alpha{\mathbf E},
 \end{equation}
 %
+onde $\alpha=4\pi\epsilon_0 \frac{\epsilon - 1}{\epsilon + 2}a^3$ é a polarizabilidade da microesfera.
+
 
 Podemos concluir que a força vai ser proporcional a ${\mathbf E}^2$, que é proporcional por sua vez à intensidade do campo. Se ${\mathbf E}$ e ${\mathbf p}$ têm o mesmo sentido, a força apontará sempre para a região de maior intensidade. Isso ocorre desde que $\epsilon>1$. Essa é a força que chamamos de força de gradiente.
 
