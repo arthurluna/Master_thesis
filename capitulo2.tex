@@ -60,6 +60,8 @@ O efeito de absorção é devido a uma parte imaginária do índice de refração, como
 
 Um modelo proposto por Ashkin \cite{Ashkin1992} usa a taxa de mudança do momento de uma raio de luz no regime de ótica geométrica para obter a força ótica exercida por esse raio sobre a esfera. Nesse modelo, no entanto, múltiplas reflexões internas do raio são levadas em conta, o que não fizemos na explicação acima. Soma-se então os vários raios que compõem o feixe gaussiano TEM$_{00}$, e também é feito o cálculo para o modo Laguerre-Gaussiano TEM$_{01}$. A condição do seno de Abbe, à qual as objetivas de alta abertura numérica satisfazem, não é levada em conta em nenhum dos casos \cite{Viana2007}.
 
+Recentemente, em 2015, a aproximação de ótica geométrica foi usada para se obter a força ótica em objetos elipsoidais numéricamente \cite{Callegari2015}.
+
 No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo induzido ${\mathbf p}$ será dada por:
 %
 \begin{equation}
@@ -77,6 +79,11 @@ onde $\alpha$ é a polarizabilidade da microesfera.
 Podemos concluir que a força vai ser proporcional a ${\mathbf E}^2$, que é proporcional por sua vez à intensidade do campo. Se ${\mathbf E}$ e ${\mathbf p}$ têm o mesmo sentido, a força apontará sempre para a região de maior intensidade. Isso ocorre desde que $\alpha>0$. Essa é a força que chamamos de força de gradiente.
 
 Essa abordagem foi usada para um feixe gaussiano não perturbado na região focal por \cite{Tlusty1998}, apresentando incompatibilidades com experimentos \cite{Viana2007}. Abordagens seguintes \cite{Rohrbach2001} usam um modelo para o feixe focalizado devido a Richards e Wolf \cite{1959a}, o mesmo utilizado para a teoria MDSA que sera discutida na seção \ref{MD}, porém usando a aproximação de dipolo para a força de gradiente, e restringindo a validade da força devido ao espalhamento para raios menores ou da ordem de $\lambda /2(n_1-n_3)$ ($n_1$ e $n_3$ são respectivamente os índices de refração do meio e da microesfera), pela aproximação de Rayleigh-Gans.
+
+Os modelos baseados em ótica geométrica e aproximação do centro espalhador por um dipolo tem relativa boa concordância com experimentos. Por outro lado, não são válidos para os tamanhos intermediários de raios, que são amplamente utilizados nos experimentos. Para descrever esses casos, é necessário um modelo baseado em ótica ondulatória, que leve em conta o espalhamento do feixe pela esfera. Antes de tratar do modelo MD, apresentaremos outros modelos e formas de calculos de forças óticas.
+
+\section{Modelos de ótica ondulatória}
+\label{mod_oo}
 
 
 
