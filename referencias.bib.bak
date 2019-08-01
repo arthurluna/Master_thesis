@@ -193,6 +193,13 @@
   url       = {https://www.ebook.de/de/product/3762039/optical_trapping_and_manipulation_of_neutral_particles_using_lasers_a_reprint_volume_with_commentaries.html},
 }
 
+@Book{lorenz1890,
+  title     = {Lysbev{\ae}gelsen i og uden for en af plane Lysb{\o}lger belyst Kugle},
+  publisher = {na},
+  year      = {1890},
+  author    = {Lorenz, Louis},
+}
+
 @MastersThesis{Diniz,
   author = {Kainã Gonçalves Diniz},
   title  = {Momento Angular de Spin em Pin\c{c}as \'{O}ticas},
@@ -287,17 +294,16 @@
 }
 
 @Article{Callegari2015,
-  author        = {Agnese Callegari and Mite Mijalkov and A. Burak Gököz and Giovanni Volpe},
-  title         = {Computational toolbox for optical tweezers in geometrical optics},
-  journal       = {Journal of the Optical Society of America B},
-  year          = {2015},
-  volume        = {32},
-  number        = {5},
-  pages         = {B11},
-  month         = {apr},
-  __markedentry = {[arthurluna:1]},
-  doi           = {10.1364/josab.32.000b11},
-  publisher     = {The Optical Society},
+  author    = {Agnese Callegari and Mite Mijalkov and A. Burak Gököz and Giovanni Volpe},
+  title     = {Computational toolbox for optical tweezers in geometrical optics},
+  journal   = {Journal of the Optical Society of America B},
+  year      = {2015},
+  volume    = {32},
+  number    = {5},
+  pages     = {B11},
+  month     = {apr},
+  doi       = {10.1364/josab.32.000b11},
+  publisher = {The Optical Society},
 }
 
 @Article{Tlusty1998,
@@ -338,6 +344,26 @@
   __markedentry = {[arthurluna:2]},
   doi           = {10.1088/1464-4258/9/8/s12},
   publisher     = {{IOP} Publishing},
+}
+
+@Book{Gouesbet2011,
+  title     = {Generalized Lorenz-Mie Theories},
+  publisher = {Springer Berlin Heidelberg},
+  year      = {2011},
+  author    = {G{\'{e}}rard Gouesbet and G{\'{e}}rard Gr{\'{e}}han},
+  doi       = {10.1007/978-3-642-17194-9},
+}
+
+@Article{Mie1908,
+  author    = {Gustav Mie},
+  title     = {Beitr{\"a}ge zur Optik tr{\"u}ber Medien, speziell kolloidaler Metall{\"o}sungen},
+  journal   = {Annalen der Physik},
+  year      = {1908},
+  volume    = {330},
+  number    = {3},
+  pages     = {377--445},
+  doi       = {10.1002/andp.19083300302},
+  publisher = {Wiley},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
