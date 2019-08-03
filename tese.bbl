@@ -42,10 +42,15 @@ Konstantin~Y. Bliokh, Elena~A. Ostrovskaya, Miguel~A. Alonso, Oscar~G.
 \newblock {\em Optics Express}, 19(27):26132, dec 2011.
 
 \bibitem{Callegari2015}
-Agnese Callegari, Mite Mijalkov, A.~Burak Gököz, and Giovanni Volpe.
+Agnese Callegari, Mite Mijalkov, A.~Burak G\"{o}k\"{o}z, and Giovanni Volpe.
 \newblock Computational toolbox for optical tweezers in geometrical optics.
 \newblock {\em Journal of the Optical Society of America B}, 32(5):B11, apr
   2015.
+
+\bibitem{Davis1979}
+L.~W. Davis.
+\newblock Theory of electromagnetic beams.
+\newblock {\em Physical Review A}, 19(3):1177--1179, mar 1979.
 
 \bibitem{Dutra}
 Rafael de~Sousa~Dutra.
@@ -60,7 +65,7 @@ K.~Diniz, R.~S. Dutra, L.~B. Pires, N.~B. Viana, H.~M. Nussenzveig, and
 \newblock {\em Optics Express}, 27(5):5905, feb 2019.
 
 \bibitem{Diniz}
-Kainã~Gonçalves Diniz.
+Kain\~{a}~Gon\c{c}alves Diniz.
 \newblock Momento angular de spin em pin\c{c}as \'{O}ticas.
 \newblock Master's thesis, Universidade Federal do Rio de Janeiro, 2018.
 
@@ -74,6 +79,23 @@ R~S Dutra, N~B Viana, P~A~Maia Neto, and H~M Nussenzveig.
 R.~S. Dutra, N.~B. Viana, P.~A.~Maia Neto, and H.~M. Nussenzveig.
 \newblock Absolute calibration of forces in optical tweezers.
 \newblock {\em Physical Review A}, 90(1), jul 2014.
+
+\bibitem{Gouesbet2010}
+G.~Gouesbet.
+\newblock T-matrix formulation and generalized lorenz{\textendash}mie theories
+  in spherical coordinates.
+\newblock {\em Optics Communications}, 283(4):517--521, feb 2010.
+
+\bibitem{Gouesbet1985}
+G~Gouesbet, G~Grehan, and B~Maheu.
+\newblock Scattering of a gaussian beam by a mie scatter center using a
+  bromwich formalism.
+\newblock {\em Journal of Optics}, 16(2):83--93, mar 1985.
+
+\bibitem{Gouesbet2011}
+G{\'{e}}rard Gouesbet and G{\'{e}}rard Gr{\'{e}}han.
+\newblock {\em Generalized Lorenz-Mie Theories}.
+\newblock Springer Berlin Heidelberg, 2011.
 
 \bibitem{Jackson1998}
 John~David Jackson.
@@ -111,10 +133,31 @@ Gustav Mie.
   metall{\"o}sungen.
 \newblock {\em Annalen der Physik}, 330(3):377--445, 1908.
 
+\bibitem{Mishchenko1996}
+Michael~I. Mishchenko, Larry~D. Travis, and Daniel~W. Mackowski.
+\newblock T-matrix computations of light scattering by nonspherical particles:
+  A review.
+\newblock {\em Journal of Quantitative Spectroscopy and Radiative Transfer},
+  55(5):535--575, may 1996.
+
 \bibitem{Neto2000}
 P.~A.~Maia Neto and H.~M Nussenzveig.
 \newblock Theory of optical tweezers.
 \newblock {\em Europhysics Letters ({EPL})}, 50(5):702--708, jun 2000.
+
+\bibitem{Neves2019}
+Antonio Alvaro~Ranha Neves and Carlos~Lenz Cesar.
+\newblock Analytical calculation of optical forces on spherical particles in
+  optical tweezers: tutorial.
+\newblock {\em Journal of the Optical Society of America B}, 36(6):1525, may
+  2019.
+
+\bibitem{Nieminen2007}
+Timo~A Nieminen, Vincent L~Y Loke, Alexander~B Stilgoe, Gregor Kn\"{o}ner,
+  Agata~M Bra{\'{n}}czyk, Norman~R Heckenberg, and Halina Rubinsztein-Dunlop.
+\newblock Optical tweezers computational toolbox.
+\newblock {\em Journal of Optics A: Pure and Applied Optics}, 9(8):S196--S203,
+  jul 2007.
 
 \bibitem{Novotny2001}
 Lukas Novotny, Robert~D. Grober, and Khaled Karrai.
