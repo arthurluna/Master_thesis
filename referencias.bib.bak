@@ -73,7 +73,7 @@
   volume        = {75},
   number        = {2},
   month         = {feb},
-  __markedentry = {[arthurluna:2]},
+  __markedentry = {[arthurluna:]},
   doi           = {10.1103/physreve.75.021914},
   publisher     = {American Physical Society ({APS})},
 }
@@ -201,7 +201,7 @@
 }
 
 @MastersThesis{Diniz,
-  author = {Kainã Gonçalves Diniz},
+  author = {Kain\~{a} Gon\c{c}alves Diniz},
   title  = {Momento Angular de Spin em Pin\c{c}as \'{O}ticas},
   school = {Universidade Federal do Rio de Janeiro},
   year   = {2018},
@@ -280,21 +280,20 @@
 }
 
 @Article{Neves2019,
-  author        = {Antonio Alvaro Ranha Neves and Carlos Lenz Cesar},
-  title         = {Analytical calculation of optical forces on spherical particles in optical tweezers: tutorial},
-  journal       = {Journal of the Optical Society of America B},
-  year          = {2019},
-  volume        = {36},
-  number        = {6},
-  pages         = {1525},
-  month         = {may},
-  __markedentry = {[arthurluna:1]},
-  doi           = {10.1364/josab.36.001525},
-  publisher     = {The Optical Society},
+  author    = {Antonio Alvaro Ranha Neves and Carlos Lenz Cesar},
+  title     = {Analytical calculation of optical forces on spherical particles in optical tweezers: tutorial},
+  journal   = {Journal of the Optical Society of America B},
+  year      = {2019},
+  volume    = {36},
+  number    = {6},
+  pages     = {1525},
+  month     = {may},
+  doi       = {10.1364/josab.36.001525},
+  publisher = {The Optical Society},
 }
 
 @Article{Callegari2015,
-  author    = {Agnese Callegari and Mite Mijalkov and A. Burak Gököz and Giovanni Volpe},
+  author    = {Agnese Callegari and Mite Mijalkov and A. Burak G\"{o}k\"{o}z and Giovanni Volpe},
   title     = {Computational toolbox for optical tweezers in geometrical optics},
   journal   = {Journal of the Optical Society of America B},
   year      = {2015},
@@ -333,7 +332,7 @@
 }
 
 @Article{Nieminen2007,
-  author        = {Timo A Nieminen and Vincent L Y Loke and Alexander B Stilgoe and Gregor Knöner and Agata M Bra{\'{n}}czyk and Norman R Heckenberg and Halina Rubinsztein-Dunlop},
+  author        = {Timo A Nieminen and Vincent L Y Loke and Alexander B Stilgoe and Gregor Kn\"{o}ner and Agata M Bra{\'{n}}czyk and Norman R Heckenberg and Halina Rubinsztein-Dunlop},
   title         = {Optical tweezers computational toolbox},
   journal       = {Journal of Optics A: Pure and Applied Optics},
   year          = {2007},
@@ -341,7 +340,7 @@
   number        = {8},
   pages         = {S196--S203},
   month         = {jul},
-  __markedentry = {[arthurluna:2]},
+  __markedentry = {[arthurluna:]},
   doi           = {10.1088/1464-4258/9/8/s12},
   publisher     = {{IOP} Publishing},
 }
@@ -364,6 +363,70 @@
   pages     = {377--445},
   doi       = {10.1002/andp.19083300302},
   publisher = {Wiley},
+}
+
+@Article{Gouesbet1985,
+  author    = {G Gouesbet and G Grehan and B Maheu},
+  title     = {Scattering of a Gaussian beam by a Mie scatter center using a Bromwich formalism},
+  journal   = {Journal of Optics},
+  year      = {1985},
+  volume    = {16},
+  number    = {2},
+  pages     = {83--93},
+  month     = {mar},
+  doi       = {10.1088/0150-536x/16/2/004},
+  publisher = {{IOP} Publishing},
+}
+
+@Article{Polimeno2018,
+  author    = {Paolo Polimeno and Alessandro Magazz{\`{u}} and Maria Antonia Iat{\`{\i}} and Francesco Patti and Rosalba Saija and Cristian Degli Esposti Boschi and Maria Grazia Donato and Pietro G. Gucciardi and Philip H. Jones and Giovanni Volpe and Onofrio M. Marag{\`{o}}},
+  title     = {Optical tweezers and their applications},
+  journal   = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year      = {2018},
+  volume    = {218},
+  pages     = {131--150},
+  month     = {oct},
+  doi       = {10.1016/j.jqsrt.2018.07.013},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Davis1979,
+  author    = {L. W. Davis},
+  title     = {Theory of electromagnetic beams},
+  journal   = {Physical Review A},
+  year      = {1979},
+  volume    = {19},
+  number    = {3},
+  pages     = {1177--1179},
+  month     = {mar},
+  doi       = {10.1103/physreva.19.1177},
+  publisher = {American Physical Society ({APS})},
+}
+
+@Article{Mishchenko1996,
+  author    = {Michael I. Mishchenko and Larry D. Travis and Daniel W. Mackowski},
+  title     = {T-matrix computations of light scattering by nonspherical particles: A review},
+  journal   = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year      = {1996},
+  volume    = {55},
+  number    = {5},
+  pages     = {535--575},
+  month     = {may},
+  doi       = {10.1016/0022-4073(96)00002-7},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Gouesbet2010,
+  author    = {G. Gouesbet},
+  title     = {T-matrix formulation and generalized Lorenz{\textendash}Mie theories in spherical coordinates},
+  journal   = {Optics Communications},
+  year      = {2010},
+  volume    = {283},
+  number    = {4},
+  pages     = {517--521},
+  month     = {feb},
+  doi       = {10.1016/j.optcom.2009.10.092},
+  publisher = {Elsevier {BV}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
