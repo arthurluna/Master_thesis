@@ -60,7 +60,7 @@ O efeito de absorção é devido a uma parte imaginária do índice de refração, como
 
 Um modelo proposto por Ashkin \cite{Ashkin1992} usa a taxa de mudança do momento de uma raio de luz no regime de ótica geométrica para obter a força ótica exercida por esse raio sobre a esfera. Nesse modelo, no entanto, múltiplas reflexões internas do raio são levadas em conta, o que não fizemos na explicação acima. Soma-se então os vários raios que compõem o feixe gaussiano TEM$_{00}$, e também é feito o cálculo para o modo Laguerre-Gaussiano TEM$_{01}$. A condição do seno de Abbe, à qual as objetivas de alta abertura numérica satisfazem, não é levada em conta em nenhum dos casos \cite{Viana2007}.
 
-Recentemente, em 2015, a aproximação de ótica geométrica foi usada para se obter a força ótica em objetos elipsoidais numéricamente \cite{Callegari2015}.
+Recentemente, em 2015, a aproximação de ótica geométrica foi usada para se desenvolver um programa que calcula a força ótica em objetos elipsoidais numericamente \cite{Callegari2015}.
 
 No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo induzido ${\mathbf p}$ será dada por:
 %
@@ -80,17 +80,25 @@ Podemos concluir que a força vai ser proporcional a ${\mathbf E}^2$, que é propo
 
 Essa abordagem foi usada para um feixe gaussiano não perturbado na região focal por \cite{Tlusty1998}, apresentando incompatibilidades com experimentos \cite{Viana2007}. Abordagens seguintes \cite{Rohrbach2001} usam um modelo para o feixe focalizado devido a Richards e Wolf \cite{1959a}, o mesmo utilizado para a teoria MDSA que sera discutida na seção \ref{MD}, porém usando a aproximação de dipolo para a força de gradiente, e restringindo a validade da força devido ao espalhamento para raios menores ou da ordem de $\lambda /2(n_1-n_3)$ ($n_1$ e $n_3$ são respectivamente os índices de refração do meio e da microesfera), pela aproximação de Rayleigh-Gans.
 
-Os modelos baseados em ótica geométrica e aproximação do centro espalhador por um dipolo tem relativa boa concordância com experimentos. Por outro lado, não são válidos para os tamanhos intermediários de raios, que são amplamente utilizados nos experimentos. Para descrever esses casos, é necessário um modelo baseado em ótica ondulatória, que leve em conta o espalhamento do feixe pela esfera. Antes de tratar do modelo MD, apresentaremos outros modelos e formas de calculos de forças óticas.
+Os modelos baseados em ótica geométrica e aproximação do centro espalhador por um dipolo tem uma concordância relativamente boa com experimentos. Por outro lado, não são válidos para os tamanhos intermediários de raios, que são amplamente utilizados nos experimentos. Para descrever esses casos, é necessário um modelo baseado em ótica ondulatória, que leve em conta o espalhamento do feixe pela esfera. Antes de tratar do modelo MD, apresentaremos outros modelos e formas de calculos de forças óticas.
 
 \section{Uma abordagem de ótica ondulatória}
 \label{mod_oo}
 
-Na tentativa de obter um modelo baseado em ótica ondulatória, o modelo de Gouesbet e Gréhan faz uma generalização do modelo de Lorenz e Mie para o espalhamento de uma onda plana (circularmente polarizada) por uma esfera \cite{Mie1908,Lorenz1890}, onde o feixe incidente passa a ser arbitrário. Tanto o feixe espalhado como o incidente são obtidos 
+\hspace{5 mm}Na tentativa de obter um modelo baseado em ótica ondulatória, o modelo de Gouesbet e Gréhan \cite{Gouesbet1985} faz uma generalização do modelo de Mie para o espalhamento de uma onda plana (circularmente polarizada) por uma esfera \cite{Mie1908,Lorenz1890}, onde o feixe incidente passa a ser definido por uma combinação linear de funções de onda que são soluções da equação de Helmholtz \cite{Nieminen2007}. Os coeficientes da expansão, ou coeficientes de formato do feixe ({\it beam shape coefficients}, ou BSC), são obtidos através de projeções {\bf(ou expansões?)} do campo nessas funções, que formam uma base discreta \cite{Gouesbet2011}. 
+
+Na abordagem do artigo de 1985 \cite{Gouesbet1985}, o campo incidente na esfera é um feixe de Davis (de 5ª ordem) \cite{Davis1979}, que consiste em um feixe paraxial com correções em ordens de $1/k\thinspace w_0$ , onde $k$ é módulo do vetor de onda e $w_0$ é a cintura do feixe. Essa aproximação foi usada pois o feixe paraxial não é solução da equação da equação de Helmholtz, porém o feixe de Davis tampouco o é. O método proposto por Gouesbet e Gréhan é atualmente conhecido na literatura como {\it generalized Lerenz-Mie theory} (LGMT), e programas computacionais para o cálculo da força ótica baseados em tal teoria estão disponíveis na internet \cite{Nieminen2007}.
+
+Uma formulação de espalhamento chamada matriz-T (matriz de transferência) é utilizada em conjunto com a expansão em ondas esfericas para obter os campos espalhados para um objeto não esférico\cite{Mishchenko1996,Gouesbet2010}. A discussão desse caso, porém, não está no escopo do trabalho.
+
+No caso em que os coeficientes de expansão são os correspondentes aos do feixe do modelo de Richards e Wolf \cite{1959a}, e o objeto espalhador é uma esfera, recupera-se o resultado do modelo Mie-Debye \cite{Neves2019}, que será discutido a seguir.
 
 \section{Modelo Mie-Debye}
 \label{MD}
 
-\hspace{5 mm}Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
+\hspace{5 mm}{\bf discutir origem do nome, tipo do feixe e refazer introdução!}
+
+Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
 Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótica \cite{Jackson1998}:
 
@@ -334,11 +342,11 @@ Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esf
 \end{figure}
 %
 
-Uma breve explicação das aberrações será feita a seguir, baseada em trabalhos do grupo \cite{Dutra, Diniz2019, Dutra2014}, onde detalhes do seguinte desenvolvimento podem ser encontrados. 
+Uma breve explicação das aberrações será feita a seguir, baseada em trabalhos do grupo \cite{Dutra, Diniz, Dutra2014, Diniz2019}, onde detalhes do seguinte desenvolvimento podem ser encontrados. 
 
 Considemos agora o problema prático: os experimentos que serviram de base comparatória para as simulações desenvolvidas não possuem coma e os efeitos de aberração esférica podem ser negligenciados. Portanto, somente o astigmatismo será levado em conta nas equações apresentadas. Como a fase referente ao astigmatismo possui uma dependência em $\phi$, podemos concluir que a integral da equação \ref{int_phi} será modificada. 
 
-Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as expressões para força em termos dos coeficientes de multipolo.
+Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as expressões para força em termos dos coeficientes de multipolo. 
 
 %
 %
