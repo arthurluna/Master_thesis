@@ -429,4 +429,13 @@
   publisher = {Elsevier {BV}},
 }
 
+@Book{Biedenharn1984,
+  title     = {The Racah-Wigner Algebra in Quantum Theory (Encyclopedia of Mathematics and its Applications)},
+  publisher = {Cambridge University Press},
+  year      = {1984},
+  author    = {L. C. Biedenharn and J. D. Louck},
+  isbn      = {9780521302296},
+  url       = {https://www.amazon.com/Racah-Wigner-Algebra-Encyclopedia-Mathematics-Applications/dp/0521302293?SubscriptionId=AKIAIOBINVZYXZQZ2U3A&tag=chimbori05-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0521302293},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
