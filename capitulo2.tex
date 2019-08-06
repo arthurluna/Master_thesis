@@ -80,7 +80,9 @@ Podemos concluir que a força vai ser proporcional a ${\mathbf E}^2$, que é propo
 
 Essa abordagem foi usada para um feixe gaussiano não perturbado na região focal por \cite{Tlusty1998}, apresentando incompatibilidades com experimentos \cite{Viana2007}. Abordagens seguintes \cite{Rohrbach2001} usam um modelo para o feixe focalizado devido a Richards e Wolf \cite{1959a}, o mesmo utilizado para a teoria MDSA que sera discutida na seção \ref{MD}, porém usando a aproximação de dipolo para a força de gradiente, e restringindo a validade da força devido ao espalhamento para raios menores ou da ordem de $\lambda /2(n_1-n_3)$ ($n_1$ e $n_3$ são respectivamente os índices de refração do meio e da microesfera), pela aproximação de Rayleigh-Gans.
 
-Os modelos baseados em ótica geométrica e aproximação do centro espalhador por um dipolo tem uma concordância relativamente boa com experimentos. Por outro lado, não são válidos para os tamanhos intermediários de raios, que são amplamente utilizados nos experimentos. Para descrever esses casos, é necessário um modelo baseado em ótica ondulatória, que leve em conta o espalhamento do feixe pela esfera. Antes de tratar do modelo MD, apresentaremos outros modelos e formas de calculos de forças óticas.
+Os modelos baseados em ótica geométrica e aproximação do centro espalhador por um dipolo tem uma concordância relativamente boa com dados experimentais de esferas com raios condizentes com cada limite. Por outro lado, não são válidos para os tamanhos intermediários de raios, que são mais fáceis de se visualizar e amplamente utilizados nos experimentos. 
+
+Para descrever esses casos, é necessário um modelo baseado em ótica ondulatória, que leve em conta o feixe produzido pelas objetivas de alta abertura numérica e o espalhamento desses campo pela esfera. Antes de tratar do modelo MD, apresentaremos outros modelos e formas de cálculos de forças óticas.
 
 \section{Uma abordagem de ótica ondulatória}
 \label{mod_oo}
@@ -91,43 +93,58 @@ Na abordagem do artigo de 1985 \cite{Gouesbet1985}, o campo incidente na esfera 
 
 Uma formulação de espalhamento chamada matriz-T (matriz de transferência) é utilizada em conjunto com a expansão em ondas esfericas para obter os campos espalhados para um objeto não esférico\cite{Mishchenko1996,Gouesbet2010}. A discussão desse caso, porém, não está no escopo do trabalho.
 
-No caso em que os coeficientes de expansão são os correspondentes aos do feixe do modelo de Richards e Wolf \cite{1959a}, e o objeto espalhador é uma esfera, recupera-se o resultado do modelo Mie-Debye \cite{Neves2019}, que será discutido a seguir.
+No caso em que os coeficientes de expansão são os correspondentes aos do feixe proposto por Richards e Wolf \cite{1959a}, e o objeto espalhador é uma esfera, recupera-se o resultado do modelo Mie-Debye \cite{Neves2019}, que será discutido a seguir.
 
 \section{Modelo Mie-Debye}
 \label{MD}
 
-\hspace{5 mm}{\bf discutir origem do nome, tipo do feixe e refazer introdução!}
+\hspace{5 mm}Nessa seção será discutido o modelo Mie-Debye. O nome desse modelo faz alusão aos cientistas que propuseram os dois principais elementos desse modelo: o espalhamento de uma onda plana por uma esfera por Mie, como visto na seção anterior, e Debye, que propôs um modelo com campo escalar para o feixe produzido por uma objetiva de alta abertura numérica. A extensão do modelo para um campo vetorial foi feita por Richards e Wolf, citados no final da última seção.
 
-Discutiremos brevemente nesse capítulo o modelo MDSA+. Para entender a orígem das expressões para a força, vamos começar do problema mais simples. Trataremos nessa seção as bases do modelo Mie-Debye, para uma onda de polarização circular (direita ou esquerda). Os detalhes de tais cálculos podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
+Começaremos a explicação do modelo pelo caso de espalhamento mais simples: uma onda plana de polarização circular direita ou esquerda incidindo sobre uma esfera. Obteremos os coeficientes do espalhamentos, chamados coeficientes de Mie. A seguir, faremos a descrição do feixe incidente como uma superposição de ondas planas com a forma \cite{1959a}:
+%
+\begin{equation}
+\mathbf{E}_{IN}=\int d\Omega_k e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k,
+\label{RW_puro}
+\end{equation}
+%
+porém levando em conta efeitos da objetiva que serão discutidos mais à frente. 
 
-Começamos pela forma como se faz o cálculo da força em uma amostra na pinça ótica \cite{Jackson1998}:
+Os detalhes dos cálculos desta seção podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
+
+Nossa finalidade é encontrar a força eletromagnética em uma amostra na pinça ótica. Obtemos ela com \cite{Jackson1998}:
 
 \begin{equation}
-\vec{F} = \oint_{\sigma} \hat{n} \cdot T d \sigma - \mu \epsilon \frac{d}{dt} \int_{\nu} \vec{S} d \nu,
+\vec{F} = \oint_{\sigma} \hat{n} \cdot \mathbf{T} d \sigma - \mu \epsilon \frac{d}{dt} \int_{\nu} \mathbf{S} d \nu,
 \label{2_F}
 \end{equation}
-
+%
 onde $\sigma$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
-O primeiro passo, portanto, é calcular o campo eletromagnético incidente e espalhado nessa amostra (centro espalhador). O campo incidente na amostra tem formato cônico sólido, gerado pela objetiva. Montaremos esse campo superpondo ondas planas. Para tanto, começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolo (ondas esféricas ou ondas parciais). Outros casos de polarização serão discutidos adiante. 
+Assim, queremos obter os campos incidentes na esfera e espalhados por ela. Começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolos (ondas esféricas ou ondas parciais), que por sua vez é a base ideal para analisarmos o espalhamento de um objeto esférico. Outros casos de polarização serão tratados na seção \ref{Efeitos de polarizacao}. 
 
-A base de multipolos é a ideal para problemas com simetria esférica, pois são compostas pelos harmônicos esféricos na parte radial, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, que serão definidos a seguir: 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A simetria esférica do centro espalhador impõe condições de contorno sobre as partes radiais e transversais do campo. Por isso, dividimos o campo eletromagnético nessas duas partes: o modo tranversal elétrico $\Pi^{M}$, que possui as componentes do campo elétrico tangenciais à superfície esférica concêntrica à esfera e do campo magnético na direção radial dessa superfície; e o modo transversal magnético $\Pi^{E}$, com o elétrico radial e o magnético tangencial à superfície. Para isso, fazemos o produto interno dos campos com $\mathbf{r}$, e obtemos os potenciais de Debye:
+%
 \begin{equation}
 \Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
 \label{debye_def}
 \end{equation}
 %
 com
-
+%
 \begin{equation}
 {\mathbf E}=E_0(\hat{x}\pm i \hat{y})e^{ikz-i\omega t} \qquad e\qquad {\mathbf H}=\frac{n_1}{\mu c}(\mp i){\mathbf E}.
 \label{onda_plana}
 \end{equation}
 %
-onde $n_1$ é o índice de refração do meio ao redor da amostra, $k$  e $\omega$ são o vetor de onda e a frequência angular do feixe, sendo $\omega/k=c$ a velocidade da luz no vácuo. Tais potenciais serão úteis para resolver o problem do espalhamento Mie. Estes decompõem os campos em dois modos, um deles com o campo ${\mathbf E}$ paralelo à superfície do objeto espalhador ($\Pi^{M}$, modo transversal elétrico) e outra perpendicular ($\Pi^{E}$, modo transversal magnético). 
+onde $n_1$ é o índice de refração do meio ao redor da amostra, $k$  e $\omega$ são o vetor de onda e a frequência angular do feixe, sendo $\omega/k=c$ a velocidade da luz no vácuo. Os somatórios em $J$ nas equações acima indicam a expansão em multipolos. 
 
-Essa decomposição forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Os coeficientes de Mie para o espalhamento são:
+A base de multipolos são compostas pelos harmônicos esféricos na parte angular, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, pois podemos usar um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e não alteram as soluções da equação de Helmholtz. Esses operadores são: $-i {\mathbf r}\times\nabla = {\mathbf L}$, $\nabla \times {\mathbf L}$ e $\nabla$ \cite{Biedenharn2008}, onde o operador $\nabla$ fornece campos com divergência não nula, ou seja, com componentes na direção de propagação ${\mathbf k}$ e que assumimos serem serem nulas desde o começo.
+
+A expansão em multipolos forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Com elas podemos obter os campos espalhados a partir do campo incidente. Os coeficientes de Mie para o espalhamento são:
 
 \begin{equation}
 a_J=\frac{\psi_J(\beta)\psi'_J(\alpha)-N\psi'_J(\beta)\psi_J(\alpha)}{\zeta^{(1)}_J(\beta)\psi'_J(\alpha)-N\zeta'^{(1)}_J(\beta)\psi_J(\alpha)} \qquad ,\qquad
@@ -137,17 +154,7 @@ b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1
 %
 onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera e $N$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
 
-Assim, uma vez encontradas as soluções escalares para os campos espalhados e incidentes, temos que reobter os campos vetoriais. Fazemos isso usando um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e são perpendiculares entre si: $-i {\mathbf r}\times\nabla = {\mathbf L}$, $\nabla \times {\mathbf L}$ e $\nabla$. No espaço de Fourier, esses operadores são proporcionais a ${\mathbf k}\times \nabla_{\mathbf k}$, ${\mathbf k}\times({\mathbf k}\times \nabla_{\mathbf k})$ e ${\mathbf k}$, respectivamente. A figura \ref{vet_fourier} mostra os vetores em questão. O operador ${\mathbf k}$ fornece a soluções com campos na direção de propagação, ou seja, campos com divergência não nula e que não são soluções do nosso problema.
-%
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.5]{vec_fourier}
-\caption{Operadores vetoriais no espaço de Fourier usados para encontrar as soluções vetoriais.}
-\label{vet_fourier}
-\end{center}
-\end{figure}
-%
-Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usa-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
+Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usá-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
 
 \begin{equation}
 Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha M'+\gamma M)} d^J_{M'M}(\beta),
@@ -352,7 +359,7 @@ Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as
 %
 %%%%%  Seção 6  %%%%%
 %
-%
+%,
 \section{Força ótica em termos da expansão em multipolos}
 \label{forcaotica}
 
