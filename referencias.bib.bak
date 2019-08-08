@@ -429,13 +429,28 @@
   publisher = {Elsevier {BV}},
 }
 
-@Book{Biedenharn1984,
-  title     = {The Racah-Wigner Algebra in Quantum Theory (Encyclopedia of Mathematics and its Applications)},
+@Book{Biedenharn2008,
+  title     = {Angular Momentum in Quantum Physics},
   publisher = {Cambridge University Press},
-  year      = {1984},
-  author    = {L. C. Biedenharn and J. D. Louck},
-  isbn      = {9780521302296},
-  url       = {https://www.amazon.com/Racah-Wigner-Algebra-Encyclopedia-Mathematics-Applications/dp/0521302293?SubscriptionId=AKIAIOBINVZYXZQZ2U3A&tag=chimbori05-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0521302293},
+  year      = {2008},
+  author    = {Biedenharn, L. C. and Louck, James D. and Louck, J. D.},
+  isbn      = {0521102448},
+  date      = {2008-10-31},
+  ean       = {9780521102445},
+  pagetotal = {748},
+  url       = {https://www.ebook.de/de/product/8102790/l_c_biedenharn_james_d_louck_j_d_louck_angular_momentum_in_quantum_physics.html},
+}
+
+@Book{Hulst1981,
+  title     = {Light Scattering by Small Particles},
+  publisher = {Dover Publications Inc.},
+  year      = {1981},
+  author    = {van de Hulst, H. C.},
+  isbn      = {0486642283},
+  date      = {1981-12-01},
+  ean       = {9780486642284},
+  pagetotal = {470},
+  url       = {https://www.ebook.de/de/product/3303077/h_c_van_de_hulst_light_scattering_by_small_particles.html},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
