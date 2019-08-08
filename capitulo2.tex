@@ -107,7 +107,7 @@ Começaremos a explicação do modelo pelo caso de espalhamento mais simples: uma o
 \label{RW_puro}
 \end{equation}
 %
-porém levando em conta efeitos da objetiva que serão discutidos mais à frente. 
+onde a região de integração é um cone sólido definido por um angulo chamado abertura angular do feixe. Nesse modelo também é levado em conta efeitos da objetiva que serão discutidos mais à frente. 
 
 Os detalhes dos cálculos desta seção podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
@@ -121,8 +121,6 @@ Nossa finalidade é encontrar a força eletromagnética em uma amostra na pinça óti
 onde $\sigma$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
 Assim, queremos obter os campos incidentes na esfera e espalhados por ela. Começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolos (ondas esféricas ou ondas parciais), que por sua vez é a base ideal para analisarmos o espalhamento de um objeto esférico. Outros casos de polarização serão tratados na seção \ref{Efeitos de polarizacao}. 
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -154,14 +152,16 @@ b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1
 %
 onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera e $N$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
 
-Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usá-las para montar um feixe cônico de alta abertura numérica. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador ${\mathbf J}$, que é o gerador de rotações no espaço. Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume em fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
+Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usá-las para montar um feixe de alta abertura numérica, de acordo com a equação \ref{RW_puro}. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador momento angular total ${\mathbf J}$, que é o gerador de rotações no espaço. 
+
+Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume a fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ \cite{Biedenharn2008} e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
 
 \begin{equation}
 Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha M'+\gamma M)} d^J_{M'M}(\beta),
 \label{harm_esf_rot}
 \end{equation}
 %
-que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz-$d$ de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam:
+que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz de rotação de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam:
 
 \begin{equation}
 \Pi^E =\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
@@ -174,7 +174,7 @@ e
 \end{equation}
 %
 
-O próximo passo é integrar no ângulo solido do cone. Começando pela varável $\phi_k$ (ou seja, componente $\phi$ da direção do vetor de onda ${\mathbf k}$; notação que será usada para $\theta_k$ também), obtemos:
+O próximo passo é integrar no ângulo solido do cone no espaço de Fourier. Começando pela variável $\phi_k$ (ou seja, componente $\phi$ da direção do vetor de onda ${\mathbf k}$; notação que será usada para $\theta_k$ também), obtemos:
 
 \begin{equation}
 \begin{split}
@@ -183,7 +183,7 @@ O próximo passo é integrar no ângulo solido do cone. Começando pela varável $\ph
 \end{split}
 \end{equation}
 %
-onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe. O cone sólido se obtem integrando em $\theta_k$:
+onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe \cite{Hulst1981}. O cone sólido se obtem integrando em $\theta_k$:
 
 \begin{equation}
 \begin{split}
@@ -193,9 +193,9 @@ onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe. O cone sól
 \end{split}
 \end{equation}
 %
-onde $\theta_0$ é a meia abertura do feixe.
+onde $\theta_0$ é a abertura angular do feixe aprisionador.
 
-Para derivar a força na microesfera em função da sua posição relativa ao foco do feixe, temos que calcular os campos deslocados em relação ao centro do objeto espalhador, ou seja, a orígem. Fazemos isso usando o gerador de translações no espaço ${\mathbf k}$, com o operador $e^{-i{\mathbf k}\cdot{\mathbf R}}$, onde ${\mathbf R}=q_x\hat{x}+q_y\hat{y}+q_z\hat{z}$ é o vetor de deslocamento. Multiplicamos esse operador em cada coeficiente de multipolo, e dessa forma, o operador fica dentro da integral em $\phi_k$, que leva ao seguinte resultado:
+Para derivar a força na microesfera em função da sua posição relativa ao foco do feixe, temos que calcular os campos deslocados em relação ao centro do objeto espalhador, ou seja, a orígem. Fazemos isso usando o gerador de translações no espaço, com o operador $e^{-i{\mathbf k}\cdot{\mathbf R}}$, onde ${\mathbf R}=q_x\hat{x}+q_y\hat{y}+q_z\hat{z}$ é o vetor de deslocamento. Multiplicamos esse operador em cada coeficiente de multipolo, e dessa forma, o operador fica dentro da integral em $\phi_k$, que leva ao seguinte resultado:
 
 \begin{equation}
 \begin{split}
@@ -215,15 +215,15 @@ Uma vez determinados os potenciais de Debye incidentes e espalhados, podemos obt
 \end{equation}
 %
 
-Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de um campo cônico e com perfil de instensidade constante antes de entrar na objetiva. Essa integral pode ser resolvida tomando a superfície $\sigma$ como uma esfera (com centro na orígem) com raio tendendo a infinito. Isso faz com que as componentes radiais do campo sejam desprezadas no cálculo, pois caem com $\frac{1}{r^2}$, comparado às componentes tangenciais que caem com $\frac{1}{r}$. Temos, então:
+Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de um campo produzido pela passagem de uma onda plana sendo focalizada por uma objetiva. Essa integral pode ser resolvida tomando a superfície $\sigma$ como uma esfera (com centro na orígem) com raio tendendo a infinito. Isso faz com que as componentes radiais do campo sejam desprezadas no cálculo, pois caem com $\frac{1}{r^2}$, comparado às componentes tangenciais que caem com $\frac{1}{r}$. Temos, então:
 
 \begin{equation}
 {\mathbf F}=\frac{-1}{2}r\left( \int d\Omega (\epsilon E^2_{tan}{\mathbf r}) + \int d\Omega (\mu H^2_{tan}{\mathbf r}) \right),
 \end{equation}
 %
-onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produtos dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa de perda de momento do campo incidente para o centro espalhador. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
+onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produto dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa com que o momento linear é subtraido do campo incidente. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
 
-A expressão para a força será mostrada depois de introduzirmos o perfil do feixe e a polarização, uma vez que tanto os campos mudam, quanto as expressões da força ganham termos adicionais. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_JM$, que carregam as informações de aberrações e do perfil de intensidade.
+A expressão para a força será mostrada depois de introduzirmos o perfil do feixe e a polarização, uma vez que tanto os campos mudam, quanto as expressões da força ganham termos adicionais. Junto com a expressão para a força, serão mostrados os coeficientes de multipolo $\G_{JM}$, que carregam as informações de aberrações e do perfil de intensidade.
 
 %
 %
