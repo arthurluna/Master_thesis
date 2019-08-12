@@ -230,7 +230,7 @@ Finalmente, podemos definir o fator de eficiência vetorial ${\mathbf Q}$, ou for
 \label{Q_es}
 \end{equation}
 %
-onde ${\mathbf Q}_s$ é a contribuição devida ao espalhamento ao fator de eficiência, e ${\mathbf Q}_e$ é a contribuição devida à extinção. Para obtermos expressões do ${\mathbf Q}$ que condizem com um feixe usado em um experimento, devemos levar em conta o perfil gaussiano, a polarização e as aberrações óticas do feixe na entrada da objetiva. Esses serão os temas discutidos nas próximas seções. {\bf talvez trocar perfil gaussiano por modo transverso?}
+onde $\left<{\mathbf F}\right>$ é a média temporal da força, P é a potência do feixe incidente na amostra, ${\mathbf Q}_s$ é a contribuição devida ao espalhamento ao fator de eficiência, e ${\mathbf Q}_e$ é a contribuição devida à extinção. Para obtermos expressões do ${\mathbf Q}$ que condizem com um feixe usado em um experimento, devemos levar em conta o perfil gaussiano, a polarização e as aberrações óticas do feixe na entrada da objetiva. Esses serão os temas discutidos nas próximas seções. {\bf talvez trocar perfil gaussiano por modo transverso?}
 
 %
 %
@@ -258,24 +258,29 @@ onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela con
 \section{Efeitos de polarização}
 \label{Efeitos de polarizacao}
 
-\hspace{5 mm}Até então, discutimos o caso de polarização circular direita e esquerda do feixe na porta de entrada da objetiva. Essas polarizações fazem com que o momento angular de spin seja bem definido, o que facilita a rotação e a expansão multipolar dos campos que compõem o feixe focalizado.Nas simulações realizadas, que serão descritas no capítulo \ref{cap3}, calculamos forças sobre a microesfera realizadas por feixes focalizados com diferentes polarizações na entrada da objetiva. 
+\hspace{5 mm}Até então, discutimos o caso de polarização circular direita e esquerda do feixe na porta de entrada da objetiva. Essas polarizações fazem com que o momento angular de spin seja bem definido, o que facilita a rotação e a expansão multipolar dos campos que compõem o feixe focalizado. Nas simulações realizadas, que serão descritas no capítulo \ref{cap3}, calculamos forças sobre a microesfera realizadas por feixes focalizados com diferentes polarizações na entrada da objetiva. Por isso, determinar a dependência explícita das forças com a polarização é de extrema importância do ponto de vista computacional.
 
-Modelamos esse caso assumindo o feixe na entrada da objetiva como uma superposição de feixes com polarização circular à direita e à esquerda. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. Introduzimos, então, o fator de eficiência vetorial, também chamado de força normalizada, para o feixe de polarização linear:
+Modelamos esse caso assumindo o feixe na entrada da objetiva como uma superposição de feixes com polarização circular à direita e à esquerda. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. 
+
+A força exercida por uma polarização elíptica pode ser obtida introduzindo a dependência com o ângulo $\psi$ do eixo rápido da placa de quarto de onda (PQO, ou QWP) no feixe paraxial incidente na entrada da objetva:
 %
-\begin{equation}
-{\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= |a|{\mathbf Q}^{(\sigma +)} + \frac{1}{2}{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross})}
-\label{fatoref_forca}
-\end{equation}
-%
-onde $\left<{\mathbf F}\right>$ é a média temporal da força e P é a potência do feixe incidente na amostra. Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda (tanto de espalhamento quanto de extinção). O termo ${\mathbf Q}^{({\it cross})}$ é o que chamamos de cruzado, pois contem produtos de campos com polarizações opostas. 
-
-A força exercida por uma polarização elípitica pode ser obtida introduzindo a dependência com o ângulo $\psi$ do eixo rápido da placa de quarto de onda (PQO, ou QWP) no feixe paraxial incidente na entrada da objetva:
-
 \begin{equation}
 {\mathbf E}^{ent}(\rho,\phi,z) = E_{centro} e^{ik_0z} e^{\frac{-\rho^2}{w_0^2}} \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \psi}}{2} \hat{\bf{\epsilon}}_\sigma .
 \label{l}
 \end{equation}
 %
+
+Dessa forma, o fator de eficiência pode ser dividido de acordo com a contribuição dos termos puros e cruzados:
+%
+\begin{equation}
+{\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= |a_+|^2{\mathbf Q}^{(\sigma +)} + |a_-|^2{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross},+-)} + {\mathbf Q}^{({\it cross},-+)}
+\label{fatoref_forca}
+\end{equation}
+%
+Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda (tanto de espalhamento quanto de extinção). Os coeficientes $a_\pm$  são dados pelo fator $(1 - ie^{-2i\sigma \psi})/2$ da equação \ref{l}, onde $a_+$ ($a_-$) corresponde a $\sigma=+1$ ($\sigma=-1$). Dessa forma, $|a_\pm|^2=(1\mp\sin2\psi)/2$.
+
+Os termos ${\mathbf Q}^{({\it cross})}$ são os que chamamos de cruzados, pois contêm produtos de campos com polarizações opostas. Como, nesse caso, o produto dos campos fornece uma fase complexa, a dependência desses termos com $\psi$ é menos trivial que no caso dos termos puros.
+
 Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da placa de quarto de onda. Podemos, então, identificar 4 tipos de termos nas forças de extinção e de espalhamento: diretos ou puros devidos as polarizações $\sigma_\pm$, e termos cruzados com os produtos $\sigma_\pm^*\cdot\sigma_\mp$.
 
 %
@@ -288,9 +293,11 @@ Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da p
 
 \hspace{5 mm}A aberração esférica é um efeito ótico onde os raios que compõem o feixe são focalizados em pontos distintos do eixo ótico. Uma lente esférica, por exemplo, fará com que os raios marginais de um feixe colimado sejam mais refratados que os raios mais próximos ao eixo ótico. Esse efeito faz com que o perfil de intensidade do feixe seja difundido ao longo do eixo ótico.
 
-{\bf Antes mesmo do feixe ser focalizado, este pode conter aberração esférica, como veremos na próxima seção.}
+No aparato de pinças óticas esse efeito ocorre quando usamos uma lente objetiva de imersão em óleo, que não é corrigida para aberração esférica, e o feixe incidide em um porta-amostra contendo algum fluido com índice de refração diferente do óleo e do vídro do porta-amostra, que são iguais. Esse efeito faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface.
 
-Uma outra forma que a aberração esférica pode ocorrer é quando há algum tipo de feixe focalizado atravessando a interface de meios com índices de refração diferentes. Nesse caso, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
+Também pode haver aberração esférica no feixe paraxial antes da entrada da objetiva, mas trataremos esse caso somente na seção \ref{Aberracoes oticas}.
+
+No caso do feixe focalizado atravessando uma interface de dois meios com índices de refração diferentes, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
 %
 \begin{equation}
 n\sin\theta=n_1\sin\theta_1.
@@ -298,23 +305,35 @@ n\sin\theta=n_1\sin\theta_1.
 \end{equation}
 %
 
-Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface. No aparato de pinças óticas esse efeito ocorre quando usamos uma lente objetiva de imersão em óleo, que não é corrigida para aberração esférica, e o feixe incidide em um porta-amostra contendo algum fluido com índice de refração diferente do óleo e do vídro do porta-amostra, que são iguais. Esse efeito faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface.
+Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface, de forma a produzir um novo plano focal. 
 %
 \begin{figure}
 \begin{center}
-\includegraphics[scale=1.]{aberracao_esf}
-\caption{}
+\includegraphics[scale=.9]{aberracao_esf4}
+\caption{Ilustração do efeito de aberração esférica. Na figura, ${\mathbf L_a}$ e ${\mathbf L}$ são as distância entre a interface e o plano focal na ausência da interface e o plano focal efetivo, e ${\mathbf S}$ é a distância do eixo ótico ao ponto de incidência de um raio na interface.}
 \label{ab_esf}
 \end{center}
 \end{figure}
 %
 
-Podemos entender esse efeito também como uma diferença de caminho ótico induzida no feixe. Esta 
+A distância a esse plano focal (${\mathbf L}$ na figura \ref{ab_esf}) pode ser calculada usando a lei de snell e geometria. Assumindo ângulos pequenos (situação em que os raios incidem aproximadamente no mesmo ponto), tomamos $\sin\theta\approx\theta$ e a lei de snell fornece:
+%
+\begin{equation}
+\frac{\theta_1}{\theta}\approx\frac{n}{n_1}.
+\end{equation}
+%
 
-Ao serem refratadas, as componetes de onda-plana ganham também uma fase $e^{i\Psi(z, \theta)}$, onde
+E usando a distância do ponto de incidência do raio na interface até o eixo ótico e a distância entre a interface e o plano focal na ausência da inteface (${\mathbf S}$ e ${\mathbf L_a}$ na figura\ref{ab_esf}), temos $\tan\theta=s/L_a$ e $\tan\theta_1=s/L$. Em ângulos pequenos, temos $\theta\approx s/L_a$ e $\theta_1\approx s/L$; e junto com a lei de Snell, temos:
+%
+\begin{equation}
+\frac{\theta_1}{\theta} \approx \frac{L_a}{L} \approx\frac{n}{n_1}.
+\end{equation}
+%
+
+Podemos entender esse efeito também como uma diferença de caminho ótico induzida no feixe. Ao serem refratadas, as componetes de onda-plana ganham também uma fase $e^{i\Psi(z, \theta)}$, onde
 
 \begin{equation}
-\Psi(z,\theta)=k\left( -\frac{L}{N^2}\cos\theta +(L+z)\cos\theta_1 \right) 
+\Psi(z,\theta)=k\left( -\frac{L}{N^2}\cos\theta +(L+z)\cos\theta_1 \right) {\mathbf corrigir!!}
 \label{faseSA}
 \end{equation}
 %
@@ -335,6 +354,7 @@ onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$.
 %
 %
 \section{Aberrações óticas}
+\label{Aberracoes oticas}
 
 \hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
 
