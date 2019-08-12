@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {2.6}Aberra\c c\~ao esf\'erica produzida por refra\c c\~ao na interface com o porta-amostra}{16}{section.2.6}% 
 \contentsline {section}{\numberline {2.7}Aberra\c c\~oes \'oticas}{19}{section.2.7}% 
 \contentsline {section}{\numberline {2.8}For\c ca \'otica em termos da expans\~ao em multipolos}{21}{section.2.8}% 
-\contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{22}{section.2.9}% 
+\contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{23}{section.2.9}% 
 \contentsline {chapter}{\numberline {3}Experimento e Simula\c c\~ao}{26}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Aparato Experimental}{26}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Procedimento Experimental}{30}{section.3.2}% 
