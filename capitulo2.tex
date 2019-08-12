@@ -145,12 +145,12 @@ A base de multipolos são compostas pelos harmônicos esféricos na parte angular, 
 A expansão em multipolos forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Com elas podemos obter os campos espalhados a partir do campo incidente. Os coeficientes de Mie para o espalhamento são:
 
 \begin{equation}
-a_J=\frac{\psi_J(\beta)\psi'_J(\alpha)-N\psi'_J(\beta)\psi_J(\alpha)}{\zeta^{(1)}_J(\beta)\psi'_J(\alpha)-N\zeta'^{(1)}_J(\beta)\psi_J(\alpha)} \qquad ,\qquad
-b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1)}_J(\beta)\psi_J(\alpha)-N\zeta^{(1)}_J(\beta)\psi'_J(\alpha)},
+a_J=\frac{\psi_J(\beta)\psi'_J(\alpha)-N_{12}\psi'_J(\beta)\psi_J(\alpha)}{\zeta^{(1)}_J(\beta)\psi'_J(\alpha)-N_{12}\zeta'^{(1)}_J(\beta)\psi_J(\alpha)} \qquad ,\qquad
+b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N_{12}\psi_J(\beta)\psi'_J(\alpha)}{\zeta'^{(1)}_J(\beta)\psi_J(\alpha)-N_{12}\zeta^{(1)}_J(\beta)\psi'_J(\alpha)},
 \label{mie}
 \end{equation} 
 %
-onde $\beta=ka$, $\alpha=Nka$, $a$ é o raio da esfera e $N$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
+onde $\beta=ka$, $\alpha=N_{12}ka$, $a$ é o raio da esfera e $N_{12}$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
 
 Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usá-las para montar um feixe de alta abertura numérica, de acordo com a equação \ref{RW_puro}. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador momento angular total ${\mathbf J}$, que é o gerador de rotações no espaço. 
 
@@ -297,15 +297,6 @@ No aparato de pinças óticas esse efeito ocorre quando usamos uma lente objetiva 
 
 Também pode haver aberração esférica no feixe paraxial antes da entrada da objetiva, mas trataremos esse caso somente na seção \ref{Aberracoes oticas}.
 
-No caso do feixe focalizado atravessando uma interface de dois meios com índices de refração diferentes, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
-%
-\begin{equation}
-n\sin\theta=n_1\sin\theta_1.
-\label{snell}
-\end{equation}
-%
-
-Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface, de forma a produzir um novo plano focal. 
 %
 \begin{figure}
 \begin{center}
@@ -315,38 +306,63 @@ Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendic
 \end{center}
 \end{figure}
 %
+No caso do feixe focalizado atravessando uma interface de dois meios com índices de refração diferentes, é fácil de mostrar como o efeito funciona em uma abordagem de ótica de raios e a lei de Snell. Componentes do feixe no meio com índice $n$ que incidem na interface com ângulo $\theta$, por refração, são transmitidos com um ângulo $\theta_1$ no meio com índice de refração $n_1$, de forma a respeitar a lei de Snell:
+%
+\begin{equation}
+n\sin\theta=n_1\sin\theta_1.
+\label{snell}
+\end{equation}
+%
 
-A distância a esse plano focal (${\mathbf L}$ na figura \ref{ab_esf}) pode ser calculada usando a lei de snell e geometria. Assumindo ângulos pequenos (situação em que os raios incidem aproximadamente no mesmo ponto), tomamos $\sin\theta\approx\theta$ e a lei de snell fornece:
+Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface, de forma a produzir um novo plano focal. 
+
+A distância a esse plano focal (${\mathbf L}$ na figura \ref{ab_esf}) pode ser calculada usando a lei de snell e geometria. Assumindo ângulos pequenos (situação em que os raios incidem aproximadamente no mesmo ponto), tomamos $\sin\theta\approx\theta$ e a lei de Snell fornece:
 %
 \begin{equation}
 \frac{\theta_1}{\theta}\approx\frac{n}{n_1}.
 \end{equation}
 %
 
-E usando a distância do ponto de incidência do raio na interface até o eixo ótico e a distância entre a interface e o plano focal na ausência da inteface (${\mathbf S}$ e ${\mathbf L_a}$ na figura\ref{ab_esf}), temos $\tan\theta=s/L_a$ e $\tan\theta_1=s/L$. Em ângulos pequenos, temos $\theta\approx s/L_a$ e $\theta_1\approx s/L$; e junto com a lei de Snell, temos:
+E usando a distância do ponto de incidência do raio na interface até o eixo ótico e a distância entre a interface e o plano focal na ausência da inteface (${\mathbf S}$ e ${\mathbf L_a}$ na figura\ref{ab_esf}), temos $\tan\theta=s/L_a$ e $\tan\theta_1=s/L$. Em ângulos pequenos, temos $\theta\approx s/L_a$ e $\theta_1\approx s/L$, e usando a lei de Snell:
 %
 \begin{equation}
-\frac{\theta_1}{\theta} \approx \frac{L_a}{L} \approx\frac{n}{n_1}.
+\frac{\theta_1}{\theta} \approx \frac{L_a}{L} \approx\frac{n}{n_1},
+\end{equation}
+%
+de onde concluimos que $L=L_a n_1/n=L_a N$, onde $N=n_1/n$ é o índice de refração relativo.
+
+Podemos entender esse efeito também como uma fase induzida no feixe pela diferença de caminho ótico. Somente a componente de ${\mathbf k}$ na mesma direção do eixo ótico (eixo $z$) vai sofrer uma mudança. Portanto, a fase que cada componente de onda-plana ${\mathbf k}(\theta)$ ganha por se propagar no meio de índice de refração $n_1$ será:
+%
+\begin{equation}
+\Psi_+(z,\theta)=k_1 L\cos\theta_1,
+\end{equation}
+%
+onde $k_1=N k$ é o módulo do vetor de onda nesse meio.
+
+Como essa onda se propagou nesse meio de índice de refração $n_1$, ela deixou de se propagar no meio de índice de refração $n$, e portanto deve ser subtraída a fase esta deixou de ganhar:
+%
+\begin{equation}
+\Psi_-(z,\theta)=k L_a\cos\theta.
 \end{equation}
 %
 
-Podemos entender esse efeito também como uma diferença de caminho ótico induzida no feixe. Ao serem refratadas, as componetes de onda-plana ganham também uma fase $e^{i\Psi(z, \theta)}$, onde
-
+Portanto, ao serem refratadas, as componetes de onda-plana ganham a fase $e^{i\Psi(z, \theta)}$, onde
+%
 \begin{equation}
-\Psi(z,\theta)=k\left( -\frac{L}{N^2}\cos\theta +(L+z)\cos\theta_1 \right) {\mathbf corrigir!!}
+\Psi(z,\theta)= \Psi_+(z,\theta) - \Psi_-(z,\theta) =k\left( -\frac{L}{N}\cos\theta + N L\cos\theta_1 \right)
 \label{faseSA}
 \end{equation}
 %
-é a função de aberração esférica.
+é a função de aberração esférica \cite{Diniz2019}.
 
-Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por \cite{Viana2007}:
+Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por:
 
 \begin{equation}
 T(\theta)=\frac{2\cos\theta}{\cos\theta + N\cos\theta_1} ,
 \label{transmitancia}
 \end{equation}
 %
-onde, por \ref{snell}, $\theta_1=\arcsin(\frac{\sin\theta}{N})$. 
+onde, pela lei de Snell, $\theta_1=\arcsin(\frac{\sin\theta}{N})$. 
 
 %
 %
