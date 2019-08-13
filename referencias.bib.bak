@@ -459,10 +459,21 @@
   year      = {2013},
   author    = {Zangwill, Andrew},
   isbn      = {0521896975},
-  note      = {pgs. 558-560},
+  note      = {558-560},
   date      = {2013-02-01},
   ean       = {9780521896979},
   url       = {https://www.ebook.de/de/product/19399352/andrew_zangwill_modern_electrodynamics.html},
+}
+
+@Book{Born2002,
+  title     = {Principles of Optics},
+  publisher = {Cambridge University Pr.},
+  year      = {2002},
+  author    = {Born, Max and Wolf, Emil and Bhatia, A. B.},
+  isbn      = {0521642221},
+  date      = {2002-06-01},
+  ean       = {9780521642224},
+  url       = {https://www.ebook.de/de/product/3242885/max_born_emil_wolf_a_b_bhatia_principles_of_optics.html},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

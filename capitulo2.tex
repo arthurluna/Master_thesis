@@ -114,11 +114,11 @@ Os detalhes dos cálculos desta seção podem ser encontrados em \cite{Mazolli}, e 
 Nossa finalidade é encontrar a força eletromagnética em uma amostra na pinça ótica. Obtemos ela com \cite{Jackson1998}:
 
 \begin{equation}
-\vec{F} = \oint_{\sigma} \hat{n} \cdot \mathbf{T} d \sigma - \mu \epsilon \frac{d}{dt} \int_{\nu} \mathbf{S} d \nu,
+\vec{F} = \oint_{s} \hat{n} \cdot \mathbf{T} d s - \mu \epsilon \frac{d}{dt} \int_{\nu} \mathbf{S} d \nu,
 \label{2_F}
 \end{equation}
 %
-onde $\sigma$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
+onde $s$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell, $\mathbf{S}$ é o vetor de Poynting e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
 Assim, queremos obter os campos incidentes na esfera e espalhados por ela. Começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolos (ondas esféricas ou ondas parciais), que por sua vez é a base ideal para analisarmos o espalhamento de um objeto esférico. Outros casos de polarização serão tratados na seção \ref{Efeitos de polarizacao}. 
 
@@ -279,7 +279,7 @@ Dessa forma, o fator de eficiência pode ser dividido de acordo com a contribuiçã
 %
 Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda (tanto de espalhamento quanto de extinção). Os coeficientes $a_\pm$  são dados pelo fator $(1 - ie^{-2i\sigma \psi})/2$ da equação \ref{l}, onde $a_+$ ($a_-$) corresponde a $\sigma=+1$ ($\sigma=-1$). Dessa forma, $|a_\pm|^2=(1\mp\sin2\psi)/2$.
 
-Os termos ${\mathbf Q}^{({\it cross})}$ são os que chamamos de cruzados, pois contêm produtos de campos com polarizações opostas. Como, nesse caso, o produto dos campos fornece uma fase complexa, a dependência desses termos com $\psi$ é menos trivial que no caso dos termos puros.
+Os termos ${\mathbf Q}^{({\it cross})}$ são os que chamamos de cruzados, pois contêm produtos de campos com polarizações opostas. Como, nesse caso, o produto dos campos fornece uma fase complexa, a dependência desses termos com $\psi$ é menos trivial que no caso dos termos puros. Voltaremos a essa discussão na seção \ref{forcaotica}.
 
 Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da placa de quarto de onda. Podemos, então, identificar 4 tipos de termos nas forças de extinção e de espalhamento: diretos ou puros devidos as polarizações $\sigma_\pm$, e termos cruzados com os produtos $\sigma_\pm^*\cdot\sigma_\mp$.
 
@@ -372,18 +372,18 @@ onde, pela lei de Snell, $\theta_1=\arcsin(\frac{\sin\theta}{N})$.
 \section{Outras aberrações do sistema ótico}
 \label{Aberracoes oticas}
 
-\hspace{5 mm}As aberrações óticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
+\hspace{5 mm}As aberrações óticas monocromáticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
 
 O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. Estamos tratando aqui de aberrações antes da objetiva, ou seja, a aberração esférica tratada aqui tem orígem diferente da descrita na sessão anterior, apesar de serem o mesmo fenômeno físico.
 
-Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\Phi_{adicional}(\theta,\phi)}$ nos campos na entrada da objetiva (modificando a equação \ref{l}), com:
+Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\Phi_{adicional}(\theta,\phi)}$ nos campos na entrada da objetiva (modificando a equação \ref{l}), com \cite{Born2002}:
 
 \begin{equation}
-\Phi_{adicional}(\theta,\phi) = 2\pi \left[ A'_{sa}\left( \frac{\sin\theta}{\sin\theta_0} \right)^4 + A'_{c}\left( \frac{\sin\theta}{\sin\theta_0} \right)^3\cos(\phi - \varphi_c) + A'_{a}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos^2(\phi - \varphi_a) \right].
+\Phi_{adicional}(\theta,\phi) = 2\pi \left[ A'_{sa}\left( \frac{\sin\theta}{\sin\theta_0} \right)^4 + A'_{c}\left( \frac{\sin\theta}{\sin\theta_0} \right)^3\cos(\phi - \varphi_c) + A'_{a}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos^2(\phi - \varphi_a) \right],
 \end{equation}
-{\bf atenção aqui! tese do Rafael$->$ cos do $A_{ast}$ é diferente (2(angulo), elevado ao quad), no artigo do Kaina, essa fase é referida como fase de Zernike, e tirei da tese do Rafa como fase de Seidel. }
+%{\bf atenção aqui! tese do Rafael$->$ cos do $A_{ast}$ é diferente (2(angulo), elevado ao quad), no artigo do Kaina, essa fase é referida como fase de Zernike, e tirei da tese do Rafa como fase de Seidel. }
 %
-Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
+em que $\Phi_{adicional}(\theta,\phi)$ é obtida como uma expansão em série de potências do parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, onde $\rho$ é a distância do ponto do feixe ao eixo e $R_p$ é o raio da pupila da objetiva. Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
 %
 \begin{figure}[h]
 \begin{center}
@@ -394,9 +394,25 @@ Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esf
 \end{figure}
 %
 
-Uma breve explicação das aberrações será feita a seguir, baseada em trabalhos do grupo \cite{Dutra, Diniz, Dutra2014, Diniz2019}, onde detalhes do seguinte desenvolvimento podem ser encontrados. 
-
 Considemos agora o problema prático: os experimentos que serviram de base comparatória para as simulações desenvolvidas não possuem coma e os efeitos de aberração esférica podem ser negligenciados. Portanto, somente o astigmatismo será levado em conta nas equações apresentadas. Como a fase referente ao astigmatismo possui uma dependência em $\phi$, podemos concluir que a integral da equação \ref{int_phi} será modificada. 
+
+Uma breve explicação do efeito de astigmatismo será feita a seguir, baseada em trabalhos do grupo \cite{Dutra, Diniz, Dutra2014, Diniz2019}, onde detalhes do seguinte desenvolvimento e das demais aberrações podem ser encontrados. 
+
+O astigmatismo surge ao deslocarmos o ponto de orígem de um raio de luz do eixo ótico de uma lente. A reta que passa pelo ponto objeto e o centro da lente é chamado raio principal, e o plano que contém ele e o eixo ótico da lente é chamado plano meridional. O plano que contém o raio principal e é perpendicular ao plano meridional é chamado plano sagital.
+
+Dessa forma, os raios de luz que emergem do ponto deslocado do eixo ótico formarão um cone assimétrico incidente na lente. Os raios que estão contidos no plano meridional se encontrarão no foco meridional ${\mathbf F}_T$ ao passar pela lente, enquanto os que estão contidos no plano sagital se encontrarão no foco sagital ${\mathbf F}_S$. A figura \ref{feixe_astig} ilustra os planos meridional e sagital e os respectivos focos. Como podemos ver, a seção reta do feixe forma elipses, e seu eixo alongado gira $90º$ de direção quando passa pelo círculo de menor confusão, também chamado de foco difratado. Esse alongamento ocorre, portanto, no {\it spot} (a imagem formada por um feixe) do laser, o que torna fácil a identificação dessa aberração em sistemas óticos.
+
+Para o caso em que o ponto que emite os raios está localizado sobre o eixo ótico, os planos meridional e sagital são indistinguíveis e todos os raios se encontram no mesmo ponto, recuperando o caso em que não há astigmatismo.
+
+Podemos expressar o astigmatismo de uma forma alternativa (porém análoga) ao formalismo de Seidel: o formalismo de Zernike. Os polinômios de Seidel, apesar de serem linearmente independentes, não formam uma base ortogonal, enquanto os polinômios de Zernike formam. O centro de coordenadas difere também entre os dois formalismos: o de Seidel usa o foco gaussiano, enquanto o de Zernike usa o foco difratado \cite{Dutra}. A fase de Zernike é \cite{Born2002,Diniz2019}:
+%
+\begin{equation}
+\Phi_{adicional}(\theta,\phi) = 2\pi A_{ast}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos2(\phi - \varphi_a),
+\end{equation}
+%
+onde $A_{ast}$ é o parâmetro de astigmatismo no formalismo de Zernike, que será o usado para realizar os cálculos numéricos. 
+
+Podemos relacionar $A_{ast}$ e $A'_{a}$ observando que $\cos2(\phi-\varphi_a) = 2\cos^2(\phi-\varphi_a)-1$, e 
 
 Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as expressões para força em termos dos coeficientes de multipolo. 
 
