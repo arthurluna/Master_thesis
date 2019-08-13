@@ -279,7 +279,7 @@ Dessa forma, o fator de eficiência pode ser dividido de acordo com a contribuiçã
 %
 Os termos ${\mathbf Q}^{(\sigma \pm)}$ são os termos que encontraríamos para a polarização circular direita ou esquerda (tanto de espalhamento quanto de extinção). Os coeficientes $a_\pm$  são dados pelo fator $(1 - ie^{-2i\sigma \psi})/2$ da equação \ref{l}, onde $a_+$ ($a_-$) corresponde a $\sigma=+1$ ($\sigma=-1$). Dessa forma, $|a_\pm|^2=(1\mp\sin2\psi)/2$.
 
-Os termos ${\mathbf Q}^{({\it cross})}$ são os que chamamos de cruzados, pois contêm produtos de campos com polarizações opostas. Como, nesse caso, o produto dos campos fornece uma fase complexa, a dependência desses termos com $\psi$ é menos trivial que no caso dos termos puros. Voltaremos a essa discussão na seção \ref{forcaotica}.
+Os termos ${\mathbf Q}^{({\it cross})}$ são os que chamamos de cruzados, pois contêm produtos de campos com polarizações opostas. Nesse caso, os produtos dos campos fornecem duas fases complexas (conjugadas entre si): $\cos 2\psi e^{i2\psi}$ e $\cos 2\psi e^{-i2\psi}$.
 
 Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da placa de quarto de onda. Podemos, então, identificar 4 tipos de termos nas forças de extinção e de espalhamento: diretos ou puros devidos as polarizações $\sigma_\pm$, e termos cruzados com os produtos $\sigma_\pm^*\cdot\sigma_\mp$.
 
@@ -383,7 +383,9 @@ Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\P
 \end{equation}
 %{\bf atenção aqui! tese do Rafael$->$ cos do $A_{ast}$ é diferente (2(angulo), elevado ao quad), no artigo do Kaina, essa fase é referida como fase de Zernike, e tirei da tese do Rafa como fase de Seidel. }
 %
-em que $\Phi_{adicional}(\theta,\phi)$ é obtida como uma expansão em série de potências do parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, onde $\rho$ é a distância do ponto do feixe ao eixo e $R_p$ é o raio da pupila da objetiva. Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
+%em que $\Phi_{adicional}(\theta,\phi)$ é obtida como uma expansão em série de potências do parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, onde $\rho$ é a distância do ponto do feixe ao eixo e $R_p$ é o raio da pupila da objetiva. Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
+%
+onde o parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, $\rho$ é a distância do ponto do feixe ao eixo e $R_p$ é o raio da pupila da objetiva. Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
 %
 \begin{figure}[h]
 \begin{center}
@@ -412,7 +414,7 @@ Podemos expressar o astigmatismo de uma forma alternativa (porém análoga) ao for
 %
 onde $A_{ast}$ é o parâmetro de astigmatismo no formalismo de Zernike, que será o usado para realizar os cálculos numéricos. 
 
-Podemos relacionar $A_{ast}$ e $A'_{a}$ observando que $\cos2(\phi-\varphi_a) = 2\cos^2(\phi-\varphi_a)-1$, e 
+Podemos relacionar $A_{ast}$ e $A'_{a}$ observando que $\cos2(\phi-\varphi_a) = 2\cos^2(\phi-\varphi_a)-1$. Podemos concluir que $A'_{a}$ no formalismo de Seidel é igual a $\thinspace2A_{ast}$ no formalismo de Zernike, e este último possui uma fase adicional, que pode ser interpretada como um desfocamento do feixe, ou seja, um deslocamento rígido do perfil de intensidade ao longo do eixo de propagação \cite{Born2002}.
 
 Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as expressões para força em termos dos coeficientes de multipolo. 
 
@@ -424,16 +426,9 @@ Uma vez apresentadas todas as correções feitas ao modelo MD, vamos apresentar as
 \section{Força ótica em termos da expansão em multipolos}
 \label{forcaotica}
 
+\hspace{5 mm}Como apresentado no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. Como o momento se conserva nesse sistema, podemos analisar a força sobre o centro espalhador escolhendo uma superfície $s$ fechada que o englobe e calcular o fluxo de momento através dela. A forma mais fácil de faze-lo é escolhendo uma superfície esférica com raio tendendo a infinito. Podemos argumentar também que a integral envolvendo o vetor de Poynting não contribui para a força, pois este é harmônico no tempo e a média temporal se anula \cite{Zangwill2013}. No limite que tal superfície está no infinito, usamos as expressões assintóticas para as funções de Bessel (com dependência em $kr$) que aparecem nos potenciais de Debye. 
 
-
-
-
-
-
-
-\hspace{5 mm}Como apresentado no começo do capítulo, o método para se obter a força na pinça ótica é resolver a integral \ref{2_F}. A forma mais fácil de faze-lo é tomando a superfície $\sigma$ no infinito, já que a escolha dessa é arbitrária. Podemos argumentar também que a integral envolvendo o vetor de Poynting é zero. No limite que tal superfície está no infinito, usamos as expressões assintóticas das funções de Bessel (com dependência em $kr$) dentro dos potenciais de Debye. 
-
-Portanto, a expressão para as contribuições de espalhamento e extinção do fator de eficiência na direção $z$, para uma polarização qualquer, corrigida para aberração esférica e astigmatismo, tem a forma \cite{Diniz2019}:
+Portanto, a expressão para as contribuições de espalhamento e extinção do fator de eficiência na direção $z$, para um ângulo $\psi$ da placa de quarto de onda, corrigida para aberração esférica e astigmatismo, tem a forma \cite{Diniz2019}:
 
 \begin{equation}
 \begin{split}
@@ -446,9 +441,25 @@ Q_{ez}(\rho,\phi,z) = \frac{2\gamma^2}{AN}\operatorname{Re}\sum\limits_{jm\sigma
 \end{equation}
 %
 
-O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e a cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} as expressões para os coeficiente de multipolo $\G^{(\sigma)}_{j,m}$ e $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_\phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
+Os somatórios nos fatores de eficiência variam da seguinte forma: $j=1,2,...,\infty$, $m=-j,-j+1,...,j-1,j$ como na equação \ref{pi_phi}, e o índice das polarizações $\sigma=+1,-1$, como na equação \ref{l}. O coeficiente de multipolo $\G^{(\sigma)}_{j,m} (\rho,\phi,z)$ tem a forma:
+%
+\begin{equation}
+\G^{(\sigma)}_{j,m} (\rho,\phi,z) = \int_0^{\theta_0} d\theta_k \sin\theta_k \sqrt{\cos\theta_k}\>e^{\gamma^2\sin^2\theta_k} T(\theta_k) d^j_{m,\sigma}(\theta_w)f^{(\sigma)}_m(\rho,\phi,z)\>e^{\Phi_{g-w}(\theta_k)+k_wz\cos\theta_w}.
+\end{equation}
+%
 
-No capítulo \ref{cap3} serão descritas as medidas feitas com o aparato da pinça ótica. As forças não são medidas diretamente: como as microesferas estão em movimento browniano na solução, quando pinçadas elas passam flutuar ao redor da posição de equilíbrio na pinça. Seus movimento pode ser descrito por meio de um potencial harmônico, que permite uma expansão de Taylor da força em $\rho$, e uma constante elástica associada a pinça. Temos, então, a constante transversa $\kappa_\rho$ de rigidez dada por\cite{Viana2007}:
+A função $f^{(\sigma)}(\rho,\phi,z)$ usada nos coeficientes de multipolo é:
+%
+\begin{equation}
+f^{(\sigma)}(\rho,\phi,z)=\sum\limits_{s=-\infty}^{\infty}(-i)^sJ_s\Big{(}2\pi A_{ast} \frac{\sin^2\theta_k}{\sin^2\theta_0} \Big{)} J_{2s+m-\sigma}(k\rho\sin\theta_k) \>e^{i2s(\varphi_a-\phi)},
+\label{ap_f}
+\end{equation}
+%
+onde $J_m$ são as funções de Bessel cilindricas do primeiro tipo. Repare que essa função carrega a dependência de ${\mathbf Q}$ com os parâmetros de astigmatismo $A_{ast}$ e $\varphi_a$, assim como com as coordenadas $z$ e $\rho$.
+
+O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e a cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} a expressão para o coeficiente de multipolo $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_\phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
+
+No capítulo \ref{cap3} serão descritas as medidas feitas com o aparato da pinça ótica. As forças não são medidas diretamente: como as microesferas estão em movimento browniano na solução, quando pinçadas elas passam a flutuar ao redor da posição de equilíbrio na pinça. Seu movimento pode ser descrito por meio de um potencial harmônico, caracterizado por valores para as constantes elásticas da pinça. Temos, então, a constante transversa $\kappa_\rho$ definida por\cite{Viana2007}:
 %
 \begin{equation}
 \kappa_\rho=-\frac{n_1 P}{c}\frac{\partial Q_\rho}{\partial \rho}\Big{|}_{\rho=0, \thinspace z=z_{eq}},
@@ -463,9 +474,9 @@ onde $P$ é a potência do laser; e a constante de torção \cite{Diniz2019}:
 \end{equation}
 %
 
-Os somatórios em $j$ e $m$ são feitos da mesma forma que na expressão \ref{pi_phi}: $j$ vai de $0$ a $\infty$, e $m$ de $-j$ a $j$. Os valores da soma de $\sigma$ são $\pm1$, como na equação \ref{l}. O importante de observarmos aqui é a dependência de $Q_z$ com $\psi$, que será um parâmtero livre no experimento e portanto na simulação. Podemos identificar nas expressões 4 tipos de termos: com multipolos com mesmo índice de polarização $\G^{(+1)}\G^{(+1)*}$ e $\G^{(-1)}\G^{(-1)*}$, e com índices invertidos $\G^{(+1)}\G^{(-1)*}$ e $\G^{(-1)}\G^{(+1)*}$. Os dois primeiros termos são proporciais, respectivamente, a $(1-\sin2\psi)$ e $(1+\sin2\psi)$, e os dois últimos, a $\cos2\psi e^{i2\psi}$ e $\cos2\psi e^{-i2\psi}$.
+O importante de observarmos aqui é a dependência de $Q_z$ com $\psi$, que será um parâmtero livre no experimento e portanto na simulação. Podemos identificar nas expressões 4 tipos de termos: com multipolos com mesmo índice de polarização $\G^{(+1)}\G^{(+1)*}$ e $\G^{(-1)}\G^{(-1)*}$, e com índices invertidos $\G^{(+1)}\G^{(-1)*}$ e $\G^{(-1)}\G^{(+1)*}$. Os dois primeiros termos são proporciais, respectivamente, a $(1-\sin2\psi)$ e $(1+\sin2\psi)$, e os dois últimos, a $\cos2\psi e^{i2\psi}$ e $\cos2\psi e^{-i2\psi}$, como foi discutido na seção \ref{Efeitos de polarizacao}. Como podemos ver nas expressões para $Q_{ez}$, a dependência com $\psi$ está na parte real de $(a_j-b_j) (\G^{(\sigma)}_{j,m} \G^{C,(-\sigma)*}_{j,m}\cos2\psi e^{i2\sigma(\phi-\psi)})$. Outras vezes, a dependência será na parte imaginária de um produto como esse, como por exemplo em $Q_{e\rho}$ (equação \ref{qerho}), onde o produto é $(a_j-b_j) (\G^{(\sigma)}_{j,m} (\G^{-,(-\sigma)*}_{j,m+1}-\G^{+,(-\sigma)*}_{j,m-1} )\cos2\psi \> e^{i2\sigma(\phi-\psi)}$.
 
-Explicitar essa soma é de grande importância para os cálculos numéricos, pois podemos calcular esses 4 termos de forma independente, e teremos o valor de $Q_z$ para qualquer ângulo da placa de quarto de onda.
+Explicitar a soma em $\sigma$ é de grande importância para os cálculos numéricos, pois podemos calcular esses 4 termos de forma independente, e teremos o valor de $Q_z$ para qualquer ângulo da placa de quarto de onda.
 
 \section{Interação Spin-Órbita}
 \label{interacao_so}
