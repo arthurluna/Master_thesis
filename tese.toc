@@ -11,17 +11,17 @@
 \contentsline {section}{\numberline {2.4}Efeito do perfil gaussiano}{14}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Efeitos de polariza\c c\~ao}{15}{section.2.5}% 
 \contentsline {section}{\numberline {2.6}Aberra\c c\~ao esf\'erica produzida por refra\c c\~ao na interface com o porta-amostra}{16}{section.2.6}% 
-\contentsline {section}{\numberline {2.7}Aberra\c c\~oes \'oticas}{19}{section.2.7}% 
-\contentsline {section}{\numberline {2.8}For\c ca \'otica em termos da expans\~ao em multipolos}{21}{section.2.8}% 
-\contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{23}{section.2.9}% 
-\contentsline {chapter}{\numberline {3}Experimento e Simula\c c\~ao}{26}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Aparato Experimental}{26}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Procedimento Experimental}{30}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Simula\c c\~ao do experimento de transfer\^encia de momento angular}{33}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}Condi\c c\~oes de Pin\c camento}{36}{section.3.4}% 
-\contentsline {chapter}{\numberline {4}Resultados}{39}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{39}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao da amostra na pin\c ca \'otica}{42}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{46}{chapter.5}% 
-\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{52}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}Formalismos de Zernike e Seidel para astigmastismo}{55}{appendix.B}% 
+\contentsline {section}{\numberline {2.7}Outras aberra\c c\~oes do sistema \'otico}{19}{section.2.7}% 
+\contentsline {section}{\numberline {2.8}For\c ca \'otica em termos da expans\~ao em multipolos}{22}{section.2.8}% 
+\contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{24}{section.2.9}% 
+\contentsline {chapter}{\numberline {3}Experimento e Simula\c c\~ao}{27}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Aparato Experimental}{27}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Procedimento Experimental}{31}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Simula\c c\~ao do experimento de transfer\^encia de momento angular}{34}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Condi\c c\~oes de Pin\c camento}{37}{section.3.4}% 
+\contentsline {chapter}{\numberline {4}Resultados}{40}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{40}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao da amostra na pin\c ca \'otica}{43}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{47}{chapter.5}% 
+\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{54}{appendix.A}% 
+\contentsline {chapter}{\numberline {B}Formalismos de Zernike e Seidel para astigmastismo}{57}{appendix.B}% 
