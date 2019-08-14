@@ -481,51 +481,47 @@ Explicitar a soma em $\sigma$ é de grande importância para os cálculos numéricos
 \section{Interação Spin-Órbita}
 \label{interacao_so}
 
-\hspace{5 mm}Uma das características da pinça ótica que faz com que a modelagem teórica seja tão difícil é o fato de que o feixe que emerge da objetiva é muito focalizado, e portanto não paraxial. Um dos efeitos resultantes da focalização do feixe é a conversão de momento angular de spin do feixe, associado a polarização (ou helicidade) do campo, em momento angular orbital \cite{Bliokh2015}. O momento angular orbital insere uma fase com dependência na variável cilindrica $\phi$.
+\hspace{5 mm}Uma das características da pinça ótica que faz com que a modelagem teórica seja tão difícil é o fato de que o feixe que emerge da objetiva é muito focalizado, e portanto não paraxial. Um dos efeitos resultantes da focalização do feixe é a conversão de momento angular de spin do feixe, associado a polarização (ou helicidade) do campo, em momento angular orbital \cite{Bliokh2015}. O momento angular orbital insere uma fase com dependência na variável de posição angular cilíndrica $\phi$.
 
 Evidências experimentais apontam que o campo espalhado por uma microesfera no aparato de pinça ótica pode carregar mais momento angular do que o campo incidente. Usamos o efeito de conversão de momento angular de spin para orbital junto com a teoria MD para pinça ótica para trazer luz a esse fenômeno.
 
-De uma forma simples, podemos entender essa transferência de momento angular considerando um cone de ondas planas circularmente polarizdas com angulo de meia abertura $\theta$, da mesma forma que fizemos no começo da seção \ref{MD}. 
+De uma forma simples, podemos entender essa transferência de momento angular considerando uma superposição de ondas planas circularmente polarizdas, onde os vetores ${\mathbf k}$ fazem um ângulo $\theta$ com o eixo $z$, da mesma forma que fizemos no começo da seção \ref{MD}. 
 
-Suas componentes de spin apontam para as respectivas direções de propagação, com o sentido definido pelo sentido da polarização circular {\bf colocar referência}. Assumindo que o momento angular (intrínsico) total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam. Se ${\mathbf P}$ é o momento angular total do feixe e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
+No contexto de campos paraxiais, podemos separar as componentes do momento angular em duas partes, uma de spin associada à helicidade do feixe, e outra associada ao momento angular orbital, caracterizado pela fase $e^{il\phi}$, presente nos modos Laguerre-Gaussianos \cite{Zangwill2013}. 
+
+Podemos extender essa distinção de momentos angulares para o caso de ondas planas. O momento angular de spin permanece associado à polarização. O momento angular orbital surge com rotações da onda plana, onde o vetor ${\mathbf k}$ passa a ter coordenadas esféricas $\theta$ e $\phi$. A rotação do campo vetorial ${\mathbf E}$ dará orígem a uma fase geométrica $\Phi_g=-\sigma\phi\cos\theta$, onde $\sigma=\pm1$ indica a polarização. Ao considerar um cone de vetores de onda ${\mathbf k}$ rotacionados, o campo resultante terá uma fase global de $\Phi_{g0}=2\pi\sigma(1-\cos\theta)$ \cite{Bliokh2015}.
+%
+Portanto, a variação de momento angular intrínseco devido às rotações e superposição das ondas planas é dado por $\Delta L_z = -\Delta S_z = \Phi_{g0}/2\pi$.
+
+%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.75]{so_fig}
+\caption{Ilustração da conservação do momento angular. ${\mathbf P}_{antes}=\sigma{\mathbf S}$ é o momento angular intrínseco de uma onda plana com polarização $\sigma$, onde só há componente de spin. Após ser rotacionada, a onda passa a apresentar uma componente de momento angular orbital ${\mathbf L}$.}
+\label{so_fig}
+\end{center}
+\end{figure}
+%
+Podemos visualizar esse efeito de uma forma mais simples.
+%
+Assumindo que o momento angular intrínseco total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam, como mostra a figura \ref{so_fig}. Se ${\mathbf P}$ é o momento angular total do feixe e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
 %
 \begin{equation}
 {\mathbf S}=\sigma\cos\theta{\mathbf P}\thinspace, \quad\quad {\mathbf L}=\sigma(1-\cos\theta){\mathbf P}.
 \end{equation}
 %
 
-Na seção \ref{MD} rotacionamos os potenciais de Debye, que representam ondas paciais, utilizando um operador de rotação. Podemos, ao invés disso, rotacionar o campo vetorial ${\mathbf E}$ diretamente. Essa rotação pode ser representada na base de polarização circular $\ket{\sigma +}$, $\ket{\sigma -}$ e $\ket{z}$ com a seguinte transformação unitária \cite{Bliokh2011}:
-%
-\begin{equation}
-\begin{pmatrix}
-\braket{\sigma+|E'} \\
-\braket{\sigma-|E'} \\
-\braket{z|E'} 
-\end{pmatrix}
-=
-\begin{pmatrix}
-a & be^{-i2\phi} & \sqrt{2ab}e^{-i\phi} \\
--be^{i2\phi} & a & \sqrt{2ab}e^{i\phi} \\
--\sqrt{2ab}e^{i\phi} & -\sqrt{2ab}e^{-i\phi} & a-b
-\end{pmatrix}
-\begin{pmatrix}
-\braket{\sigma+|E} \\
-\braket{\sigma-|E} \\
-\braket{z|E} 
-\end{pmatrix}.
-\end{equation}
-%
-A dependência com o ângulo $\phi$ também aparece nas expressões dos campos rotacionados (equação \ref{pi_phi}), ao rotacionarmos os harmônicos esféricos (equação \ref{harm_esf_rot}) com $\alpha=-\gamma=\phi_k$.
-
 Uma vez que haja momento angular orbital incidindo na microesfera, podemos fazer um paralelo com a transferência de momento linear para explicar o excesso de momento angular no campo espalhado.
 
-Como discutido na seção \ref{MD}, os termos de extinção representa a quantidade de momento que é transferida do campo incidente à microesfera; enquanto o termo de espalhamento está relacionado à transferência de momento para o campo espalhado. Podemos entender que, na região de pequenos raios, o termo que domina na expressão da força é o de extinção, pois se o raio da esfera é muito menor que o comprimento de onda do laser, pode-se concluir que o campo não será tão afetado por esse centro espalhador (${\mathbf E}_S$ é muito pequeno e $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$ domina sobre ${\mathbf E}_S\cdot{\mathbf E}_S^*$). 
+Como discutido na seção \ref{MD}, os termos de extinção representa a quantidade de momento que é transferida do campo incidente à microesfera; enquanto o termo de espalhamento está relacionado à transferência de momento para o campo espalhado. Podemos entender que, na região de pequenos raios, o termo que domina na expressão da força é o de extinção, pois se o raio da esfera é muito menor que o comprimento de onda do laser, pode-se concluir que o campo espalhado terá magnitude menor do que a do campoincidente. 
+%não será tão afetado por esse centro espalhador (${\mathbf E}_S$ é muito pequeno e 
+Assim, $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$ domina sobre ${\mathbf E}_S\cdot{\mathbf E}_S^*$ nesse caso. 
 
-Quanto maior for o centro espalhador, mais afetado o campo será, e a partir de um certo raio, o termo de espalhamento da força domina \cite{}{\bf encontrar referência}. A imagem \ref{Kphi_raio} mostra o comportamento da constante de torção $\kappa_\phi$.
+Quanto maior for o centro espalhador, maior será o campo espalhado, e a partir de um certo raio, o termo de espalhamento da força domina. A imagem \ref{Kphi_raio} mostra o comportamento da constante de torção $\kappa_\phi$.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.85]{Kphi_Artigo_Kaina}
+\includegraphics[scale=.75]{Kphi_Artigo_Kaina}
 \caption{Constante de torção $\kappa_\phi$ em função do raio da microesfera. O comprimento de onda do laser é de $1064 nm$, a distância $L$ entre o foco e a lamínula é de $4,5$ unidades de raio e a polarização $\sigma+$. Astigmatismo não é levado em conta nessa simulação.\\{\bf colocar informações sobre os dados (comp de onda, aberração esferica, ausencia de astig, polarização, etc.).}}
 \label{Kphi_raio}
 \end{center}
@@ -534,7 +530,6 @@ Quanto maior for o centro espalhador, mais afetado o campo será, e a partir de u
 
 Podemos observar que na região em que o raio $a$ é menor que $0,15 \mu m$, a constante de torção é positiva, e o torque indica um ganho de momento angular na mesma direção ao de spin do campo incidente. Sendo essa a região onde o termo de extinção domina, podemos inferir que o campo está cedendo momento angular para a microesfera, e esta não está espalhando momento angular o suficiente para sofrer torque negativo.
 
-
-Quando o raio aumenta, a componente de espalhamento da força começa a dominar, e efeitos de torque negativos a prevalecer. Podemos concluir que o campo espalhado carrega momento angular em excesso. Como a componente de spin do campo espalhado não podem ser maior que do incidente, por esta última já ser máxima, o excesso de momento angular tem que ser de origem orbital. 
+Quando o raio aumenta, a componente de espalhamento da força começa a dominar, e efeitos de torque negativos tendem a prevalecer. Podemos concluir que o campo espalhado carrega momento angular em excesso. Como o momento angular de spin do campo espalhado não pode ser maior que o do incidente, por esta última já ser máxima, o excesso de momento angular tem que ser de origem orbital. 
 
 \end{chapter}
