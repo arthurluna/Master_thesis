@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: tese.aux
 The style file: plain.bst
 Database file #1: referencias.bib
-You've used 37 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            760 strings with 9963 characters,
-and the built_in function-call counts, 11888 in all, are:
-= -- 1138
-> -- 613
+            755 strings with 9714 characters,
+and the built_in function-call counts, 11460 in all, are:
+= -- 1101
+> -- 580
 < -- 0
-+ -- 243
-- -- 206
-* -- 954
-:= -- 2068
-add.period$ -- 112
-call.type$ -- 37
-change.case$ -- 204
++ -- 230
+- -- 194
+* -- 912
+:= -- 1992
+add.period$ -- 109
+call.type$ -- 36
+change.case$ -- 195
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 406
-empty$ -- 890
-format.name$ -- 206
-if$ -- 2371
+cite$ -- 36
+duplicate$ -- 395
+empty$ -- 865
+format.name$ -- 194
+if$ -- 2289
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 42
-newline$ -- 189
-num.names$ -- 74
-pop$ -- 190
+int.to.str$ -- 36
+missing$ -- 41
+newline$ -- 184
+num.names$ -- 72
+pop$ -- 183
 preamble$ -- 1
-purify$ -- 177
+purify$ -- 169
 quote$ -- 0
-skip$ -- 255
+skip$ -- 248
 stack$ -- 0
-substring$ -- 714
-swap$ -- 36
+substring$ -- 694
+swap$ -- 35
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
+type$ -- 128
 warning$ -- 0
-while$ -- 114
-width$ -- 39
-write$ -- 403
+while$ -- 111
+width$ -- 38
+write$ -- 392

@@ -1,3 +1,5 @@
+\backcite {Diniz}{{x}{(document)}{Doc-Start}}
+\backcite {Diniz}{{x}{(document)}{Doc-Start}}
 \backcite {Ashkin1986,Ashkin1977}{{1}{1.1}{section.1.1}}
 \backcite {Ashkin1970}{{1}{1.1}{section.1.1}}
 \backcite {A2007}{{1}{1.1}{section.1.1}}
@@ -52,9 +54,10 @@
 \backcite {Bliokh2015}{{25}{2.9}{section.2.9}}
 \backcite {Bliokh2015}{{26}{2.9}{figure.caption.14}}
 \backcite {Diniz2019,Diniz}{{28}{3.1}{section.3.1}}
-\backcite {Viana2007}{{30}{3.1}{figure.caption.17}}
+\backcite {Diniz}{{31}{3.3}{figure.caption.18}}
 \backcite {Ma2003}{{32}{3.1}{figure.caption.18}}
-\backcite {Diniz}{{32}{3.1}{figure.caption.18}}
-\backcite {Diniz2019}{{41}{4.1}{section.4.1}}
-\backcite {Dutra2014,Diniz2019}{{43}{4.1}{figure.caption.26}}
-\backcite {Novotny2001}{{43}{4.1}{figure.caption.26}}
+\backcite {Viana2007}{{33}{3.2}{section.3.2}}
+\backcite {Diniz}{{35}{3.5}{figure.caption.20}}
+\backcite {Diniz2019}{{42}{4.1}{section.4.1}}
+\backcite {Dutra2014,Diniz2019}{{44}{4.1}{figure.caption.26}}
+\backcite {Novotny2001}{{44}{4.1}{figure.caption.26}}
