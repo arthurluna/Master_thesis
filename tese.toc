@@ -24,4 +24,3 @@
 \contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao da amostra na pin\c ca \'otica}{45}{section.4.2}% 
 \contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{49}{chapter.5}% 
 \contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{55}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}Formalismos de Zernike e Seidel para astigmastismo}{58}{appendix.B}% 
