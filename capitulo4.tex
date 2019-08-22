@@ -1,13 +1,13 @@
 \begin{chapter}{Resultados}
 \label{cap4}
 
-\hspace{5 mm}Nesse capítulo discutiremos sobre os resultados obtidos nas simulações descritas no capítulo anterior. Resultados obtidos de métodos alternativos são usados como comparação e validação.
+\hspace{5 mm}Nesse capítulo discutiremos os resultados obtidos nas simulações descritas no capítulo anterior. Resultados obtidos por meio de métodos alternativos são usados para comparação e validação.
 
 \section{Transferência de momento angular e caracterização do astigmatismo}
 
-\hspace{5 mm}Primeiramente, devemos observar que o efeito de torque negativo é dependente de aberrações óticas. O astigmatismo desempenha um papel de atenuar esse efeito, podendo até trocar o sinal de $\kappa_\phi$\cite{Diniz2019}. No nosso caso, os ângulos de rotação da microesfera ao redor da posição de equilíbrio ($\phi$) são simplesmente diminuídos. Isso nos possibilita tentar ajustar uma curva simulada com o modelo MDSA+ com o parâmetro de astigmatismo $A_{ast}$ como variável livre. 
+\hspace{5 mm}Primeiramente, devemos observar que o efeito de torque negativo é dependente de aberrações óticas. O astigmatismo desempenha um papel de atenuar esse efeito, podendo até trocar o sinal de $\kappa_\phi$\cite{Diniz2019}. No nosso caso, os ângulos de rotação da microesfera ao redor da posição de equilíbrio são simplesmente diminuídos. Isso nos possibilita tentar ajustar uma curva simulada com o modelo MDSA+ com o parâmetro de astigmatismo $A_{ast}$ como variável livre. 
 
-Usamos um método de mínimos quadrados para realizar esse ajuste. Dado o conjunto de pontos experimentais $\phi_i^{exp}$, calculamos a função erro $E$ do conjunto de pontos simulados $\phi_i^{sim}$, onde cada índice $i$ corresponde a um ângulo $\psi$ na placa de quarto de onda. A função erro é definida como:
+Usamos um método de mínimos quadrados para realizar esse ajuste. Dado o conjunto de pontos experimentais $\phi_i^{exp}$, calculamos a função erro $E$ do conjunto de pontos simulados $\phi_i^{sim}$, onde cada índice $i$ corresponde a um ângulo $\psi_i$ da placa de quarto de onda. A função erro é definida como:
 %
 \begin{equation}
 E(A_{ast})=\sum \limits_i \big{[} \phi_i^{exp} - \phi_i^{sim}(A_{ast}) \big{]}^2.
@@ -20,17 +20,17 @@ Ao considerar parâmetros de astigmatismo altos, começamos a ter problemas para a
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.56]{Kphi_rho_Aast0036}
-\caption{Simulação com $A_{ast}=0$ (à esquerda) e $A_{ast}=0.36$ (à dureita).}
+\includegraphics[scale=.56]{Kphi_rho_Aast_dupla}
+\caption{Simulação com $A_{ast}=0$ (à esquerda) e $A_{ast}=0.36$ (à direita).}
 \label{alpha_0036}
 \end{center}
 \end{figure}
 
-A simulação dos vários parâmetros de astigmatismo mostraram que o valor que minimiza a função erro é $A_{ast}=0.24\pm0.1$ (figura \ref{erro_astig}). A incerteza foi estimada tomando $20\%$ do valor da função erro no mínimo $E(0.24)=2.65$, e acrescendo a esse valor. Obtemos, então, a tolerância do erro $E_{tol}=3.18$. Os valores da função erro para $A_{ast}=0.23,0.25$ são, respectivamente, $2.96$ e $3.14$. Como são menores que $E_{tol}$, assumimos que estão dentro da barra de erro. Valores do parâmetro de astigmatismo maiores que $0.26$ e menores que $0.22$ geram erros maiores que $4$, indicando que $A_{ast}=0.24$ é um mínimo global.
+A simulação dos vários parâmetros de astigmatismo mostraram que o valor que minimiza a função erro é $A_{ast}=0.24\pm0.01$ (figura \ref{erro_astig}). A incerteza foi estimada tomando $20\%$ do valor da função erro no mínimo $E(0.24)=2.65$, e acrescendo a esse valor. Obtemos, então, a tolerância do erro $E_{tol}=3.18$. Os valores da função erro para $A_{ast}=0.23,0.25$ são, respectivamente, $2.96$ e $3.14$. Como são menores que $E_{tol}$, assumimos que estão dentro da barra de erro. Por outro lado, valores do parâmetro de astigmatismo maiores que $0.26$ e menores que $0.22$ geram erros maiores que $4$.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.7]{erro_astig}
+\includegraphics[scale=.7]{erro_astigII}
 \caption{Valores da função erro (equação \ref{erro}) em função do parâmetro de astigmatismo $A_{ast}$. O mínimo se encontra aproximadamente em $A_{ast}=0.24$.}
 \label{erro_astig}
 \end{center}
@@ -40,7 +40,7 @@ Podemos ver que as contribuições mais importantes para o ajuste são os pontos em
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.6]{Kphi_rho_Aast024II}
+\includegraphics[scale=.65]{Kphi_rho_Aast024III}
 \caption{Pontos teóricos em azul, com o parâmetro $A_{ast}=0.24$, ajustado como mínimo da função erro.}
 \label{alpha_024}
 \end{center}
@@ -52,7 +52,7 @@ Podemos comparar o resultado obtido com o ajuste pela simulação com o resultado 
 
 Por fim, observamos que o resultado obtido é pouco sensível a alguns parâmetros importantes do sistema. Se a absorção de luz pela microesfera não for levada em conta, ou seja, tomar $\operatorname{Im}(n_2)=0$; o valor obtido para o parâmetro de astigmatismo é $A_{ast}=0.23$, que está dentro das medidas de incerteza do ajuste anterior e do método de nível de cinza. Na próxima seção será discutido como efeitos de absorção exercem inflências muito maiores sobre as condições de pinçamento.
 
-\section{Caracterização da amostra na pinça ótica}
+\section{Caracterização do parâmetro de absorção da amostra}
 
 \hspace{5 mm}Os gráficos do fator de eficiência $Q_z$ por $z$ foram feitos para alguns valores de $\operatorname{Im}(n_2)$ e para alguns raios diferentes. O valor nominal do raio das microesferas pinçadas é de $a=7.9\pm0.1$, e o valor encontrado na literatura para $\operatorname{Im}(n_2)$ é $1.1\times10^{-3}$. Foram feitas simulações para raios entre $7.8$ e $8 \mu m$, e $\operatorname{Im}(n_2)$ tão pequenos quanto $3\times10^{-4}$.
 %
@@ -92,13 +92,22 @@ Como podemos ver na figura \ref{qz}, a integral do fator de eficiência com respe
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.9]{pot_imn}
+\includegraphics[scale=.9]{pot_imnII}
 \caption{Altura da barreira potencial adimensional em função da parte imaginária do índice de refração.}
-\label{alpha_024}
+\label{pot_imn_ep}
 \end{center}
 \end{figure}
 
 Dessa forma, podemos procurar uma potência mínima para a qual haja pinçamento no laboratório. Podemos usar o critério que a barreira potencial tem que ter no mínimo $3k_BT$ para deduzir a parte imaginária do índice de refração. Uma alternativa para esse critério é medir a série temporal da posição da microesfera na pinça para obter sua energia {\bf entender melhor essa parte, conversar com paulo}.
+
+%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.9]{Pot_EGII}
+\caption{Altura da barreira potencial adimensional em função da parte imaginária do índice de refração.}
+\label{pot_imn_EG}
+\end{center}
+\end{figure}
 
 
 \end{chapter}
