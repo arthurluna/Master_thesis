@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.24)  22 AUG 2019 03:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.24)  22 AUG 2019 04:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -568,9 +568,6 @@ LaTeX Warning: Label `kphi' multiply defined.
 
 LaTeX Warning: Label `alpha_024' multiply defined.
 
-
-LaTeX Warning: Label `alpha_024' multiply defined.
-
 )
 \openout1 = `tese.aux'.
 
@@ -764,18 +761,18 @@ Cap\'{\i }tulo 2.
 [3
 
 ]
-<geom_foco_coincIII.png, id=345, 207.25363pt x 300.42818pt>
+<geom_foco_coincIII.png, id=348, 207.25363pt x 300.42818pt>
 File: geom_foco_coincIII.png Graphic file (type png)
 <use geom_foco_coincIII.png>
 Package pdftex.def Info: geom_foco_coincIII.png  used on input line 20.
 (pdftex.def)             Requested size: 165.80312pt x 240.34286pt.
-<geom_foco_axialIII.png, id=348, 522.61363pt x 405.54819pt>
+<geom_foco_axialIII.png, id=351, 522.61363pt x 405.54819pt>
 File: geom_foco_axialIII.png Graphic file (type png)
 <use geom_foco_axialIII.png>
 Package pdftex.def Info: geom_foco_axialIII.png  used on input line 32.
 (pdftex.def)             Requested size: 418.09146pt x 324.43898pt.
  [4 <./geom_foco_coincIII.png>]
-<geom_lateralIV.png, id=354, 363.14182pt x 341.64pt>
+<geom_lateralIV.png, id=357, 363.14182pt x 341.64pt>
 File: geom_lateralIV.png Graphic file (type png)
 <use geom_lateralIV.png>
 Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
@@ -784,7 +781,7 @@ Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<reflex_absorII.png, id=356, 962.09438pt x 586.44093pt>
+<reflex_absorII.png, id=359, 962.09438pt x 586.44093pt>
 File: reflex_absorII.png Graphic file (type png)
 <use reflex_absorII.png>
 Package pdftex.def Info: reflex_absorII.png  used on input line 53.
@@ -806,7 +803,7 @@ Underfull \vbox (badness 1406) has occurred while \output is active []
 
  [11]
 [12] [13] [14] [15] [16]
-<aberracao_esf4.png, id=491, 355.37727pt x 261.60545pt>
+<aberracao_esf4.png, id=494, 355.37727pt x 261.60545pt>
 File: aberracao_esf4.png Graphic file (type png)
 <use aberracao_esf4.png>
 Package pdftex.def Info: aberracao_esf4.png  used on input line 303.
@@ -820,7 +817,7 @@ Overfull \hbox (25.95111pt too wide) detected at line 383
 m/it/12 ^^Y [] ;
  []
 
-<feixe_astig.png, id=520, 671.50874pt x 311.66437pt>
+<feixe_astig.png, id=523, 671.50874pt x 311.66437pt>
 File: feixe_astig.png Graphic file (type png)
 <use feixe_astig.png>
 Package pdftex.def Info: feixe_astig.png  used on input line 392.
@@ -847,7 +844,7 @@ cmm/m/it/12 ^^[ [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ) + (\OML
  []
 
 [23] [24]
-<so_fig.png, id=579, 475.4291pt x 275.34273pt>
+<so_fig.png, id=582, 475.4291pt x 275.34273pt>
 File: so_fig.png Graphic file (type png)
 <use so_fig.png>
 Package pdftex.def Info: so_fig.png  used on input line 499.
@@ -857,7 +854,7 @@ Package pdftex.def Info: so_fig.png  used on input line 499.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [25]
-<Kphi_Artigo_Kaina.png, id=588, 462.22687pt x 347.04657pt>
+<Kphi_Artigo_Kaina.png, id=591, 462.22687pt x 347.04657pt>
 File: Kphi_Artigo_Kaina.png Graphic file (type png)
 <use Kphi_Artigo_Kaina.png>
 Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 524.
@@ -873,7 +870,7 @@ ise
 [28
 
 ]
-<fig/setup.jpg, id=606, 1129.21875pt x 760.8425pt>
+<fig/setup.jpg, id=609, 1129.21875pt x 760.8425pt>
 File: fig/setup.jpg Graphic file (type jpg)
 <use fig/setup.jpg>
 Package pdftex.def Info: fig/setup.jpg  used on input line 27.
@@ -883,13 +880,13 @@ Package pdftex.def Info: fig/setup.jpg  used on input line 27.
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 34.
 
 
-<fig/microscopio.jpg, id=607, 495.35063pt x 605.26125pt>
+<fig/microscopio.jpg, id=610, 495.35063pt x 605.26125pt>
 File: fig/microscopio.jpg Graphic file (type jpg)
 <use fig/microscopio.jpg>
 Package pdftex.def Info: fig/microscopio.jpg  used on input line 38.
 (pdftex.def)             Requested size: 297.21268pt x 363.15953pt.
 [29 <./fig/setup.jpg>]
-<fig/QWP.jpg, id=615, 377.41pt x 375.4025pt>
+<fig/QWP.jpg, id=618, 377.41pt x 375.4025pt>
 File: fig/QWP.jpg Graphic file (type jpg)
 <use fig/QWP.jpg>
 Package pdftex.def Info: fig/QWP.jpg  used on input line 57.
@@ -901,7 +898,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 1721) has occurred while \output is active []
 
  [31 <./fig/QWP.jpg>] [32]
-<fig/forcas_estagio.jpg, id=643, 1160.08406pt x 622.57594pt>
+<fig/forcas_estagio.jpg, id=646, 1160.08406pt x 622.57594pt>
 File: fig/forcas_estagio.jpg Graphic file (type jpg)
 <use fig/forcas_estagio.jpg>
 Package pdftex.def Info: fig/forcas_estagio.jpg  used on input line 88.
@@ -915,7 +912,7 @@ Overfull \hbox (8.7813pt too wide) in paragraph at lines 88--89
 Underfull \vbox (badness 5817) has occurred while \output is active []
 
  [33 <./fig/forcas_estagio.jpg>]
-<fig/pos_eq_phi.jpg, id=649, 816.04875pt x 490.83376pt>
+<fig/pos_eq_phi.jpg, id=652, 816.04875pt x 490.83376pt>
 File: fig/pos_eq_phi.jpg Graphic file (type jpg)
 <use fig/pos_eq_phi.jpg>
 Package pdftex.def Info: fig/pos_eq_phi.jpg  used on input line 110.
@@ -926,7 +923,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 129
 .
 
 [34] [35 <./fig/pos_eq_phi.jpg>]
-<zeq_psi_ast25II.png, id=669, 462.2891pt x 347.01546pt>
+<zeq_psi_ast25II.png, id=672, 462.2891pt x 347.01546pt>
 File: zeq_psi_ast25II.png Graphic file (type png)
 <use zeq_psi_ast25II.png>
 Package pdftex.def Info: zeq_psi_ast25II.png  used on input line 159.
@@ -937,7 +934,7 @@ Overfull \hbox (11.4217pt too wide) in paragraph at lines 176--176
 -
  []
 
-<Qz_tipico.png, id=680, 462.2891pt x 347.01546pt>
+<Qz_tipico.png, id=683, 462.2891pt x 347.01546pt>
 File: Qz_tipico.png Graphic file (type png)
 <use Qz_tipico.png>
 Package pdftex.def Info: Qz_tipico.png  used on input line 183.
@@ -946,7 +943,7 @@ Package pdftex.def Info: Qz_tipico.png  used on input line 183.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [38] [39 <./Qz_tipico.png>]
-<Regiao_de_pincamentoII.png, id=695, 722.7pt x 578.16pt>
+<Regiao_de_pincamentoII.png, id=698, 722.7pt x 578.16pt>
 File: Regiao_de_pincamentoII.png Graphic file (type png)
 <use Regiao_de_pincamentoII.png>
 Package pdftex.def Info: Regiao_de_pincamentoII.png  used on input line 210.
@@ -963,20 +960,20 @@ Overfull \hbox (14.72363pt too wide) in paragraph at lines 6--6
 [42
 
 ]
-<Kphi_rho_Aast0036.png, id=712, 882.76909pt x 347.01546pt>
-File: Kphi_rho_Aast0036.png Graphic file (type png)
-<use Kphi_rho_Aast0036.png>
-Package pdftex.def Info: Kphi_rho_Aast0036.png  used on input line 23.
-(pdftex.def)             Requested size: 494.34732pt x 194.32732pt.
+<Kphi_rho_Aast_dupla.png, id=715, 885.75545pt x 356.57182pt>
+File: Kphi_rho_Aast_dupla.png Graphic file (type png)
+<use Kphi_rho_Aast_dupla.png>
+Package pdftex.def Info: Kphi_rho_Aast_dupla.png  used on input line 23.
+(pdftex.def)             Requested size: 496.01967pt x 199.67885pt.
 
-Overfull \hbox (39.10321pt too wide) in paragraph at lines 23--24
+Overfull \hbox (40.77556pt too wide) in paragraph at lines 23--24
  [] 
  []
 
-<erro_astig.png, id=714, 462.2891pt x 347.01546pt>
-File: erro_astig.png Graphic file (type png)
-<use erro_astig.png>
-Package pdftex.def Info: erro_astig.png  used on input line 33.
+<erro_astigII.png, id=717, 462.2891pt x 347.01546pt>
+File: erro_astigII.png Graphic file (type png)
+<use erro_astigII.png>
+Package pdftex.def Info: erro_astigII.png  used on input line 33.
 (pdftex.def)             Requested size: 323.60016pt x 242.90915pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1005,12 +1002,12 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 39.
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 39.
 
 
-<Kphi_rho_Aast024II.png, id=717, 462.2891pt x 347.01546pt>
-File: Kphi_rho_Aast024II.png Graphic file (type png)
-<use Kphi_rho_Aast024II.png>
-Package pdftex.def Info: Kphi_rho_Aast024II.png  used on input line 43.
-(pdftex.def)             Requested size: 277.3756pt x 208.21088pt.
-[43 <./Kphi_rho_Aast0036.png>]
+<Kphi_rho_Aast024III.png, id=720, 457.51091pt x 360.15546pt>
+File: Kphi_rho_Aast024III.png Graphic file (type png)
+<use Kphi_rho_Aast024III.png>
+Package pdftex.def Info: Kphi_rho_Aast024III.png  used on input line 43.
+(pdftex.def)             Requested size: 297.37856pt x 234.09825pt.
+[43 <./Kphi_rho_Aast_dupla.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1023,15 +1020,15 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 49.
 
 
 
-Underfull \vbox (badness 1377) has occurred while \output is active []
+Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [44 <./erro_astig.png>]
+ [44 <./erro_astigII.png>]
 Overfull \hbox (11.4217pt too wide) in paragraph at lines 55--55
 []\OT1/cmr/bx/n/17.28 Caracteriza^^Xc~ao do par^ametro de ab-sor^^Xc~ao da amos
 -
  []
 
-<Qz_z_1e-3_79.png, id=734, 900.09pt x 347.01546pt>
+<Qz_z_1e-3_79.png, id=737, 900.09pt x 347.01546pt>
 File: Qz_z_1e-3_79.png Graphic file (type png)
 <use Qz_z_1e-3_79.png>
 Package pdftex.def Info: Qz_z_1e-3_79.png  used on input line 61.
@@ -1039,7 +1036,8 @@ Package pdftex.def Info: Qz_z_1e-3_79.png  used on input line 61.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Qz_z_1e-34.png, id=738, 882.76909pt x 348.21pt>
+[45 <./Kphi_rho_Aast024III.png>]
+<Qz_z_1e-34.png, id=746, 882.76909pt x 348.21pt>
 File: Qz_z_1e-34.png Graphic file (type png)
 <use Qz_z_1e-34.png>
 Package pdftex.def Info: Qz_z_1e-34.png  used on input line 73.
@@ -1049,37 +1047,54 @@ Overfull \hbox (30.2804pt too wide) in paragraph at lines 73--74
  [] 
  []
 
-[45 <./Kphi_rho_Aast024II.png>] [46 <./Qz_z_1e-3_79.png> <./Qz_z_1e-34.png>]
-<potencial_qz.png, id=752, 464.67818pt x 347.01546pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<potencial_qz.png, id=749, 464.67818pt x 347.01546pt>
 File: potencial_qz.png Graphic file (type png)
 <use potencial_qz.png>
 Package pdftex.def Info: potencial_qz.png  used on input line 85.
 (pdftex.def)             Requested size: 325.27249pt x 242.90915pt.
-<pot_imn.png, id=754, 479.01273pt x 357.76636pt>
-File: pot_imn.png Graphic file (type png)
-<use pot_imn.png>
-Package pdftex.def Info: pot_imn.png  used on input line 95.
-(pdftex.def)             Requested size: 431.10747pt x 321.98674pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47 <./potencial_qz.png>]) (./capitulo5.tex [48 <./pot_imn.png>]
-Cap\'{\i }tulo 5.
-[49
+<pot_imnII.png, id=751, 465.27545pt x 347.01546pt>
+File: pot_imnII.png Graphic file (type png)
+<use pot_imnII.png>
+Package pdftex.def Info: pot_imnII.png  used on input line 95.
+(pdftex.def)             Requested size: 418.74403pt x 312.31102pt.
 
-]) [50] (./tese.bbl (./tese.brf)
+Underfull \vbox (badness 3118) has occurred while \output is active []
+
+ [46 <./Qz_z_1e-3_79.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pot_EGII.png, id=757, 462.2891pt x 347.01546pt>
+File: Pot_EGII.png Graphic file (type png)
+<use Pot_EGII.png>
+Package pdftex.def Info: Pot_EGII.png  used on input line 106.
+(pdftex.def)             Requested size: 416.05634pt x 312.31102pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./capitulo5.tex [47 <./Qz_z_1e-34.png>] [48 <./potencial_qz.png>] [49 <./pot
+_imnII.png>] [50 <./Pot_EGII.png>]
+Cap\'{\i }tulo 5.
+[51
+
+]) [52] (./tese.bbl (./tese.brf)
 \tf@brf=\write9
 \openout9 = `tese.brf'.
 
- [51
+ [53
 
-] [52] [53]) (./apendicea.tex [54]
+] [54] [55]) (./apendicea.tex [56]
 Ap\^endice A.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55
+ [57
 
 ]
 Overfull \hbox (30.62813pt too wide) detected at line 41
@@ -1099,9 +1114,9 @@ OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (\OML
 m/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[]:
  []
 
-[56])
+[58])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
- [57]
+ [59]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (./tese.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
@@ -1117,10 +1132,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
- 12170 strings out of 492623
- 171906 string characters out of 6135669
- 341752 words of memory out of 5000000
- 15570 multiletter control sequences out of 15000+600000
+ 12180 strings out of 492623
+ 172075 string characters out of 6135669
+ 342082 words of memory out of 5000000
+ 15576 multiletter control sequences out of 15000+600000
  14945 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,19n,51p,3234b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1136,10 +1151,10 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (71 pages, 1742245 bytes).
+Output written on tese.pdf (73 pages, 1801435 bytes).
 PDF statistics:
- 978 PDF objects out of 1000 (max. 8388607)
- 832 compressed objects within 9 object streams
- 207 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 993 PDF objects out of 1000 (max. 8388607)
+ 843 compressed objects within 9 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 
