@@ -17,8 +17,8 @@
 \contentsline {chapter}{\numberline {3}Caracteriza\c c\~ao de par\^ametros f\IeC {\'\i }sicos}{28}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Caracteriza\c c\~ao do astigmatismo por meio da an\'alise do experimento de transfer\^encia de momento angular}{28}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{38}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}Resultados}{42}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{42}{section.4.1}% 
+\contentsline {chapter}{\numberline {4}Resultados}{41}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{41}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{45}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{51}{chapter.5}% 
-\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{57}{appendix.A}% 
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{50}{chapter.5}% 
+\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{56}{appendix.A}% 
