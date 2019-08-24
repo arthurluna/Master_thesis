@@ -163,9 +163,7 @@ Calcular tal posição de equilíbrio para cada polarização do feixe incidente seri
 \end{figure}
 %
 
-É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Constatações experimentais nos levam a definir tal intervalo, como por exemplo, se vemos a microesfera focalizada na câmera, ela só pode estar frações de unidades de raio ($a\approx 0.5\mu m$) de distância do foco paraxial. Portanto, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para os parâmetros de entrada não são satisfeitos. 
-
-Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.4$). {\bf rever esse paragrafo, pois nao tenho nenhuma imagem ou medida: o programa retorna erro quando busca por posicoes de eq acima desse valor de $A_{ast}$, justamente por nao achar dentro do intervalo de 4 unidades de raio, por volta de $2\mu m$}
+É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Constatações experimentais nos levam a definir tal intervalo como a região próxima ao plano focal, pois vemos a microesfera focalizada na câmera. Portanto, ela só pode estar frações de unidades de raio ($a\approx 0.5\mu m$) de distância do plano focal. Assim, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para os parâmetros de entrada não são satisfeitos. Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.4$).% {\bf rever esse paragrafo, pois nao tenho nenhuma imagem ou medida: o programa retorna erro quando busca por posicoes de eq acima desse valor de $A_{ast}$, justamente por nao achar dentro do intervalo de 4 unidades de raio, por volta de $2\mu m$}
 
 Com as posições de equilíbrio para cada $\psi$ do experimento e a posição inicial $L_0$ podemos calcular $ \kappa_\phi /\kappa_\rho $ numericamente. Assim, toda vez que a posição de equilíbrio mude, todo o cálculo tem que ser feito novamente. Por esse motivo, as posições de equilíbrio são arredondadas até a 4ª casa decimal dos valores em unidades de raio, que corresponderia a considerar variações menores que $1nm$. 
 
@@ -180,7 +178,7 @@ Reproduzimos todo esse procedimento para vários valores do parâmetro de astigmat
 %
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=.7]{Qz_tipico}
+\includegraphics[scale=.65]{Qz_tipico}
 \caption{Comportamento do fator de eficiência axial em função de $z$. O ponto $z_{eq}$ indicado no gráfico corresponde à posição de equilíbrio estável na direção $z$, enquanto o ponto $z_{inst}$ corresponde a um ponto de equilíbrio instável. Esse último também será o ponto em que $V(z)$ será um máximo local.}
 \label{Qz_tipico}
 \end{center}
