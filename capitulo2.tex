@@ -107,7 +107,7 @@ Começaremos a explicação do modelo pelo caso de espalhamento mais simples: uma o
 \label{RW_puro}
 \end{equation}
 %
-onde a região de integração é um cone sólido definido por um angulo chamado abertura angular do feixe. Nesse modelo também é levado em conta efeitos da objetiva que serão discutidos mais à frente. 
+onde a região de integração é um cone sólido com ângulo de abertura $\theta_0=\arcsin(NA/n)$, em que $NA$ é a abertura numérica do feixe, $n$ é o índice de refração no meio (mais tarde esse $n$ será o índice de refração da lamínula de vidro, e esse fato será importante para definir aberração esférica), $\hat{\varepsilon}_k$ é o vetor de polarização rotacionado e o foco desse feixe se encontra na orígem do espaço de posição. Nesse modelo também é levado em conta efeitos da objetiva que serão discutidos mais à frente. 
 
 Os detalhes dos cálculos desta seção podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
@@ -124,7 +124,11 @@ Assim, queremos obter os campos incidentes na esfera e espalhados por ela. Começ
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-A simetria esférica do centro espalhador impõe condições de contorno sobre as partes radiais e transversais do campo. Por isso, dividimos o campo eletromagnético nessas duas partes: o modo tranversal elétrico $\Pi^{M}$, que possui as componentes do campo elétrico tangenciais à superfície esférica concêntrica à esfera e do campo magnético na direção radial dessa superfície; e o modo transversal magnético $\Pi^{E}$, com o elétrico radial e o magnético tangencial à superfície. Para isso, fazemos o produto interno dos campos com $\mathbf{r}$, e obtemos os potenciais de Debye:
+A simetria esférica do centro espalhador impõe condições de contorno sobre as partes radiais e transversais do campo. Por isso, dividimos o campo eletromagnético nessas duas partes: o modo tranversal elétrico $\Pi^{M}$ (ou multipolo magnético), que possui as componentes do campo elétrico tangenciais à superfície esférica concêntrica à esfera
+% e do campo magnético na direção radial dessa superfície; 
+, e o modo transversal magnético $\Pi^{E}$ (ou multipolo elétrico), com o 
+%elétrico radial e o 
+magnético tangencial à superfície. Para isso, fazemos o produto interno dos campos com $\mathbf{r}$, e obtemos os potenciais de Debye:
 %
 \begin{equation}
 \Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
@@ -140,7 +144,7 @@ com
 %
 onde $n_1$ é o índice de refração do meio ao redor da amostra, $k$  e $\omega$ são o vetor de onda e a frequência angular do feixe, sendo $\omega/k=c$ a velocidade da luz no vácuo. Os somatórios em $J$ nas equações acima indicam a expansão em multipolos. 
 
-A base de multipolos são compostas pelos harmônicos esféricos na parte angular, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, pois podemos usar um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e não alteram as soluções da equação de Helmholtz. Esses operadores são: $-i {\mathbf r}\times\nabla = {\mathbf L}$, $\nabla \times {\mathbf L}$ e $\nabla$ \cite{Biedenharn2008}, onde o operador $\nabla$ fornece campos com divergência não nula, ou seja, com componentes na direção de propagação ${\mathbf k}$ e que assumimos serem serem nulas desde o começo.
+A base de multipolos é composta pelos harmônicos esféricos na parte angular, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, pois podemos usar um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e portanto geram soluções vetoriais da equação de Helmholtz. Esses operadores são: $-i {\mathbf r}\times\nabla = {\mathbf L}$, $\nabla \times {\mathbf L}$ e $\nabla$ \cite{Biedenharn2008}, onde o operador $\nabla$ fornece campos com divergência não nula, ou seja, com componentes na direção de propagação ${\mathbf k}$ e que assumimos serem nulas desde o começo.
 
 A expansão em multipolos forma a base para se aplicar as condições de contorno e obter os coeficientes de Mie, que podemos entender como as amplitudes de espalhamento de cada onda parcial. Com elas podemos obter os campos espalhados a partir do campo incidente. Os coeficientes de Mie para o espalhamento são:
 
@@ -150,7 +154,7 @@ b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N_{12}\psi_J(\beta)\psi'_J(\alpha)}{\zeta
 \label{mie}
 \end{equation} 
 %
-onde $\beta=ka$, $\alpha=N_{12}ka$, $a$ é o raio da esfera e $N_{12}$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes de $\Pi^E$ e $\Pi^M$ terão os termos $a_J$ e $b_J$ respectivamente multiplicando as expressões dentro dos somatórios em $J$.
+onde $\beta=ka$, $\alpha=N_{12}ka$, $a$ é o raio da esfera e $N_{12}$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes do multipolo elétrico $\Pi^E$ terá o coeficiente de espalhamento $a_J$ multiplicando as expressões dentro dos somatórios em $J$, enquanto o multipolo magnético $\Pi^M$ terá o coeficiente de espalhamento $b_J$
 
 Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usá-las para montar um feixe de alta abertura numérica, de acordo com a equação \ref{RW_puro}. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador momento angular total ${\mathbf J}$, que é o gerador de rotações no espaço. 
 
@@ -161,7 +165,7 @@ Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha
 \label{harm_esf_rot}
 \end{equation}
 %
-que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz de rotação de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam: {\bf discutir o porque M=1?}
+que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz de rotação de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Como o fóton carrega momento angular de {\it spin}, o número $M$ na equação \ref{harm_esf_rot} será igual a $1$ no caso de polarização circular esquerda (e $-1$ no caso da direita). Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam: 
 
 \begin{equation}
 \Pi^E =\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
@@ -230,7 +234,7 @@ Finalmente, podemos definir o fator de eficiência vetorial ${\mathbf Q}$, ou for
 \label{Q_es}
 \end{equation}
 %
-onde $\left<{\mathbf F}\right>$ é a média temporal da força, P é a potência do feixe incidente na amostra, ${\mathbf Q}_s$ é a contribuição devida ao espalhamento ao fator de eficiência, e ${\mathbf Q}_e$ é a contribuição devida à extinção. Para obtermos expressões do ${\mathbf Q}$ que condizem com um feixe usado em um experimento, devemos levar em conta o perfil gaussiano, a polarização e as aberrações óticas do feixe na entrada da objetiva. Esses serão os temas discutidos nas próximas seções. {\bf talvez trocar perfil gaussiano por modo transverso?}
+onde $\left<{\mathbf F}\right>$ é a média temporal da força, P é a potência do feixe incidente na amostra, ${\mathbf Q}_s$ é a contribuição devida ao espalhamento ao fator de eficiência, e ${\mathbf Q}_e$ é a contribuição devida à extinção. Para obtermos expressões para ${\mathbf Q}$ que condizem com um feixe usado em um experimento, devemos levar em conta o modo transverso, a polarização e as aberrações óticas do feixe paraxial na entrada da objetiva. Esses serão os temas discutidos nas próximas seções. %{\bf talvez trocar perfil gaussiano por modo transverso?}
 
 %
 %
@@ -262,7 +266,7 @@ onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela con
 
 Modelamos esse caso assumindo o feixe na entrada da objetiva como uma superposição de feixes com polarização circular à direita e à esquerda. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. 
 
-A força exercida por uma polarização elíptica pode ser obtida introduzindo a dependência com o ângulo $\psi$ do eixo rápido da placa de quarto de onda (PQO, ou QWP) no feixe paraxial incidente na entrada da objetva:
+A força exercida por uma polarização elíptica pode ser obtida introduzindo a dependência com o ângulo $\psi$ do eixo rápido da placa de quarto de onda (QWP) no feixe paraxial incidente na entrada da objetva:
 %
 \begin{equation}
 {\mathbf E}^{ent}(\rho,\phi,z) = E_{centro} e^{ik_0z} e^{\frac{-\rho^2}{w_0^2}} \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \psi}}{2} \hat{\bf{\epsilon}}_\sigma .
@@ -301,7 +305,7 @@ Também pode haver aberração esférica no feixe paraxial antes da entrada da objet
 \begin{figure}
 \begin{center}
 \includegraphics[scale=.9]{aberracao_esf4}
-\caption{Ilustração do efeito de aberração esférica. Na figura, ${\mathbf L_a}$ e ${\mathbf L}$ são as distância entre a interface e o plano focal na ausência da interface e o plano focal efetivo, e ${\mathbf S}$ é a distância do eixo ótico ao ponto de incidência de um raio na interface.}
+\caption{Ilustração do efeito de aberração esférica. Na figura, ${\mathbf L_a}$ e ${\mathbf L}$ são as distância entre a interface e o plano focal na ausência da interface e o plano focal efetivo paraxial, e ${\mathbf S}$ é a distância do eixo ótico ao ponto de incidência de um raio na interface.}
 \label{ab_esf}
 \end{center}
 \end{figure}
@@ -314,16 +318,17 @@ n\sin\theta=n_1\sin\theta_1.
 \end{equation}
 %
 
-Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios que incidem em direções com ângulo $\theta\ne 0$, ao mudarem de meio, não mais incidem no foco. Portanto, a região de maior intensidade não se localiza mais no ponto focal, e sim difundida e mais próxima à interface, de forma a produzir um novo plano focal. 
+Fica claro, então, que para um feixe focalizado incidindo com seu eixo perpendicular à interface, raios paraxiais, ao mudarem de meio, não mais incidem no foco paraxial. Portanto, a região de maior intensidade não se localiza mais no foco paraxial, e sim difundida e mais próxima à interface. 
 
-A distância a esse plano focal (${\mathbf L}$ na figura \ref{ab_esf}) pode ser calculada usando a lei de snell e geometria. Assumindo ângulos pequenos (situação em que os raios incidem aproximadamente no mesmo ponto), tomamos $\sin\theta\approx\theta$ e a lei de Snell fornece:
+A distância entre a interface e plano focal paraxial (${\mathbf L}$ na figura \ref{ab_esf}) pode ser calculada usando a lei de Snell. Assumindo ângulos pequenos (paraxiais), tomamos $\sin\theta\approx\theta$ e a lei de Snell fornece:
 %
 \begin{equation}
-\frac{\theta_1}{\theta}\approx\frac{n}{n_1}.
+\frac{\theta_1}{\theta}\approx\frac{n}{n_1},
 \end{equation}
 %
+onde $\theta_1$ é o angulo de refração no meio com índice de refração $n_1$, como mostra a figura \ref{ab_esf}, que é o meio no qual a microesfera vai estar imersa.
 
-E usando a distância do ponto de incidência do raio na interface até o eixo ótico e a distância entre a interface e o plano focal na ausência da inteface (${\mathbf S}$ e ${\mathbf L_a}$ na figura\ref{ab_esf}), temos $\tan\theta=s/L_a$ e $\tan\theta_1=s/L$. Em ângulos pequenos, temos $\theta\approx s/L_a$ e $\theta_1\approx s/L$, e usando a lei de Snell:
+Usando a distância do ponto de incidência do raio na interface até o eixo ótico e a distância entre a interface e o plano focal na ausência da inteface (${\mathbf S}$ e ${\mathbf L_a}$ na figura\ref{ab_esf}), temos $\tan\theta=s/L_a$ e $\tan\theta_1=s/L$. Em ângulos pequenos, temos $\theta\approx s/L_a$ e $\theta_1\approx s/L$, e usando a lei de Snell:
 %
 \begin{equation}
 \frac{\theta_1}{\theta} \approx \frac{L_a}{L} \approx\frac{n}{n_1},
@@ -355,7 +360,7 @@ Portanto, ao serem refratadas, as componetes de onda-plana ganham a fase $e^{i\P
 %
 é a função de aberração esférica \cite{Diniz2019}.
 
-Para modelar a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por:
+Para completar o modelo para a passagem de um meio para outro, levamos em conta a amplitude de transmissão de Fresnel de cada componente ${\mathbf k}$ do campo, dada por:
 
 \begin{equation}
 T(\theta)=\frac{2\cos\theta}{\cos\theta + N\cos\theta_1} ,
@@ -504,7 +509,7 @@ Portanto, a variação de momento angular intrínseco devido às rotações e superpos
 %
 Podemos visualizar esse efeito de uma forma mais simples.
 %
-Assumindo que o momento angular intrínseco total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam, como mostra a figura \ref{so_fig}. Se ${\mathbf P}$ é o momento angular total do feixe e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
+Assumindo que o momento angular intrínseco total se conserve, vemos que a soma dos vetores diametralmente opostos terão suas componentes radiais se anulando, enquando as na direção axial se somam, como mostra a figura \ref{so_fig}. Se ${\mathbf P}$ é o momento angular total do feixe, e este se conserva ao passar pela objetiva (${\mathbf P}_{antes}={\mathbf P}_{depois}$), e ${\mathbf S}$ e ${\mathbf L}$ são os momentos angulares de spin e orbital, temos a seguinte relação \cite{Bliokh2015}:
 %
 \begin{equation}
 {\mathbf S}=\sigma\cos\theta{\mathbf P}\thinspace, \quad\quad {\mathbf L}=\sigma(1-\cos\theta){\mathbf P}.
