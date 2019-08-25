@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{Ali2019}
+R.~Ali, F.~A. Pinheiro, F.~S.~S. Rosa, R.~S. Dutra, and P.~A.~Maia Neto.
+\newblock Enantioselective manipulation of chiral nanoparticles using optical
+  tweezers.
+\newblock 2019.
+
 \bibitem{Ashkin1970}
 A.~Ashkin.
 \newblock Acceleration and trapping of particles by radiation pressure.
@@ -82,6 +88,13 @@ R~S Dutra, N~B Viana, P~A~Maia Neto, and H~M Nussenzveig.
 R.~S. Dutra, N.~B. Viana, P.~A.~Maia Neto, and H.~M. Nussenzveig.
 \newblock Absolute calibration of forces in optical tweezers.
 \newblock {\em Physical Review A}, 90(1), jul 2014.
+
+\bibitem{Ether2015}
+D.~S. Ether, L.~B. Pires, S.~Umrath, D.~Martinez, Y.~Ayala, B.~Pontes, G.~R.
+  de~S.~Ara{\'{u}}jo, S.~Frases, G.-L. Ingold, F.~S.~S. Rosa, N.~B. Viana,
+  H.~M. Nussenzveig, and P.~A.~Maia Neto.
+\newblock Probing the casimir force with optical tweezers.
+\newblock {\em {EPL} (Europhysics Letters)}, 112(4):44001, nov 2015.
 
 \bibitem{Gouesbet2010}
 G.~Gouesbet.
@@ -194,12 +207,7 @@ H.~C. van~de Hulst.
 N.~G. van Kampen.
 \newblock {\em Stochastic Processes in Physics and Chemistry}.
 \newblock NORTH HOLLAND, 2007.
-
-\bibitem{Viana2006}
-N.~B. Viana, A.~Mazolli, P.~A.~Maia Neto, H.~M. Nussenzveig, M.~S. Rocha, and
-  O.~N. Mesquita.
-\newblock Absolute calibration of optical tweezers.
-\newblock {\em Applied Physics Letters}, 88(13):131110, mar 2006.
+\newblock pp. 347-349.
 
 \bibitem{Viana2007}
 N.~B. Viana, M.~S. Rocha, O.~N. Mesquita, A.~Mazolli, P.~A.~Maia Neto, and

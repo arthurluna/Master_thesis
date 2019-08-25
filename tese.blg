@@ -1,46 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: tese.aux
+White space in argument---line 39 of file tese.aux
+ : \citation{Diniz
+ :                 2019}
+I'm skipping whatever remains of this command
 The style file: plain.bst
 Database file #1: referencias.bib
-You've used 37 entries,
+Warning--empty journal in Ali2019
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            760 strings with 9809 characters,
-and the built_in function-call counts, 11675 in all, are:
-= -- 1120
-> -- 587
+            762 strings with 10095 characters,
+and the built_in function-call counts, 12224 in all, are:
+= -- 1163
+> -- 650
 < -- 0
-+ -- 233
-- -- 196
-* -- 920
-:= -- 2030
-add.period$ -- 112
-call.type$ -- 37
-change.case$ -- 198
++ -- 258
+- -- 220
+* -- 972
+:= -- 2135
+add.period$ -- 116
+call.type$ -- 38
+change.case$ -- 213
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 407
-empty$ -- 887
-format.name$ -- 196
-if$ -- 2335
+cite$ -- 39
+duplicate$ -- 417
+empty$ -- 903
+format.name$ -- 220
+if$ -- 2432
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 43
-newline$ -- 189
-num.names$ -- 74
-pop$ -- 191
+int.to.str$ -- 38
+missing$ -- 44
+newline$ -- 195
+num.names$ -- 76
+pop$ -- 207
 preamble$ -- 1
-purify$ -- 172
+purify$ -- 186
 quote$ -- 0
-skip$ -- 254
+skip$ -- 261
 stack$ -- 0
-substring$ -- 699
+substring$ -- 701
 swap$ -- 36
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 130
-warning$ -- 0
-while$ -- 113
-width$ -- 39
-write$ -- 402
+type$ -- 134
+warning$ -- 1
+while$ -- 115
+width$ -- 40
+write$ -- 413
+(There was 1 error message)
