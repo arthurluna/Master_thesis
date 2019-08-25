@@ -19,6 +19,6 @@
 \contentsline {section}{\numberline {3.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{39}{section.3.2}% 
 \contentsline {chapter}{\numberline {4}Resultados}{42}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{42}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{45}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da microesfera}{45}{section.4.2}% 
 \contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{50}{chapter.5}% 
 \contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{56}{appendix.A}% 
