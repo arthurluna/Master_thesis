@@ -66,16 +66,16 @@
 }
 
 @Article{Viana2007,
-  author        = {N. B. Viana and M. S. Rocha and O. N. Mesquita and A. Mazolli and P. A. Maia Neto and H. M. Nussenzveig},
-  title         = {Towards absolute calibration of optical tweezers},
-  journal       = {Physical Review E},
-  year          = {2007},
-  volume        = {75},
-  number        = {2},
-  month         = {feb},
-  __markedentry = {[arthurluna:]},
-  doi           = {10.1103/physreve.75.021914},
-  publisher     = {American Physical Society ({APS})},
+  author    = {N. B. Viana and M. S. Rocha and O. N. Mesquita and A. Mazolli and P. A. Maia Neto and H. M. Nussenzveig},
+  journal   = {Physical Review E},
+  title     = {Towards absolute calibration of optical tweezers},
+  year      = {2007},
+  month     = {feb},
+  number    = {2},
+  volume    = {75},
+  doi       = {10.1103/physreve.75.021914},
+  groups    = {[arthurluna:]},
+  publisher = {American Physical Society ({APS})},
 }
 
 @Article{Dutra2007,
@@ -267,16 +267,16 @@
 }
 
 @Article{Ali2019,
-  author        = {R. Ali and F. A. Pinheiro and F. S. S. Rosa and R. S. Dutra and P. A. Maia Neto},
-  title         = {Enantioselective manipulation of chiral nanoparticles using optical tweezers},
-  __markedentry = {[arthurluna:1]},
-  abstract      = {We put forward a twofold enantioselective method for chiral nanoparticles using optical tweezers. First, we demonstrate that the optical trapping force in a typical, realistic optical tweezing setup with circularly-polarized trapping beams are sensitive to the chirality of core-shell nanoparticles, allowing for efficient enantioselection. Second, we propose another enantioselective method based on the rotation of core-shell chiral nanoparticle's equilibrium position under the effect of a transverse Stokes drag force. In this case, the chirality of the particle shell gives rise to an additional twist, thus leading to a strong enhancement of the optical torque driving the rotation. Both chiral resolution methods are shown to be robust against the variation of the size of the system and material parameters, suggesting it could be applied to a wide range of experimental situations, particularly those of biological interest for which optical tweezing is widely used. Our results provide alternative enantioselective mechanisms and pave the way for all-optical manipulation and enantiopure synthesis of chiral nanoparticles. In addition, they can also be applied in the characterization of chirality for testing existing methods of enantioselection.},
-  date          = {2019-06-06},
-  eprint        = {http://arxiv.org/abs/1906.02528v1},
-  eprintclass   = {physics.optics},
-  eprinttype    = {arXiv},
-  file          = {:http\://arxiv.org/pdf/1906.02528v1:PDF},
-  keywords      = {physics.optics},
+  author      = {R. Ali and F. A. Pinheiro and F. S. S. Rosa and R. S. Dutra and P. A. Maia Neto},
+  title       = {Enantioselective manipulation of chiral nanoparticles using optical tweezers},
+  abstract    = {We put forward a twofold enantioselective method for chiral nanoparticles using optical tweezers. First, we demonstrate that the optical trapping force in a typical, realistic optical tweezing setup with circularly-polarized trapping beams are sensitive to the chirality of core-shell nanoparticles, allowing for efficient enantioselection. Second, we propose another enantioselective method based on the rotation of core-shell chiral nanoparticle's equilibrium position under the effect of a transverse Stokes drag force. In this case, the chirality of the particle shell gives rise to an additional twist, thus leading to a strong enhancement of the optical torque driving the rotation. Both chiral resolution methods are shown to be robust against the variation of the size of the system and material parameters, suggesting it could be applied to a wide range of experimental situations, particularly those of biological interest for which optical tweezing is widely used. Our results provide alternative enantioselective mechanisms and pave the way for all-optical manipulation and enantiopure synthesis of chiral nanoparticles. In addition, they can also be applied in the characterization of chirality for testing existing methods of enantioselection.},
+  date        = {2019-06-06},
+  eprint      = {http://arxiv.org/abs/1906.02528v1},
+  eprintclass = {physics.optics},
+  eprinttype  = {arXiv},
+  file        = {:http\://arxiv.org/pdf/1906.02528v1:PDF},
+  groups      = {arthurluna:1},
+  keywords    = {physics.optics},
 }
 
 @Article{Neves2019,
@@ -332,17 +332,17 @@
 }
 
 @Article{Nieminen2007,
-  author        = {Timo A Nieminen and Vincent L Y Loke and Alexander B Stilgoe and Gregor Kn\"{o}ner and Agata M Bra{\'{n}}czyk and Norman R Heckenberg and Halina Rubinsztein-Dunlop},
-  title         = {Optical tweezers computational toolbox},
-  journal       = {Journal of Optics A: Pure and Applied Optics},
-  year          = {2007},
-  volume        = {9},
-  number        = {8},
-  pages         = {S196--S203},
-  month         = {jul},
-  __markedentry = {[arthurluna:]},
-  doi           = {10.1088/1464-4258/9/8/s12},
-  publisher     = {{IOP} Publishing},
+  author    = {Timo A Nieminen and Vincent L Y Loke and Alexander B Stilgoe and Gregor Kn\"{o}ner and Agata M Bra{\'{n}}czyk and Norman R Heckenberg and Halina Rubinsztein-Dunlop},
+  journal   = {Journal of Optics A: Pure and Applied Optics},
+  title     = {Optical tweezers computational toolbox},
+  year      = {2007},
+  month     = {jul},
+  number    = {8},
+  pages     = {S196--S203},
+  volume    = {9},
+  doi       = {10.1088/1464-4258/9/8/s12},
+  groups    = {[arthurluna:]},
+  publisher = {{IOP} Publishing},
 }
 
 @Book{Gouesbet2011,
@@ -476,4 +476,26 @@
   url       = {https://www.ebook.de/de/product/3242885/max_born_emil_wolf_a_b_bhatia_principles_of_optics.html},
 }
 
+@Article{,
+}
+
+@Book{Kampen2007,
+  author    = {van Kampen, N. G.},
+  publisher = {NORTH HOLLAND},
+  title     = {Stochastic Processes in Physics and Chemistry},
+  year      = {2007},
+  isbn      = {0444529659},
+  date      = {2007-05-01},
+  ean       = {9780444529657},
+  pagetotal = {463},
+  url       = {https://www.ebook.de/de/product/6071989/n_g_van_kampen_stochastic_processes_in_physics_and_chemistry.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Markings\;2\;1\;\;\;\;;
+2 StaticGroup:[arthurluna:]\;2\;1\;\;\;\;;
+2 StaticGroup:arthurluna:1\;2\;1\;\;\;\;;
+}
