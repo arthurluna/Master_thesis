@@ -78,7 +78,7 @@ onde $\alpha$ é a polarizabilidade da microesfera.
 
 Podemos concluir que a força vai ser proporcional a ${\mathbf E}^2$, que é proporcional por sua vez à intensidade do campo. Se ${\mathbf E}$ e ${\mathbf p}$ têm o mesmo sentido, a força apontará sempre para a região de maior intensidade. Isso ocorre desde que $\alpha>0$. Essa é a força que chamamos de força de gradiente.
 
-Essa abordagem foi usada para um feixe gaussiano não perturbado na região focal por \cite{Tlusty1998}, apresentando incompatibilidades com experimentos \cite{Viana2007}. Abordagens seguintes \cite{Rohrbach2001} usam um modelo para o feixe focalizado devido a Richards e Wolf \cite{1959a}, o mesmo utilizado para a teoria MDSA que sera discutida na seção \ref{MD}, porém usando a aproximação de dipolo para a força ótica, e restringindo a validade da força devido ao espalhamento para raios menores ou da ordem de $\lambda /2(n_1-n_3)$ ($n_1$ e $n_3$ são respectivamente os índices de refração do meio e da microesfera), pela aproximação de Rayleigh-Gans.
+Essa abordagem foi usada para um feixe gaussiano não perturbado na região focal por \cite{Tlusty1998}, apresentando incompatibilidades com experimentos \cite{Viana2007}. Abordagens seguintes \cite{Rohrbach2001} usam um modelo para o feixe focalizado devido a Richards e Wolf \cite{1959a}, o mesmo utilizado para a teoria MDSA que será discutida na seção \ref{MD}, porém usando a aproximação de dipolo para a força ótica, e restringindo a validade da força devido ao espalhamento para raios menores ou da ordem de $\lambda /2(n_1-n_3)$ ($n_1$ e $n_3$ são respectivamente os índices de refração do meio e da microesfera), pela aproximação de Rayleigh-Gans.
 
 Os modelos baseados em ótica geométrica e aproximação do centro espalhador por um dipolo tem uma concordância relativamente boa com dados experimentais de esferas com raios condizentes com cada limite. Por outro lado, não são válidos para os tamanhos intermediários de raios, que são mais fáceis de se visualizar e amplamente utilizados nos experimentos. 
 
@@ -100,25 +100,25 @@ No caso em que os coeficientes de expansão são os correspondentes aos do feixe p
 
 \hspace{5 mm}Nessa seção será discutido o modelo Mie-Debye. O nome desse modelo faz alusão aos cientistas que propuseram os dois principais elementos desse modelo: o espalhamento de uma onda plana por uma esfera por Mie, como visto na seção anterior, e Debye, que propôs um modelo com campo escalar para o feixe produzido por uma objetiva de alta abertura numérica. A extensão do modelo para um campo vetorial foi feita por Richards e Wolf, citados no final da última seção.
 
-Começaremos a explicação do modelo pelo caso de espalhamento mais simples: uma onda plana de polarização circular direita ou esquerda incidindo sobre uma esfera. Obteremos os coeficientes do espalhamentos, chamados coeficientes de Mie. A seguir, faremos a descrição do feixe incidente como uma superposição de ondas planas com a forma \cite{1959a}:
+Começaremos a explicação do modelo pelo caso de espalhamento mais simples: uma onda plana de polarização circular direita ou esquerda incidindo sobre uma esfera. Obteremos os coeficientes de espalhamento, chamados coeficientes de Mie. A seguir, faremos a descrição do feixe incidente como uma superposição de ondas planas com a forma \cite{1959a}:
 %
 \begin{equation}
 \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k,
 \label{RW_puro}
 \end{equation}
 %
-onde a região de integração é um cone sólido com ângulo de abertura $\theta_0=\arcsin(NA/n)$, em que $NA$ é a abertura numérica do feixe, $n$ é o índice de refração no meio (mais tarde esse $n$ será o índice de refração da lamínula de vidro, e esse fato será importante para definir aberração esférica), $\hat{\varepsilon}_k$ é o vetor de polarização rotacionado e o foco desse feixe se encontra na orígem do espaço de posição. Nesse modelo também é levado em conta efeitos da objetiva que serão discutidos mais à frente. 
+onde a região de integração é um cone sólido com ângulo de abertura $\theta_0=\arcsin(NA/n)$, em que $NA$ é a abertura numérica do feixe, $n$ é o índice de refração no meio (mais tarde esse $n$ será o índice de refração da lamínula de vidro, e esse fato será importante para definir aberração esférica), $\hat{\varepsilon}_k$ é o vetor de polarização rotacionado e o foco desse feixe se encontra na origem do espaço de posição. Nesse modelo também é levado em conta efeitos da objetiva que serão discutidos mais à frente. 
 
 Os detalhes dos cálculos desta seção podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
-Nossa finalidade é encontrar a força eletromagnética em uma amostra na pinça ótica. Obtemos ela com \cite{Jackson1998}:
+Nossa finalidade é encontrar a força eletromagnética exercida em uma microesfera na pinça ótica. Obtemos ela com \cite{Jackson1998}:
 
 \begin{equation}
 \vec{F} = \oint_{s} \hat{n} \cdot \mathbf{T} d s - \mu \epsilon \frac{d}{dt} \int_{\nu} \mathbf{S} d \nu,
 \label{2_F}
 \end{equation}
 %
-onde $s$ é uma superfície que envolve a amostra na pinça ótica, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell, $\mathbf{S}$ é o vetor de Poynting e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
+onde $s$ é uma superfície que envolve o centro espalhador, $\nu$ é o interior dessa superfície, $T$ é o tensor das tensões de Maxwell, $\mathbf{S}$ é o vetor de Poynting e $\mu$ e $\epsilon$ são a permeabilidade magnética e a permissividade elétrica do meio envolvendo a amostra, respectivamente. 
 
 Assim, queremos obter os campos incidentes na esfera e espalhados por ela. Começamos tratando do caso de uma onda plana se propagando na direção $z$, com polarização circular. Essa é a polarização conveniente para expansão do campo em multipolos (ondas esféricas ou ondas parciais), que por sua vez é a base ideal para analisarmos o espalhamento de um objeto esférico. Outros casos de polarização serão tratados na seção \ref{Efeitos de polarizacao}. 
 
@@ -142,7 +142,7 @@ com
 \label{onda_plana}
 \end{equation}
 %
-onde $n_1$ é o índice de refração do meio ao redor da amostra, $k$  e $\omega$ são o vetor de onda e a frequência angular do feixe, sendo $\omega/k=c$ a velocidade da luz no vácuo. Os somatórios em $J$ nas equações acima indicam a expansão em multipolos. 
+onde $n_1$ é o índice de refração do meio ao redor da amostra, $k$  e $\omega$ são o módulo do vetor de onda e a frequência angular do feixe, sendo $\omega/k=c$ a velocidade da luz no vácuo. Os somatórios em $J$ nas equações acima indicam a expansão em multipolos. 
 
 A base de multipolos é composta pelos harmônicos esféricos na parte angular, que são autofunções dos operadores de momento angular $L^2$ e $L_z$. Esse fato será importante para obter os campos vetoriais a partir dos potenciais de Debye, pois podemos usar um conjunto de operadores vetoriais que comutam com $\nabla ^2$ e portanto geram soluções vetoriais da equação de Helmholtz. Esses operadores são: $-i {\mathbf r}\times\nabla = {\mathbf L}$, $\nabla \times {\mathbf L}$ e $\nabla$ \cite{Biedenharn2008}, onde o operador $\nabla$ fornece campos com divergência não nula, ou seja, com componentes na direção de propagação ${\mathbf k}$ e que assumimos serem nulas desde o começo.
 
@@ -165,7 +165,7 @@ Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha
 \label{harm_esf_rot}
 \end{equation}
 %
-que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz de rotação de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Como o fóton carrega momento angular de {\it spin}, o número $M$ na equação \ref{harm_esf_rot} será igual a $1$ no caso de polarização circular esquerda (e $-1$ no caso da direita). Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam: 
+que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz de rotação de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ do sistema rodado coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Como o fóton carrega momento angular de {\it spin}, o número $M$ na equação \ref{harm_esf_rot} será igual a $1$ no caso de polarização circular esquerda (e $-1$ no caso da direita). Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam: 
 
 \begin{equation}
 \Pi^E =\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
@@ -178,7 +178,7 @@ e
 \end{equation}
 %
 
-O próximo passo é integrar no ângulo solido do cone no espaço de Fourier. Começando pela variável $\phi_k$ (ou seja, componente $\phi$ da direção do vetor de onda ${\mathbf k}$; notação que será usada para $\theta_k$ também), obtemos:
+O próximo passo é integrar no ângulo sólido do cone no espaço de Fourier. Começando pela variável $\phi_k$ (ou seja, componente $\phi$ da direção do vetor de onda ${\mathbf k}$; notação que será usada para $\theta_k$ também), obtemos:
 
 \begin{equation}
 \begin{split}
@@ -187,7 +187,7 @@ O próximo passo é integrar no ângulo solido do cone no espaço de Fourier. Começa
 \end{split}
 \end{equation}
 %
-onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe \cite{Hulst1981}. O cone sólido se obtem integrando em $\theta_k$:
+onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe \cite{Hulst1981}. O cone sólido se obtém integrando em $\theta_k$:
 
 \begin{equation}
 \begin{split}
@@ -199,7 +199,7 @@ onde o termo $\sqrt{\cos(\theta_k)}$ vem da condição do seno de Abbe \cite{Hulst
 %
 onde $\theta_0$ é a abertura angular do feixe aprisionador.
 
-Para derivar a força na microesfera em função da sua posição relativa ao foco do feixe, temos que calcular os campos deslocados em relação ao centro do objeto espalhador, ou seja, a orígem. Fazemos isso usando o gerador de translações no espaço, com o operador $e^{-i{\mathbf k}\cdot{\mathbf R}}$, onde ${\mathbf R}=q_x\hat{x}+q_y\hat{y}+q_z\hat{z}$ é o vetor de deslocamento. Multiplicamos esse operador em cada coeficiente de multipolo, e dessa forma, o operador fica dentro da integral em $\phi_k$, que leva ao seguinte resultado:
+Para derivar a força na microesfera em função da sua posição relativa ao foco do feixe, temos que calcular os campos deslocados em relação ao centro do objeto espalhador, ou seja, a origem. Fazemos isso usando o gerador de translações no espaço, com o operador $e^{-i{\mathbf k}\cdot{\mathbf R}}$, onde ${\mathbf R}=q_x\hat{x}+q_y\hat{y}+q_z\hat{z}$ é o vetor de deslocamento. Multiplicamos esse operador em cada coeficiente de multipolo, e dessa forma, o operador fica dentro da integral em $\phi_k$, que leva ao seguinte resultado:
 
 \begin{equation}
 \begin{split}
@@ -219,7 +219,7 @@ Uma vez determinados os potenciais de Debye incidentes e espalhados, podemos obt
 \end{equation}
 %
 
-Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de um campo produzido pela passagem de uma onda plana sendo focalizada por uma objetiva. Essa integral pode ser resolvida tomando a superfície $\sigma$ como uma esfera (com centro na orígem) com raio tendendo a infinito. Isso faz com que as componentes radiais do campo sejam desprezadas no cálculo, pois caem com $\frac{1}{r^2}$, comparado às componentes tangenciais que caem com $\frac{1}{r}$. Temos, então:
+Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de um campo produzido pela passagem de uma onda plana sendo focalizada por uma objetiva. Essa integral pode ser resolvida tomando a superfície $\sigma$ como uma esfera (com centro na origem) com raio tendendo a infinito. Isso faz com que as componentes radiais do campo sejam desprezadas no cálculo, pois caem com $\frac{1}{r^2}$, comparado às componentes tangenciais que caem com $\frac{1}{r}$. Temos, então:
 
 \begin{equation}
 {\mathbf F}=\frac{-1}{2}r\left( \int d\Omega (\epsilon E^2_{tan}{\mathbf r}) + \int d\Omega (\mu H^2_{tan}{\mathbf r}) \right),
@@ -245,7 +245,7 @@ onde $\left<{\mathbf F}\right>$ é a média temporal da força, P é a potência do f
 
 \hspace{5 mm}O modo gaussiano TEM$_{00}$ do feixe laser é o mais amplamente usado nos experimentos de pinça ótica. Para incorporar o efeito do perfil gaussiano no modelo, analisamos o campo paraxial na entrada da objetiva. %Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
 
-Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a altura da cintura mínima coincidente com a entrada da objetiva. Isso nos permite tratar-lo como um feixe cilíndrico (de raio de curvartura infinito) \cite{Zangwill2013}. O campo fica:
+Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a altura da cintura mínima coincidente com a entrada da objetiva. Isso nos permite tratá-lo como um feixe cilíndrico (de raio de curvartura infinito) \cite{Zangwill2013}. O campo fica:
 
 \begin{equation}
 {\mathbf E}_{IN}^{antes}(\vec{r},t)=E_0 e^{ikz} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}(\hat{{\mathbf x}}\pm i\hat{{\mathbf y}}) e^{i\omega t},
@@ -297,7 +297,7 @@ Dessa forma, os potenciais de Debye ganham um termo a mais devido ao ângulo da p
 
 \hspace{5 mm}A aberração esférica é um efeito ótico onde os raios que compõem o feixe são focalizados em pontos distintos do eixo ótico. Uma lente esférica, por exemplo, fará com que os raios marginais de um feixe colimado sejam mais refratados que os raios mais próximos ao eixo ótico. Esse efeito faz com que o perfil de intensidade do feixe seja difundido ao longo do eixo ótico.
 
-No aparato de pinças óticas esse efeito ocorre quando usamos uma lente objetiva de imersão em óleo, que não é corrigida para aberração esférica, e o feixe incidide em um porta-amostra contendo algum fluido com índice de refração diferente do óleo e do vídro do porta-amostra, que são iguais. Esse efeito faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface.
+No aparato de pinças óticas esse efeito ocorre quando usamos uma lente objetiva de imersão em óleo, que não é corrigida para aberração esférica, e o feixe incidide em um porta-amostra contendo algum fluido com índice de refração diferente do óleo e do vidro do porta-amostra, que são iguais. Esse efeito faz com que a posição de equilíbro da microesfera se desloque para mais perto da interface.
 
 Também pode haver aberração esférica no feixe paraxial antes da entrada da objetiva, mas trataremos esse caso somente na seção \ref{Aberracoes oticas}.
 
@@ -344,7 +344,7 @@ Podemos entender esse efeito também como uma fase induzida no feixe pela diferen
 %
 onde $k_1=N k$ é o módulo do vetor de onda nesse meio.
 
-Como essa onda se propagou nesse meio de índice de refração $n_1$, ela deixou de se propagar no meio de índice de refração $n$, e portanto deve ser subtraída a fase esta deixou de ganhar:
+Como essa onda se propagou nesse meio de índice de refração $n_1$, ela deixou de se propagar no meio de índice de refração $n$, e portanto deve ser subtraída a fase que esta deixou de ganhar:
 %
 \begin{equation}
 \Psi_-(z,\theta)=k L_a\cos\theta.
@@ -379,7 +379,7 @@ onde, pela lei de Snell, $\theta_1=\arcsin(\frac{\sin\theta}{N})$.
 
 \hspace{5 mm}As aberrações óticas monocromáticas são modificações nos feixes paraxiais induzidas por uma série de fatores, entre eles imperfeições nas lentes e desalinhamentos no sistema ótico. O estudo das aberrações é inspirado pelo fato de que a teoria MDSA subestima a força radial na pinça ótica quando o raio da microesfera aprisionada é menor ou da ordem do comprimento de onda $\lambda$ do laser\cite{Dutra2014}. Raios maiores que $\lambda$ recuperam tanto os resultados da teoria MDSA quanto os da ótica geométrica. Isso ocorre porque a esfera passa a sondar uma média do perfil do feixe, em contraste com o caso anterior, em que ela sonda diferenças de fase e distribuição de intensidade do feixe focalizado.
 
-O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. Estamos tratando aqui de aberrações antes da objetiva, ou seja, a aberração esférica tratada aqui tem orígem diferente da descrita na sessão anterior, apesar de serem o mesmo fenômeno físico.
+O formalismo de Seidel é um dos possíveis métodos para se descrever as aberrações em um feixe paraxial. Entre as aberrações primárias, que aparecem como os primeiros termos de uma expansão nesse formalismo, são relevantes para o nosso modelo o astigmatismo, a coma e a aberração esférica \cite{Dutra2014}. Estamos tratando aqui de aberrações antes da objetiva, ou seja, a aberração esférica tratada aqui tem origem diferente da descrita na sessão anterior, apesar de serem o mesmo fenômeno físico.
 
 Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\Phi_{adicional}(\theta,\phi)}$ nos campos na entrada da objetiva (modificando a equação \ref{l}), com \cite{Born2002}:
 
@@ -405,7 +405,7 @@ Considemos agora o problema prático: os experimentos que serviram de base compar
 
 Uma breve explicação do efeito de astigmatismo será feita a seguir, baseada em trabalhos do grupo \cite{Dutra, Diniz, Dutra2014, Diniz2019}, onde detalhes do seguinte desenvolvimento e das demais aberrações podem ser encontrados. 
 
-O astigmatismo surge ao deslocarmos o ponto de orígem de um raio de luz do eixo ótico de uma lente. A reta que passa pelo ponto objeto e o centro da lente é chamado raio principal, e o plano que contém ele e o eixo ótico da lente é chamado plano meridional. O plano que contém o raio principal e é perpendicular ao plano meridional é chamado plano sagital.
+O astigmatismo surge ao deslocarmos o ponto de origem de um raio de luz do eixo ótico de uma lente. A reta que passa pelo ponto objeto e o centro da lente é chamado raio principal, e o plano que contém ele e o eixo ótico da lente é chamado plano meridional. O plano que contém o raio principal e é perpendicular ao plano meridional é chamado plano sagital.
 
 Dessa forma, os raios de luz que emergem do ponto deslocado do eixo ótico formarão um cone assimétrico incidente na lente. Os raios que estão contidos no plano meridional se encontrarão no foco meridional ${\mathbf F}_T$ ao passar pela lente, enquanto os que estão contidos no plano sagital se encontrarão no foco sagital ${\mathbf F}_S$. A figura \ref{feixe_astig} ilustra os planos meridional e sagital e os respectivos focos. Como podemos ver, a seção reta do feixe forma elipses, e seu eixo alongado gira $90º$ de direção quando passa pelo círculo de menor confusão, também chamado de foco difratado. Esse alongamento ocorre, portanto, no {\it spot} (a imagem formada por um feixe) do laser, o que torna fácil a identificação dessa aberração em sistemas óticos.
 
@@ -494,7 +494,7 @@ De uma forma simples, podemos entender essa transferência de momento angular con
 
 No contexto de campos paraxiais, podemos separar as componentes do momento angular em duas partes, uma de spin associada à helicidade do feixe, e outra associada ao momento angular orbital, caracterizado pela fase $e^{il\phi}$, presente nos modos Laguerre-Gaussianos \cite{Zangwill2013}. 
 
-Podemos extender essa distinção de momentos angulares para o caso de ondas planas. O momento angular de spin permanece associado à polarização. O momento angular orbital surge com rotações da onda plana, onde o vetor ${\mathbf k}$ rotacionado define a nova direção de propagação e os vetores do campo ${\mathbf E}$ (perpendiculares a ${\mathbf k}$) sofrem um transporte paralelo ao longo da esfera centrada na orígem do espaço de Fourier. A rotação do campo vetorial ${\mathbf E}$ dará orígem a uma fase geométrica $\Phi_g=-\sigma\phi\cos\theta$, onde $\sigma=\pm1$ indica a polarização. Ao considerar um cone de vetores de onda ${\mathbf k}$ rotacionados, o campo resultante terá uma fase global de $\Phi_{g0}=2\pi\sigma(1-\cos\theta)$ \cite{Bliokh2015}.
+Podemos extender essa distinção de momentos angulares para o caso de ondas planas. O momento angular de spin permanece associado à polarização. O momento angular orbital surge com rotações da onda plana, onde o vetor ${\mathbf k}$ rotacionado define a nova direção de propagação e os vetores do campo ${\mathbf E}$ (perpendiculares a ${\mathbf k}$) sofrem um transporte paralelo ao longo da esfera centrada na origem do espaço de Fourier. A rotação do campo vetorial ${\mathbf E}$ dará origem a uma fase geométrica $\Phi_g=-\sigma\phi\cos\theta$, onde $\sigma=\pm1$ indica a polarização. Ao considerar um cone de vetores de onda ${\mathbf k}$ rotacionados, o campo resultante terá uma fase global de $\Phi_{g0}=2\pi\sigma(1-\cos\theta)$ \cite{Bliokh2015}.
 %
 Portanto, a variação de momento angular intrínseco devido às rotações e superposição das ondas planas é dado por $\Delta L_z = -\Delta S_z = \Phi_{g0}/2\pi$.
 
@@ -535,6 +535,6 @@ Quanto maior for o centro espalhador, maior será o campo espalhado, e a partir d
 
 Podemos observar que na região em que o raio $a$ é menor que $0,15 \mu m$, a constante de torção é positiva, e o torque indica um ganho de momento angular na mesma direção ao de spin do campo incidente. Sendo essa a região onde o termo de extinção domina, podemos inferir que o campo está cedendo momento angular para a microesfera, e esta não está espalhando momento angular o suficiente para sofrer torque negativo.
 
-Quando o raio aumenta, a componente de espalhamento da força começa a dominar, e efeitos de torque negativos tendem a prevalecer. Podemos concluir que o campo espalhado carrega momento angular em excesso. Como o momento angular de spin do campo espalhado não pode ser maior que o do incidente, por esta última já ser máxima, o excesso de momento angular tem que ser de origem orbital. 
+Quando o raio aumenta, a componente de espalhamento da força começa a dominar, e efeitos de torque negativos tendem a prevalecer. Podemos concluir que o campo espalhado carrega momento angular em excesso. Como o momento angular de spin do campo espalhado não pode ser maior que o do incidente, por este último já ser máximo, o excesso de momento angular tem que ser de origem orbital. 
 
 \end{chapter}
