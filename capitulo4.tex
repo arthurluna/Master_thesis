@@ -108,12 +108,17 @@ Multiplicando $\Delta$ por $(n_1 P a)/c$, obtemos o potencial no qual a microesf
 \end{center}
 \end{figure}
 
+Para um valor típico da potência do laser $P=1mW$, teremos $(n_1 P a)/c = 3.5 \times 10^{-17} J$, e $k_BT=414.2 \times 10^{-23} J$ para uma temperatura $T=300K$. A razão $(n_1 P a)/ck_BT=8.45 \times 10^3$ é multiplicada pelo valor de $\Delta$ para saber o tamanho da barreira de potencial $U_0$ que a microesfera deve atravessar em unidades de $k_BT$. De acordo com a figura \ref{pot_imn_EG}, se $\operatorname{Im}(n_2)=5 \times 10^{-4}$, teremos $\Delta=0.01$, e $U_0=84.5k_BT$; o que quer dizer que a microesfera continuará aprisionada. Por outro lado, se a potência do laser fosse 10 vezes menor, $U_0=8.5k_BT$, o que significa que o critério para haver pinçamento de que $U_0>10k_BT$ não é mais satisfeito, e a microesfera pode escapar.
 
-Para uma análise mais aprofundada, podemos calcular o tempo médio que a microesfera demoraria para difundir para fora da armadilha. O caso de uma partícula em movimento browniano, confinada em um potencial como o da figura \ref{qz} é conhecido como problema de escape de Kramers, e tem solução \cite{Kampen2007}:
-
+Para uma análise mais aprofundada, podemos calcular o tempo médio que a microesfera demoraria para difundir para fora da armadilha. O caso de uma partícula em movimento browniano, confinada em um potencial como o da figura \ref{qz} (onde $V(z)$ cresce para valores negativos cada vez menores de $z$) é conhecido como problema de escape de Kramers, e tem solução \cite{Kampen2007}:
+%
 \begin{equation}
-\frac{1}{\tau}=\frac{\partial^2 V(z_{min})}{\partial z^2}\frac{e^{-\Delta}}{2}
+\frac{1}{\tau}=\sqrt{\frac{\kappa_z}{m}}\frac{e^{-U_0/k_BT}}{2\pi},
 \label{t_esc}
 \end{equation}
+%
+onde $\tau$ é o tempo médio de escape da microesfera, $m$ é a sua massa, $U_0=\Delta(n_1 P a)/c$ é o tamanho da barreira de potencial e $\kappa_z=\partial^2 V/\partial z^2|_{z=z_{eq}}=(n_1 P /c)\partial Q_z/\partial z|_{z=z_{eq}}$ é a constante elástica axial, uma vez que $z_{eq}$ é também a posição do mínimo do potencial $V(z)$.
+
+A massa de uma microesfera de poliestireno com raio $a=7.9 \mu m$ é $m=2.2 \times 10^{-15}kg$, e o valor da constante elástica axial para uma potência $P=0.1mW$ é $\kappa_z=5.6 \times 10^{-8} kg/s^2$. Sabendo que $U_0/k_BT=8.5$ para essa potência, usamos a equação \ref{t_esc} para obter o valor para o tempo de passagem de $6s$. Se a potência for $P=0.15mW$, o tempo aumenta para $321 s$, e se for $P=0.2mW$, o tempo é de aproximadamente $5 horas$.
 
 \end{chapter}
