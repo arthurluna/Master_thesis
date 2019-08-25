@@ -14,11 +14,11 @@
 
 \hspace{5 mm}Apresentaremos nessa seção o experimento para medir o torque ótico sobre a microesfera aprisionada, bem como a simulação computacional desse experimento. O experimento foi realizado em 2018 por Diniz {\it et al.} \cite{Diniz2019,Diniz}. Detalhes do procedimento experimental, do material e das ferramentas usadas nesse experimento podem ser encontradas nas referências citadas, e não serão abordados nesse trabalho.
 
-A descrição do experimento deve ser dividida em partes. De forma geral, temos um feixe laser que incide sobre a traseira de uma lente objetiva de um microscópio invertido. O feixe focalizado incide dentro de um porta-amostra que contém um meio fluido com microesferas diluidas. 
+A descrição do experimento deve ser dividida em partes. De forma geral, temos um feixe laser que incide sobre a traseira de uma lente objetiva de um microscópio invertido. O feixe focalizado incide dentro de um porta-amostra que contém um meio fluido com microesferas diluídas. 
 
 Este porta-amostra está acoplado a um suporte preso ao estágio do microscópio que pode ser movido em qualquer direção por meio de um controle piezo-elétrico ou manualmente. Tudo isso forma o aparato da pinça ótica, e deixaremos para o final a descrição do experimento que foi simulado.
 
-Primeiramente, trataremos do feixe paraxial: trata-se de um laser com perfil gaussiano ($TEM_{00}$) de comprimento de onda $\lambda_0=1064nm$ e cintura $\omega_0=5.82\pm0.08$. Suas caraterísticas são importantes para definir o feixe focalizado pela objetiva, como vimos no capítulo anterior. 
+Primeiramente, trataremos do feixe paraxial: trata-se de um laser com perfil gaussiano ($TEM_{00}$) de comprimento de onda $\lambda_0=1064nm$ e cintura $\omega_0=5.82mm$. Suas caraterísticas são importantes para definir o feixe focalizado pela objetiva, como vimos no capítulo anterior. 
 
 A largura da cintura $\omega_0$ do feixe é essencial para garantir a condição de aprisionamento da microesfera, pois se esta for muito menor que a entrada da objetiva, teremos o que se chama de {\it underfilling}, favorecendo a pressão de radiação e impedindo o aprisionamento. Como, para alguns tamanhos de esfera aprisionada, a largura do feixe não é grande o suficiente, usa-se um expansor de feixes, que consiste em um par de lentes, sendo uma biconvexa e a outra convexa, para se ampliar o perfil deste.
 %
@@ -31,7 +31,7 @@ A largura da cintura $\omega_0$ do feixe é essencial para garantir a condição de
 \end{figure}
 %
 
-O feixe laser, logo após ser gerado, incide sobre um divisor de feixe que o polariza linearmente. A direção de polarização é paralela à mesa ótica. No caso em que o feixe entra no porta-amostra com polarização linear, a direção de polarização passa a definir o eixo $x$ das nossas coordenadas. É em relação a esse eixo que vamos medir o ângulo $\phi$ das coordenadas cilíndricas da microesfera e o ângulo $\varphi_a$ do eixo do astigmatismo. Como já foi explicado, o astigmatismo gera um alongamento no perfil do feixe, fazendo com que o {\it spot} tenha um formato elipsoidal ao invés de circular. O ângulo entre a direção do alongamento e o eixo de polarização linear (eixo $x$) é o ângulo $\varphi_a$. Dessa forma, medir esse ângulo é realizado de forma muito fácil uma vez que se obtenha a imagem do perfil do feixe. O valor medido e usado na simulação foi $\varphi_a=(1\pm1)º$.
+O feixe laser, logo após ser gerado, incide sobre um divisor de feixe que o polariza linearmente. A direção de polarização é paralela à mesa ótica. No caso em que o feixe entra no porta-amostra com polarização linear, a direção de polarização passa a definir o eixo $x$ das nossas coordenadas. É em relação a esse eixo que vamos medir o ângulo $\phi$ das coordenadas cilíndricas da microesfera e o ângulo $\varphi_a$ do eixo do astigmatismo. Como já foi explicado, o astigmatismo gera um alongamento no perfil do feixe, fazendo com que o {\it spot} tenha um formato elipsoidal ao invés de circular. O ângulo entre a direção do alongamento e o eixo de polarização linear (eixo $x$) é o ângulo $\varphi_a$. Dessa forma, a medida desse ângulo poder ser realizada uma forma muito fácil uma vez que se obtenha a imagem do perfil do feixe. O valor medido e usado na simulação foi $\varphi_a=(1\pm1)º$.
 %
 \begin{figure}
 \begin{center}
@@ -120,13 +120,13 @@ As figuras \ref{forcas_estagio} e \ref{pos_eq_phi} são cortesia de Kainã Diniz \
 \frac{F_\phi}{F_\rho} = \tan\phi \approx \phi.
 \end{equation}
 %
-Com a linearidade da força $F_\phi/F_\phi = \kappa_\phi \rho/\kappa_\rho \rho$, temos:
+Com a linearidade da força $F_\phi/F_\rho = \kappa_\phi \rho/\kappa_\rho \rho$, temos:
 %
 \begin{equation}
 \frac{\kappa_\phi}{\kappa_\rho} \approx \phi.
 \end{equation}
 
-Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. No caso de polarização linear ($\psi=0$), espera-se que deslocamentos da microesfera ao longo da direção $x$ não produzam rotação em torno do eixo do feixe, que é o caso de (a) na figura \ref{forcas_estagio}. Se o deslocamento fosse em outras direções, poderíamos esperar uma força direção $\phi$ causada pela assimetria do feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no {\it spot}. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$. Esse resultado é intuitivo, porque o feixe incidente não possui momento angular, e portanto não deve haver torques nesse sistema.
+Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. No caso de polarização linear ($\psi=0$), espera-se que deslocamentos da microesfera ao longo da direção $x$ não produzam rotação em torno do eixo do feixe, que é o caso de (a) na figura \ref{forcas_estagio}. Se o deslocamento fosse em outras direções, poderíamos esperar uma força na direção $\phi$ causada pela assimetria do feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no {\it spot}. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$. Esse resultado é intuitivo, porque o feixe incidente não possui momento angular, e portanto não deve haver torques nesse sistema.
 
 Por outro lado, quando o feixe tem uma polarização elíptica ($\psi\neq0$), o feixe incidente passa a ter momento angular, e esperamos que a posição de equilíbrio da microesfera não seja mais em cima do eixo $x$.
 %
