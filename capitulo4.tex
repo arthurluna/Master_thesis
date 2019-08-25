@@ -84,15 +84,15 @@ Por outro lado, se simularmos o caso de uma objetiva de imersão em água com aber
 
 Tomando o valor da parte real do índice de refração do poliestireno como $\operatorname{Re}(n_2)=1.576$, de acordo com o gráfico referido acima, buscamos uma região da parte imaginária de $n_2$ que seja propícia ao aprisionamento da microesfera.
 %
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=.7]{potencial_qz}
-\caption{Componente $Q_z$ do fator de eficiência (em laranja) e o potencial (em azul) em função de $z$. O potencial nesse gráfico é adimensional, e vem da integração do fator de eficiência no eixo em unidades de raio. Representamos também no gráfico a altura $\Delta$ da barreira de potencial. O raio da esfera é $a=0.5\mu m$, o índice de refração $n_2=1.576+10^{-3}i$, não estão sendo levados em conta astigmtismo e aberração esférica nessa simulação.}
+\includegraphics[scale=.65]{potencial_qz}
+\caption{Componente $Q_z$ do fator de eficiência (em laranja) e o potencial (em azul) em função de $z$. Representamos no gráfico a altura $\Delta$ da barreira de potencial. }%O raio da esfera é $a=0.5\mu m$, o índice de refração $n_2=1.576+10^{-3}i$, não estão sendo levados em conta astigmtismo e aberração esférica nessa simulação.}
 \label{qz}
 \end{center}
 \end{figure}
 
-Como podemos ver na figura \ref{qz}, a integral do fator de eficiência com respeito a $z$ (em unidade de raio) entre a posição de equilíbrio estável $z_{eq}$ e a de equilíbrio instável $z_{inst}$ nos fornece a altura da barreira potencial adimensional. Multiplicando por $(n_1 P a)/c$, obtemos o potencial no qual a microesfera está inserida. 
+O potencial $V(z)$ na figura \ref{qz} é adimensional, sendo calculado com a equação \ref{V_z} tomando $n_1P/c=1$ e $dz$ sendo em unidades de raio. A altura da barreira de potencial é obtida tomando $z_0=z_{eq}$ e calculando $V(z_{inst})$, ou seja:
 %
 \begin{figure}[h]
 \begin{center}
