@@ -13,12 +13,12 @@
 \contentsline {section}{\numberline {2.6}Aberra\c c\~ao esf\'erica produzida por refra\c c\~ao na interface com o porta-amostra}{17}{section.2.6}% 
 \contentsline {section}{\numberline {2.7}Outras aberra\c c\~oes do sistema \'otico}{20}{section.2.7}% 
 \contentsline {section}{\numberline {2.8}For\c ca \'otica em termos da expans\~ao em multipolos}{23}{section.2.8}% 
-\contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{25}{section.2.9}% 
-\contentsline {chapter}{\numberline {3}Caracteriza\c c\~ao de par\^ametros f\IeC {\'\i }sicos}{29}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Caracteriza\c c\~ao do astigmatismo por meio da an\'alise do experimento de transfer\^encia de momento angular}{29}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{40}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}Resultados}{43}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{43}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da microesfera}{46}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{51}{chapter.5}% 
-\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{58}{appendix.A}% 
+\contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{26}{section.2.9}% 
+\contentsline {chapter}{\numberline {3}Caracteriza\c c\~ao de par\^ametros f\IeC {\'\i }sicos}{30}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Caracteriza\c c\~ao do astigmatismo por meio da an\'alise do experimento de transfer\^encia de momento angular}{30}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{41}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}Resultados}{44}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{44}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da microesfera}{47}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{52}{chapter.5}% 
+\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{59}{appendix.A}% 
