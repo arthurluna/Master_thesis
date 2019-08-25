@@ -46,7 +46,7 @@ De forma análoga ao caso anterior, ao deslocar verticalmente o foco em relação a
 \end{figure}
 %
 
-A contribuição da reflexão é a transferência de momento na direção normal ao plano tangente à esfera onde o raio de luz é refletido, como mostra a imagem \ref{reflex_absor}. Os raios refletidos têm sua componente de momento perpendicular à superfície reflexora (tangente) invertidas. Por conservação de momento, a esfera ganha o dobro de momento nessa direção. 
+A contribuição da reflexão é a transferência de momento na direção normal ao plano tangente à esfera onde o raio de luz é refletido, como mostra a figura \ref{reflex_absor}(a). Os raios refletidos têm sua componente de momento perpendicular à superfície reflexora (tangente) invertidas. Por conservação de momento, a esfera ganha o dobro de momento nessa direção. 
 %
 \begin{figure}[h]
 \begin{center}
@@ -89,7 +89,7 @@ Para descrever esses casos, é necessário um modelo baseado em ótica ondulatória,
 
 \hspace{5 mm}Na tentativa de obter um modelo baseado em ótica ondulatória, o modelo de Gouesbet e Gréhan \cite{Gouesbet1985} faz uma generalização do modelo de Mie para o espalhamento de uma onda plana (circularmente polarizada) por uma esfera \cite{Mie1908,Lorenz1890}, onde o feixe incidente passa a ser definido por uma combinação linear de funções de onda que são soluções da equação de Helmholtz \cite{Nieminen2007}. Os coeficientes da expansão, ou coeficientes de formato do feixe ({\it beam shape coefficients}, ou BSC), são obtidos através de expansões do campo nessas funções, que formam uma base discreta \cite{Gouesbet2011}. 
 
-Na abordagem do artigo de 1985 \cite{Gouesbet1985}, o campo incidente na esfera é um feixe de Davis (de 5ª ordem) \cite{Davis1979}, que consiste em um feixe paraxial com correções em ordens de $1/k\thinspace w_0$ , onde $k$ é módulo do vetor de onda e $w_0$ é a cintura do feixe. Essa aproximação foi usada pois o feixe paraxial não é solução da equação da equação de Helmholtz, porém o feixe de Davis tampouco o é. O método proposto por Gouesbet e Gréhan é atualmente conhecido na literatura como {\it generalized Lerenz-Mie theory} (LGMT), e programas computacionais para o cálculo da força ótica baseados em tal teoria estão disponíveis na internet \cite{Nieminen2007}.
+Na abordagem do artigo de 1985 \cite{Gouesbet1985}, o campo incidente na esfera é um feixe de Davis \cite{Davis1979}, que consiste em um feixe paraxial com correções até quinta ordem no parâmetro $1/(k\thinspace w_0)$ , onde $k$ é módulo do vetor de onda e $w_0$ é a cintura do feixe. Essa aproximação foi usada na tentativa de adequar o formalismo paraxial usual a situações fora do seu regime de validade, tendo em vista que os feixes usados em pinças óticas exigem altos valores de abertura numérica. O método proposto por Gouesbet e Gréhan é atualmente conhecido na literatura como {\it generalized Lerenz-Mie theory} (LGMT), e programas computacionais para o cálculo da força ótica baseados em tal teoria estão disponíveis na internet \cite{Nieminen2007}.
 
 Uma formulação de espalhamento chamada matriz-T (matriz de transferência) é utilizada em conjunto com a expansão em ondas esfericas para obter os campos espalhados para um objeto não esférico\cite{Mishchenko1996,Gouesbet2010}. A discussão desse caso, porém, não está no escopo do trabalho.
 
@@ -103,7 +103,7 @@ No caso em que os coeficientes de expansão são os correspondentes aos do feixe p
 Começaremos a explicação do modelo pelo caso de espalhamento mais simples: uma onda plana de polarização circular direita ou esquerda incidindo sobre uma esfera. Obteremos os coeficientes do espalhamentos, chamados coeficientes de Mie. A seguir, faremos a descrição do feixe incidente como uma superposição de ondas planas com a forma \cite{1959a}:
 %
 \begin{equation}
-\mathbf{E}_{IN}=\int d\Omega_k e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k,
+\mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k,
 \label{RW_puro}
 \end{equation}
 %
