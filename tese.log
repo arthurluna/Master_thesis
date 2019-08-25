@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.24)  25 AUG 2019 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.24)  25 AUG 2019 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -542,24 +542,112 @@ File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Hy@SectionHShift=\skip65
 )
 (/usr/share/texmf-dist/tex/latex/braket/braket.sty)
-\@indexfile=\write4
-\openout4 = `tese.idx'.
+(/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count137
+\calc@Bcount=\count138
+\calc@Adimen=\dimen177
+\calc@Bdimen=\dimen178
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count139
+\calc@Cskip=\skip68
+)
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen179
+\AM@pageheight=\dimen180
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box41
+\AM@global@opts=\toks41
+\AM@toc@title=\toks42
+\c@AM@survey=\count140
+\AM@templatesizebox=\box42
+)
+(/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2019/02/08 v5.1 Nomenclature package
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks43
+\XKV@tempa@toks=\toks44
+)
+\XKV@depth=\count141
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+))
+\scr@dte@tocline@numberwidth=\skip69
+\scr@dte@tocline@numbox=\box43
+)
+Package tocbasic Info: setting babel extension for `nlo' on input line 24.
+Package tocbasic Info: setting babel extension for `nls' on input line 25.
+\nomlabelwidth=\dimen181
+\nom@tempdim=\dimen182
+\nomitemsep=\skip70
+)
+\@nomenclaturefile=\write4
+\openout4 = `tese.nlo'.
+
+Package nomencl Info: Writing nomenclature file tese.nlo on input line 33.
+\@indexfile=\write5
+\openout5 = `tese.idx'.
 
 
 Writing index file tese.idx
 
 Package hyperref Warning: Option `pdfpagelabels' has already been used,
-(hyperref)                setting the option has no effect on input line 34.
+(hyperref)                setting the option has no effect on input line 41.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 34.
+(hyperref)                setting the option has no effect on input line 41.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 34.
-Package hyperref Info: Option `breaklinks' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
+Package hyperref Info: Option `breaklinks' set `true' on input line 41.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 34.
+(hyperref)                setting the option has no effect on input line 41.
 
 (./tese.aux
 
@@ -568,37 +656,37 @@ LaTeX Warning: Label `kphi' multiply defined.
 )
 \openout1 = `tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
-\scratchdimen=\dimen177
-\scratchbox=\box41
-\nofMPsegments=\count138
-\nofMParguments=\count139
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count140
-\MPscratchDim=\dimen178
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count142
+\scratchdimen=\dimen183
+\scratchbox=\box44
+\nofMPsegments=\count143
+\nofMParguments=\count144
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count145
+\MPscratchDim=\dimen184
+\MPnumerator=\count146
+\makeMPintoPDFobject=\count147
+\everyMPtoPDFconversion=\toks46
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -650,37 +738,28 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 37.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 44.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 44.
 
 (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Package xypdf Info: Line width: 0.47998pt on input line 37.
-\AtBeginShipoutBox=\box42
-
-(/usr/share/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 37.
+Package xypdf Info: Line width: 0.47998pt on input line 44.
+\AtBeginShipoutBox=\box45
+Package hyperref Info: Link coloring ON on input line 44.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -688,20 +767,28 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count143
+\c@section@level=\count148
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
  (./tese.out)
 (./tese.out)
-\@outlinefile=\write5
-\openout5 = `tese.out'.
+\@outlinefile=\write6
+\openout6 = `tese.out'.
 
-<logo_ufrj.jpg, id=96, 113.67468pt x 135.50626pt>
+ (/usr/share/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+<logo_ufrj.jpg, id=92, 113.67468pt x 135.50626pt>
 File: logo_ufrj.jpg Graphic file (type jpg)
 <use logo_ufrj.jpg>
-Package pdftex.def Info: logo_ufrj.jpg  used on input line 73.
+Package pdftex.def Info: logo_ufrj.jpg  used on input line 80.
 (pdftex.def)             Requested size: 90.93985pt x 108.40514pt.
  [1
 
@@ -715,35 +802,31 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] [4] [5] [6] (./tese.toc [7
+[3] [4] [5] [6] [7] (./tese.toc [8
 
 ])
-\tf@toc=\write6
-\openout6 = `tese.toc'.
+\tf@toc=\write7
+\openout7 = `tese.toc'.
 
- [8] (./tese.lof
+
+No file tese.nls.
+[9] (./tese.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [10
 
 ]
 Underfull \vbox (badness 1810) has occurred while \output is active []
 
- [10]
+ [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11])
-\tf@lof=\write7
-\openout7 = `tese.lof'.
+ [12])
+\tf@lof=\write8
+\openout8 = `tese.lof'.
 
 
-[12] (./tese.lot)
-\tf@lot=\write8
-\openout8 = `tese.lot'.
-
- [13
-
-] [14
+[13] [14
 
 ] (./capitulo1.tex
 Cap\'{\i }tulo 1.
@@ -761,18 +844,18 @@ Cap\'{\i }tulo 2.
 [4
 
 ]
-<geom_foco_coincIII.png, id=350, 207.25363pt x 300.42818pt>
+<geom_foco_coincIII.png, id=344, 207.25363pt x 300.42818pt>
 File: geom_foco_coincIII.png Graphic file (type png)
 <use geom_foco_coincIII.png>
 Package pdftex.def Info: geom_foco_coincIII.png  used on input line 20.
 (pdftex.def)             Requested size: 165.80312pt x 240.34286pt.
-<geom_foco_axialIII.png, id=353, 522.61363pt x 405.54819pt>
+<geom_foco_axialIII.png, id=347, 522.61363pt x 405.54819pt>
 File: geom_foco_axialIII.png Graphic file (type png)
 <use geom_foco_axialIII.png>
 Package pdftex.def Info: geom_foco_axialIII.png  used on input line 32.
 (pdftex.def)             Requested size: 418.09146pt x 324.43898pt.
  [5 <./geom_foco_coincIII.png>]
-<geom_lateralIV.png, id=360, 363.14182pt x 341.64pt>
+<geom_lateralIV.png, id=354, 363.14182pt x 341.64pt>
 File: geom_lateralIV.png Graphic file (type png)
 <use geom_lateralIV.png>
 Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
@@ -781,7 +864,7 @@ Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<reflex_absorII.png, id=362, 962.09438pt x 586.44093pt>
+<reflex_absorII.png, id=356, 962.09438pt x 586.44093pt>
 File: reflex_absorII.png Graphic file (type png)
 <use reflex_absorII.png>
 Package pdftex.def Info: reflex_absorII.png  used on input line 53.
@@ -802,41 +885,49 @@ e es-pa-lha-dos por ela. Come^^Xcamos
 Underfull \vbox (badness 1406) has occurred while \output is active []
 
  [12]
-[13] [14] [15] [16] [17]
-<aberracao_esf4.png, id=498, 355.37727pt x 261.60545pt>
+[13] [14]
+Underfull \vbox (badness 3271) has occurred while \output is active []
+
+ [15]
+[16]
+Underfull \vbox (badness 3240) has occurred while \output is active []
+
+ [17]
+<aberracao_esf4.png, id=493, 355.37727pt x 261.60545pt>
 File: aberracao_esf4.png Graphic file (type png)
 <use aberracao_esf4.png>
-Package pdftex.def Info: aberracao_esf4.png  used on input line 303.
+Package pdftex.def Info: aberracao_esf4.png  used on input line 307.
 (pdftex.def)             Requested size: 319.8366pt x 235.44272pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18 <./aberracao_esf4.png>] [19] [20]
-Overfull \hbox (25.95111pt too wide) detected at line 383
+[18] [19 <./aberracao_esf4.png>] [20]
+Overfull \hbox (25.95111pt too wide) detected at line 388
 []\OT1/cmr/m/n/12 ^^H[](\OML/cmm/m/it/12 ^^R; ^^^\OT1/cmr/m/n/12 ) = 2\OML/cmm/
 m/it/12 ^^Y [] ;
  []
 
-<feixe_astig.png, id=527, 671.50874pt x 311.66437pt>
+<feixe_astig.png, id=523, 671.50874pt x 311.66437pt>
 File: feixe_astig.png Graphic file (type png)
 <use feixe_astig.png>
-Package pdftex.def Info: feixe_astig.png  used on input line 392.
+Package pdftex.def Info: feixe_astig.png  used on input line 397.
 (pdftex.def)             Requested size: 470.05292pt x 218.16356pt.
 
-Overfull \hbox (14.8088pt too wide) in paragraph at lines 392--393
+Overfull \hbox (14.8088pt too wide) in paragraph at lines 397--398
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21]
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 405
+Underfull \vbox (badness 1173) has occurred while \output is active []
+
+ [21]
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 410
 .
 
 [22 <./feixe_astig.png>] [23]
-Overfull \hbox (42.80061pt too wide) detected at line 441
+Overfull \hbox (42.80061pt too wide) detected at line 446
 []\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n
 /12 ) = [] [] [](2\OML/cmm/m/it/12 j \OT1/cmr/m/n/12 + 1)\OMS/cmsy/m/n/12 G[][]
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b[]\OT
@@ -846,24 +937,20 @@ cmm/m/it/12 ^^[ [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ) + (\OML
 /cmsy/m/n/12 G[] [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  e[][]:
  []
 
-[24]
-Underfull \vbox (badness 2680) has occurred while \output is active []
-
- [25]
-[26]
-<so_fig.png, id=590, 475.4291pt x 275.34273pt>
+[24] [25] [26]
+<so_fig.png, id=586, 475.4291pt x 275.34273pt>
 File: so_fig.png Graphic file (type png)
 <use so_fig.png>
-Package pdftex.def Info: so_fig.png  used on input line 499.
+Package pdftex.def Info: so_fig.png  used on input line 504.
 (pdftex.def)             Requested size: 356.57094pt x 206.50653pt.
  [27 <./so_fig.png>]
-<Kphi_Artigo_Kaina.png, id=601, 462.22687pt x 347.04657pt>
+<Kphi_Artigo_Kaina.png, id=597, 462.22687pt x 347.04657pt>
 File: Kphi_Artigo_Kaina.png Graphic file (type png)
 <use Kphi_Artigo_Kaina.png>
-Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 524.
+Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 529.
 (pdftex.def)             Requested size: 346.6693pt x 260.28429pt.
- [28 <./Kphi_Artigo_Kaina.png>]) (./capitulo3.tex
-[29]
+ [28 <./Kphi_Artigo_Kaina.png>])
+(./capitulo3.tex [29]
 Cap\'{\i }tulo 3.
 
 Overfull \hbox (19.1397pt too wide) in paragraph at lines 13--13
@@ -874,7 +961,7 @@ ise
 [30
 
 ]
-<fig/setup.jpg, id=618, 1129.21875pt x 760.8425pt>
+<fig/setup.jpg, id=614, 1129.21875pt x 760.8425pt>
 File: fig/setup.jpg Graphic file (type jpg)
 <use fig/setup.jpg>
 Package pdftex.def Info: fig/setup.jpg  used on input line 27.
@@ -884,13 +971,13 @@ Package pdftex.def Info: fig/setup.jpg  used on input line 27.
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 34.
 
 
-<fig/microscopio.jpg, id=619, 495.35063pt x 605.26125pt>
+<fig/microscopio.jpg, id=615, 495.35063pt x 605.26125pt>
 File: fig/microscopio.jpg Graphic file (type jpg)
 <use fig/microscopio.jpg>
 Package pdftex.def Info: fig/microscopio.jpg  used on input line 38.
 (pdftex.def)             Requested size: 297.21268pt x 363.15953pt.
 [31 <./fig/setup.jpg>]
-<fig/QWP.jpg, id=626, 377.41pt x 375.4025pt>
+<fig/QWP.jpg, id=622, 377.41pt x 375.4025pt>
 File: fig/QWP.jpg Graphic file (type jpg)
 <use fig/QWP.jpg>
 Package pdftex.def Info: fig/QWP.jpg  used on input line 57.
@@ -902,7 +989,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 1721) has occurred while \output is active []
 
  [33 <./fig/QWP.jpg>] [34]
-<fig/forcas_estagio.jpg, id=654, 1160.08406pt x 622.57594pt>
+<fig/forcas_estagio.jpg, id=650, 1160.08406pt x 622.57594pt>
 File: fig/forcas_estagio.jpg Graphic file (type jpg)
 <use fig/forcas_estagio.jpg>
 Package pdftex.def Info: fig/forcas_estagio.jpg  used on input line 88.
@@ -916,7 +1003,7 @@ Overfull \hbox (8.7813pt too wide) in paragraph at lines 88--89
 Underfull \vbox (badness 5817) has occurred while \output is active []
 
  [35 <./fig/forcas_estagio.jpg>]
-<fig/pos_eq_phi.jpg, id=661, 816.04875pt x 490.83376pt>
+<fig/pos_eq_phi.jpg, id=657, 816.04875pt x 490.83376pt>
 File: fig/pos_eq_phi.jpg Graphic file (type jpg)
 <use fig/pos_eq_phi.jpg>
 Package pdftex.def Info: fig/pos_eq_phi.jpg  used on input line 110.
@@ -927,7 +1014,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 129
 .
 
 [36] [37 <./fig/pos_eq_phi.jpg>]
-<zeq_psi_ast25II.png, id=680, 462.2891pt x 347.01546pt>
+<zeq_psi_ast25II.png, id=676, 462.2891pt x 347.01546pt>
 File: zeq_psi_ast25II.png Graphic file (type png)
 <use zeq_psi_ast25II.png>
 Package pdftex.def Info: zeq_psi_ast25II.png  used on input line 159.
@@ -942,7 +1029,7 @@ Overfull \hbox (11.4217pt too wide) in paragraph at lines 180--180
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
-<Qz_tipico.png, id=698, 462.2891pt x 347.01546pt>
+<Qz_tipico.png, id=694, 462.2891pt x 347.01546pt>
 File: Qz_tipico.png Graphic file (type png)
 <use Qz_tipico.png>
 Package pdftex.def Info: Qz_tipico.png  used on input line 192.
@@ -955,7 +1042,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 1975) has occurred while \output is active []
 
  [41]
-<Regiao_de_pincamentoII.png, id=707, 722.7pt x 578.16pt>
+<Regiao_de_pincamentoII.png, id=703, 722.7pt x 578.16pt>
 File: Regiao_de_pincamentoII.png Graphic file (type png)
 <use Regiao_de_pincamentoII.png>
 Package pdftex.def Info: Regiao_de_pincamentoII.png  used on input line 216.
@@ -963,6 +1050,12 @@ Package pdftex.def Info: Regiao_de_pincamentoII.png  used on input line 216.
 
 [42 <./Qz_tipico.png>]) (./capitulo4.tex [43 <./Regiao_de_pincamentoII.png>]
 Cap\'{\i }tulo 4.
+
+Overfull \hbox (5.01651pt too wide) in paragraph at lines 4--5
+[] \OT1/cmr/m/n/12 Nesse cap^^S^^Ptulo dis-cu-ti-re-mos os re-sul-ta-dos ob-ti-
+dos nas si-mula^^Xc~oes des-cri-tas no cap^^S^^Ptulo
+ []
+
 
 Overfull \hbox (14.72363pt too wide) in paragraph at lines 6--6
 []\OT1/cmr/bx/n/17.28 Transfer^encia de mo-mento an-gu-lar e ca-rac-te-riza^^Xc
@@ -972,7 +1065,7 @@ Overfull \hbox (14.72363pt too wide) in paragraph at lines 6--6
 [44
 
 ]
-<Kphi_rho_Aast_dupla.png, id=726, 885.75545pt x 356.57182pt>
+<Kphi_rho_Aast_dupla.png, id=722, 885.75545pt x 356.57182pt>
 File: Kphi_rho_Aast_dupla.png Graphic file (type png)
 <use Kphi_rho_Aast_dupla.png>
 Package pdftex.def Info: Kphi_rho_Aast_dupla.png  used on input line 23.
@@ -982,7 +1075,7 @@ Overfull \hbox (40.77556pt too wide) in paragraph at lines 23--24
  [] 
  []
 
-<erro_astigII.png, id=728, 462.2891pt x 347.01546pt>
+<erro_astigII.png, id=724, 462.2891pt x 347.01546pt>
 File: erro_astigII.png Graphic file (type png)
 <use erro_astigII.png>
 Package pdftex.def Info: erro_astigII.png  used on input line 33.
@@ -1014,7 +1107,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 39.
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 39.
 
 
-<Kphi_rho_Aast024III.png, id=731, 457.51091pt x 360.15546pt>
+<Kphi_rho_Aast024III.png, id=727, 457.51091pt x 360.15546pt>
 File: Kphi_rho_Aast024III.png Graphic file (type png)
 <use Kphi_rho_Aast024III.png>
 Package pdftex.def Info: Kphi_rho_Aast024III.png  used on input line 43.
@@ -1035,7 +1128,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 49.
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
  [46 <./erro_astigII.png>]
-<Qz_z_1e-3_79.png, id=748, 900.09pt x 347.01546pt>
+<Qz_z_1e-3_79.png, id=744, 900.09pt x 347.01546pt>
 File: Qz_z_1e-3_79.png Graphic file (type png)
 <use Qz_z_1e-3_79.png>
 Package pdftex.def Info: Qz_z_1e-3_79.png  used on input line 61.
@@ -1045,7 +1138,7 @@ Package pdftex.def Info: Qz_z_1e-3_79.png  used on input line 61.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [47 <./Kphi_rho_Aast024III.png>]
-<Qz_z_1e-34II.png, id=758, 882.76909pt x 348.21pt>
+<Qz_z_1e-34II.png, id=754, 882.76909pt x 348.21pt>
 File: Qz_z_1e-34II.png Graphic file (type png)
 <use Qz_z_1e-34II.png>
 Package pdftex.def Info: Qz_z_1e-34II.png  used on input line 73.
@@ -1062,7 +1155,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 5388) has occurred while \output is active []
 
  [48 <./Qz_z_1e-3_79.png>]
-<potencial_qz.png, id=765, 464.67818pt x 347.01546pt>
+<potencial_qz.png, id=761, 464.67818pt x 347.01546pt>
 File: potencial_qz.png Graphic file (type png)
 <use potencial_qz.png>
 Package pdftex.def Info: potencial_qz.png  used on input line 89.
@@ -1071,7 +1164,7 @@ Package pdftex.def Info: potencial_qz.png  used on input line 89.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pot_EGII.png, id=768, 462.2891pt x 347.01546pt>
+<Pot_EGII.png, id=764, 462.2891pt x 347.01546pt>
 File: Pot_EGII.png Graphic file (type png)
 <use Pot_EGII.png>
 Package pdftex.def Info: Pot_EGII.png  used on input line 105.
@@ -1117,38 +1210,33 @@ m/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[]:
  []
 
 [60])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
  [61]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
  (./tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
 Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: 3A5FA03583234553DFD879A80543FAED;1904.
+(rerunfilecheck)             Checksum: D0EF39E6DE6AEB2345B46B96B5BD440C;1851.
+Package rerunfilecheck Info: File `tese.brf' has not changed.
+(rerunfilecheck)             Checksum: 16DA003962A519599A1BA308C991AABE;3342.
 
-
-Package rerunfilecheck Warning: File `tese.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tese.brf':
-(rerunfilecheck)             Before: 8771507263C92230B207F8169F9D3DBC;3343
-(rerunfilecheck)             After:  8B9CCDDB41C12FF0204D62AD3488B2CD;3343.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
  ) 
 Here is how much of TeX's memory you used:
- 12191 strings out of 492623
- 172174 string characters out of 6135669
- 342113 words of memory out of 5000000
- 15583 multiletter control sequences out of 15000+600000
+ 14181 strings out of 492623
+ 203635 string characters out of 6135669
+ 414015 words of memory out of 5000000
+ 17526 multiletter control sequences out of 15000+600000
  14945 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,19n,51p,3234b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,19n,77p,3234b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1161,10 +1249,10 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (75 pages, 1775796 bytes).
+Output written on tese.pdf (75 pages, 1777080 bytes).
 PDF statistics:
- 1013 PDF objects out of 1200 (max. 8388607)
- 863 compressed objects within 9 object streams
- 215 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1010 PDF objects out of 1200 (max. 8388607)
+ 860 compressed objects within 9 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

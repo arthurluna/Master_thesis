@@ -26,6 +26,13 @@
 
 \newcommand{\G}{\mathcal G}
 
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage[intoc]{nomencl}
+
+\makenomenclature
+\renewcommand{\nomname}{Lista de Símbolos}
+
 \makeindex
 
 \marginsize{25mm}{25mm}{25mm}{25mm}
@@ -152,18 +159,18 @@ urlcolor=black}
 
 \hspace{2cm} Interação de Momento Angular de Spin e Orbital na Pinça Ótica. / Arthur Luna da Fonseca - Rio de Janeiro: UFRJ/IF, 2019.
 
-\hspace{2cm} xiv, 154f(mudar).
+\hspace{2cm} 
 
 \hspace{2cm} Orientador: Paulo Américo Maia Neto
 
-\hspace{2cm} Coorientador: 
+\hspace{2cm} Coorientador: Rafael de Sousa Dutra
 
 \hspace{2cm} Dissertação (mestrado) - UFRJ / Instituto de Física / Programa de Pós-graduação em Física, 2019.
 
 \hspace{2cm} Referências Bibliográficas: f. 124-145.(mudar)
 
 \hspace{2cm}
-1. Pinça ótica. 2. Momento angular ótico. 3. Feixes não paraxiais. 4. Interação spin-órbita. 5. Astigmatismo. I. Wotzasek, Clóvis José. II. Guimarães, Marcelo Santos. III. Universidade Federal do Rio de Janeiro, Instituto de Física, Programa de Pós-graduação em Física. IV. Abordagem de Julia-Toulouse para condensação de correntes topológicas e aplicações.(mudar)
+1. Pinça ótica. 2. Momento angular ótico. 3. Feixes não paraxiais. 4. Interação spin-órbita. 5. Astigmatismo. 6. Absorção de radiação. I. Neto, Paulo Américo Maia. II. Dutra, Rafael Sousa. III. Universidade Federal do Rio de Janeiro, Instituto de Física, Programa de Pós-graduação em Física.
 
 \bigskip
 \end{minipage}
@@ -187,12 +194,12 @@ urlcolor=black}
 \begin{center}
 {\LARGE\bf Resumo}\\
 \vspace{15pt}
-{\Large\bf Título da Tese}\\
+{\Large\bf Aplicando a Teoria Mie-Debye para Caracterização de Parâmetros Físicos em Pinças Óticas}\\
 \vspace{6pt}
-{\bf Nome do Estudante}\\
+{\bf Arthur Luna da Fonseca}\\
 \vspace{12pt}
-{\bf Orientador: Nome do Orientador}\\
-{\bf Coorientador: Nome do Coorientador}\\
+{\bf Orientador: Paulo Américo Maia Neto}\\
+{\bf Coorientador: Rafael de Sousa Dutra}\\
 \vspace{20pt}
 \parbox{14cm}{Resumo da Dissertação de Mestrado apresentada ao Programa de Pós-Graduação em Física do Instituto de Física da Universidade Federal do Rio de Janeiro - UFRJ, como parte dos requisitos necessários à obtenção do título de Mestre em Ciências (Física).}
 \end{center}
@@ -206,7 +213,7 @@ A proposta do experimento se baseia no cálculo de barreiras potenciais que uma e
 
 \vspace{15pt}
 
-\textbf{Palavras-chave:} Insira as palavras-chave aqui.
+\textbf{Palavras-chave:} Pinça ótica, Momento angular ótico, Feixes não paraxiais, Interação spin-órbita, Astigmatismo, Absorção de radiação.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -222,22 +229,26 @@ A proposta do experimento se baseia no cálculo de barreiras potenciais que uma e
 \begin{center}
 {\LARGE\bf Abstract}\\
 \vspace{15pt}
-{\Large\bf Title of the Thesis}\\
+{\Large\bf Applying the Mie-Debye Theory to Characterize Physical Parameters in Optical Tweezers}\\
 \vspace{6pt}
-{\bf Name of the Student}\\
+{\bf Arthur Luna da Fonseca}\\
 \vspace{12pt}
-{\bf Orientador: Name of the Advisor}\\
-{\bf Coorientador: Name of the Coadvisor}\\
+{\bf Orientador: Paulo Américo Maia Neto}\\
+{\bf Coorientador: Rafael de Sousa Dutra}\\
 \vspace{20pt}
 \parbox{14cm}{\emph{Abstract} da Dissertação de Mestrado apresentada ao Programa de Pós-Graduação em Física do Instituto de Física da Universidade Federal do Rio de Janeiro - UFRJ, como parte dos requisitos necessários à obtenção do título de Mestre em Ciências (Física).} % ATENÇÃO: esse trecho fica em português mesmo!
 \end{center}
 \vspace*{35pt}
 
-Abstract in English.
+In this work, we discuss the Mie-Debye model for optical tweezers with aberrations correction (MDSA+) and it's applications. We present two computational simulations with numerical methods. The first one is an experiment that measures the spin angular momentum transfer to the trapped sphere, which results can be used to fit the parameter that characterize the optical system astigmatism. The second onde is an experiment proposal, which was not yet done, to fit the imaginary part of the refractive index of the trapped sphere. The MDSA+ model is also discussed  to clarify the results obtained from the experiment.
+
+The fit result for the astigmatism parameter agrees with another method to obtain it. This validates the fit method developed during the thesis work. Comparing both methods, we can also conclude that the experimental data fit method is easier and simpler to use.
+
+The experiment proposal is based on potential barriers calculations, which the trapped sphere has to go through in order to scape the optical trap. The inspiration to study this parameter comes from the fact that the MDSA+ model wouldn't predict an equilibrium position for big spheres with the imaginary part of the refractive index found on the literature, while spheres like this were being traped in the lab.
 
 \vspace{15pt}
 
-\textbf{Keywords:} Insert the keywords here.
+\textbf{Keywords:} Optical Tweezers, Optical angular momentum, non-paraxial beams, Spin-orbit interaction , Astigmatism, Absorption of radiation.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -272,33 +283,6 @@ Listar agradecimentos aqui, inclusive à agência de fomento que concedeu a bolsa 
 \addcontentsline{toc}{chapter}{Sumário}
 \tableofcontents
 
-\nomenclature{$A$}{amplitude do campo elétrico da onda plana antes da placa de quarto de onda.}%
-\nomenclature{$E_0$}{amplitude do campo elétrico da onda plana após a placa de quarto de onda.}%
-\nomenclature{$\vec{E}$}{campo elétrico.}
-\nomenclature{$\vec{H}$}{campo magnético.}
-\nomenclature{$\Pi^E$}{potencial de Debye elétrico.}
-\nomenclature{$\Pi^M$}{potencial de Debye magnético.}
-\nomenclature{$\omega$}{frequencia angular da onda plana.}
-\nomenclature{$a$}{raio da microesfera de poliestireno.}
-\nomenclature{$\lambda_0$}{comprimento de onda do campo elomagnético no ar.}
-\nomenclature{$\lambda$}{comprimento de onda do campo eletromagnético no meio fluido da solução de microesferas.}
-\nomenclature{$n_f$}{índice de refração do fluido da solução.}
-\nomenclature{$n_e$}{índice de refração do fluido da esfera.}
-\nomenclature{$n_{ps}$}{índice de refração complexo do poliestireno.}
-\nomenclature{$\psi$}{ângulo entre o eixo rápido da placa de quarto e onda e o eixo de polarização da onda plana.}
-\nomenclature{$i$}{unidade imaginária.}
-\nomenclature{$R_{\phi}$}{reta definida pelas posições de equilíbrio deslocadas quando o eixo horizontal da câmera concide com o eixo de deslocamento do estágio.}
-\nomenclature{$R_{\alpha-\alpha_0}$}{reta definida pelas posições de equilíbrio deslocadas quando existe um ângulo $\alpha_0$ entre o eixo horizontal da câmera o eixo de deslocamento do estágio.}
-\nomenclature{$\alpha_0$}{ângulo entre o eixo horizontal da câmera e o eixo de deslocamento do estágio.}
-\nomenclature{$\alpha$}{ângulo de inclinação da reta $xy$.}
-\nomenclature{$\alpha - \alpha_0$}{ângulo de rotação de $R_{\alpha-\alpha_0}$ devido a tranferência de momento ângular.}
-\nomenclature{$k$}{módulo do vetor de onda da onda polana incidente.}
-\nomenclature{$M$}{media dos coeficientes ângulares das retas  $R_{\alpha-\alpha_0}$ correspondentes a um mesmo ângulo $\psi$ e um mesmo raio $a$.}
-\nomenclature{$\vec{F}$}{força exercida pela pinça ótica(força ótica).} 
-\nomenclature{$\vec{F}_{\phi}$}{componente azimutal da força ótica.}
-\nomenclature{$\vec{F_s}$}{força de arraste exercida pelo fluido da solução na esfera aprisionada.}
-\nomenclature{$Re$}{parte real}%
-\nomenclature{$Im$}{parte imaginária}%
 
 
 \printnomenclature

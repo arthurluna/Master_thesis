@@ -1,5 +1,5 @@
-\backcite {Diniz}{{x}{(document)}{Doc-Start}}
-\backcite {Diniz}{{x}{(document)}{Doc-Start}}
+\backcite {Diniz}{{xi}{(document)}{Doc-Start}}
+\backcite {Diniz}{{xi}{(document)}{Doc-Start}}
 \backcite {Ashkin1986,Ashkin1977}{{1}{1.1}{section.1.1}}
 \backcite {Ashkin1970}{{1}{1.1}{section.1.1}}
 \backcite {A2007}{{1}{1.1}{section.1.1}}
@@ -13,9 +13,9 @@
 \backcite {Diniz 2019}{{2}{1.1}{section.1.1}}
 \backcite {Mazolli, Dutra}{{2}{1.1}{section.1.1}}
 \backcite {Bliokh2015}{{4}{2}{chapter.2}}
-\backcite {Ashkin1992}{{7}{2.1}{figure.caption.11}}
-\backcite {Viana2007}{{7}{2.1}{figure.caption.11}}
-\backcite {Callegari2015}{{7}{2.1}{figure.caption.11}}
+\backcite {Ashkin1992}{{7}{2.1}{figure.caption.9}}
+\backcite {Viana2007}{{7}{2.1}{figure.caption.9}}
+\backcite {Callegari2015}{{7}{2.1}{figure.caption.9}}
 \backcite {Jackson1998}{{8}{2.1}{equation.2.1.1}}
 \backcite {Tlusty1998}{{8}{2.1}{equation.2.1.2}}
 \backcite {Viana2007}{{8}{2.1}{equation.2.1.2}}
@@ -43,26 +43,26 @@
 \backcite {Dutra2014}{{20}{2.7}{section.2.7}}
 \backcite {Dutra2014}{{21}{2.7}{section.2.7}}
 \backcite {Born2002}{{21}{2.7}{section.2.7}}
-\backcite {Dutra, Diniz, Dutra2014, Diniz2019}{{21}{2.7}{figure.caption.13}}
-\backcite {Dutra}{{23}{2.7}{figure.caption.13}}
-\backcite {Born2002,Diniz2019}{{23}{2.7}{figure.caption.13}}
+\backcite {Dutra, Diniz, Dutra2014, Diniz2019}{{22}{2.7}{figure.caption.11}}
+\backcite {Dutra}{{23}{2.7}{figure.caption.11}}
+\backcite {Born2002,Diniz2019}{{23}{2.7}{figure.caption.11}}
 \backcite {Born2002}{{23}{2.7}{equation.2.7.28}}
-\backcite {Zangwill2013}{{23}{2.8}{section.2.8}}
+\backcite {Zangwill2013}{{24}{2.8}{section.2.8}}
 \backcite {Diniz2019}{{24}{2.8}{section.2.8}}
 \backcite {Viana2007}{{25}{2.8}{equation.2.8.32}}
 \backcite {Diniz2019}{{25}{2.8}{equation.2.8.33}}
 \backcite {Bliokh2015}{{26}{2.9}{section.2.9}}
 \backcite {Zangwill2013}{{26}{2.9}{section.2.9}}
-\backcite {Bliokh2015}{{26}{2.9}{section.2.9}}
-\backcite {Bliokh2015}{{27}{2.9}{figure.caption.14}}
+\backcite {Bliokh2015}{{27}{2.9}{section.2.9}}
+\backcite {Bliokh2015}{{27}{2.9}{figure.caption.12}}
 \backcite {Diniz2019,Diniz}{{30}{3.1}{section.3.1}}
-\backcite {Diniz}{{33}{3.3}{figure.caption.18}}
-\backcite {Ma2003}{{34}{3.1}{figure.caption.18}}
-\backcite {Viana2007}{{35}{3.1}{figure.caption.18}}
-\backcite {Diniz}{{37}{3.5}{figure.caption.20}}
+\backcite {Diniz}{{33}{3.3}{figure.caption.16}}
+\backcite {Ma2003}{{34}{3.1}{figure.caption.16}}
+\backcite {Viana2007}{{35}{3.1}{figure.caption.16}}
+\backcite {Diniz}{{37}{3.5}{figure.caption.18}}
 \backcite {Ma2003}{{41}{3.2}{section.3.2}}
 \backcite {Ashkin1986}{{43}{3.2}{equation.3.2.5}}
 \backcite {Diniz2019}{{44}{4.1}{section.4.1}}
-\backcite {Dutra2014,Diniz2019}{{46}{4.1}{figure.caption.26}}
-\backcite {Novotny2001}{{46}{4.1}{figure.caption.26}}
-\backcite {Kampen2007}{{50}{4.2}{figure.caption.30}}
+\backcite {Dutra2014,Diniz2019}{{46}{4.1}{figure.caption.24}}
+\backcite {Novotny2001}{{46}{4.1}{figure.caption.24}}
+\backcite {Kampen2007}{{50}{4.2}{figure.caption.28}}
