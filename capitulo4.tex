@@ -50,9 +50,11 @@ Podemos notar que a região ao redor de $60º$ e $120º$ na figura \ref{alpha_024} 
 
 Podemos comparar o resultado obtido com o ajuste pela simulação com o resultado da caracterização por nível de cinza \cite{Dutra2014,Diniz2019}. Uma análise do {\it spot} do feixe refletido em diferentes planos é feita. A curva teórica é obtida por meio da propagação do feixe não paraxial \cite{Novotny2001}, e o valor de $A_{ast}$ é ajustado com medidas de intensidade do centro do {\it spot} do feixe em alturas diferentes do eixo de propagação. Foi obtido $A_{ast}=0.25\pm0.04$ com esse método, que não só está de acordo com o valor encontrado pelo ajuste dos dados de torque na microesfera, como tem a incerteza maior. 
 
-\section{Caracterização do parâmetro de absorção da amostra}
+\section{Caracterização do parâmetro de absorção da microesfera}
 
-\hspace{5 mm}Os gráficos do fator de eficiência $Q_z$ por $z$ foram feitos para alguns valores de $\operatorname{Im}(n_2)$ e para alguns raios diferentes. O valor nominal do raio das microesferas pinçadas é de $a=7.9\pm0.1$, e o valor encontrado na literatura para $\operatorname{Im}(n_2)$ é $1.1\times10^{-3}$. Foram feitas simulações para raios entre $7.8$ e $8 \mu m$, e $\operatorname{Im}(n_2)$ tão pequenos quanto $3\times10^{-4}$.
+\hspace{5 mm}Nessa seção, veremos os cálculos numéricos do fator de eficiência $Q_z$ em função de $z$ para alguns valores de $\operatorname{Im}(n_2)$ e para alguns raios diferentes. Será apresentado também o cálculo da barreira potencial para alguns valores de $\operatorname{Im}(n_2)$, para um valor fixo do raio da microesfera. Por fim, serão sugeridos duas formas de realizar a caracterização do parâmetro de absorção.
+
+O valor nominal do raio das microesferas de poliestireno pinçadas é de $a=(7.9\pm0.1)\mu m$, e o valor encontrado na literatura para $\operatorname{Im}(n_2)$ é $1.1\times10^{-3}$. Foram feitas simulações para raios entre $7.8$ e $8 \mu m$, e $\operatorname{Im}(n_2)$ tão pequenos quanto $3\times10^{-4}$.
 %
 \begin{figure}[h!]
 \begin{center}
@@ -62,15 +64,15 @@ Podemos comparar o resultado obtido com o ajuste pela simulação com o resultado 
 \end{center}
 \end{figure}
 
-Podemos ver no gráfico à esquerda da figura \ref{Qz_experimento} que não há valor de $Q_z$ menor que zero, ou seja, a microesfera não pode ser pinçada. Á direita, o zoom da região do plano focal, onde o pinçamento deveria estar ocorrendo. 
+Fazendo simulações com os parâmetros experimentais conhecidos para o sistema, não encontramos nenhuma posição de equilíbrio estável, como podemos ver na figura \ref{Qz_experimento}. Podemos ver também que não há valor de $Q_z$ menor que zero, ou seja, a microesfera é empurrada no sentido $z$ positivo. Á direita, o zoom da região do plano focal, onde o pinçamento deveria estar ocorrendo. Como explicado na seção \ref{condicoes_pincamento}, microesferas grandes são mais sensíveis à efeitos de absorção, que nesse caso favorece a pressão de radiação. Portanto, a absorção favorece a força na mesma direção e sentido de propagação do feixe, inviabilizando o pinçamento nesse caso.
 
-Fazendo simulações com os parâmetros experimentais do sistema, não encontramos nenhuma posição de equilíbrio estável, como podemos ver na figura \ref{Qz_experimento}. Nas simulações para valores de $\operatorname{Im}(n_2)$ menores, encontramos regiões suficientemente próximas do eixo $Q_z=0$ para assumir aprisionamento, como podemos ver na figura \ref{alpha_024}. No caso, podemos assumir que efeitos gravitacionais desempenham um papel significativo para esferas maiores, possibilitando o equilíbrio de forças no eixo.
+Nas simulações para valores de $\operatorname{Im}(n_2)$ menores, encontramos regiões suficientemente próximas do eixo $Q_z=0$ para assumir aprisionamento, como podemos ver na figura \ref{Qz_z_1e-34}. No caso, podemos assumir que efeitos gravitacionais desempenham um papel significativo para esferas maiores, possibilitando o equilíbrio de forças no eixo.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=.55]{Qz_z_1e-34}
+\includegraphics[scale=.55]{Qz_z_1e-34II}
 \caption{O parâmetro de astigmatismo e a distância entre o foco e interface são iguais ao caso anterior. À esquerda, $\operatorname{Im}(n_2)=3\times10^{-4}$, a direita, $\operatorname{Im}(n_2)=4\times10^{-4}$.}
-\label{alpha_024}
+\label{Qz_z_1e-34}
 \end{center}
 \end{figure}
 
@@ -96,7 +98,7 @@ Como podemos ver na figura \ref{qz}, a integral do fator de eficiência com respe
 \end{center}
 \end{figure}
 
-Dessa forma, podemos procurar uma potência mínima para a qual haja pinçamento no laboratório. Podemos usar o critério que a barreira potencial tem que ter no mínimo $3k_BT$ para deduzir a parte imaginária do índice de refração. Uma alternativa para esse critério é medir a série temporal da posição da microesfera na pinça para obter sua energia {\bf entender melhor essa parte, conversar com paulo}.
+Dessa forma, podemos procurar uma potência mínima para a qual haja pinçamento no laboratório. Podemos usar o critério que a barreira potencial tem que ter no mínimo $10k_BT$ para deduzir a parte imaginária do índice de refração. Uma alternativa para esse critério é medir a série temporal da posição da microesfera na pinça para obter sua energia {\bf entender melhor essa parte, conversar com paulo}.
 
 %
 \begin{figure}[h]
@@ -107,5 +109,12 @@ Dessa forma, podemos procurar uma potência mínima para a qual haja pinçamento no
 \end{center}
 \end{figure}
 
+
+Para uma análise mais aprofundada, podemos calcular o tempo médio que a microesfera demoraria para difundir para fora da armadilha. O caso de uma partícula em movimento browniano, confinada em um potencial como o da figura \ref{qz} é conhecido como problema de escape de Kramers, e tem solução \cite{Kampen2007}:
+
+\begin{equation}
+\frac{1}{\tau}=\frac{\partial^2 V(z_{min})}{\partial z^2}\frac{e^{-\Delta}}{2}
+\label{t_esc}
+\end{equation}
 
 \end{chapter}
