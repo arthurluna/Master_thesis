@@ -269,6 +269,7 @@
 @Article{Ali2019,
   author      = {R. Ali and F. A. Pinheiro and F. S. S. Rosa and R. S. Dutra and P. A. Maia Neto},
   title       = {Enantioselective manipulation of chiral nanoparticles using optical tweezers},
+  year        = {2019},
   abstract    = {We put forward a twofold enantioselective method for chiral nanoparticles using optical tweezers. First, we demonstrate that the optical trapping force in a typical, realistic optical tweezing setup with circularly-polarized trapping beams are sensitive to the chirality of core-shell nanoparticles, allowing for efficient enantioselection. Second, we propose another enantioselective method based on the rotation of core-shell chiral nanoparticle's equilibrium position under the effect of a transverse Stokes drag force. In this case, the chirality of the particle shell gives rise to an additional twist, thus leading to a strong enhancement of the optical torque driving the rotation. Both chiral resolution methods are shown to be robust against the variation of the size of the system and material parameters, suggesting it could be applied to a wide range of experimental situations, particularly those of biological interest for which optical tweezing is widely used. Our results provide alternative enantioselective mechanisms and pave the way for all-optical manipulation and enantiopure synthesis of chiral nanoparticles. In addition, they can also be applied in the characterization of chirality for testing existing methods of enantioselection.},
   date        = {2019-06-06},
   eprint      = {http://arxiv.org/abs/1906.02528v1},
@@ -476,9 +477,6 @@
   url       = {https://www.ebook.de/de/product/3242885/max_born_emil_wolf_a_b_bhatia_principles_of_optics.html},
 }
 
-@Article{,
-}
-
 @Book{Kampen2007,
   author    = {van Kampen, N. G.},
   publisher = {NORTH HOLLAND},
@@ -489,6 +487,19 @@
   ean       = {9780444529657},
   pagetotal = {463},
   url       = {https://www.ebook.de/de/product/6071989/n_g_van_kampen_stochastic_processes_in_physics_and_chemistry.html},
+}
+
+@Article{Ether2015,
+  author    = {D. S. Ether and L. B. Pires and S. Umrath and D. Martinez and Y. Ayala and B. Pontes and G. R. de S. Ara{\'{u}}jo and S. Frases and G.-L. Ingold and F. S. S. Rosa and N. B. Viana and H. M. Nussenzveig and P. A. Maia Neto},
+  journal   = {{EPL} (Europhysics Letters)},
+  title     = {Probing the Casimir force with optical tweezers},
+  year      = {2015},
+  month     = {nov},
+  number    = {4},
+  pages     = {44001},
+  volume    = {112},
+  doi       = {10.1209/0295-5075/112/44001},
+  publisher = {{IOP} Publishing},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
