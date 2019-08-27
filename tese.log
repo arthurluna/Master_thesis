@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.24)  26 AUG 2019 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.24)  26 AUG 2019 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1039,7 +1039,7 @@ Package pdftex.def Info: Qz_tipico.png  used on input line 192.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 1975) has occurred while \output is active []
+Underfull \vbox (badness 3128) has occurred while \output is active []
 
  [41]
 <Regiao_de_pincamentoII.png, id=703, 722.7pt x 578.16pt>
@@ -1047,6 +1047,9 @@ File: Regiao_de_pincamentoII.png Graphic file (type png)
 <use Regiao_de_pincamentoII.png>
 Package pdftex.def Info: Regiao_de_pincamentoII.png  used on input line 216.
 (pdftex.def)             Requested size: 289.07487pt x 231.2599pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [42 <./Qz_tipico.png>]) (./capitulo4.tex [43 <./Regiao_de_pincamentoII.png>]
 Cap\'{\i }tulo 4.
@@ -1218,9 +1221,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: D0EF39E6DE6AEB2345B46B96B5BD440C;1851.
-Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: 16DA003962A519599A1BA308C991AABE;3342.
 
+
+Package rerunfilecheck Warning: File `tese.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `tese.brf':
+(rerunfilecheck)             Before: 16DA003962A519599A1BA308C991AABE;3342
+(rerunfilecheck)             After:  F2335CBA6D9B6237FDC120F4A472E1CF;3342.
 
 LaTeX Warning: There were undefined references.
 
@@ -1249,7 +1257,7 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb>
-Output written on tese.pdf (75 pages, 1777018 bytes).
+Output written on tese.pdf (75 pages, 1776890 bytes).
 PDF statistics:
  1010 PDF objects out of 1200 (max. 8388607)
  860 compressed objects within 9 object streams
