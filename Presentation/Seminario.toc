@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Spherical Wave Solutions of the Scalar Wave Equation}{6}{0}{2}
+\beamer@sectionintoc {3}{Electromagnetic Fields description}{11}{0}{3}
+\beamer@sectionintoc {4}{Scattering of Electromagnetic Waves by a sphere (Mie)}{19}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{24}{0}{5}
