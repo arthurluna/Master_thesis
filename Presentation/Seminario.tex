@@ -18,8 +18,8 @@
 \title{Aplicando a Teoria Mie-Debye para Caracterização de Parâmetros Físicos \\em Pinças Óticas}
 \subtitle{Defesa de Dissertação de Mestrado}
 \date{\today}
-\author{Arthur Luna da Fonseca}
-\date{\today}
+\author{Arthur Luna da Fonseca \\Orientadores: Paulo Américo Maia Neto, Rafael de Sousa Dutra}
+\date{10 de Setembro de 2019}
 \institute{Instituto de Física - Universidade Federal do Rio de Janeiro}
 \titlegraphic{\hfill\includegraphics[height=2.cm]{../logo_ufrj}}
 
@@ -43,32 +43,103 @@
 \begin{frame}[fragile]{Introdução}
       \begin{center}
           \metroset{block=fill}
-          \begin{exampleblock}{Goal}
-            Describe the process of scattering of EM waves by a spherically symmetric object.\\
-            Discuss the application of this model to experiments that try to measure Casimir interactions.
+          \begin{exampleblock}{Objetivo}
+            Caracterização de parâmetros na pinça ótica:\\
+            \hspace{1mm}\\
+            \hspace{4mm}$\rightarrow$Teoria MDSA+ para pinças óticas:\\
+            \hspace{7mm}$\rightarrow$Correções de aberrações óticas na teoria MDSA $\rightarrow$Astigmatismo.\\
+            \hspace{7mm}$\rightarrow$Espalhamento Mie $\rightarrow$Parâmetro de absorção da microesfera.\\
+            \hspace{1mm}\\
+            \hspace{4mm}$\rightarrow$Cálculo numérico usando a teoria MDSA+:\\
+            \hspace{7mm}$\rightarrow$Simulação do experimento de transferência de momento angular na pinça ótica.\\
+            \hspace{7mm}$\rightarrow$Cálculos da posição de equilíbrio da esfera variando o parâmetro de absorção.
           \end{exampleblock}
       \end{center}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Introduction}
+\begin{frame}[fragile]{Introdução}
 
-Path: \\
+Breve introdução à teoria de pinças óticas: \\
     \begin{center}
-        Find a solution for a scalar wave equation in spherical coordinates 
+        Modelagens da pinça ótica: interação de um campo (feixe) com o objeto espalhador (esfera pinçada).
 
-        $\downarrow$
+        Campo: feixe fortemente focalizado.
 
-        Adapt the result to a vector field $\rightarrow$ Electromagnetic field description
+        Objeto espalhador: simetria esférica $\rightarrow$ espalhamento Mie.
 
-        $\downarrow$
+        
 
-        Scattering description with developed tools
+    \end{center}
 
-        $\downarrow$
+\end{frame}
 
-        Aplications
+\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador.}
+
+Dois regimes distintos: \\
+    \begin{center}
+        Regime Rayleigh: raio da esfera muito menor que o comprimento de onda do feixe ($a<<\lambda$).
+
+        Aproximamos a esfera por um dipolo induzido:
+        \begin{equation}
+        {\mathbf F} = \frac{1}{2}\nabla({\mathbf p}\cdot{\mathbf E})=\frac{1}{2}\nabla(\alpha{\mathbf E}^2).
+        \end{equation}
+
+        Força aponta para região de maior intensidade do campo. Para o feixe fortemente focalizado, a região de maio intensidade é o foco.
+
+    \end{center}
+.
+\end{frame}
+
+\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador.}
+
+    \begin{center}
+        Regime de ótica geométrica: raio da esfera muito mairo que o comprimento de onda do feixe ($a>>\lambda$).
+
+        Ignorando efeitos de reflexão e de absorção, raios diametralmente\\opostos transferem momento para esfera na direção do foco.
+        %
+        \begin{picture}(320,250)
+        \put(190,95){\includegraphics[scale=.40]{../geom_lateralIV}}
+        \end{picture}
+
+        \begin{picture}(320,250)
+        \put(-17,332){\includegraphics[scale=.38]{../geom_foco_axialIII}}
+        \end{picture}
+        %
+        
+
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador.}
+
+    \begin{center}
+        A posição de equilíbrio não necessariamente é no foco, \\pois a reflexão (a) transfere momento na direção normal ao plano tangente ao ponto de reflexão na esfera,\\enquanto a absorção (b) transfere na direção da propagação do raio:
+        %
+        \begin{picture}(320,250)
+        \put(27,90){\includegraphics[scale=.25]{../reflex_absorII}}
+        \end{picture}
+
+    \end{center}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+
+    \begin{center}
+        O modelo Mie-Debye para a pinça ótica é um modelo exato para o espalhamento por uma esfera de um campo fortemente focalizado (por uma objetiva).
+
+        O modelo para o campo foi desenvolvido por Richards e Wolf, baseado em uma proposição de Debye para um campo escalar produzido por uma objetiva de alta abertura numérica.
+        
+        O campo é expresso como uma superposição de ondas planas onde os vetores $\mathbf{k}(\theta_k,\phi_k)$ formam um cone de meia abertura $\theta_0$ no espaço de momento:
+        %
+        \begin{equation}
+        \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k.
+        \end{equation}
 
     \end{center}
 
