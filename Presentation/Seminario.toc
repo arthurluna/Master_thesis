@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
-\beamer@sectionintoc {2}{Spherical Wave Solutions of the Scalar Wave Equation}{13}{0}{2}
-\beamer@sectionintoc {3}{Electromagnetic Fields description}{18}{0}{3}
-\beamer@sectionintoc {4}{Scattering of Electromagnetic Waves by a sphere (Mie)}{26}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{31}{0}{5}
+\beamer@sectionintoc {2}{Simula\IeC {\c c}\IeC {\~a}o do experimento de transfer\IeC {\^e}ncia de momento angular}{17}{0}{2}
+\beamer@sectionintoc {3}{Electromagnetic Fields description}{28}{0}{3}
+\beamer@sectionintoc {4}{Scattering of Electromagnetic Waves by a sphere (Mie)}{36}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{41}{0}{5}

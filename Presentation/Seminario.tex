@@ -181,99 +181,232 @@ Dois regimes distintos: \\
 
 \end{frame}
 
+
 \begin{frame}[fragile]{Introdução ao modelo MDSA.}
 
     \begin{center}
         Depois que o feixe focalizado é produzido pela objetiva, ele incide no porta amostra, passando por uma interface de vidro e água. Algumas objetivas de alta abertura numérica são de imersão em óleo, o que faz com que haja um efeito de aberração esférica que deve ser levado em conta no modelo.
         %
-        \begin{equation}
-        \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}} \hat{\varepsilon}_k.        
-        \end{equation}
-
-        O caso de um feixe elipticamente polarizado é obtido tomando o feixe na entrada da objetiva como uma superposição de ondas circularmente polarizadas:
-        \begin{equation}
-        \hat{\varepsilon}_k = \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \psi}}{2} \hat{\bf{\epsilon}}_\sigma .     
-        \end{equation}
-
+        \begin{picture}(320,250)
+        \put(45,90){\includegraphics[scale=.6]{../aberracao_esf4}}
+        \end{picture}
     \end{center}
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
 
-\section{Spherical Wave Solutions of the Scalar Wave Equation}
+    \begin{center}
+        Esse efeito insere uma fase em cada componente de onda plana do campo, de acordo com seu ângulo de incidência, que pode ser obtida através da lei de Snell:
+        %
+        \begin{equation}
+        \Psi(z,\theta) = k\left( -\frac{L}{N}\cos\theta + N L\cos\theta_1 \right).
+        \end{equation}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        Também haverá reflexão nessa interface, e portanto devemos levar a amplitude de transmissão de Fresnel em consideração:
+        %
+        \begin{equation}
+        T(\theta)=\frac{2\cos\theta}{\cos\theta + N\cos\theta_1}.     
+        \end{equation}
+    \end{center}
 
-\begin{frame}[fragile]{Spherical Wave Solutions of the Scalar Wave Equation}
-    Consider the scalar function $\psi(\vec{r},\omega)$, which satisfies the Helmholtz wave equation\\
-      \begin{equation*}
-        \left(\nabla^2 + k^2\right)\psi(\vec{r},\omega) = 0 .
-      \end{equation*}
+\end{frame}
 
-    Note that $k^2=\omega^2/c^2$ and $\psi(\vec{r},\omega)=FT_t{\psi(\vec{r},t)}$.
+\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+
+    \begin{center}
+        Outras aberrações óticas também podem ser incluidas no modelo usado o formalismo de Zernike, que utiliza um conjunto de polinômios que formam uma base para descrever as fases de cada aberração ótica de um feixe. Os polinômios de Zernike formam uma base ortonormal no círculo unitário, o que nos permite descrever qualquer aberração ótica do sistema.\\
+        Nos experimentos realizados pelo grupo, a aberração de interesse é o astigmatismo.
+
+        \begin{picture}(320,250)
+        \put(34,132){\includegraphics[scale=.4]{../feixe_astig}}
+        \end{picture}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{center}
+        A fase associada ao astigmatismo é:
+        %
+        \begin{equation}
+        \Phi_{astigmatismo}(\theta,\phi) = 2\pi A_{ast}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos2(\phi - \varphi_a),
+        \end{equation}
+        onde o círculo unitário foi definido como o círculo formado pela entrada da objetiva, que tem raio $R_p=f\sin\theta_0$ (pela condição do seno de Abbe).
+
+        O parâmetro $A_{ast}$ é o chamado parâmetro de astigmatismo. Um dos objetivos do trabalho é a determinação desse parâmetro por meio de ajustes do modelo.
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{center}
+        Finalmente, expressamos a força em termos do fator de eficiência $\mathbf{Q}$:
+        %
+        \begin{equation}
+        {\mathbf Q} = \frac{\left<{\mathbf F}\right>}{n_1 P/c}= |a_+|^2{\mathbf Q}^{(\sigma +)} + |a_-|^2{\mathbf Q}^{(\sigma -)} + {\mathbf Q}^{({\it cross},+-)} + {\mathbf Q}^{({\it cross},-+)}.
+        \end{equation}
+        
+        onde $n_1$ é o índice de refração do meio em que a microesfera está inserida e $P$ é a potência do laser.
+
+        O fator de eficiência na direção $z$ será usado para calcular a posição de equilíbrio axial nas simulações. Uma das grandezas medidas no experimento são as constante eláticas $\kappa_\rho$ e $\kappa_\phi$, definidas como:
+
+        \begin{equation}
+        \kappa_\rho=-\frac{n_1 P}{c}\frac{\partial Q_\rho}{\partial \rho}\Big{|}_{\rho=0, \thinspace z=z_{eq}} \qquad, \qquad \kappa_\phi=\frac{n_1 P}{c}\frac{\partial Q_\phi}{\partial \rho}\Big{|}_{\rho=0, \thinspace z=z_{eq}}.
+        \end{equation}
+%
+    \end{center}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Spherical Wave Solutions of the Scalar Wave Equation}
+\section{Simulação do experimento de transferência de momento angular}
 
-The laplacian $\nabla$ is then writen in spherical coordinates and, after separating the variables and solving the angular part, we find:
-  \begin{equation*}
-    \psi(\vec{r},\omega)=\sum_{l,m}F_{l,m}(r)Y_{l,m}(\theta,\phi)
-  \end{equation*}
-and $F_{l,m}(r)$ is the solution for the radial part of the equation (don't depend on m).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-With the transformation:
-  \begin{equation*}
-      F_l(r)=\frac{1}{\sqrt[]{r}}u_l(r)
-  \end{equation*}
-the radial part of the equation becomes a Bessel equation, which solutions are:
-\begin{equation*}
-F_l(r)=\frac{1}{\sqrt[]{r}}\left( A_{l,m}J_{l+1/2}(r) + B_{l,m}N_{l+1/2}(r) \right)
-\end{equation*}
+\begin{frame}[fragile]{Experimento de transferência de momento angular}
+    \begin{center}
+        Para entender a simulação, é necessário discutir o experimento que mede o torque ótico na microesfera. Começamos pela geração do feixe paraxial na mesa ótica, ilustrada a seguir:
+
+        \begin{picture}(320,250)
+        \put(34,90){\includegraphics[scale=.21]{../fig/setup}}
+        \end{picture}
+
+    \end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular}
+    \begin{center}
+        Dessa forma, o feixe entra no microscópio com polarização definida e cintura bem determinada, parâmetros estes que são de grande importância para simulação.
+
+        O feixe, então, é refletido por um espelho dicróico, passa pela objetiva e incide no porta amostra, onde há a solução de microesfera.
+
+        Através do espelho dicróico podemos tomar as imagens da amostra com uma câmera (CMOS).
+
+    \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular}
+    \begin{center}
+
+        \begin{picture}(310,250)
+        \put(10,40){\includegraphics[scale=.35]{../fig/microscopio}}
+        \end{picture}
+
+        \begin{picture}(320,250)
+        \put(185,350){\includegraphics[scale=.33]{../fig/QWP}}
+        \end{picture}
+
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular}
+    \begin{center}
+        O procedimento do experimento começa encostando a microesfera na lamínula. Em seguida, abaixa-se o estágio popr uma distância bem determinada e o deslocamos na direção de $\hat{x}$ com velocidades bem definidas. A força de arrasto do líquido (força de Stokes) é proporcional à velocidade de deslocamento do fluido, e desloca a microesfera na mesma direção e sentido. 
+
+        Assumimos que as forças que são realizadas na esfera pelo feixe ao ser deslocada do eixo em que $\rho=0$ são harmônicas. 
+
+    \end{center}
+\end{frame}
+
+\begin{frame}
+
+    \begin{center}
+        Teremos, então, no equilíbrio de forças, $\vec{F_\phi}+\vec{F_\rho}=-\vec{F_s}$. Observando a projeção na direção $y$, onde $\vec{F_s}\cdot\hat{y}=0$ e $F_\rho\sin\phi = F_\phi\cos\phi$:
+        %
+        \begin{equation}
+        \frac{F_\phi}{F_\rho} = \tan\phi \approx \phi,
+        \end{equation}
+        
+        onde $\phi$ é a coordenada angular da popsição de equilíbrio. Como as forças óticas são lineares, temos:
+        %
+        \begin{equation}
+        \frac{\kappa_\phi}{\kappa_\rho} \approx \phi.
+        \end{equation}
+%
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular}
+    \begin{center}
+        É importante destacar que o ângulo $\phi$ não varia com a velocidade. Podemos ver abaixo o diagrama de forças da microesfera deslocada do eixo, e a reta formada pelas posições de equilíbrio de várias velocidades do estágio diferentes.
+
+        \begin{picture}(310,250)
+        \put(-22,130){\includegraphics[scale=.2]{../fig/pos_eq_phi}}
+        \end{picture}
+
+        \begin{picture}(320,250)
+        \put(145,385){\includegraphics[scale=.16]{../fig/forcas_estagio}}
+        \end{picture}
+
+    \end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Simulação do experimento}
+
+    \begin{center}
+
+        Para iniciar a simulação, calcula-se a posição do foco do feixe em relação à interface, quando a microesfera está encostada na lamínula e em uma posição de equilíbrio estável, com ângulo $\psi$ da placa de quarto de onda (QWP) $\psi=0$ (polarização linear). Esta posição será chamada de $L_0$.
+
+        A seguir, desloca-se o estágio do microscópio na direção $z$ por uma distância de $\delta z = 3 \mu m$. O feixe, portanto, estará a uma distância $L=L_0 + 3 \mu m \frac{n_1}{n}$ da interface vidro-água.
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Simulação do experimento}
+
+    \begin{center}
+        Uma vez que a posição do foco esteja determinada, calculamos a posição de equilíbrio para varias polarizações do feixe incidente diferentes, ou seja, variando $\psi$.
+
+        \begin{picture}(310,250)
+        \put(-20,100){\includegraphics[scale=.35]{../Qz_tipico}}
+        \end{picture}
+
+        \begin{picture}(320,250)
+        \put(160,353){\includegraphics[scale=.36]{../zeq_psi_ast25II}}
+        \end{picture}
+
+    \end{center}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Spherical Wave Solutions of the Scalar Wave Equation}
+\begin{frame}[fragile]{Resultados da simulação do experimento}
 
-Now, we define the \emph{Spherical Bessel and Henkel Functions}:
-  \begin{equation*}
-    \begin{split}
-      j_l(kr)=\left(\frac{\pi}{2kr}\right)^{1/2}J_{l+1/2}(kr)\\
-      n_l(kr)=\left(\frac{\pi}{2kr}\right)^{1/2}N_{l+1/2}(kr)\\
-      h_l^{\pm}(kr)=j_l(kr)\pm i n_l(kr)\\
-    \end{split}
-  \end{equation*}
-which look like:
-        \begin{textblock*}{3cm}(2.2cm,7cm)
-        \includegraphics[width=4cm]{besselesf1}
-        \end{textblock*}
-        \begin{textblock*}{3cm}(7.2cm,6.5cm)
-        \includegraphics[width=4cm]{besselesf2}
-        \end{textblock*}
+    \begin{center}
+        Usando as posições de equilíbrio, calculamos as derivadas do fator de eficiência nas direções $\rho$ e $\phi$, e temos assim o ângulo da posição de equilíbrio.
+
+        Variando o parâmetro de astigmatismo, usamos uma função erro para determinar qual conjunto de pontos numéricos tem maior verossimilhança com os dados experimentais.
+
+    \end{center}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Resultados da simulação do experimento}
 
-\begin{frame}[fragile]{Spherical Wave Solutions of the Scalar Wave Equation}
-    When $kr>>l$, those functions will behave as follows:
-      \begin{equation*}
-        \begin{split}
-          j_l(kr)\rightarrow \frac{1}{kr}sin\left(kr-\frac{l\pi}{2}\right)\\
-          n_l(kr)\rightarrow -\frac{1}{kr}cos\left(kr-\frac{l\pi}{2}\right)\\
-          h_l^{+}(kr)\rightarrow (-i)^{l+1} \frac{e^{ikr}}{kr}\\
-        \end{split}
-      \end{equation*}
-Now, we have a complete set of functions to describe $\psi$:
-      \begin{equation*}
-          \psi({\bf r},\omega)=\sum_{l,m} [A^{(+)}_{lm}h^{(+)}_l(kr) + A^{(-)}_{lm}h^{(-)}_l(kr)]Y_{lm}(\theta,\phi)
-      \end{equation*}
+    \begin{center}
+
+        A seguir, dois exemplos de conjuntos de pontos teóricos com paprâmetros de astigmatismo diferentes ($A_{ast}=0$ na esquerda e $A_{ast}=0.36$ na direita):
+
+        \begin{picture}(310,250)
+        \put(-10,100){\includegraphics[scale=.38]{../Kphi_rho_Aast_dupla}}
+        \end{picture}
+
+
+    \end{center}
 
 \end{frame}
 

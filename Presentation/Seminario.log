@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.8)  8 SEP 2019 04:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.8)  8 SEP 2019 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1220,66 +1220,213 @@ Overfull \vbox (3.54988pt too high) detected at line 149
 ]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [12
+ (./Seminario.vrb
+<../aberracao_esf4.png, id=123, 355.37727pt x 261.60545pt>
+File: ../aberracao_esf4.png Graphic file (type png)
+<use ../aberracao_esf4.png>
+Package pdftex.def Info: ../aberracao_esf4.png  used on input line 7.
+(pdftex.def)             Requested size: 213.228pt x 156.96446pt.
 
-]
-[13
+Overfull \hbox (12.71013pt too wide) in paragraph at lines 4--9
+ [] 
+ []
 
-]
-\openout4 = `Seminario.vrb'.
+)
+Overfull \vbox (110.23553pt too high) detected at line 195
+ []
 
- (./Seminario.vrb) [14
+[12
 
-]
-\openout4 = `Seminario.vrb'.
-
- (./Seminario.vrb) [15
+ <../aberracao_esf4.png>] [13
 
 ]
 \openout4 = `Seminario.vrb'.
 
  (./Seminario.vrb
+<../feixe_astig.png, id=136, 671.50874pt x 311.66437pt>
+File: ../feixe_astig.png Graphic file (type png)
+<use ../feixe_astig.png>
+Package pdftex.def Info: ../feixe_astig.png  used on input line 8.
+(pdftex.def)             Requested size: 268.59874pt x 124.66353pt.
 
-Package textpos Warning: environment textblock* not in vertical mode. 
-(textpos)                Environment textblock* should not have any text
-(textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 12.
-
-<besselesf1.png, id=146, 414.54875pt x 217.81375pt>
-File: besselesf1.png Graphic file (type png)
-<use besselesf1.png>
-Package pdftex.def Info: besselesf1.png  used on input line 13.
-(pdftex.def)             Requested size: 113.81102pt x 59.79759pt.
-
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 13--14
-[][]  
+Overfull \hbox (12.71013pt too wide) in paragraph at lines 9--10
+ [][] 
  []
 
-<besselesf2.png, id=147, 359.3425pt x 273.02pt>
-File: besselesf2.png Graphic file (type png)
-<use besselesf2.png>
-Package pdftex.def Info: besselesf2.png  used on input line 16.
-(pdftex.def)             Requested size: 113.81102pt x 86.46834pt.
-
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 16--17
-[][]  
+)
+Overfull \vbox (158.57976pt too high) detected at line 227
  []
 
-) [16
+[14
 
- <./besselesf1.png> <./besselesf2.png>]
+ <../feixe_astig.png>] [15
+
+] [16
+
+] [17
+
+]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [17
+ (./Seminario.vrb
+<../fig/setup.jpg, id=161, 1129.21875pt x 760.8425pt>
+File: ../fig/setup.jpg Graphic file (type jpg)
+<use ../fig/setup.jpg>
+Package pdftex.def Info: ../fig/setup.jpg  used on input line 6.
+(pdftex.def)             Requested size: 237.14293pt x 159.78163pt.
 
-] [18
+Overfull \hbox (12.71013pt too wide) in paragraph at lines 7--8
+ [][] 
+ []
+
+)
+Overfull \vbox (89.58012pt too high) detected at line 281
+ []
+
+[18
+
+ <../fig/setup.jpg>]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb) [19
+
+]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb
+<../fig/microscopio.jpg, id=174, 495.35063pt x 605.26125pt>
+File: ../fig/microscopio.jpg Graphic file (type jpg)
+<use ../fig/microscopio.jpg>
+Package pdftex.def Info: ../fig/microscopio.jpg  used on input line 5.
+(pdftex.def)             Requested size: 173.37532pt x 211.8446pt.
+
+Overfull \hbox (2.71013pt too wide) in paragraph at lines 6--7
+ [] 
+ []
+
+<../fig/QWP.jpg, id=175, 377.41pt x 375.4025pt>
+File: ../fig/QWP.jpg Graphic file (type jpg)
+<use ../fig/QWP.jpg>
+Package pdftex.def Info: ../fig/QWP.jpg  used on input line 9.
+(pdftex.def)             Requested size: 124.54568pt x 123.8832pt.
+
+Overfull \hbox (12.71013pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+)
+Overfull \vbox (311.03583pt too high) detected at line 309
+ []
+
+[20
+
+ <../fig/microscopio.jpg> <../fig/QWP.jpg>]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb) [21
+
+] [22
 
 ]
 \openout4 = `Seminario.vrb'.
 
 
 (./Seminario.vrb
-<tangesfk.png, id=168, 463.7325pt x 368.37625pt>
+<../fig/pos_eq_phi.jpg, id=191, 816.04875pt x 490.83376pt>
+File: ../fig/pos_eq_phi.jpg Graphic file (type jpg)
+<use ../fig/pos_eq_phi.jpg>
+Package pdftex.def Info: ../fig/pos_eq_phi.jpg  used on input line 6.
+(pdftex.def)             Requested size: 163.20685pt x 98.16501pt.
+
+Overfull \hbox (2.71013pt too wide) in paragraph at lines 7--8
+ [][] 
+ []
+
+<../fig/forcas_estagio.jpg, id=192, 1160.08406pt x 622.57594pt>
+File: ../fig/forcas_estagio.jpg Graphic file (type jpg)
+<use ../fig/forcas_estagio.jpg>
+Package pdftex.def Info: ../fig/forcas_estagio.jpg  used on input line 10.
+(pdftex.def)             Requested size: 185.61723pt x 99.61418pt.
+
+Overfull \hbox (12.71013pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+)
+Overfull \vbox (359.38005pt too high) detected at line 352
+ []
+
+[23
+
+ <../fig/pos_eq_phi.jpg> <../fig/forcas_estagio.jpg>]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb)
+[24
+
+]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb
+<../Qz_tipico.png, id=203, 462.2891pt x 347.01546pt>
+File: ../Qz_tipico.png Graphic file (type png)
+<use ../Qz_tipico.png>
+Package pdftex.def Info: ../Qz_tipico.png  used on input line 7.
+(pdftex.def)             Requested size: 161.8036pt x 121.45721pt.
+
+Overfull \hbox (2.71013pt too wide) in paragraph at lines 8--9
+ [][] 
+ []
+
+<../zeq_psi_ast25II.png, id=204, 462.2891pt x 347.01546pt>
+File: ../zeq_psi_ast25II.png Graphic file (type png)
+<use ../zeq_psi_ast25II.png>
+Package pdftex.def Info: ../zeq_psi_ast25II.png  used on input line 11.
+(pdftex.def)             Requested size: 166.42393pt x 124.92546pt.
+
+Overfull \hbox (12.71013pt too wide) in paragraph at lines 12--13
+ [][] 
+ []
+
+)
+Overfull \vbox (345.58012pt too high) detected at line 383
+ []
+
+[25
+
+ <../Qz_tipico.png> <../zeq_psi_ast25II.png>]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb) [26
+
+]
+\openout4 = `Seminario.vrb'.
+
+
+(./Seminario.vrb
+<../Kphi_rho_Aast_dupla.png, id=218, 885.75545pt x 356.57182pt>
+File: ../Kphi_rho_Aast_dupla.png Graphic file (type png)
+<use ../Kphi_rho_Aast_dupla.png>
+Package pdftex.def Info: ../Kphi_rho_Aast_dupla.png  used on input line 8.
+(pdftex.def)             Requested size: 336.59056pt x 135.49869pt.
+
+Overfull \hbox (2.71013pt too wide) in paragraph at lines 9--10
+ [][] 
+ []
+
+)
+Overfull \vbox (90.13568pt too high) detected at line 411
+ []
+
+[27
+
+ <../Kphi_rho_Aast_dupla.png>] [28
+
+]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb
+<tangesfk.png, id=231, 463.7325pt x 368.37625pt>
 File: tangesfk.png Graphic file (type png)
 <use tangesfk.png>
 Package pdftex.def Info: tangesfk.png  used on input line 12.
@@ -1289,7 +1436,7 @@ Overfull \hbox (17.07182pt too wide) in paragraph at lines 12--13
 []  
  []
 
-) [19
+) [29
 
  <./tangesfk.png>]
 \openout4 = `Seminario.vrb'.
@@ -1301,7 +1448,7 @@ Package textpos Warning: environment textblock* not in vertical mode.
 (textpos)                or printable material appearing before it.
 (textpos)                Alignment may work out wrongly. on input line 8.
 
-<tangesfkd.png, id=176, 463.7325pt x 368.37625pt>
+<tangesfkd.png, id=238, 463.7325pt x 368.37625pt>
 File: tangesfkd.png Graphic file (type png)
 <use tangesfkd.png>
 Package pdftex.def Info: tangesfkd.png  used on input line 9.
@@ -1311,7 +1458,7 @@ Overfull \hbox (17.07182pt too wide) in paragraph at lines 9--10
 [][]  
  []
 
-) [20
+) [30
 
  <./tangesfkd.png>]
 \openout4 = `Seminario.vrb'.
@@ -1323,7 +1470,7 @@ Package textpos Warning: environment textblock* not in vertical mode.
 (textpos)                or printable material appearing before it.
 (textpos)                Alignment may work out wrongly. on input line 8.
 
-<tangesfkdk.png, id=183, 463.7325pt x 368.37625pt>
+<tangesfkdk.png, id=245, 463.7325pt x 368.37625pt>
 File: tangesfkdk.png Graphic file (type png)
 <use tangesfkdk.png>
 Package pdftex.def Info: tangesfkdk.png  used on input line 9.
@@ -1333,12 +1480,12 @@ Overfull \hbox (17.07182pt too wide) in paragraph at lines 9--10
 [][]  
  []
 
-) [21
+) [31
 
  <./tangesfkdk.png>]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [22
+ (./Seminario.vrb) [32
 
 ]
 \openout4 = `Seminario.vrb'.
@@ -1348,12 +1495,12 @@ Overfull \hbox (3.46136pt too wide) detected at line 8
 []
  []
 
-) [23
+) [33
 
 ]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [24
+ (./Seminario.vrb) [34
 
 ]
 \openout4 = `Seminario.vrb'.
@@ -1363,47 +1510,37 @@ Overfull \hbox (10.27193pt too wide) detected at line 9
 []
  []
 
-) [25
+) [35
 
-] [26
-
-]
-\openout4 = `Seminario.vrb'.
-
- (./Seminario.vrb) [27
+] [36
 
 ]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [28
+ (./Seminario.vrb) [37
 
 ]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb)
-[29
+ (./Seminario.vrb) [38
 
 ]
 \openout4 = `Seminario.vrb'.
 
  (./Seminario.vrb)
-Overfull \hbox (15.17665pt too wide) in paragraph at lines 444--444
-[][]  
- []
-
-[30
+[39
 
 ]
-Overfull \hbox (9.16779pt too wide) in paragraph at lines 468--468
-[][][]  
- []
+\openout4 = `Seminario.vrb'.
 
-[31
+ (./Seminario.vrb) [40
+
+] [41
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 474.
+(hyperref)                removing `\translate ' on input line 607.
 
 \tf@nav=\write6
 \openout6 = `Seminario.nav'.
@@ -1414,20 +1551,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@snm=\write8
 \openout8 = `Seminario.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 610.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 610.
 (./Seminario.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 610.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 610.
 Package rerunfilecheck Info: File `Seminario.out' has not changed.
-(rerunfilecheck)             Checksum: 0A05866D13F63C9321AEC83A823FC1C1;342.
+(rerunfilecheck)             Checksum: FC2790A9ED860261EBDB0D09A410E1E1;359.
  ) 
 Here is how much of TeX's memory you used:
- 31109 strings out of 492623
- 752683 string characters out of 6135670
- 982824 words of memory out of 5000000
- 34263 multiletter control sequences out of 15000+600000
- 10480 words of font info for 38 fonts, out of 8000000 for 9000
+ 31208 strings out of 492623
+ 754242 string characters out of 6135670
+ 982825 words of memory out of 5000000
+ 34321 multiletter control sequences out of 15000+600000
+ 11182 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,20n,98p,1832b,775s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
@@ -1441,10 +1578,10 @@ public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8
 .pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Seminario.pdf (31 pages, 432710 bytes).
+Output written on Seminario.pdf (41 pages, 1125756 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
