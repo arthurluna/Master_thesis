@@ -389,7 +389,11 @@ Dois regimes distintos: \\
     \begin{center}
         Usando as posições de equilíbrio, calculamos as derivadas do fator de eficiência nas direções $\rho$ e $\phi$, e temos assim o ângulo da posição de equilíbrio.
 
-        Variando o parâmetro de astigmatismo, usamos uma função erro para determinar qual conjunto de pontos numéricos tem maior verossimilhança com os dados experimentais.
+        Variando o parâmetro de astigmatismo, usamos uma função erro para determinar qual conjunto de pontos numéricos tem maior verossimilhança com os dados experimentais. A função erro é definida como:
+
+        \begin{equation}
+        E(A_{ast})=\sum \limits_i \big{[} \phi_i^{exp} - \phi_i^{sim}(A_{ast}) \big{]}^2.
+        \end{equation}
 
     \end{center}
 
@@ -405,6 +409,33 @@ Dois regimes distintos: \\
         \put(-10,100){\includegraphics[scale=.38]{../Kphi_rho_Aast_dupla}}
         \end{picture}
 
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Resultados da simulação do experimento}
+
+    \begin{center}
+
+        O gráfico da função erro pelo parâmetro de astigmatismo apresenta um mínimo em $A_{ast}=0.24$, que corresponde ao valor mais provável do parâmetro de astigmatismo:
+
+        \begin{picture}(310,250)
+        \put(70,100){\includegraphics[scale=.38]{../erro_astigII}}
+        \end{picture}
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Resultados da simulação do experimento}
+
+    \begin{center}
+
+        A seguir, mostramos o gráfico da posição angular $\phi$ em função do ângulo da placa de quarto de onda $\psi$ para o valor de $A_{ast}=0.24$:
+
+        \begin{picture}(310,250)
+        \put(70,100){\includegraphics[scale=.38]{../Kphi_rho_Aast024III}}
+        \end{picture}
 
     \end{center}
 
@@ -412,169 +443,115 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Electromagnetic Fields description}
+\section{Caracterização do parâmetro de absorção da microesfera}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Electromagnetic Fields description}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
 
-Motivation: 
   \begin{center}
-  Right now we have the wave equation solution for a scalar field.
+      O que chamamos de parâmetro de absorção da microesfera é a parte imaginára do seu índice de refração. 
 
-  Transverse field can be obtained by multiplying the solution by a transverse vector.
+      O poliestireno é um material amplamente usado em experimentos de pinças óticas, e seu parâmetro de absorção é fornecido na literatura como $Im(n_{poli})=0.002$.
 
-  \alert{But which transverse vector?}
+      Simulações com esferas grandes usadas e aprisionadas em laboratório não apresentaram qualquer posição de equilíbrio axial para esse valor quando o feixe incidente possui astigmatismo. Essa foi a motivação para o estudo da caracterização dessa grandeza, juntamente com o fato de haver uma forte dependência do fator de eficiência na direção $z$ com ela.
+
   \end{center}
-        \begin{textblock*}{3cm}(4.8cm,6.5cm)
-            \includegraphics[width=3.6cm]{tangesfk}
-        \end{textblock*}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Electromagnetic Fields description}
+\begin{frame}[fragile]{Resultados da simulação do experimento}
 
-The vector operator $\nabla_k$ (in reciprocal space) is a good way to start. Assuming the field has no longitudinal component ($\vec{k} \cdot \vec{A}=0$), we can write the operator as:
-      \begin{equation*}
-          \nabla_k = \frac{1}{k}\left(\hat{\theta}\frac{\partial}{\partial\theta} + \hat{\phi}\frac{1}{sen\theta}\frac{\partial}{\partial\phi}\right)
-      \end{equation*}
-where is clear that it is defined in the tangencial plane.
-        \begin{textblock*}{3cm}(4.8cm,6.5cm)
-            \includegraphics[width=3.6cm]{tangesfkd}
-        \end{textblock*}
-\end{frame}
+    \begin{center}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        Os maiores valores de $Im(n_{poli})$ que apresentaram uma posição próxima ao eixo $z=0$ foram para $Im(n_{poli})=0.0004$, o que poderia indicar um equilíbrio com a força peso. O comportamento do fator de eficiência $Q_z$ em função de $z$ para vários raios está apresentado no gráfico a seguir:
 
-\begin{frame}[fragile]{Electromagnetic Fields description}
+        \begin{picture}(310,250)
+        \put(-15,100){\includegraphics[scale=.38]{../Qz_z_1e-34II}}
+        \end{picture}
 
-Now, the last component should be perpendicular to, not just $\hat{k}$, but also $\nabla_k$. The obvious choice is to take the vector product:
-      \begin{equation*}
-          \hat{k}\times\nabla_k = \alpha \vec{L}
-      \end{equation*}
-and, now, we finally have a set of vetors that describes our vector field:
-        \begin{textblock*}{3cm}(4.8cm,6.5cm)
-            \includegraphics[width=3.6cm]{tangesfkdk}
-        \end{textblock*}
+    \end{center}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Electromagnetic Fields description}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
 
-Since the spherical harmonics are eigenfunctions of the operator $\vec{L}$, we can build our fields with the normalized vector
-      \begin{equation*}
-          \vec{X}_{lm}(\theta,\phi)=\frac{1}{\sqrt[]{l(l+1)}}\vec{L}Y_{lm}(\theta,\phi).
-      \end{equation*}
-First, we build the magnetic multipole field, using the scalar field expansion found earlier:
-      \begin{equation*}
-      \begin{split}
-          \vec{E}_{lm}^{(M)}(\vec{r})=c^2g_l(kr)\vec{X}_{lm}(\theta,\phi)\\
-          \vec{B}_{lm}^{(M)}(\vec{r})=\frac{-i}{kc^2}\nabla \times \vec{E}_{lm}^{(M)}(\vec{r})
-      \end{split}
-      \end{equation*}
-where
-      \begin{equation*}
-          g_l(kr)= B^{(+)}_{l}h^{(+)}_l(kr) + B^{(-)}_{l}h^{(-)}_l(kr).
-      \end{equation*}
-\end{frame}
+  \begin{center}
+      Para voltar a observar posições de equilíbrio, podemos levar o parâmetro de astigmatismo a 0 e procurar parâmetros de abosorção que apresentem uma posição de equilíbrio próxima ao foco. Para fazer isso, o cálculo numérico para esferas menores é mais rápido, e o resultado é equivalente. Dessa forma, os valores de $n_{poli}$ tais que a posição de equilíbrio esteja ao menos 3 raios de de distância do plano focal estão representados pela parte preenchida do gráfico:
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \begin{picture}(310,250)
+      \put(70,115){\includegraphics[scale=.23]{../Regiao_de_pincamentoII}}
+      \end{picture}
 
-\begin{frame}[fragile]{Electromagnetic Fields description}
-The same ideia is used to construct the eletric multipole field, which leads us to the final result:
-      \begin{equation*}
-      \begin{split}
-          \vec{E}(\vec{r})=c^2\sum_{l,m}\left[ \frac{i}{k}a_E(l,m)\nabla \times f_l(kr)\vec{X}_{lm}(\theta,\phi) + a_M(l,m)g_l(kr)\vec{X}_{lm}(\theta,\phi)  \right],\\
-          \vec{B}(\vec{r})=\sum_{l,m}\left[ a_E(l,m)f_l(kr)\vec{X}_{lm}(\theta,\phi) - \frac{-i}{k} a_M(l,m)\nabla \times g_l(kr)\vec{X}_{lm}(\theta,\phi)) \right].
-      \end{split}
-      \end{equation*}
+  \end{center}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Electromagnetic Fields description}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
 
-Plane waves also have a spherical wave expansion. As an example, we have the case of $\hat{k}=\hat{z}$:
-      \begin{equation*}
-          e^{ikz}= \sum_{l=0}^{\infty}i^l(2l+1)j_l(kr)P_l(cos\theta))
-      \end{equation*}
-      where
-      \begin{equation*}
-          P_l(cos\theta)=Y_{l0}(\theta)
-      \end{equation*}
+  \begin{center}
+      Podemos propor um experimento para tentar caracterizar esse parâmetro. Como a força em $z$ tem uma dependência forte com $Im(n_{poli})$, podemos testar a condição de pinçamento observando as flutuações de energia potencial da pinça e calculando o tamanho da berreira potencial em $z$ que a esfera deve ultrapassar para sair do aprisionamento.
 
+      Definimos o potencial efetivo para microesfera confinada no eixo $z$:
+      %
+      \begin{equation}
+      V(z)=-\int\limits_{z_0}^{z} \frac{n_1P}{c} Q_z dz + V(z_0).
+      \end{equation}
+
+      O tamanho da barreira potencial é, então:
+      %
+      \begin{equation}
+      \Delta=\int\limits^{z_{inst}}_{z_{eq}} Q_z \frac{dz}{a}.
+      \end{equation}
+
+  \end{center}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
+
+  \begin{center}
+      A seguir, ilustramos as grandezas discutidas anteriormente. Em laranja, o fator de eficiência $Q_z$, e em azul o potencial $V(z)$:
+
+      \begin{picture}(310,250)
+      \put(60,100){\includegraphics[scale=.4]{../potencial_qz}}
+      \end{picture}
+
+  \end{center}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Electromagnetic Fields description}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This leads to the field:
-      \begin{equation*}
-      \begin{split}
-          \vec{E}(\vec{r})=\sum_{l=1}^{\infty}i^l\sqrt[]{4\pi(2l+1)}\left[j_l(kr)\vec{X}_{l,\pm1}(\theta,\phi) \pm \frac{1}{k}\nabla \times j_l(kr)\vec{X}_{l,\pm1}(\theta,\phi)  \right],\\
-          \vec{B}(\vec{r})=\frac{1}{c}\sum_{l=1}^{\infty}i^l\sqrt[]{4\pi(2l+1)}\left[ \frac{-i}{k}\nabla \times j_l(kr)\vec{X}_{l,\pm1}(\theta,\phi) \mp  ij_l(kr)\vec{X}_{l,\pm1}(\theta,\phi)\right].
-      \end{split}
-      \end{equation*}
-Those will be a sum of \emph{ingoing} spherical waves of various $l$'s.
-\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Scattering of Electromagnetic Waves by a sphere (Mie)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Scattering of Electromagnetic Waves by a sphere (Mie)}
-We begin to discuss our problem by stating that we can divide our fields in 2 parts:
-      \begin{equation*}
-      \begin{split}
-          \vec{E}(\vec{r}) = \vec{E}_{inc}(\vec{r}) + \vec{E}_{sc}(\vec{r})\\
-          \vec{B}(\vec{r}) = \vec{B}_{inc}(\vec{r}) + \vec{B}_{sc}(\vec{r})
-      \end{split}
-      \end{equation*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-      We use the multipole basis to describe them all! But with caution...
 
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Scattering of Electromagnetic Waves by a sphere (Mie)}
-$\vec{A}_{inc}(\vec{r})$ is an incoming wave, described by the plane wave expansion.
-
-$\vec{A}_{sc}(\vec{r})$ is the scattered wave. Only one Henkel function describe \emph{outgoing} spherical wave: $H_l^+(kr)$.
-
-      \begin{equation*}
-      \begin{split}
-          \vec{E}_{sc}(\vec{r})=\frac{1}{2}\sum_{l=1}^{\infty}i^l\sqrt[]{4\pi(2l+1)}\left[\alpha _{\pm}h^+_l\vec{X}_{l,\pm1} \pm \beta_{\pm}\frac{1}{k}\nabla \times h^+_l\vec{X}_{l,\pm1}\right],\\
-          \vec{B}_{sc}(\vec{r})=\frac{1}{2c}\sum_{l=1}^{\infty}i^l\sqrt[]{4\pi(2l+1)}\left[\alpha_{\pm}\frac{-i}{k}\nabla \times h^+_l\vec{X}_{l,\pm1} \mp i\beta_{\pm}h^+_l\vec{X}_{l,\pm1}\right].     
-          \end{split}
-      \end{equation*}
-
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Scattering of Electromagnetic Waves by a sphere (Mie)}
-
-$\alpha _{\pm}$ and $\beta_{\pm}$ are both determined by the boundary conditions.
-Since the scatterer is spherically symmetric, no direction will be treated differently; and assuming there is no absorption, the scattering effect only changes the 
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[fragile]{Scattering of Electromagnetic Waves by a sphere (Mie)}
-
-
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
