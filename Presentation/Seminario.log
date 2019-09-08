@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.19)  8 SEP 2019 03:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.8)  8 SEP 2019 04:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1201,7 +1201,11 @@ Overfull \vbox (98.93561pt too high) detected at line 128
  <../reflex_absorII.png>]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [9
+ (./Seminario.vrb)
+Overfull \vbox (3.54988pt too high) detected at line 149
+ []
+
+[9
 
 ]
 \openout4 = `Seminario.vrb'.
@@ -1209,7 +1213,9 @@ Overfull \vbox (98.93561pt too high) detected at line 128
  (./Seminario.vrb) [10
 
 ]
-[11
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb) [11
 
 ]
 \openout4 = `Seminario.vrb'.
@@ -1217,9 +1223,17 @@ Overfull \vbox (98.93561pt too high) detected at line 128
  (./Seminario.vrb) [12
 
 ]
+[13
+
+]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [13
+ (./Seminario.vrb) [14
+
+]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb) [15
 
 ]
 \openout4 = `Seminario.vrb'.
@@ -1231,7 +1245,7 @@ Package textpos Warning: environment textblock* not in vertical mode.
 (textpos)                or printable material appearing before it.
 (textpos)                Alignment may work out wrongly. on input line 12.
 
-<besselesf1.png, id=132, 414.54875pt x 217.81375pt>
+<besselesf1.png, id=146, 414.54875pt x 217.81375pt>
 File: besselesf1.png Graphic file (type png)
 <use besselesf1.png>
 Package pdftex.def Info: besselesf1.png  used on input line 13.
@@ -1241,7 +1255,7 @@ Overfull \hbox (28.45276pt too wide) in paragraph at lines 13--14
 [][]  
  []
 
-<besselesf2.png, id=133, 359.3425pt x 273.02pt>
+<besselesf2.png, id=147, 359.3425pt x 273.02pt>
 File: besselesf2.png Graphic file (type png)
 <use besselesf2.png>
 Package pdftex.def Info: besselesf2.png  used on input line 16.
@@ -1251,21 +1265,21 @@ Overfull \hbox (28.45276pt too wide) in paragraph at lines 16--17
 [][]  
  []
 
-) [14
+) [16
 
  <./besselesf1.png> <./besselesf2.png>]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [15
+ (./Seminario.vrb) [17
 
-] [16
+] [18
 
 ]
 \openout4 = `Seminario.vrb'.
 
 
 (./Seminario.vrb
-<tangesfk.png, id=153, 463.7325pt x 368.37625pt>
+<tangesfk.png, id=168, 463.7325pt x 368.37625pt>
 File: tangesfk.png Graphic file (type png)
 <use tangesfk.png>
 Package pdftex.def Info: tangesfk.png  used on input line 12.
@@ -1275,7 +1289,7 @@ Overfull \hbox (17.07182pt too wide) in paragraph at lines 12--13
 []  
  []
 
-) [17
+) [19
 
  <./tangesfk.png>]
 \openout4 = `Seminario.vrb'.
@@ -1287,7 +1301,7 @@ Package textpos Warning: environment textblock* not in vertical mode.
 (textpos)                or printable material appearing before it.
 (textpos)                Alignment may work out wrongly. on input line 8.
 
-<tangesfkd.png, id=160, 463.7325pt x 368.37625pt>
+<tangesfkd.png, id=176, 463.7325pt x 368.37625pt>
 File: tangesfkd.png Graphic file (type png)
 <use tangesfkd.png>
 Package pdftex.def Info: tangesfkd.png  used on input line 9.
@@ -1297,7 +1311,7 @@ Overfull \hbox (17.07182pt too wide) in paragraph at lines 9--10
 [][]  
  []
 
-) [18
+) [20
 
  <./tangesfkd.png>]
 \openout4 = `Seminario.vrb'.
@@ -1309,7 +1323,7 @@ Package textpos Warning: environment textblock* not in vertical mode.
 (textpos)                or printable material appearing before it.
 (textpos)                Alignment may work out wrongly. on input line 8.
 
-<tangesfkdk.png, id=167, 463.7325pt x 368.37625pt>
+<tangesfkdk.png, id=183, 463.7325pt x 368.37625pt>
 File: tangesfkdk.png Graphic file (type png)
 <use tangesfkdk.png>
 Package pdftex.def Info: tangesfkdk.png  used on input line 9.
@@ -1319,12 +1333,12 @@ Overfull \hbox (17.07182pt too wide) in paragraph at lines 9--10
 [][]  
  []
 
-) [19
+) [21
 
  <./tangesfkdk.png>]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [20
+ (./Seminario.vrb) [22
 
 ]
 \openout4 = `Seminario.vrb'.
@@ -1334,12 +1348,12 @@ Overfull \hbox (3.46136pt too wide) detected at line 8
 []
  []
 
-) [21
+) [23
 
 ]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [22
+ (./Seminario.vrb) [24
 
 ]
 \openout4 = `Seminario.vrb'.
@@ -1349,37 +1363,47 @@ Overfull \hbox (10.27193pt too wide) detected at line 9
 []
  []
 
-) [23
+) [25
 
-] [24
-
-]
-\openout4 = `Seminario.vrb'.
-
- (./Seminario.vrb) [25
+] [26
 
 ]
 \openout4 = `Seminario.vrb'.
 
- (./Seminario.vrb) [26
-
-]
-\openout4 = `Seminario.vrb'.
-
- (./Seminario.vrb)
-[27
+ (./Seminario.vrb) [27
 
 ]
 \openout4 = `Seminario.vrb'.
 
  (./Seminario.vrb) [28
 
-] [29
+]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb)
+[29
+
+]
+\openout4 = `Seminario.vrb'.
+
+ (./Seminario.vrb)
+Overfull \hbox (15.17665pt too wide) in paragraph at lines 444--444
+[][]  
+ []
+
+[30
+
+]
+Overfull \hbox (9.16779pt too wide) in paragraph at lines 468--468
+[][][]  
+ []
+
+[31
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 435.
+(hyperref)                removing `\translate ' on input line 474.
 
 \tf@nav=\write6
 \openout6 = `Seminario.nav'.
@@ -1390,36 +1414,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@snm=\write8
 \openout8 = `Seminario.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
 (./Seminario.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
 Package rerunfilecheck Info: File `Seminario.out' has not changed.
 (rerunfilecheck)             Checksum: 0A05866D13F63C9321AEC83A823FC1C1;342.
  ) 
 Here is how much of TeX's memory you used:
- 31097 strings out of 492623
- 752555 string characters out of 6135669
+ 31109 strings out of 492623
+ 752683 string characters out of 6135670
  982824 words of memory out of 5000000
- 34260 multiletter control sequences out of 15000+600000
+ 34263 multiletter control sequences out of 15000+600000
  10480 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,20n,98p,1832b,775s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Seminario.pdf (29 pages, 420464 bytes).
+ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Seminario.pdf (31 pages, 432710 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

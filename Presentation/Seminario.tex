@@ -138,7 +138,43 @@ Dois regimes distintos: \\
         O campo é expresso como uma superposição de ondas planas onde os vetores $\mathbf{k}(\theta_k,\phi_k)$ formam um cone de meia abertura $\theta_0$ no espaço de momento:
         %
         \begin{equation}
-        \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k.
+        \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k,
+        \label{RichWolf}
+        \end{equation}
+
+        onde o termo $\sqrt{\sin\theta_k}$ vem da condição de seno de Abbe ($f^2\sin^2\theta_k=\rho^2$) que as objetivas de alta abertura numérica satisfazem.
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+
+    \begin{center}
+        Para encontrarmos os campos espalhados pela esfera, calculamos os potenciais de Debye do campo incidente para cada caso de polarização circular, que são definidos por:
+        %
+        \begin{equation}
+        \Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
+        \end{equation}
+
+        O somatório em $J$ denota a expansão do campo em multipolos. Cada multipolo do campo incidente será espalhado com uma amplitude, dada pelos coeficiente de Mie $a_j$ (para os multipolos elétricos) e $b_j$ (para o multipolo magnético).
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+
+    \begin{center}
+        Para introduzirmos o efeito causado pelo perfil do feixe paraxial incidente na objetiva, inserimos a amplitude de campo em cada ponto da entrada da objetiva na equação \ref{RichWolf}:
+        %
+        \begin{equation}
+        \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}} \hat{\varepsilon}_k.        
+        \end{equation}
+
+        O caso de um feixe elipticamente polarizado é obtido tomando o feixe na entrada da objetiva como uma superposição de ondas circularmente polarizadas:
+        \begin{equation}
+        \hat{\varepsilon}_k = \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \psi}}{2} \hat{\bf{\epsilon}}_\sigma .     
         \end{equation}
 
     \end{center}
@@ -148,18 +184,21 @@ Dois regimes distintos: \\
 \begin{frame}[fragile]{Introdução ao modelo MDSA.}
 
     \begin{center}
-        Para encontrarmos os campos espalhados pela esfera, calculamos os potenciais de Debye do campo incidente, que são definidos por:
+        Depois que o feixe focalizado é produzido pela objetiva, ele incide no porta amostra, passando por uma interface de vidro e água. Algumas objetivas de alta abertura numérica são de imersão em óleo, o que faz com que haja um efeito de aberração esférica que deve ser levado em conta no modelo.
         %
         \begin{equation}
-        \Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
+        \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}} \hat{\varepsilon}_k.        
         \end{equation}
 
-        O somatório em $J$ denota a expansão do campo em multipolos. Cada multipolo do campo incidente será espalhado com uma amplitude, dada pelos coeficiente de Mie $a_j$ (para os multipolos elétricos) e $b_j$ (para o multipolo magnético).
-
+        O caso de um feixe elipticamente polarizado é obtido tomando o feixe na entrada da objetiva como uma superposição de ondas circularmente polarizadas:
+        \begin{equation}
+        \hat{\varepsilon}_k = \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \psi}}{2} \hat{\bf{\epsilon}}_\sigma .     
+        \end{equation}
 
     \end{center}
 
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
