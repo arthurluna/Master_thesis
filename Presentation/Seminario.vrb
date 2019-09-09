@@ -1,11 +1,13 @@
-\frametitle{Caracterização do parâmetro de absorção da microesfera}
+\frametitle{Conclusão}
 
   \begin{center}
-      A seguir, ilustramos as grandezas discutidas anteriormente. Em laranja, o fator de eficiência $Q_z$, e em azul o potencial $V(z)$:
 
-      \begin{picture}(310,250)
-      \put(60,100){\includegraphics[scale=.4]{../potencial_qz}}
-      \end{picture}
+      \begin{itemize}
+
+        \item bla
+
+
+      \end{itemize}
 
   \end{center}
 
