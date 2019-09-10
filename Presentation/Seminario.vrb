@@ -4,8 +4,11 @@
 
       \begin{itemize}
 
-        \item bla
+        \item Desenvolvimento de um método para caracterizar o parâmetro de astigmatismo do sistema. Microesferas da ordem do comprimento de onda.
 
+        \item Proposição de um experimento para determinar um parâmetro que apresenta certa dificuldade de ser medido.
+
+        \item Desenvolvimento de um código otimizado para cálculo de forças óticas. Funciona bem para microesferas grandes, que precisam de muito poder computacional para que os cálculos sejam realizados.
 
       \end{itemize}
 
