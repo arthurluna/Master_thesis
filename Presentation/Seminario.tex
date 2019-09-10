@@ -44,15 +44,15 @@
       \begin{center}
           \metroset{block=fill}
           \begin{exampleblock}{Objetivo}
-            Caracterização de parâmetros na pinça ótica:\\
-            \hspace{1mm}\\
-            \hspace{4mm}$\rightarrow$Teoria MDSA+ para pinças óticas:\\
-            \hspace{7mm}$\rightarrow$Correções de aberrações óticas na teoria MDSA $\rightarrow$Astigmatismo.\\
-            \hspace{7mm}$\rightarrow$Espalhamento Mie $\rightarrow$Parâmetro de absorção da microesfera.\\
-            \hspace{1mm}\\
-            \hspace{4mm}$\rightarrow$Cálculo numérico usando a teoria MDSA+:\\
-            \hspace{7mm}$\rightarrow$Simulação do experimento de transferência de momento angular na pinça ótica.\\
-            \hspace{7mm}$\rightarrow$Cálculos da posição de equilíbrio da esfera variando o parâmetro de absorção.
+
+		      \begin{itemize}
+
+		        \item Caracterização do parâmetro de astigmatismo do sistema ótico através do experimento de torque ótico $\rightarrow$ microesferas com raio da ordem do comprimento de onda.
+
+		        \item Caracterização do parâmetro de absorção da microesfera através da análise da posição de equilíbrio axial. $\rightarrow$ microesferas com raio maior que o comprimento de onda.
+
+		      \end{itemize}
+
           \end{exampleblock}
       \end{center}
 \end{frame}
@@ -75,27 +75,36 @@ Introdução à teoria de pinças óticas: \\
 
 \end{frame}
 
-\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador.}
+\section{Regimes de tamanhos do objeto espalhador}
+
+\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador}
 
 Dois regimes distintos: \\
     \begin{center}
-        Regime Rayleigh: raio da esfera muito menor que o comprimento de onda do feixe ($a<<\lambda$).
+        Regime Rayleigh: raio da esfera muito menor que o comprimento de onda do feixe ($a\ll\lambda$).
 
         Aproximamos a esfera por um dipolo induzido:
         \begin{equation}
         {\mathbf F} = \frac{1}{2}\nabla({\mathbf p}\cdot{\mathbf E})=\frac{1}{2}\nabla(\alpha{\mathbf E}^2).
         \end{equation}
 
-        Força aponta para região de maior intensidade do campo. Para o feixe fortemente focalizado, a região de maio intensidade é o foco.
+	      \begin{itemize}
+
+		        \item Força aponta para região de maior intensidade do campo
+
+		        \item Feixe fortemente focalizado : região de maior intensidade é o foco.
+
+	      \end{itemize}
+ 
 
     \end{center}
-.
+
 \end{frame}
 
-\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador.}
+\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador}
 
     \begin{center}
-        Regime de ótica geométrica: raio da esfera muito mairo que o comprimento de onda do feixe ($a>>\lambda$).
+        Regime de ótica geométrica: raio da esfera muito mairo que o comprimento de onda do feixe ($a\gg\lambda$).
 
         Ignorando efeitos de reflexão e de absorção, raios diametralmente\\opostos transferem momento para esfera na direção do foco.
         %
@@ -108,13 +117,11 @@ Dois regimes distintos: \\
         \end{picture}
         %
         
-
-
     \end{center}
 
 \end{frame}
 
-\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador.}
+\begin{frame}[fragile]{Regimes de tamanhos do objeto espalhador}
 
     \begin{center}
         A posição de equilíbrio não necessariamente é no foco, \\pois a reflexão (a) transfere momento na direção normal ao plano tangente ao ponto de reflexão na esfera,\\enquanto a absorção (b) transfere na direção da propagação do raio:
@@ -127,28 +134,27 @@ Dois regimes distintos: \\
 
 \end{frame}
 
+\section{Introdução ao modelo MDSA+}
 
-\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
-        O modelo Mie-Debye para a pinça ótica é um modelo exato para o espalhamento por uma esfera de um campo fortemente focalizado (por uma objetiva).
-
-        O modelo para o campo foi desenvolvido por Richards e Wolf, baseado em uma proposição de Debye para um campo escalar produzido por uma objetiva de alta abertura numérica.
+    	Modelo Mie-Debye para a pinça ótica: modelo exato para o espalhamento por uma esfera de um campo fortemente focalizado.
         
-        O campo é expresso como uma superposição de ondas planas onde os vetores $\mathbf{k}(\theta_k,\phi_k)$ formam um cone de meia abertura $\theta_0$ no espaço de momento:
+        Campo expresso como uma superposição de ondas planas: vetores $\mathbf{k}(\theta_k,\phi_k)$ formam um cone sólido de meia abertura $\theta_0$:
         %
         \begin{equation}
         \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}}\hat{\varepsilon}_k,
         \label{RichWolf}
         \end{equation}
 
-        onde o termo $\sqrt{\sin\theta_k}$ vem da condição de seno de Abbe ($f^2\sin^2\theta_k=\rho^2$) que as objetivas de alta abertura numérica satisfazem.
+        Termo $\sqrt{\sin\theta_k}$ vem da condição de seno de Abbe ($f\sin\theta_k=\rho$):
 
     \end{center}
 
 \end{frame}
 
-\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
         Para encontrarmos os campos espalhados pela esfera, calculamos os potenciais de Debye do campo incidente para cada caso de polarização circular, que são definidos por:
@@ -157,24 +163,27 @@ Dois regimes distintos: \\
         \Pi^{E}=\sum\limits_{J} \Pi^{E}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf E })_J }{J(J+1)} \qquad e\qquad \Pi^{M}=\sum\limits_{J} \Pi^{M}_J=\sum\limits_{J}\frac{ ({\mathbf r}\cdot{\mathbf H })_J }{J(J+1)} .
         \end{equation}
 
-        O somatório em $J$ denota a expansão do campo em multipolos. Cada multipolo do campo incidente será espalhado com uma amplitude, dada pelos coeficiente de Mie $a_j$ (para os multipolos elétricos) e $b_j$ (para o multipolo magnético).
+        O somatório em $J$ denota a expansão do campo em multipolos. 
+
+        Cada multipolo do campo incidente será espalhado com uma amplitude, dada pelos coeficiente de Mie $a_j$ (para os multipolos elétricos) e $b_j$ (para o multipolo magnético).
 
     \end{center}
 
 \end{frame}
 
-\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
+    	
         Para introduzirmos o efeito causado pelo perfil do feixe paraxial incidente na objetiva, inserimos a amplitude de campo em cada ponto da entrada da objetiva na equação \ref{RichWolf}:
         %
         \begin{equation}
         \mathbf{E}_{IN}=\int\limits_0^{\theta_0} d\theta_k \sin\theta_k \int\limits_0^{2\pi} d\phi_k\sqrt{\sin\theta_k} e^{i\mathbf{k}\cdot\mathbf{r}} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}} \hat{\varepsilon}_k.        
         \end{equation}
 
-        O caso de um feixe elipticamente polarizado é obtido tomando o feixe na entrada da objetiva como uma superposição de ondas circularmente polarizadas:
+        O caso de um feixe elipticamente polarizado é obtido superpondo ondas circularmente polarizadas:
         \begin{equation}
-        \hat{\varepsilon}_k = \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \psi}}{2} \hat{\bf{\epsilon}}_\sigma .     
+        \hat{\varepsilon}_k = a_{\sigma+}\hat{\bf{\epsilon}}_{\sigma+} + a_{\sigma-}\hat{\bf{\epsilon}}_{\sigma-} .     
         \end{equation}
 
     \end{center}
@@ -182,10 +191,14 @@ Dois regimes distintos: \\
 \end{frame}
 
 
-\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
-        Depois que o feixe focalizado é produzido pela objetiva, ele incide no porta amostra, passando por uma interface de vidro e água. Algumas objetivas de alta abertura numérica são de imersão em óleo, o que faz com que haja um efeito de aberração esférica que deve ser levado em conta no modelo.
+
+    	\hspace{1mm}\\\hspace{1mm}\\
+
+
+        Depois que o feixe focalizado é produzido pela objetiva, ele incide no porta amostra, passando por uma interface de vidro e água. 
         %
         \begin{picture}(320,250)
         \put(45,90){\includegraphics[scale=.6]{../aberracao_esf4}}
@@ -195,7 +208,7 @@ Dois regimes distintos: \\
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
         Esse efeito insere uma fase em cada componente de onda plana do campo, de acordo com seu ângulo de incidência, que pode ser obtida através da lei de Snell:
@@ -213,11 +226,14 @@ Dois regimes distintos: \\
 
 \end{frame}
 
-\begin{frame}[fragile]{Introdução ao modelo MDSA.}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
-        Outras aberrações óticas também podem ser incluidas no modelo usado o formalismo de Zernike, que utiliza um conjunto de polinômios que formam uma base para descrever as fases de cada aberração ótica de um feixe. Os polinômios de Zernike formam uma base ortonormal no círculo unitário, o que nos permite descrever qualquer aberração ótica do sistema.\\
-        Nos experimentos realizados pelo grupo, a aberração de interesse é o astigmatismo.
+
+    	\hspace{1mm}\\\hspace{1mm}\\
+        Outras aberrações óticas também podem ser incluidas no modelo usado o formalismo de Zernike, que utiliza um conjunto de polinômios que formam uma base para descrever as fases de cada aberração ótica de um feixe. %Os polinômios de Zernike formam uma base ortonormal no círculo unitário, o que nos permite descrever qualquer aberração ótica do sistema.\\
+        
+        %Nos experimentos realizados pelo grupo, a aberração de interesse é o astigmatismo.
 
         \begin{picture}(320,250)
         \put(34,132){\includegraphics[scale=.4]{../feixe_astig}}
@@ -226,7 +242,7 @@ Dois regimes distintos: \\
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
         A fase associada ao astigmatismo é:
@@ -234,15 +250,17 @@ Dois regimes distintos: \\
         \begin{equation}
         \Phi_{astigmatismo}(\theta,\phi) = 2\pi A_{ast}\left( \frac{\sin\theta}{\sin\theta_0} \right)^2\cos2(\phi - \varphi_a),
         \end{equation}
-        onde o círculo unitário foi definido como o círculo formado pela entrada da objetiva, que tem raio $R_p=f\sin\theta_0$ (pela condição do seno de Abbe).
+        onde o círculo unitário foi definido como o círculo formado pela entrada da objetiva, que tem raio $R_p=f\sin\theta_0$.
 
-        O parâmetro $A_{ast}$ é o chamado parâmetro de astigmatismo. Um dos objetivos do trabalho é a determinação desse parâmetro por meio de ajustes do modelo.
+        O parâmetro $A_{ast}$ é o chamado parâmetro de astigmatismo. 
+
+        Um dos objetivos do trabalho é a determinação desse parâmetro por meio de ajustes do modelo.
 
     \end{center}
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]{Introdução ao modelo MDSA+}
 
     \begin{center}
         Finalmente, expressamos a força em termos do fator de eficiência $\mathbf{Q}$:
@@ -252,8 +270,12 @@ Dois regimes distintos: \\
         \end{equation}
         
         onde $n_1$ é o índice de refração do meio em que a microesfera está inserida e $P$ é a potência do laser.
+        \begin{itemize}
 
-        O fator de eficiência na direção $z$ será usado para calcular a posição de equilíbrio axial nas simulações. Uma das grandezas medidas no experimento são as constante eláticas $\kappa_\rho$ e $\kappa_\phi$, definidas como:
+        	\item Fator de eficiência na direção $z$ ($Q_z$) $\rightarrow$ calcular a posição de equilíbrio axial nas simulações. 
+
+        	\item Grandezas medidas experimentalmente $\rightarrow$ constante eláticas $\kappa_\rho$ e $\kappa_\phi$, definidas como:
+        \end{itemize}
 
         \begin{equation}
         \kappa_\rho=-\frac{n_1 P}{c}\frac{\partial Q_\rho}{\partial \rho}\Big{|}_{\rho=0, \thinspace z=z_{eq}} \qquad, \qquad \kappa_\phi=\frac{n_1 P}{c}\frac{\partial Q_\phi}{\partial \rho}\Big{|}_{\rho=0, \thinspace z=z_{eq}}.
@@ -265,7 +287,7 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Simulação do experimento de transferência de momento angular}
+\section{Experimento de transferência de momento angular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -352,6 +374,8 @@ Dois regimes distintos: \\
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Simulação do experimento de transferência de momento angular}
 
 \begin{frame}[fragile]{Simulação do experimento}
 
