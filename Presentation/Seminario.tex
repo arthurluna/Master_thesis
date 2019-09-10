@@ -459,7 +459,7 @@ Dois regimes distintos: \\
 
 \section{Resultados da simulação do experimento}
 
-\begin{frame}[fragile]{Resultados da simulação do experimento}
+\begin{frame}[fragile]{Resultados da simulação do experimento} %24
 
     \begin{center}
 
@@ -473,11 +473,11 @@ Dois regimes distintos: \\
 
 \end{frame}
 
-\begin{frame}[fragile]{Resultados da simulação do experimento}
+\begin{frame}[fragile]{Resultados da simulação do experimento} %25
 
     \begin{center}
 
-        A seguir, dois exemplos de conjuntos de pontos teóricos com paprâmetros de astigmatismo diferentes ($A_{ast}=0$ na esquerda e $A_{ast}=0.36$ na direita):
+        A seguir, dois exemplos de conjuntos de pontos teóricos com parâmetros de astigmatismo diferentes ($A_{ast}=0$ na esquerda e $A_{ast}=0.36$ na direita):
 
         \begin{picture}(310,250)
         \put(-10,100){\includegraphics[scale=.38]{../Kphi_rho_Aast_dupla}}
@@ -488,7 +488,7 @@ Dois regimes distintos: \\
 \end{frame}
 
 
-\begin{frame}[fragile]{Resultados da simulação do experimento}
+\begin{frame}[fragile]{Resultados da simulação do experimento} %26
 
     \begin{center}
 
@@ -508,14 +508,40 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera} %27
 
   \begin{center}
-      O que chamamos de parâmetro de absorção da microesfera é a parte imaginára do seu índice de refração. 
+  \begin{itemize}
+      \item Parâmetro de absorção da microesfera: parte imaginára do seu índice de refração. 
 
-      O poliestireno é um material amplamente usado em experimentos de pinças óticas, e seu parâmetro de absorção é fornecido na literatura como $Im(n_{poli})=0.002$.
+      \item O poliestireno é um material amplamente usado em experimentos de pinças óticas. Seu parâmetro de absorção de acordo com a literatura é $Im(n_{poli})=2\times10^{-3}$.
 
-      Simulações com esferas grandes usadas e aprisionadas em laboratório não apresentaram qualquer posição de equilíbrio axial para esse valor quando o feixe incidente possui astigmatismo. Essa foi a motivação para o estudo da caracterização dessa grandeza, juntamente com o fato de haver uma forte dependência do fator de eficiência na direção $z$ com ela.
+      \item Simulações com esferas grandes que foram aprisionadas em laboratório não apresentaram qualquer posição de equilíbrio axial (na presença de astigmatismo). 
+
+      \item Há uma forte dependência do fator de eficiência na direção $z$ com esse parâmetro.
+
+      \item Essa foi a motivação para o estudo e caracterização dessa grandeza.
+
+  \end{itemize}
+  \end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera} %28
+
+  \begin{center}
+  \begin{itemize}
+      \item Podemos buscar uma região dos valores complexos do índice de refração $n$ da esfera em que seja possível seu aprisionamento. 
+
+      \item Fazemos esse cálculo com esferas menores por ser mais rápido e o resultado equivalente. 
+
+      \item Dessa forma, os valores de $n$ tais que a posição de equilíbrio esteja ao menos 3 raios de de distância do plano focal estão representados pela parte preenchida do gráfico:
+  \end{itemize}
+      \begin{picture}(310,250)
+      \put(70,120){\includegraphics[scale=.23]{../Regiao_de_pincamentoII}}
+      \end{picture}
 
   \end{center}
 
@@ -523,11 +549,13 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Resultados da simulação do experimento}
+\begin{frame}[fragile]{Resultados da simulação do experimento} %29
 
     \begin{center}
 
-        Os maiores valores de $Im(n_{poli})$ que apresentaram uma posição próxima ao eixo $z=0$ foram para $Im(n_{poli})=0.0004$, o que poderia indicar um equilíbrio com a força peso. O comportamento do fator de eficiência $Q_z$ em função de $z$ para vários raios está apresentado no gráfico a seguir:
+        Os maiores valores de $Im(n_{poli})$ que apresentaram uma posição próxima ao plano $z=0$ (possibilitando contrabalancear o peso) foram para $Im(n_{poli})=0.0004$.
+
+        O comportamento do fator de eficiência $Q_z$ em função de $z$ para vários raios está apresentado no gráfico a seguir:
 
         \begin{picture}(310,250)
         \put(-15,100){\includegraphics[scale=.38]{../Qz_z_1e-34II}}
@@ -539,22 +567,7 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
-
-  \begin{center}
-      Para voltar a observar posições de equilíbrio, podemos levar o parâmetro de astigmatismo a 0 e procurar parâmetros de abosorção que apresentem uma posição de equilíbrio próxima ao foco. Para fazer isso, o cálculo numérico para esferas menores é mais rápido, e o resultado é equivalente. Dessa forma, os valores de $n_{poli}$ tais que a posição de equilíbrio esteja ao menos 3 raios de de distância do plano focal estão representados pela parte preenchida do gráfico:
-
-      \begin{picture}(310,250)
-      \put(70,115){\includegraphics[scale=.23]{../Regiao_de_pincamentoII}}
-      \end{picture}
-
-  \end{center}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera} %30
 
   \begin{center}
       Podemos propor um experimento para tentar caracterizar esse parâmetro. Como a força em $z$ tem uma dependência forte com $Im(n_{poli})$, podemos testar a condição de pinçamento observando as flutuações de energia potencial da pinça e calculando o tamanho da berreira potencial em $z$ que a esfera deve ultrapassar para sair do aprisionamento.
@@ -578,7 +591,7 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera} %31
 
   \begin{center}
       A seguir, ilustramos as grandezas discutidas anteriormente. Em laranja, o fator de eficiência $Q_z(z)$, e em azul o potencial $V(z)$:
@@ -593,7 +606,7 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera} %32
 
   \begin{center}
       Fialmente, calculamos o tamanho da barreira potencial $\Delta$ para vários valores de $Im(n_{poli})$:
@@ -608,7 +621,7 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera}
+\begin{frame}[fragile]{Caracterização do parâmetro de absorção da microesfera} %33
 
   \begin{center}
 
@@ -645,14 +658,17 @@ Dois regimes distintos: \\
 
 \section{Conclusão}
 
-\begin{frame}[fragile]{Conclusão}
+\begin{frame}[fragile]{Conclusão} %34
 
   \begin{center}
 
       \begin{itemize}
 
-        \item bla
+        \item Desenvolvimento de um método para caracterizar o parâmetro de astigmatismo do sistema. Microesferas da ordem do comprimento de onda.
 
+        \item Proposição de um experimento para determinar um parâmetro que apresenta certa dificuldade de ser medido.
+
+        \item Desenvolvimento de um código otimizado para cálculo de forças óticas. Funciona bem para microesferas grandes, que precisam de muito poder computacional para que os cálculos sejam realizados.
 
       \end{itemize}
  
