@@ -148,7 +148,11 @@ Dois regimes distintos: \\
         \label{RichWolf}
         \end{equation}
 
-        Termo $\sqrt{\sin\theta_k}$ vem da condição de seno de Abbe ($f\sin\theta_k=\rho$):
+        Termo $\sqrt{\sin\theta_k}$ vem da condição de seno de Abbe :
+        %
+        \begin{picture}(340,250)
+        \put(80,152){\includegraphics[scale=1.]{Abbe}}
+        \end{picture}
 
     \end{center}
 
@@ -291,7 +295,7 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Experimento de transferência de momento angular}
+\begin{frame}[fragile]{Experimento de transferência de momento angular} %15
     \begin{center}
         Para entender a simulação, é necessário discutir o experimento que mede o torque ótico na microesfera. Começamos pela geração do feixe paraxial na mesa ótica, ilustrada a seguir:
 
@@ -304,95 +308,119 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Experimento de transferência de momento angular}
+\begin{frame}[fragile]{Experimento de transferência de momento angular} %16
     \begin{center}
-        Dessa forma, o feixe entra no microscópio com polarização definida e cintura bem determinada, parâmetros estes que são de grande importância para simulação.
+        \begin{itemize}
+            \item Feixe entra no microscópio com polarização bem definida (dado o ângulo $\psi$ da placa de quarto de onda).
 
-        O feixe, então, é refletido por um espelho dicróico, passa pela objetiva e incide no porta amostra, onde há a solução de microesfera.
+            \item A cintura do feixe que entra na objetiva é medida.
 
-        Através do espelho dicróico podemos tomar as imagens da amostra com uma câmera (CMOS).
+            \item Parâmetros experimentais importantes para a simulação.
 
-    \end{center}
-\end{frame}
+            \item A direção $\hat{x}$ é definida a partir da direção de polarização linear.
 
-
-\begin{frame}[fragile]{Experimento de transferência de momento angular}
-    \begin{center}
-
-        \begin{picture}(310,250)
-        \put(10,40){\includegraphics[scale=.35]{../fig/microscopio}}
-        \end{picture}
+        \end{itemize}
 
         \begin{picture}(320,250)
-        \put(185,350){\includegraphics[scale=.33]{../fig/QWP}}
+        \put(95,110){\includegraphics[scale=.33]{../fig/QWP}}
         \end{picture}
 
     \end{center}
 \end{frame}
 
-\begin{frame}[fragile]{Experimento de transferência de momento angular}
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular} %17
     \begin{center}
-        O procedimento do experimento começa encostando a microesfera na lamínula. Em seguida, abaixa-se o estágio popr uma distância bem determinada e o deslocamos na direção de $\hat{x}$ com velocidades bem definidas. A força de arrasto do líquido (força de Stokes) é proporcional à velocidade de deslocamento do fluido, e desloca a microesfera na mesma direção e sentido. 
+        \begin{itemize}
+            \item Feixe é refletido por um espelho dicróico, passa pela objetiva e incide no porta amostra, onde há a solução de microesfera.
 
-        Assumimos que as forças que são realizadas na esfera pelo feixe ao ser deslocada do eixo em que $\rho=0$ são harmônicas. 
-
-    \end{center}
-\end{frame}
-
-\begin{frame}
-
-    \begin{center}
-        Teremos, então, no equilíbrio de forças, $\vec{F_\phi}+\vec{F_\rho}=-\vec{F_s}$. Observando a projeção na direção $y$, onde $\vec{F_s}\cdot\hat{y}=0$ e $F_\rho\sin\phi = F_\phi\cos\phi$:
-        %
-        \begin{equation}
-        \frac{F_\phi}{F_\rho} = \tan\phi \approx \phi,
-        \end{equation}
-        
-        onde $\phi$ é a coordenada angular da popsição de equilíbrio. Como as forças óticas são lineares, temos:
-        %
-        \begin{equation}
-        \frac{\kappa_\phi}{\kappa_\rho} \approx \phi.
-        \end{equation}
-%
-    \end{center}
-
-\end{frame}
-
-\begin{frame}[fragile]{Experimento de transferência de momento angular}
-    \begin{center}
-        É importante destacar que o ângulo $\phi$ não varia com a velocidade. Podemos ver abaixo o diagrama de forças da microesfera deslocada do eixo, e a reta formada pelas posições de equilíbrio de várias velocidades do estágio diferentes.
+            \item Através do espelho dicróico podemos tomar as imagens da amostra com uma câmera (CMOS).
+        \end{itemize}
 
         \begin{picture}(310,250)
-        \put(-22,130){\includegraphics[scale=.2]{../fig/pos_eq_phi}}
+        \put(85,80){\includegraphics[scale=.285]{../fig/microscopio}}
         \end{picture}
 
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular} %18
+    \begin{center}
+        Procedimento do experimento de torque ótico:
+            \begin{itemize}
+                \item Encostar a microesfera na lamínula.
+
+                \item Abaixar o estágio em uma distância bem determinada.
+
+                \item Deslocar a bandeja do microscópio com várias velocidades diferentes.
+
+            \end{itemize}
+
+        Haverá uma força de arrasto do líquido (força de Stokes) na microesfera, proporcional à velocidade de deslocamento da bandeja. 
+
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular} %19
+
+    \begin{center}
+        Teremos, então, no equilíbrio de forças, $\vec{F_\phi}+\vec{F_\rho}=-\vec{F_s}$. 
+
+        Assumimos que as forças óticas são harmônicas próximo à posição de equilíbrio.
+
+        Observando a projeção na direção $y$, onde $\vec{F_s}\cdot\hat{y}=0$ e $F_\rho\sin\phi = F_\phi\cos\phi$:
+        %
+        \begin{equation}
+        \frac{F_\phi}{F_\rho} = \frac{\kappa_\phi}{\kappa_\rho} = \tan\phi \approx \phi,
+        \end{equation}
+        %
+        onde $\phi$ é a coordenada angular da popsição de equilíbrio.
+
         \begin{picture}(320,250)
-        \put(145,385){\includegraphics[scale=.16]{../fig/forcas_estagio}}
+        \put(45,120){\includegraphics[scale=.2]{../fig/forcas_estagio}}
         \end{picture}
+        %
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]{Experimento de transferência de momento angular} %20
+    \begin{center}
+        \hspace{1mm}\\\hspace{1mm}\\
+
+        É importante destacar que o ângulo $\phi$ não varia com a velocidade. Podemos ver abaixo a reta formada pelas posições de equilíbrio de várias velocidades do estágio diferentes.
+
+        \begin{picture}(310,250)
+        \put(40,110){\includegraphics[scale=.28]{../fig/pos_eq_phi}}
+        \end{picture}
+
 
     \end{center}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Simulação do experimento de transferência de momento angular}
+\section{Simulação do experimento de transferência de momento angular} %21
 
 \begin{frame}[fragile]{Simulação do experimento}
 
     \begin{center}
 
-        Para iniciar a simulação, calcula-se a posição do foco do feixe em relação à interface, quando a microesfera está encostada na lamínula e em uma posição de equilíbrio estável, com ângulo $\psi$ da placa de quarto de onda (QWP) $\psi=0$ (polarização linear). Esta posição será chamada de $L_0$.
+        Para iniciar a simulação, calcula-se a posição do foco do feixe em relação à interface ($L_0$), quando a microesfera está encostada na lamínula e em uma posição de equilíbrio estável. 
 
-        A seguir, desloca-se o estágio do microscópio na direção $z$ por uma distância de $\delta z = 3 \mu m$. O feixe, portanto, estará a uma distância $L=L_0 + 3 \mu m \frac{n_1}{n}$ da interface vidro-água.
+        Move-se, então, o foco na direção $z$ por uma distância de $\delta z = 3 \frac{n_1}{n}\mu m$. O feixe, portanto, estará a uma distância $L=L_0 + 3 \mu m \frac{n_1}{n}$ da interface vidro-água.
 
     \end{center}
 
 \end{frame}
 
-\begin{frame}[fragile]{Simulação do experimento}
+\begin{frame}[fragile]{Simulação do experimento} %22
 
     \begin{center}
-        Uma vez que a posição do foco esteja determinada, calculamos a posição de equilíbrio para varias polarizações do feixe incidente diferentes, ou seja, variando $\psi$.
+        \hspace{1mm}\\\hspace{1mm}\\
+
+        Uma vez determinada a posição do foco, calculamos a posição de equilíbrio para varias polarizações do feixe incidente diferentes.
 
         \begin{picture}(310,250)
         \put(-20,100){\includegraphics[scale=.35]{../Qz_tipico}}
@@ -408,13 +436,19 @@ Dois regimes distintos: \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Resultados da simulação do experimento}
+\begin{frame}[fragile]{Simulação do experimento} %23
 
     \begin{center}
-        Usando as posições de equilíbrio, calculamos as derivadas do fator de eficiência nas direções $\rho$ e $\phi$, e temos assim o ângulo da posição de equilíbrio.
+        \begin{itemize}
 
-        Variando o parâmetro de astigmatismo, usamos uma função erro para determinar qual conjunto de pontos numéricos tem maior verossimilhança com os dados experimentais. A função erro é definida como:
+        \item Usando as posições de equilíbrio, calculamos $\kappa_\phi$ e $\kappa_\rho$, e temos assim o ângulo da posição de equilíbrio.
 
+        \item Simulamos várias vezes o experimento com parâmetros de astigmatismo diferentes.
+
+        \item Usamos uma função erro para determinar qual simulação tem maior verossimilhança com o experimento. 
+
+        \end{itemize}
+        A função erro é definida como:
         \begin{equation}
         E(A_{ast})=\sum \limits_i \big{[} \phi_i^{exp} - \phi_i^{sim}(A_{ast}) \big{]}^2.
         \end{equation}
@@ -423,19 +457,7 @@ Dois regimes distintos: \\
 
 \end{frame}
 
-\begin{frame}[fragile]{Resultados da simulação do experimento}
-
-    \begin{center}
-
-        A seguir, dois exemplos de conjuntos de pontos teóricos com paprâmetros de astigmatismo diferentes ($A_{ast}=0$ na esquerda e $A_{ast}=0.36$ na direita):
-
-        \begin{picture}(310,250)
-        \put(-10,100){\includegraphics[scale=.38]{../Kphi_rho_Aast_dupla}}
-        \end{picture}
-
-    \end{center}
-
-\end{frame}
+\section{Resultados da simulação do experimento}
 
 \begin{frame}[fragile]{Resultados da simulação do experimento}
 
@@ -455,7 +477,22 @@ Dois regimes distintos: \\
 
     \begin{center}
 
-        A seguir, mostramos o gráfico da posição angular $\phi$ em função do ângulo da placa de quarto de onda $\psi$ para o valor de $A_{ast}=0.24$:
+        A seguir, dois exemplos de conjuntos de pontos teóricos com paprâmetros de astigmatismo diferentes ($A_{ast}=0$ na esquerda e $A_{ast}=0.36$ na direita):
+
+        \begin{picture}(310,250)
+        \put(-10,100){\includegraphics[scale=.38]{../Kphi_rho_Aast_dupla}}
+        \end{picture}
+
+    \end{center}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Resultados da simulação do experimento}
+
+    \begin{center}
+
+        Por último, mostramos o gráfico da posição angular $\phi$ em função do ângulo da placa de quarto de onda $\psi$ para o valor ajustado de $A_{ast}=0.24$:
 
         \begin{picture}(310,250)
         \put(70,100){\includegraphics[scale=.38]{../Kphi_rho_Aast024III}}
