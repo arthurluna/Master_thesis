@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Diniz}
-Kain\~{a}~Gon\c{c}alves Diniz.
-\newblock Momento angular de spin em pin\c{c}as \'{O}ticas.
-\newblock Master's thesis, Universidade Federal do Rio de Janeiro, 2018.
-
 \bibitem{Ashkin1986}
 A.~Ashkin, J.~M. Dziedzic, J.~E. Bjorkholm, and Steven Chu.
 \newblock Observation of a single-beam gradient force optical trap for
@@ -70,6 +65,12 @@ Rfaqat Ali, Felipe~A. Pinheiro, Rafael~S. Dutra, Felipe S.~S. Rosa, and Paulo
 \newblock Enantioselective manipulation of single chiral nanoparticles using
   optical tweezers.
 \newblock {\em Nanoscale}, 12(8):5031--5037, 2020.
+
+\bibitem{Diniz2019}
+K.~Diniz, R.~S. Dutra, L.~B. Pires, N.~B. Viana, H.~M. Nussenzveig, and
+  P.~A.~Maia Neto.
+\newblock Negative optical torque on a microsphere in optical tweezers.
+\newblock {\em Optics Express}, 27(5):5905, feb 2019.
 
 \bibitem{Mazolli}
 A.~Mazolli.
@@ -193,16 +194,15 @@ Andrew Zangwill.
 \newblock Cambridge University Pr., 2013.
 \newblock 558-560.
 
-\bibitem{Diniz2019}
-K.~Diniz, R.~S. Dutra, L.~B. Pires, N.~B. Viana, H.~M. Nussenzveig, and
-  P.~A.~Maia Neto.
-\newblock Negative optical torque on a microsphere in optical tweezers.
-\newblock {\em Optics Express}, 27(5):5905, feb 2019.
-
 \bibitem{Born2002}
 Max Born, Emil Wolf, and A.~B. Bhatia.
 \newblock {\em Principles of Optics}.
 \newblock Cambridge University Pr., 2002.
+
+\bibitem{Diniz}
+Kain\~{a}~Gon\c{c}alves Diniz.
+\newblock Momento angular de spin em pin\c{c}as \'{O}ticas.
+\newblock Master's thesis, Universidade Federal do Rio de Janeiro, 2018.
 
 \bibitem{Ma2003}
 Xiaoyan Ma, Jun~Q Lu, R~Scott Brock, Kenneth~M Jacobs, Ping Yang, and Xin-Hua

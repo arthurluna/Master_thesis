@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.26)  26 AUG 2022 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.26)  26 AUG 2022 13:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,7 +922,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10
 
 ]
-Underfull \vbox (badness 1810) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -972,9 +972,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ] (./capitulo1.tex
 Cap\'{\i }tulo 1.
 
-LaTeX Warning: Citation `Diniz 2019' on page 1 undefined on input line 8.
-
-
 Underfull \vbox (badness 2245) has occurred while \output is active []
 
 
@@ -1019,12 +1016,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4
 
 ]
-<geom_foco_coincIII.png, id=340, 207.25363pt x 300.42818pt>
+<geom_foco_coincIII.png, id=337, 207.25363pt x 300.42818pt>
 File: geom_foco_coincIII.png Graphic file (type png)
 <use geom_foco_coincIII.png>
 Package pdftex.def Info: geom_foco_coincIII.png  used on input line 20.
 (pdftex.def)             Requested size: 165.80312pt x 240.34286pt.
-<geom_foco_axialIII.png, id=343, 522.61363pt x 405.54819pt>
+<geom_foco_axialIII.png, id=340, 522.61363pt x 405.54819pt>
 File: geom_foco_axialIII.png Graphic file (type png)
 <use geom_foco_axialIII.png>
 Package pdftex.def Info: geom_foco_axialIII.png  used on input line 32.
@@ -1039,7 +1036,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5 <./geom_foco_coincIII.png>]
-<geom_lateralIV.png, id=350, 363.14182pt x 341.64pt>
+<geom_lateralIV.png, id=347, 363.14182pt x 341.64pt>
 File: geom_lateralIV.png Graphic file (type png)
 <use geom_lateralIV.png>
 Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
@@ -1048,7 +1045,7 @@ Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<reflex_absorII.png, id=352, 962.09438pt x 586.44093pt>
+<reflex_absorII.png, id=349, 962.09438pt x 586.44093pt>
 File: reflex_absorII.png Graphic file (type png)
 <use reflex_absorII.png>
 Package pdftex.def Info: reflex_absorII.png  used on input line 53.
@@ -1181,7 +1178,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
-<aberracao_esf4.png, id=489, 355.37727pt x 261.60545pt>
+<aberracao_esf4.png, id=486, 355.37727pt x 261.60545pt>
 File: aberracao_esf4.png Graphic file (type png)
 <use aberracao_esf4.png>
 Package pdftex.def Info: aberracao_esf4.png  used on input line 307.
@@ -1219,7 +1216,7 @@ Overfull \hbox (25.95111pt too wide) detected at line 388
 m/m/it/12 ^^Y [] ;
  []
 
-<feixe_astig.png, id=519, 671.50874pt x 311.66437pt>
+<feixe_astig.png, id=515, 671.50874pt x 311.66437pt>
 File: feixe_astig.png Graphic file (type png)
 <use feixe_astig.png>
 Package pdftex.def Info: feixe_astig.png  used on input line 397.
@@ -1309,7 +1306,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26]
-<so_fig.png, id=582, 475.4291pt x 275.34273pt>
+<so_fig.png, id=579, 475.4291pt x 275.34273pt>
 File: so_fig.png Graphic file (type png)
 <use so_fig.png>
 Package pdftex.def Info: so_fig.png  used on input line 504.
@@ -1324,7 +1321,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [27 <./so_fig.png>]
-<Kphi_Artigo_Kaina.png, id=593, 462.22687pt x 347.04657pt>
+<Kphi_Artigo_Kaina.png, id=590, 462.22687pt x 347.04657pt>
 File: Kphi_Artigo_Kaina.png Graphic file (type png)
 <use Kphi_Artigo_Kaina.png>
 Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 529.
@@ -1366,7 +1363,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [30
 
 ]
-<fig/setup.jpg, id=610, 1129.21875pt x 760.8425pt>
+<fig/setup.jpg, id=607, 1129.21875pt x 760.8425pt>
 File: fig/setup.jpg Graphic file (type jpg)
 <use fig/setup.jpg>
 Package pdftex.def Info: fig/setup.jpg  used on input line 27.
@@ -1381,7 +1378,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 34.
 
 
 Missing character: There is no º in font cmr12!
-<fig/microscopio.jpg, id=611, 495.35063pt x 605.26125pt>
+<fig/microscopio.jpg, id=608, 495.35063pt x 605.26125pt>
 File: fig/microscopio.jpg Graphic file (type jpg)
 <use fig/microscopio.jpg>
 Package pdftex.def Info: fig/microscopio.jpg  used on input line 38.
@@ -1395,7 +1392,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31 <./fig/setup.jpg>]
-<fig/QWP.jpg, id=618, 377.41pt x 375.4025pt>
+<fig/QWP.jpg, id=615, 377.41pt x 375.4025pt>
 File: fig/QWP.jpg Graphic file (type jpg)
 <use fig/QWP.jpg>
 Package pdftex.def Info: fig/QWP.jpg  used on input line 57.
@@ -1434,7 +1431,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34]
-<fig/forcas_estagio.jpg, id=638, 1160.08406pt x 622.57594pt>
+<fig/forcas_estagio.jpg, id=635, 1160.08406pt x 622.57594pt>
 File: fig/forcas_estagio.jpg Graphic file (type jpg)
 <use fig/forcas_estagio.jpg>
 Package pdftex.def Info: fig/forcas_estagio.jpg  used on input line 88.
@@ -1457,18 +1454,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [35 <./fig/forcas_estagio.jpg>]
-<fig/pos_eq_phi.jpg, id=645, 816.04875pt x 490.83376pt>
+<fig/pos_eq_phi.jpg, id=642, 816.04875pt x 490.83376pt>
 File: fig/pos_eq_phi.jpg Graphic file (type jpg)
 <use fig/pos_eq_phi.jpg>
 Package pdftex.def Info: fig/pos_eq_phi.jpg  used on input line 110.
 (pdftex.def)             Requested size: 408.02338pt x 245.41628pt.
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 129
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 128
 .
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 129
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 128
 .
 
 Missing character: There is no º in font cmr12!
@@ -1481,6 +1478,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1490,10 +1490,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37 <./fig/pos_eq_phi.jpg>]
-<zeq_psi_ast25II.png, id=664, 462.2891pt x 347.01546pt>
+<zeq_psi_ast25II.png, id=655, 462.2891pt x 347.01546pt>
 File: zeq_psi_ast25II.png Graphic file (type png)
 <use zeq_psi_ast25II.png>
-Package pdftex.def Info: zeq_psi_ast25II.png  used on input line 159.
+Package pdftex.def Info: zeq_psi_ast25II.png  used on input line 158.
 (pdftex.def)             Requested size: 323.60016pt x 242.90915pt.
 
 
@@ -1514,7 +1514,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [39 <./zeq_psi_ast25II.png>]
-Overfull \hbox (11.4217pt too wide) in paragraph at lines 180--180
+Overfull \hbox (11.4217pt too wide) in paragraph at lines 179--179
 []\OT1/cmr/bx/n/17.28 Caracteriza^^Xc~ao do par^ametro de ab-sor^^Xc~ao da amos
 -
  []
@@ -1528,10 +1528,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [40]
-<Qz_tipico.png, id=682, 462.2891pt x 347.01546pt>
+<Qz_tipico.png, id=673, 462.2891pt x 347.01546pt>
 File: Qz_tipico.png Graphic file (type png)
 <use Qz_tipico.png>
-Package pdftex.def Info: Qz_tipico.png  used on input line 192.
+Package pdftex.def Info: Qz_tipico.png  used on input line 191.
 (pdftex.def)             Requested size: 300.48434pt x 225.55737pt.
 
 
@@ -1550,10 +1550,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41]
-<Regiao_de_pincamentoII.png, id=691, 722.7pt x 578.16pt>
+<Regiao_de_pincamentoII.png, id=682, 722.7pt x 578.16pt>
 File: Regiao_de_pincamentoII.png Graphic file (type png)
 <use Regiao_de_pincamentoII.png>
-Package pdftex.def Info: Regiao_de_pincamentoII.png  used on input line 216.
+Package pdftex.def Info: Regiao_de_pincamentoII.png  used on input line 215.
 (pdftex.def)             Requested size: 289.07487pt x 231.2599pt.
 
 
@@ -1601,7 +1601,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [44
 
 ]
-<Kphi_rho_Aast_dupla.png, id=711, 885.75545pt x 356.57182pt>
+<Kphi_rho_Aast_dupla.png, id=702, 885.75545pt x 356.57182pt>
 File: Kphi_rho_Aast_dupla.png Graphic file (type png)
 <use Kphi_rho_Aast_dupla.png>
 Package pdftex.def Info: Kphi_rho_Aast_dupla.png  used on input line 23.
@@ -1611,7 +1611,7 @@ Overfull \hbox (40.77556pt too wide) in paragraph at lines 23--24
  [] 
  []
 
-<erro_astigII.png, id=713, 462.2891pt x 347.01546pt>
+<erro_astigII.png, id=704, 462.2891pt x 347.01546pt>
 File: erro_astigII.png Graphic file (type png)
 <use erro_astigII.png>
 Package pdftex.def Info: erro_astigII.png  used on input line 33.
@@ -1673,7 +1673,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 39.
 
 
 Missing character: There is no º in font cmr12!
-<Kphi_rho_Aast024III.png, id=716, 457.51091pt x 360.15546pt>
+<Kphi_rho_Aast024III.png, id=707, 457.51091pt x 360.15546pt>
 File: Kphi_rho_Aast024III.png Graphic file (type png)
 <use Kphi_rho_Aast024III.png>
 Package pdftex.def Info: Kphi_rho_Aast024III.png  used on input line 43.
@@ -1721,7 +1721,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [46 <./erro_astigII.png>]
-<Qz_z_1e-3_79.png, id=733, 900.09pt x 347.01546pt>
+<Qz_z_1e-3_79.png, id=724, 900.09pt x 347.01546pt>
 File: Qz_z_1e-3_79.png Graphic file (type png)
 <use Qz_z_1e-3_79.png>
 Package pdftex.def Info: Qz_z_1e-3_79.png  used on input line 61.
@@ -1739,7 +1739,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [47 <./Kphi_rho_Aast024III.png>]
-<Qz_z_1e-34II.png, id=743, 882.76909pt x 348.21pt>
+<Qz_z_1e-34II.png, id=734, 882.76909pt x 348.21pt>
 File: Qz_z_1e-34II.png Graphic file (type png)
 <use Qz_z_1e-34II.png>
 Package pdftex.def Info: Qz_z_1e-34II.png  used on input line 73.
@@ -1765,7 +1765,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48 <./Qz_z_1e-3_79.png>]
-<potencial_qz.png, id=750, 464.67818pt x 347.01546pt>
+<potencial_qz.png, id=741, 464.67818pt x 347.01546pt>
 File: potencial_qz.png Graphic file (type png)
 <use potencial_qz.png>
 Package pdftex.def Info: potencial_qz.png  used on input line 89.
@@ -1774,7 +1774,7 @@ Package pdftex.def Info: potencial_qz.png  used on input line 89.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pot_EGII.png, id=753, 462.2891pt x 347.01546pt>
+<Pot_EGII.png, id=744, 462.2891pt x 347.01546pt>
 File: Pot_EGII.png Graphic file (type png)
 <use Pot_EGII.png>
 Package pdftex.def Info: Pot_EGII.png  used on input line 105.
@@ -1933,24 +1933,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [61] (./tese.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: EAC226F6916DE256B84DD638316B4E68;5308.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: B1D6F841662C4EEE70E756ED56401FFD;3247.
+(rerunfilecheck)             Checksum: 33C215DC47A7E867EB90CCAB94C64B58;3151.
  ) 
 Here is how much of TeX's memory you used:
- 19145 strings out of 478238
- 302707 string characters out of 5850456
- 710369 words of memory out of 5000000
- 36770 multiletter control sequences out of 15000+600000
+ 19144 strings out of 478238
+ 302694 string characters out of 5850456
+ 710285 words of memory out of 5000000
+ 36769 multiletter control sequences out of 15000+600000
  480901 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,19n,106p,3243b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,19n,106p,3243b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1965,10 +1962,10 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf
 e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
 fb>
-Output written on tese.pdf (75 pages, 1797349 bytes).
+Output written on tese.pdf (75 pages, 1796691 bytes).
 PDF statistics:
- 1017 PDF objects out of 1200 (max. 8388607)
- 855 compressed objects within 9 object streams
+ 1007 PDF objects out of 1200 (max. 8388607)
+ 848 compressed objects within 9 object streams
  213 named destinations out of 1000 (max. 500000)
  297 words of extra memory for PDF output out of 10000 (max. 10000000)
 
