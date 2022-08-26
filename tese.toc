@@ -1,6 +1,6 @@
 \babel@toc {brazilian}{}\relax 
-\contentsline {chapter}{Sum\'ario}{viii}{section*.2}%
-\contentsline {chapter}{Lista de Figuras}{x}{section*.4}%
+\contentsline {chapter}{Sum\'ario}{x}{section*.3}%
+\contentsline {chapter}{Lista de Figuras}{xii}{section*.5}%
 \contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introdu\c c\~ao}{1}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Teoria da Pin\c ca \'Otica}{4}{chapter.2}%
@@ -15,9 +15,9 @@
 \contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{26}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Caracteriza\c c\~ao de par\^ametros f\IeC {\'\i }sicos}{30}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Caracteriza\c c\~ao do astigmatismo por meio da an\'alise do experimento de transfer\^encia de momento angular}{30}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{40}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da amostra}{41}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Resultados}{44}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Transfer\^encia de momento angular e caracteriza\c c\~ao do astigmatismo}{44}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Caracteriza\c c\~ao do par\^ametro de absor\c c\~ao da microesfera}{47}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{52}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{59}{appendix.A}%
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{53}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Fator de efici\^encia e coeficientes de multipolo}{60}{appendix.A}%

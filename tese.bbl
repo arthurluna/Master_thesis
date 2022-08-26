@@ -72,6 +72,11 @@ K.~Diniz, R.~S. Dutra, L.~B. Pires, N.~B. Viana, H.~M. Nussenzveig, and
 \newblock Negative optical torque on a microsphere in optical tweezers.
 \newblock {\em Optics Express}, 27(5):5905, feb 2019.
 
+\bibitem{Gouesbet2011}
+G{\'{e}}rard Gouesbet and G{\'{e}}rard Gr{\'{e}}han.
+\newblock {\em Generalized Lorenz-Mie Theories}.
+\newblock Springer Berlin Heidelberg, 2011.
+
 \bibitem{Mazolli}
 A.~Mazolli.
 \newblock {\em Teoria das Pin\c{c}as {\'{O}}ticas}.
@@ -148,11 +153,6 @@ Timo~A Nieminen, Vincent L~Y Loke, Alexander~B Stilgoe, Gregor Kn\"{o}ner,
 \newblock {\em Journal of Optics A: Pure and Applied Optics}, 9(8):S196--S203,
   jul 2007.
 
-\bibitem{Gouesbet2011}
-G{\'{e}}rard Gouesbet and G{\'{e}}rard Gr{\'{e}}han.
-\newblock {\em Generalized Lorenz-Mie Theories}.
-\newblock Springer Berlin Heidelberg, 2011.
-
 \bibitem{Davis1979}
 L.~W. Davis.
 \newblock Theory of electromagnetic beams.
@@ -188,6 +188,12 @@ H.~C. van~de Hulst.
 \newblock {\em Light Scattering by Small Particles}.
 \newblock Dover Publications Inc., 1981.
 
+\bibitem{Bohren1998}
+Craig~F. Bohren and Donald~R. Huffman.
+\newblock {\em Absorption and Scattering of Light by Small Particles (Wiley
+  Science Paperback Series)}.
+\newblock Wiley-Interscience, 1998.
+
 \bibitem{Zangwill2013}
 Andrew Zangwill.
 \newblock {\em Modern Electrodynamics}.
@@ -221,5 +227,37 @@ N.~G. van Kampen.
 \newblock {\em Stochastic Processes in Physics and Chemistry}.
 \newblock NORTH HOLLAND, 2007.
 \newblock pp. 347-349.
+
+\bibitem{Viana2006}
+N.~B. Viana, A.~Mazolli, P.~A.~Maia Neto, H.~M. Nussenzveig, M.~S. Rocha, and
+  O.~N. Mesquita.
+\newblock Absolute calibration of optical tweezers.
+\newblock {\em Applied Physics Letters}, 88(13):131110, mar 2006.
+
+\bibitem{Polimeno2018}
+Paolo Polimeno, Alessandro Magazz{\`{u}}, Maria~Antonia Iat{\`{\i}}, Francesco
+  Patti, Rosalba Saija, Cristian Degli~Esposti Boschi, Maria~Grazia Donato,
+  Pietro~G. Gucciardi, Philip~H. Jones, Giovanni Volpe, and Onofrio~M.
+  Marag{\`{o}}.
+\newblock Optical tweezers and their applications.
+\newblock {\em Journal of Quantitative Spectroscopy and Radiative Transfer},
+  218:131--150, oct 2018.
+
+\bibitem{Hecht}
+Eugene Hecht.
+\newblock {\em Optics}.
+\newblock Addison Wesley, 2002.
+
+\bibitem{Bliokh2011}
+Konstantin~Y. Bliokh, Elena~A. Ostrovskaya, Miguel~A. Alonso, Oscar~G.
+  Rodr{\'{\i}}guez-Herrera, David Lara, and Chris Dainty.
+\newblock Spin-to-orbital angular momentum conversion in focusing, scattering,
+  and imaging systems.
+\newblock {\em Optics Express}, 19(27):26132, dec 2011.
+
+\bibitem{Hosten2008}
+Onur Hosten and Paul Kwiat.
+\newblock Observation of the spin hall effect of light via weak measurements.
+\newblock {\em Science}, 319(5864):787--790, feb 2008.
 
 \end{thebibliography}

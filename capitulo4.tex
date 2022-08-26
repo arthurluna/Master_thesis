@@ -5,7 +5,7 @@
 
 \section{Transferência de momento angular e caracterização do astigmatismo}
 
-\hspace{5 mm}Primeiramente, devemos observar que o efeito de torque negativo é dependente de aberrações óticas. O astigmatismo desempenha um papel de atenuar esse efeito, podendo até trocar o sinal de $\kappa_\phi$\cite{Diniz2019}. No nosso caso, os ângulos de rotação da microesfera ao redor da posição de equilíbrio são simplesmente diminuídos. Isso nos possibilita tentar ajustar uma curva simulada com o modelo MDSA+ com o parâmetro de astigmatismo $A_{ast}$ como variável livre. 
+\hspace{5 mm}Primeiramente, devemos observar que o efeito de torque negativo é dependente de aberrações óticas. O astigmatismo desempenha um papel de atenuar esse efeito, podendo até trocar o sinal de $\kappa_\phi$\cite{Diniz2019}. No nosso caso, os ângulos de rotação da microesfera ao redor da posição de equilíbrio são simplesmente diminuídos. Isso nos possibilita tentar ajustar uma curva simulada com o modelo MDSA+ com o parâmetro de astigmatismo $A_{ast}$ como variável livre.
 
 Usamos um método de mínimos quadrados para realizar esse ajuste. Dado o conjunto de pontos experimentais $\phi_i^{exp}$, calculamos a função erro $E$ do conjunto de pontos simulados $\phi_i^{sim}$, onde cada índice $i$ corresponde a um ângulo $\psi_i$ da placa de quarto de onda. A função erro é definida como:
 %
@@ -21,7 +21,7 @@ Ao considerar parâmetros de astigmatismo altos, começamos a ter problemas para a
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.56]{Kphi_rho_Aast_dupla}
-\caption{Simulação com $A_{ast}=0$ (à esquerda) e $A_{ast}=0.36$ (à direita).}
+\caption{Simulação com $A_{ast}=0$ (à esquerda) e $A_{ast}=0.36$ (à direita) para microesfera de raio $a=0.495 \mu m$.}
 \label{alpha_0036}
 \end{center}
 \end{figure}
@@ -48,7 +48,9 @@ Podemos ver que as contribuições mais importantes para o ajuste são os pontos em
 
 Podemos notar que a região ao redor de $60º$ e $120º$ na figura \ref{alpha_024} está com um bom acordo com a teoria. Comparando com o gráfico à esquerda da figura \ref{alpha_0036}, correspodente ao caso sem astigmatismo, fica claro que a região que prediz torque positivo também é atenuada, e não interfere de forma negativa com o ajuste.
 
-Podemos comparar o resultado obtido com o ajuste pela simulação com o resultado da caracterização por nível de cinza \cite{Dutra2014,Diniz2019}. Uma análise do {\it spot} do feixe refletido em diferentes planos é feita. A curva teórica é obtida por meio da propagação do feixe não paraxial \cite{Novotny2001}, e o valor de $A_{ast}$ é ajustado com medidas de intensidade do centro do {\it spot} do feixe em alturas diferentes do eixo de propagação. Foi obtido $A_{ast}=0.25\pm0.04$ com esse método, que não só está de acordo com o valor encontrado pelo ajuste dos dados de torque na microesfera, como tem a incerteza maior. 
+Podemos comparar o resultado obtido com o ajuste pela simulação com o resultado da caracterização por nível de cinza \cite{Dutra2014,Diniz2019}. Uma análise do {\it spot} do feixe refletido em diferentes planos é feita. A análise consiste em medir a distribuição de potência do feixe refletido por um espelho metálico (podendo também ser feito com um material dielétrico, neste caso perdendo uma das componentes de polarização do feixe incidente) em alturas $z$ diferentes e depois imageada pelo microscópio. A teoria para o imageamento foi adaptada do modelo para um campo de Richards-Wolf refletido (\cite{Novotny2001}) para incorporar os efeitos de aberração de Zernike. 
+%
+O valor de $A_{ast}$ é encontrado ajustando essas medidas da distribuição de intensidade do campo em alturas $z$ do eixo de propagação diferentes com o modelo de feixe refletido adaptado. Foi obtido $A_{ast}=0.25\pm0.04$ com esse método, que não só está de acordo com o valor encontrado pelo ajuste dos dados de torque na microesfera, como tem a incerteza maior. 
 
 \section{Caracterização do parâmetro de absorção da microesfera}
 

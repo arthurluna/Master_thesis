@@ -18,9 +18,9 @@ A descrição do experimento deve ser dividida em partes. De forma geral, temos um
 
 Este porta-amostra está acoplado a um suporte preso ao estágio do microscópio que pode ser movido em qualquer direção por meio de um controle piezo-elétrico ou manualmente. Tudo isso forma o aparato da pinça ótica, e deixaremos para o final a descrição do experimento que foi simulado.
 
-Primeiramente, trataremos do feixe paraxial: trata-se de um laser com perfil gaussiano ($TEM_{00}$) de comprimento de onda $\lambda_0=1064nm$ e cintura $\omega_0=5.82mm$. Suas caraterísticas são importantes para definir o feixe focalizado pela objetiva, como vimos no capítulo anterior. 
+Primeiramente, trataremos do feixe paraxial: trata-se de um laser com perfil gaussiano ($TEM_{00}$) de comprimento de onda $\lambda_0=1064nm$ e raio da cintura $\omega_0=5.82mm$. Suas caraterísticas são importantes para definir o feixe focalizado pela objetiva, como vimos no capítulo anterior. 
 
-A largura da cintura $\omega_0$ do feixe é essencial para garantir a condição de aprisionamento da microesfera, pois se esta for muito menor que a entrada da objetiva, teremos o que se chama de {\it underfilling}, favorecendo a pressão de radiação e impedindo o aprisionamento. Como, para alguns tamanhos de esfera aprisionada, a largura do feixe não é grande o suficiente, usa-se um expansor de feixes, que consiste em um par de lentes, sendo uma biconvexa e a outra convexa, para se ampliar o perfil deste.
+O raio da cintura $\omega_0$ do feixe é essencial para garantir a condição de aprisionamento da microesfera, pois se esta for muito menor que a entrada da objetiva, teremos o que se chama de {\it underfilling}, favorecendo a pressão de radiação e impedindo o aprisionamento. Como, para alguns tamanhos de esfera aprisionada, a largura do feixe não é grande o suficiente, usa-se um expansor de feixes, que consiste em um par de lentes, sendo uma biconvexa e a outra convexa, para se ampliar o perfil deste.
 %
 \begin{figure}
 \begin{center}
@@ -64,11 +64,11 @@ Antes de entrar no microscópio, o feixe passa por uma placa de quarto de onda (Q
 A direção e sentido de propagação do feixe definem o eixo $z$ do nosso sistema de coordenadas. Ao entrar no microscópio, o feixe entra na objetiva de imersão em óleo. A objetiva tem abertura numérica nominal de $NA=1.4$. Como a abertura numérica é maior que o índice de refração da água ($n_1=1.332$), o ângulo de abertura do feixe incidente sobre a microesfera será $\theta_0=\arcsin(n_1/n)$, onde $n=1.51$ é o índice de refração do vidro. Isso acontece porque parte do feixe que emerge da objetiva incide sobre a interface vidro-água com ângulos maiores que o ângulo crítico, gerando reflexão interna total e ondas evanescentes dentro do porta-amostra. A contribuição para a força das ondas evanescentes não são levadas em conta no modelo teórico, pois assumimos que o centro espalhador está a alguns comprimentos de onda de distância da interface. %kaina sugeriu colocar referencia sobre reflexao total
 
 Assim, o feixe com a polarização determinada pela QWP entra no microscópio, sendo refletida por um espelho dicróico e incidindo na objetiva. O espelho dicróico reflete a luz com comprimento de onda igual do laser, mas transmite comprimentos de onda de luz visível, que é um pouco menor que o do laser (ver figura \ref{microscopio}). Isso permite que a luz oriunda do condensador do microscópio ilumine o porta-amostra e forme uma imagem da microesfera aprisionada. Usando uma câmera podemos fazer filmes e obter as imagens de onde serão tirados os dados.
-
+%
 A solução dentro do porta-amostra é composta por microesferas de poliestireno dispersas em água deionizada. A parte real do índice de refração do poliestireno é de $\operatorname{Re}(n_2)=1.576$, e a parte imaginária, reponsável pela absorção de luz por esse material, é de $\operatorname{Im}(n_2)=0.0011$ \cite{Ma2003}. %A concentração dessa solução é de grande importância para o experimento. Tal concentração não pode ser muito baixa, pois dificulta-se encontrar e aprisionar as microesferas. Por outro lado, se a concentração for alta, torna-se possível que outras microesferas se aproximem da aprisionada, estragando o experimento.
 %
 %Uma vez que o feixe entre no porta-amostra, um procedimento é feito para definir a posição do foco no eixo $z$ e a posição do {\it spot} no plano $xy$ visulizado pela câmera \cite{Diniz}. Isso é feito antes de colocar a solução com microesferas, pois assim é possível observar o feixe com a câmera.
-
+%
 Uma vez posicionado o porta-amostra no microscópio com a solução de microesferas, podemos usar o controle manual para mover a posição do plano focal e buscar esferas para serem aprisionadas.
 %Após saber a posição do foco, é colocada a solução e a lamínula superior. Com o controle manual do estágio do microscópio pode-se mover a posição do plano focal e buscar esferas para serem aprisionadas. 
 %\section{Procedimento Experimental}
@@ -77,7 +77,7 @@ Uma vez posicionado o porta-amostra no microscópio com a solução de microesferas
 %\hspace{5 mm}
 Após o aprisionamento de uma microesfera, é feito um procedimento para determinar a posição de equilíbrio no eixo $z$. Para isso, vamos definir as coordenadas que estamos usando e que serão usadas na simulação. O eixo $z$ tem como origem o foco paraxial (note a diferença em relação ao modelo teórico, em que a origem se encontra no centro da microesfera) e a coordenada $z$ será a posição do centro da microesfera. A coordenada da interface será, para fins práticos, $-L\hat{z}$, com $L$ sendo o módulo da distância entre o plano focal e o plano da interface (como definido na figura \ref{ab_esf}). %Se a coordenada da interface for maior que $-a$, não esperamos que haja pinçamento.
 
-No procedimento, deslocamos a microesfera aprisionada até que ela toque a lamínula de vidro. Nesse momento temos o vínculo $z_{eq}=a-L_0$, ou seja, a posição de equilíbrio estável da microesfera define uma distância inicial entre o plano focal e a interface ($L_0$). Por causa do efeito de aberração esférica, discutido na seção \ref{Aberracao esferica}, a posição de equilíbrio tende a ser um pouco abaixo do plano focal, e por isso, usualmente temos $z_{eq}<0$. 
+No procedimento, deslocamos a microesfera aprisionada até que ela toque a lamínula de vidro. Nesse momento temos o vínculo $z_{eq}=a-L_0$, ou seja, a posição de equilíbrio estável axial ($z_{eq}$) da microesfera define uma distância inicial entre o plano focal e a interface ($L_0$). Por causa do efeito de aberração esférica, discutido na seção \ref{Aberracao esferica}, a posição de equilíbrio tende a ser um pouco abaixo do plano focal, e por isso, usualmente temos $z_{eq}<0$. 
 
 Esse detalhe é muito importante para a simulação, pois este vínculo torna possível determinar essa distância incial $L_0$. Depois de encostada a microesfera na lamínula, deslocamos o o estágio do microscópio $3 \mu m$ para baixo. O foco tem um deslocamento efetivo de $3\frac{n_1}{n} \mu m$, por causa do efeito de refração discutido na seção \ref{Aberracao esferica} \cite{Viana2007}.
 
@@ -114,9 +114,10 @@ Dessa forma, cada velocidade determina uma posição de equilíbrio, ao redor da qu
 \end{figure}
 %
 
-É importante observar que esse ângulo será muito pequeno. Podemos aproveitar esse fato e aproximar a projeção das forças no eixo $y$ $F_\rho\sin\phi = F_\phi\cos\phi$ como:
+É importante observar que esse ângulo será muito pequeno. Podemos aproveitar esse fato e aproximar a projeção das forças no eixo $y$ ($F_\rho\sin\phi = F_\phi\cos\phi$) como:
 \begin{equation}
 \frac{F_\phi}{F_\rho} = \tan\phi \approx \phi.
+\label{rel_F_phi}
 \end{equation}
 %
 Com a linearidade da força $F_\phi/F_\rho = \kappa_\phi \rho/\kappa_\rho \rho$, temos:
@@ -125,7 +126,9 @@ Com a linearidade da força $F_\phi/F_\rho = \kappa_\phi \rho/\kappa_\rho \rho$, 
 \frac{\kappa_\phi}{\kappa_\rho} \approx \phi.
 \end{equation}
 
-Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. No caso de polarização linear ($\psi=0$), espera-se que deslocamentos da microesfera ao longo da direção $x$ não produzam rotação em torno do eixo do feixe, que é o caso de (a) na figura \ref{forcas_estagio}. Se o deslocamento fosse em outras direções, poderíamos esperar uma força na direção $\phi$ causada pela assimetria do feixe. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no {\it spot}. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$. Esse resultado é intuitivo, porque o feixe incidente não possui momento angular, e portanto não deve haver torques nesse sistema.
+A partir da equação \ref{rel_F_phi} e da definição do fator de eficiência \ref{Q_es}, podemos ver que o ângulo $\phi$ não depende da potência incidente na esfera (potência na amostra), om que torna esse experimento livre de erros sistemáticos que podem aparecer com a variação ou instabilidade da potência do feixe.
+
+Por fim, o experimento consiste em medir o ângulo $\phi$ para várias polarizações do feixe incidente. No caso de polarização linear ($\psi=0$), espera-se que deslocamentos da microesfera ao longo da direção $x$ não produzam rotação em torno do eixo do feixe, que é o caso de (a) na figura \ref{forcas_estagio}. Da mesma forma, o astigmatismo pode gerar essa força azimutal pela quebra da simetria de rotação que este gera no campo. Nos pontos experimentais podemos ver que o eixo do astigmatismo é de aproximadamente $1º$, e por isso não observamos rotação nenhuma quando $\psi=0$. Esse resultado é intuitivo, porque o feixe incidente não possui momento angular, e portanto não deve haver torques nesse sistema.
 
 Por outro lado, quando o feixe tem uma polarização elíptica ($\psi\neq0$), o feixe incidente passa a ter momento angular, e esperamos que a posição de equilíbrio da microesfera não seja mais em cima do eixo $x$.
 %
@@ -162,7 +165,7 @@ Calcular tal posição de equilíbrio para cada polarização do feixe incidente seri
 \end{figure}
 %
 
-É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Constatações experimentais nos levam a definir tal intervalo como a região próxima ao plano focal, pois vemos a microesfera focalizada na câmera. Portanto, ela só pode estar frações de unidades de raio ($a\approx 0.5\mu m$) de distância do plano focal. Assim, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para os parâmetros de entrada não são satisfeitos. Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.4$).% {\bf rever esse paragrafo, pois nao tenho nenhuma imagem ou medida: o programa retorna erro quando busca por posicoes de eq acima desse valor de $A_{ast}$, justamente por nao achar dentro do intervalo de 4 unidades de raio, por volta de $2\mu m$}
+É possível também que o intervalo em $z$ em que se calcula o fator de eficiência $Q_z$ não possua nenhuma posição de equilíbrio estável. Definimos um intervalo próximo ao plano focal, varrendo frações de unidades de raio (no caso da simulação, $a\approx 0.5\mu m$) nas direções positiva e negativa, pois esta é a relação requisitada pelo experimento, onde vemos na câmera (pelo sistema de imageamento do microscópio) a microesfera aprisionada próxima ao plano focal. Assim, se o programa não encontrar tal posição de equilíbrio dentro desse intervalo, as condições de pinçamento para tais parâmetros de entrada não são satisfeitos e provavelmente estamos simulando um caso incompatível com o experimento. Isso ocorre principalmente quando fazemos simulações com parâmetros de astigmatismo altos ($A_{ast}>0.4$).% {\bf rever esse paragrafo, pois nao tenho nenhuma imagem ou medida: o programa retorna erro quando busca por posicoes de eq acima desse valor de $A_{ast}$, justamente por nao achar dentro do intervalo de 4 unidades de raio, por volta de $2\mu m$}
 
 Com as posições de equilíbrio para cada $\psi$ do experimento e a posição inicial $L_0$ podemos calcular $ \kappa_\phi /\kappa_\rho $ numericamente. Assim, toda vez que a posição de equilíbrio mude, todo o cálculo tem que ser feito novamente. Por esse motivo, as posições de equilíbrio são arredondadas até a 4ª casa decimal dos valores em unidades de raio, que corresponderia a considerar variações menores que $1nm$. 
 

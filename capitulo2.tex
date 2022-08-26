@@ -58,8 +58,8 @@ A contribuição da reflexão é a transferência de momento na direção normal ao pla
 %
 Outro efeito importante é a absorção de luz pela esfera. Podemos entende-la assumindo que uma fração ${\mathbf p}$ do raio é absorvida, e por consevação, a esfera ganha o momento dessa fração do raio com mesma direção e sentido, como ilustrado na figura \ref{reflex_absor}(b).
 
-Um modelo proposto por Ashkin \cite{Ashkin1992} usa a taxa de mudança do momento de um raio de luz no regime de ótica geométrica para obter a força ótica exercida por esse raio sobre a esfera. Nesse modelo, no entanto, múltiplas reflexões internas do raio são levadas em conta, o que não fizemos na explicação qualitativa acima. Somam-se então os vários raios que compõem o feixe gaussiano TEM$_{00}$, e também é feito o cálculo para o modo Laguerre-Gaussiano TEM$_{01}$. A condição seno de Abbe, à qual as objetivas de alta abertura numérica satisfazem, não é levada em conta em nenhum dos casos \cite{Viana2007}.
-
+Um modelo proposto por Ashkin \cite{Ashkin1992} usa a taxa de mudança do momento de um raio de luz no regime de ótica geométrica para obter a força ótica exercida por esse raio sobre a esfera. Nesse modelo, no entanto, múltiplas reflexões internas do raio são levadas em conta, o que não fizemos na explicação qualitativa acima. Somam-se então os vários raios que compõem o feixe gaussiano TEM$_{00}$, e também é feito o cálculo para o modo Laguerre-Gaussiano TEM$_{01}$. A condição do seno de Abbe, à qual as objetivas de alta abertura numérica satisfazem, não é levada em conta em nenhum dos casos \cite{Viana2007}.
+%
 Recentemente, em 2015, a aproximação de ótica geométrica foi usada para se desenvolver um programa que calcula a força ótica em objetos elipsoidais numericamente \cite{Callegari2015}.
 
 No caso em que a microesfera é muito menor que o comprimento de onda, chamado limite Rayleigh, podemos aproximar o centro espalhador por um dipolo induzido pelo campo. Dessa forma, a força no dipolo induzido ${\mathbf p}$ será dada por:
@@ -107,8 +107,8 @@ Começaremos a explicação do modelo pelo caso de espalhamento mais simples: uma o
 \label{RW_puro}
 \end{equation}
 %
-onde a região de integração é um cone sólido com ângulo de abertura $\theta_0=\arcsin(NA/n)$, em que $NA$ é a abertura numérica do feixe, $n$ é o índice de refração no meio (mais tarde esse $n$ será o índice de refração da lamínula de vidro, e esse fato será importante para definir aberração esférica), $\hat{\varepsilon}_k$ é o vetor de polarização rotacionado e o foco desse feixe se encontra na origem do espaço de posição. Nesse modelo também é levado em conta efeitos da objetiva que serão discutidos mais à frente. 
-
+onde a região de integração é um cone sólido com ângulo de abertura $\theta_0=\arcsin(NA/n)$, em que $NA$ é a abertura numérica do feixe, $n$ é o índice de refração no meio (mais tarde esse $n$ será o índice de refração da lamínula de vidro, e esse fato será importante para definir aberração esférica), $\hat{\varepsilon}_k$ é o vetor de polarização rotacionado (associado a cada componente) e o foco desse feixe se encontra na origem do espaço de posição. Nesse modelo também é levado em conta efeitos da objetiva que serão discutidos mais à frente. 
+%
 Os detalhes dos cálculos desta seção podem ser encontrados em \cite{Mazolli}, e não estarão no presente trabalho para evitar repetição. 
 
 Nossa finalidade é encontrar a força eletromagnética exercida em uma microesfera na pinça ótica. Obtemos ela com \cite{Jackson1998}:
@@ -126,7 +126,7 @@ Assim, queremos obter os campos incidentes na esfera e espalhados por ela. Começ
 
 A simetria esférica do centro espalhador impõe condições de contorno sobre as partes radiais e transversais do campo. Por isso, dividimos o campo eletromagnético nessas duas partes: o modo tranversal elétrico $\Pi^{M}$ (ou multipolo magnético), que possui as componentes do campo elétrico tangenciais à superfície esférica concêntrica à esfera
 % e do campo magnético na direção radial dessa superfície; 
-, e o modo transversal magnético $\Pi^{E}$ (ou multipolo elétrico), com o 
+, e o modo transversal magnético $\Pi^{E}$ (ou multipolo elétrico), com o campo 
 %elétrico radial e o 
 magnético tangencial à superfície. Para isso, fazemos o produto interno dos campos com $\mathbf{r}$, e obtemos os potenciais de Debye:
 %
@@ -154,9 +154,9 @@ b_J=\frac{\psi'_J(\beta)\psi_J(\alpha)-N_{12}\psi_J(\beta)\psi'_J(\alpha)}{\zeta
 \label{mie}
 \end{equation} 
 %
-onde $\beta=ka$, $\alpha=N_{12}ka$, $a$ é o raio da esfera e $N_{12}$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Henkel, respectivamente. Os campos espalhados provenientes do multipolo elétrico $\Pi^E$ terá o coeficiente de espalhamento $a_J$ multiplicando as expressões dentro dos somatórios em $J$, enquanto o multipolo magnético $\Pi^M$ terá o coeficiente de espalhamento $b_J$
+onde $\beta=ka$, $\alpha=N_{12}ka$, $a$ é o raio da esfera e $N_{12}$ é a razão entre o índice de refração do meio $n_1$ e do centro espalhador (esfera) $n_2$; $\psi_J=xj_J(x)$ e $\zeta^{(1)}_J=xh^{(1)}_J(x)$ são as funções de Bessel-Riccati e $j_J(x)$ e $h^{(1)}_J(x)$ são as funções esféricas de Bessel e Hankel, respectivamente. Os campos espalhados provenientes do multipolo elétrico $\Pi^E$ terá o coeficiente de espalhamento $a_J$ multiplicando as expressões dentro dos somatórios em $J$, enquanto o multipolo magnético $\Pi^M$ terá o coeficiente de espalhamento $b_J$
 
-Obtemos, até então, os potenciais de ondas planas incidentes e espalhadas na direção $z$ em coordenadas esféricas. Queremos usá-las para montar um feixe de alta abertura numérica, de acordo com a equação \ref{RW_puro}. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador momento angular total ${\mathbf J}$, que é o gerador de rotações no espaço. 
+Obtemos, até então, os potenciais de Debye para uma onda plana incidente na direção $z$ e para o campo espalhado em coordenadas esféricas. Queremos usá-las para montar um feixe de alta abertura numérica, de acordo com a equação \ref{RW_puro}. Faremos isso rotacionando e superpondo diversas ondas planas usando o operador momento angular total ${\mathbf J}$, que é o gerador de rotações no espaço. 
 
 Como a dependência angular dos potenciais de Debye estão contidas nos harmôncos esféricos, o procedimento se resume a fazer a rotação dos mesmos. Usando o operador $D(\alpha,\beta,\gamma)=e^{-i\alpha J_z}e^{-i\beta J_y}e^{-i\gamma J_z}$ \cite{Biedenharn2008} e o fato de que os harmônicos esféricos são autofunções de $J_z$, obtemos:
 
@@ -165,7 +165,7 @@ Y_{JM}(\theta',\phi')=\sum \limits_{M'=-J}^{J} Y_{JM'}(\theta,\phi) e^{-i(\alpha
 \label{harm_esf_rot}
 \end{equation}
 %
-que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz de rotação de Wigner e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ do sistema rodado coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Como o fóton carrega momento angular de {\it spin}, o número $M$ na equação \ref{harm_esf_rot} será igual a $1$ no caso de polarização circular esquerda (e $-1$ no caso da direita). Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam: 
+que representa um harmônico esférico em um eixo rodado com coordenadas $\theta'$ e $\phi'$, onde $d^{J}_{M',M}(\beta)=e^{-i\beta J_y}$ é o elemento da matriz de rotação de Wigner \cite{Biedenharn2008} e  $\alpha$, $\beta$, e $\gamma$ são os ângulos de Euler. A rotação é feita de forma que o eixo $z$ do sistema rodado coincida com o eixo $\hat{{\mathbf k}}$ de propagação. Para isso, $\alpha =\phi_k$ e $\beta =\theta_k$. Usamos o último ângulo de Euler para determinar corretamente a direção de polarização do feixe fazendo $\gamma =-\phi_k$. Como o fóton carrega momento angular de {\it spin} ($\pm \hbar$ por fóton, dependendo da polarização), o número $M$ na equação \ref{harm_esf_rot} será igual a $1$ no caso de polarização circular esquerda (e $-1$ no caso da direita). Substituindo em \ref{debye_def}, os potenciais de Debye rotacionados ficam: 
 
 \begin{equation}
 \Pi^E =\pm \frac{E_0 e^{-i\omega t}}{k}\sum \limits_{J=1}^{\infty}(i)^{J+1}j_J(kr)\sqrt{\frac{4\pi(2J+1)}{J(J+1)}} \sum \limits_{M'=-J}^J e^{i\phi_k(M'\mp1)}d^J_{M',\pm1}(\theta_k)Y_{JM'}(\theta,\phi),
@@ -225,7 +225,7 @@ Finalmente, calculando a integral \ref{2_F}, obtemos a força na microesfera de u
 {\mathbf F}=\frac{-1}{2}r\left( \int d\Omega (\epsilon E^2_{tan}{\mathbf r}) + \int d\Omega (\mu H^2_{tan}{\mathbf r}) \right),
 \end{equation}
 %
-onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produto dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa com que o momento linear é subtraido do campo incidente. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado.
+onde as duas integrais dentro do parentesis são iguais. Sendo assim, a força vai depender do quadrado dos campos ($E^2$ e $H^2$), e de termos proporcionais a ${\mathbf E}_{IN}\cdot{\mathbf E}_{IN}^*$(incidente-incidente), $\operatorname{Re}({\mathbf E}_{IN}\cdot{\mathbf E}_S^*)$(espalhado-incidente) e ${\mathbf E}_S\cdot{\mathbf E}_S^*$(espalhado-espalhado). O primeiro desses termos (campo incidente-incidente) não contribui para a força, pois trata-se do caso onde não há centro espalhador. O produto dos campos espalhado-incidente é chamado termo de extinção, e representa a taxa com que o momento linear é subtraido do campo incidente. Por fim, o termo de espalhamento (espalhado-espalhado) é menos a taxa de transferência de momento para o campo espalhado \cite{Mazolli, Bohren1998}.
 
 Finalmente, podemos definir o fator de eficiência vetorial ${\mathbf Q}$, ou força adimensional:
 %
@@ -274,7 +274,9 @@ onde $\omega_0$ é o raio da cintura do feixe, $f^2\sin^2\theta_k=\rho^2$ (pela c
 
 Modelamos esse caso assumindo o feixe na entrada da objetiva como uma superposição de feixes com polarização circular à direita e à esquerda. O único procedimento que muda em relação ao caso de polarização circular é quando tomamos os quadrados dos campos ${\mathbf E}$ e ${\mathbf H}$. Teremos campos espalhados e incidentes de ambas as polarizações, com as quais montamos os respectivos potenciais de Debye. Produtos de campos de mesma polarização serão chamados puros, e produtos de campos de polarização oposta serão chamados cruzados. 
 
-A força exercida por uma polarização elíptica pode ser obtida introduzindo a dependência com o ângulo $\psi$ do eixo rápido da placa de quarto de onda (QWP) no feixe paraxial incidente na entrada da objetva:
+A força exercida por uma polarização elíptica pode ser obtida fazendo o feixe paraxial passar por uma placa de quarto de onda (QWP), que é um cristal birrefringente, {\it i.e.} possui mais de um índice de refração a depnder da orientação. Esse cristal tem dois eixos caracterizados pelos índices de refração que atuam em um feixe linearmente polarizado paralelo a cada um dos eixos. Ao eixo com índice de refração maior dá-se o nome de eixo lento e ao com índice menor, dá-se o nome de eixo rápido.
+
+Introduzimos a dependência com o ângulo $\psi$ do eixo rápido da placa de quarto de onda com o vetor de polarização do feixe paraxial incidente na entrada da objetva:
 %
 \begin{equation}
 {\mathbf E}^{ent}(\rho,\phi,z) = E_{centro} e^{ik_0z} e^{\frac{-\rho^2}{w_0^2}} \sum \limits_{\sigma = +1,-1} \frac{1 - ie^{-2i\sigma \psi}}{2} \hat{\bf{\epsilon}}_\sigma .
@@ -396,7 +398,7 @@ Podemos introduzir essas aberrações no modelo colocando a fase adicional $e^{i\P
 \end{equation}
 %{\bf atenção aqui! tese do Rafael$->$ cos do $A_{ast}$ é diferente (2(angulo), elevado ao quad), no artigo do Kaina, essa fase é referida como fase de Zernike, e tirei da tese do Rafa como fase de Seidel. }
 %
-%em que $\Phi_{adicional}(\theta,\phi)$ é obtida como uma expansão em série de potências do parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, onde $\rho$ é a distância do ponto do feixe ao eixo e $R_p$ é o raio da pupila da objetiva. Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
+%em que $\Phi_{adicional}(\theta,\phi)$ é obtida como uma expansão em série de potências do parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, onde $\rho$ é a distância do ponto do feixe ao eixo e $R_p$ é o raio da pupila da objetiva. Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular à propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
 %
 onde o parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, $\rho$ é a distância do ponto do feixe ao eixo e $R_p$ é o raio da pupila da objetiva. Identificamos $A'_{sa}$, $A'_{c}$ e $A'_{a}$ como os parâmetros de aberração esférica ($sa$ do inglês, {\it spherical aberration}), coma e astigmatismo. Para entender os parâmetros $\varphi_c$ e $\varphi_a$, temos que entender o que são essas aberrações. A primeira característica delas é a quebra de simetria no plano perpendicular a propagação do feixe paraxial (eixo $z$), e os parâmetros $\varphi_c$ e $\varphi_a$ são os eixos da orientação dos efeitos de coma e astigmatismo respectivamente. Isso também explica o porquê de não haver um parâmetro angular para aberração esférica: trata-se de uma aberração simétrica em $\phi$, o que fica muito claro pela seção anterior.
 %
@@ -410,7 +412,7 @@ onde o parâmetro $(\sin\theta/\sin\theta_0)=(\rho/R_p)$, $\rho$ é a distância do
 %
 
 Considemos agora o problema prático: os experimentos que serviram de base comparatória para as simulações desenvolvidas não possuem coma e os efeitos de aberração esférica podem ser negligenciados. Portanto, somente o astigmatismo será levado em conta nas equações apresentadas. Como a fase referente ao astigmatismo possui uma dependência em $\phi$, podemos concluir que a integral da equação \ref{int_phi} será modificada. 
-
+%
 Uma breve explicação do efeito de astigmatismo será feita a seguir, baseada em trabalhos do grupo \cite{Dutra, Diniz, Dutra2014, Diniz2019}, onde detalhes do seguinte desenvolvimento e das demais aberrações podem ser encontrados. 
 
 O astigmatismo surge ao deslocarmos o ponto de origem de um raio de luz do eixo ótico de uma lente. A reta que passa pelo ponto objeto e o centro da lente é chamado raio principal, e o plano que contém ele e o eixo ótico da lente é chamado plano meridional. O plano que contém o raio principal e é perpendicular ao plano meridional é chamado plano sagital.
@@ -468,7 +470,7 @@ f^{(\sigma)}(\rho,\phi,z)=\sum\limits_{s=-\infty}^{\infty}(-i)^sJ_s\Big{(}2\pi A
 \label{ap_f}
 \end{equation}
 %
-onde $J_m$ são as funções de Bessel cilindricas do primeiro tipo. Repare que essa função carrega a dependência de ${\mathbf Q}$ com os parâmetros de astigmatismo $A_{ast}$ e $\varphi_a$, assim como com as coordenadas $z$ e $\rho$.
+onde $J_m$ são as funções de Bessel cilindricas do primeiro tipo. Repare que essa função carrega a dependência de ${\mathbf Q} =Q_z \hat{z} +Q_\rho \hat{\rho} +Q_\phi \hat{\phi}$ com os parâmetros de astigmatismo $A_{ast}$ e $\varphi_a$, assim como com as coordenadas $z$ e $\rho$.
 
 O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e o raio da cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} a expressão para o coeficiente de multipolo $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_\phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
 
@@ -502,7 +504,11 @@ De uma forma simples, podemos entender essa transferência de momento angular con
 
 No contexto de campos paraxiais, podemos separar as componentes do momento angular em duas partes, uma de spin associada à helicidade do feixe, e outra associada ao momento angular orbital, caracterizado pela fase $e^{il\phi}$, presente nos modos Laguerre-Gaussianos \cite{Zangwill2013}. 
 
-Podemos extender essa distinção de momentos angulares para o caso de ondas planas. O momento angular de spin permanece associado à polarização. O momento angular orbital surge com rotações da onda plana, onde o vetor ${\mathbf k}$ rotacionado define a nova direção de propagação e os vetores do campo ${\mathbf E}$ (perpendiculares a ${\mathbf k}$) sofrem um transporte paralelo ao longo da esfera centrada na origem do espaço de Fourier. A rotação do campo vetorial ${\mathbf E}$ dará origem a uma fase geométrica $\Phi_g=-\sigma\phi\cos\theta$, onde $\sigma=\pm1$ indica a polarização. Ao considerar um cone de vetores de onda ${\mathbf k}$ rotacionados, o campo resultante terá uma fase global de $\Phi_{g0}=2\pi\sigma(1-\cos\theta)$ \cite{Bliokh2015}.
+Podemos extender essa distinção de momentos angulares para o caso de ondas planas. O momento angular de spin permanece associado à polarização. O momento angular orbital surge com rotações da onda plana, onde o vetor ${\mathbf k}$ rotacionado define a nova direção de propagação e os vetores do campo ${\mathbf E}$ (perpendiculares a ${\mathbf k}$) sofrem um transporte paralelo ao longo da esfera centrada na origem do espaço de Fourier. A rotação do campo vetorial ${\mathbf E}$ dará origem a uma fase geométrica $\Phi_g=-\sigma\phi\cos\theta$, onde $\sigma=\pm1$ indica a polarização. 
+%
+Essa fase tem orígem no acoplamento do momento angular instrínseco e uma operação de rotação de coordenadas. 
+%
+Ao considerar um cone de vetores de onda ${\mathbf k}$ rotacionados, o campo resultante terá uma fase global de $\Phi_{g0}=2\pi\sigma(1-\cos\theta)$ \cite{Bliokh2015}.
 %
 Portanto, a variação de momento angular intrínseco devido às rotações e superposição das ondas planas é dado por $\Delta L_z = -\Delta S_z = \Phi_{g0}/2\pi$.
 
