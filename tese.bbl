@@ -1,27 +1,9 @@
 \begin{thebibliography}{10}
 
-\bibitem{Ali2019}
-R.~Ali, F.~A. Pinheiro, F.~S.~S. Rosa, R.~S. Dutra, and P.~A.~Maia Neto.
-\newblock Enantioselective manipulation of chiral nanoparticles using optical
-  tweezers.
-\newblock 2019.
-
-\bibitem{Ashkin1970}
-A.~Ashkin.
-\newblock Acceleration and trapping of particles by radiation pressure.
-\newblock {\em Physical Review Letters}, 24(4):156--159, jan 1970.
-
-\bibitem{Ashkin1992}
-A.~Ashkin.
-\newblock Forces of a single-beam gradient laser trap on a dielectric sphere in
-  the ray optics regime.
-\newblock {\em Biophysical Journal}, 61(2):569--582, feb 1992.
-
-\bibitem{Ashkin1977}
-A.~Ashkin and J.~M. Dziedzic.
-\newblock {Observation of Resonances in the Radiation Pressure on Dielectric
-  Spheres}.
-\newblock {\em Physical Review Letters}, 38(23):1351--1354, jun 1977.
+\bibitem{Diniz}
+Kain\~{a}~Gon\c{c}alves Diniz.
+\newblock Momento angular de spin em pin\c{c}as \'{O}ticas.
+\newblock Master's thesis, Universidade Federal do Rio de Janeiro, 2018.
 
 \bibitem{Ashkin1986}
 A.~Ashkin, J.~M. Dziedzic, J.~E. Bjorkholm, and Steven Chu.
@@ -29,60 +11,46 @@ A.~Ashkin, J.~M. Dziedzic, J.~E. Bjorkholm, and Steven Chu.
   dielectric particles.
 \newblock {\em Optics Letters}, 11(5):288, may 1986.
 
+\bibitem{Ashkin1977}
+A.~Ashkin and J.~M. Dziedzic.
+\newblock {Observation of Resonances in the Radiation Pressure on Dielectric
+  Spheres}.
+\newblock {\em Physical Review Letters}, 38(23):1351--1354, jun 1977.
+
+\bibitem{Ashkin1970}
+A.~Ashkin.
+\newblock Acceleration and trapping of particles by radiation pressure.
+\newblock {\em Physical Review Letters}, 24(4):156--159, jan 1970.
+
 \bibitem{A2007}
 Arthur Ashkin.
 \newblock {\em Optical Trapping and Manipulation of Neutral Particles Using
   Lasers: A Reprint Volume with Commentaries}.
 \newblock WORLD SCIENTIFIC PUB CO INC, 2007.
 
-\bibitem{Biedenharn2008}
-L.~C. Biedenharn, James~D. Louck, and J.~D. Louck.
-\newblock {\em Angular Momentum in Quantum Physics}.
-\newblock Cambridge University Press, 2008.
+\bibitem{Neto2000}
+P.~A.~Maia Neto and H.~M Nussenzveig.
+\newblock Theory of optical tweezers.
+\newblock {\em Europhysics Letters ({EPL})}, 50(5):702--708, jun 2000.
 
-\bibitem{Bliokh2015}
-K.~Y. Bliokh, F.~J. Rodr{\'{\i}}guez-Fortu{\~{n}}o, F.~Nori, and A.~V. Zayats.
-\newblock Spin{\textendash}orbit interactions of light.
-\newblock {\em Nature Photonics}, 9(12):796--808, nov 2015.
-
-\bibitem{Born2002}
-Max Born, Emil Wolf, and A.~B. Bhatia.
-\newblock {\em Principles of Optics}.
-\newblock Cambridge University Pr., 2002.
-
-\bibitem{Callegari2015}
-Agnese Callegari, Mite Mijalkov, A.~Burak G\"{o}k\"{o}z, and Giovanni Volpe.
-\newblock Computational toolbox for optical tweezers in geometrical optics.
-\newblock {\em Journal of the Optical Society of America B}, 32(5):B11, apr
-  2015.
-
-\bibitem{Davis1979}
-L.~W. Davis.
-\newblock Theory of electromagnetic beams.
-\newblock {\em Physical Review A}, 19(3):1177--1179, mar 1979.
-
-\bibitem{Dutra}
-Rafael de~Sousa~Dutra.
-\newblock {\em Parametrizando uma Pin\c{c}a \'{O}tica: Efeitos de
-  Aberra\c{c}\~{o}es e Absor\c{c}\~{a}o}.
-\newblock PhD thesis, Universidade Federal do Rio de Janeiro, 2011.
-
-\bibitem{Diniz2019}
-K.~Diniz, R.~S. Dutra, L.~B. Pires, N.~B. Viana, H.~M. Nussenzveig, and
-  P.~A.~Maia Neto.
-\newblock Negative optical torque on a microsphere in optical tweezers.
-\newblock {\em Optics Express}, 27(5):5905, feb 2019.
-
-\bibitem{Diniz}
-Kain\~{a}~Gon\c{c}alves Diniz.
-\newblock Momento angular de spin em pin\c{c}as \'{O}ticas.
-\newblock Master's thesis, Universidade Federal do Rio de Janeiro, 2018.
+\bibitem{Mazolli2003}
+A.~Mazolli, P.~A.~Maia Neto, and H.~M. Nussenzveig.
+\newblock Theory of trapping forces in optical tweezers.
+\newblock {\em Proceedings of the Royal Society of London. Series A:
+  Mathematical, Physical and Engineering Sciences}, 459(2040):3021--3041, dec
+  2003.
 
 \bibitem{Dutra2007}
 R~S Dutra, N~B Viana, P~A~Maia Neto, and H~M Nussenzveig.
 \newblock Polarization effects in optical tweezers.
 \newblock {\em Journal of Optics A: Pure and Applied Optics}, 9(8):S221--S227,
   jul 2007.
+
+\bibitem{Viana2007}
+N.~B. Viana, M.~S. Rocha, O.~N. Mesquita, A.~Mazolli, P.~A.~Maia Neto, and
+  H.~M. Nussenzveig.
+\newblock Towards absolute calibration of optical tweezers.
+\newblock {\em Physical Review E}, 75(2), feb 2007.
 
 \bibitem{Dutra2014}
 R.~S. Dutra, N.~B. Viana, P.~A.~Maia Neto, and H.~M. Nussenzveig.
@@ -96,89 +64,56 @@ D.~S. Ether, L.~B. Pires, S.~Umrath, D.~Martinez, Y.~Ayala, B.~Pontes, G.~R.
 \newblock Probing the casimir force with optical tweezers.
 \newblock {\em {EPL} (Europhysics Letters)}, 112(4):44001, nov 2015.
 
-\bibitem{Gouesbet2010}
-G.~Gouesbet.
-\newblock T-matrix formulation and generalized lorenz{\textendash}mie theories
-  in spherical coordinates.
-\newblock {\em Optics Communications}, 283(4):517--521, feb 2010.
-
-\bibitem{Gouesbet1985}
-G~Gouesbet, G~Grehan, and B~Maheu.
-\newblock Scattering of a gaussian beam by a mie scatter center using a
-  bromwich formalism.
-\newblock {\em Journal of Optics}, 16(2):83--93, mar 1985.
-
-\bibitem{Gouesbet2011}
-G{\'{e}}rard Gouesbet and G{\'{e}}rard Gr{\'{e}}han.
-\newblock {\em Generalized Lorenz-Mie Theories}.
-\newblock Springer Berlin Heidelberg, 2011.
-
-\bibitem{Jackson1998}
-John~David Jackson.
-\newblock {\em Classical Electrodynamics}.
-\newblock John Wiley \& Sons Inc, 1998.
-
-\bibitem{Lorenz1890}
-Louis Lorenz.
-\newblock {\em Lysbev{\ae}gelsen i og uden for en af plane Lysb{\o}lger belyst
-  Kugle}.
-\newblock na, 1890.
-
-\bibitem{Ma2003}
-Xiaoyan Ma, Jun~Q Lu, R~Scott Brock, Kenneth~M Jacobs, Ping Yang, and Xin-Hua
-  Hu.
-\newblock Determination of complex refractive index of polystyrene microspheres
-  from 370 to 1610 nm.
-\newblock {\em Physics in Medicine and Biology}, 48(24):4165--4172, dec 2003.
+\bibitem{Ali2020}
+Rfaqat Ali, Felipe~A. Pinheiro, Rafael~S. Dutra, Felipe S.~S. Rosa, and Paulo
+  A.~Maia Neto.
+\newblock Enantioselective manipulation of single chiral nanoparticles using
+  optical tweezers.
+\newblock {\em Nanoscale}, 12(8):5031--5037, 2020.
 
 \bibitem{Mazolli}
 A.~Mazolli.
 \newblock {\em Teoria das Pin\c{c}as {\'{O}}ticas}.
 \newblock PhD thesis, Universidade Federal do Rio de Janeiro, 2003.
 
-\bibitem{Mazolli2003}
-A.~Mazolli, P.~A.~Maia Neto, and H.~M. Nussenzveig.
-\newblock Theory of trapping forces in optical tweezers.
-\newblock {\em Proceedings of the Royal Society of London. Series A:
-  Mathematical, Physical and Engineering Sciences}, 459(2040):3021--3041, dec
-  2003.
+\bibitem{Dutra}
+Rafael de~Sousa~Dutra.
+\newblock {\em Parametrizando uma Pin\c{c}a \'{O}tica: Efeitos de
+  Aberra\c{c}\~{o}es e Absor\c{c}\~{a}o}.
+\newblock PhD thesis, Universidade Federal do Rio de Janeiro, 2011.
 
-\bibitem{Mie1908}
-Gustav Mie.
-\newblock Beitr{\"a}ge zur optik tr{\"u}ber medien, speziell kolloidaler
-  metall{\"o}sungen.
-\newblock {\em Annalen der Physik}, 330(3):377--445, 1908.
+\bibitem{Bliokh2015}
+K.~Y. Bliokh, F.~J. Rodr{\'{\i}}guez-Fortu{\~{n}}o, F.~Nori, and A.~V. Zayats.
+\newblock Spin{\textendash}orbit interactions of light.
+\newblock {\em Nature Photonics}, 9(12):796--808, nov 2015.
 
-\bibitem{Mishchenko1996}
-Michael~I. Mishchenko, Larry~D. Travis, and Daniel~W. Mackowski.
-\newblock T-matrix computations of light scattering by nonspherical particles:
-  A review.
-\newblock {\em Journal of Quantitative Spectroscopy and Radiative Transfer},
-  55(5):535--575, may 1996.
+\bibitem{Ashkin1992}
+A.~Ashkin.
+\newblock Forces of a single-beam gradient laser trap on a dielectric sphere in
+  the ray optics regime.
+\newblock {\em Biophysical Journal}, 61(2):569--582, feb 1992.
 
-\bibitem{Neto2000}
-P.~A.~Maia Neto and H.~M Nussenzveig.
-\newblock Theory of optical tweezers.
-\newblock {\em Europhysics Letters ({EPL})}, 50(5):702--708, jun 2000.
+\bibitem{Callegari2015}
+Agnese Callegari, Mite Mijalkov, A.~Burak G\"{o}k\"{o}z, and Giovanni Volpe.
+\newblock Computational toolbox for optical tweezers in geometrical optics.
+\newblock {\em Journal of the Optical Society of America B}, 32(5):B11, apr
+  2015.
 
-\bibitem{Neves2019}
-Antonio Alvaro~Ranha Neves and Carlos~Lenz Cesar.
-\newblock Analytical calculation of optical forces on spherical particles in
-  optical tweezers: tutorial.
-\newblock {\em Journal of the Optical Society of America B}, 36(6):1525, may
-  2019.
+\bibitem{Jackson1998}
+John~David Jackson.
+\newblock {\em Classical Electrodynamics}.
+\newblock John Wiley \& Sons Inc, 1998.
 
-\bibitem{Nieminen2007}
-Timo~A Nieminen, Vincent L~Y Loke, Alexander~B Stilgoe, Gregor Kn\"{o}ner,
-  Agata~M Bra{\'{n}}czyk, Norman~R Heckenberg, and Halina Rubinsztein-Dunlop.
-\newblock Optical tweezers computational toolbox.
-\newblock {\em Journal of Optics A: Pure and Applied Optics}, 9(8):S196--S203,
-  jul 2007.
+\bibitem{Tlusty1998}
+Tsvi Tlusty, Amit Meller, and Roy Bar-Ziv.
+\newblock Optical gradient forces of strongly localized fields.
+\newblock {\em Physical Review Letters}, 81(8):1738--1741, aug 1998.
 
-\bibitem{Novotny2001}
-Lukas Novotny, Robert~D. Grober, and Khaled Karrai.
-\newblock Reflected image of a strongly focused spot.
-\newblock {\em Optics Letters}, 26(11):789, jun 2001.
+\bibitem{Rohrbach2001}
+Alexander Rohrbach and Ernst H.~K. Stelzer.
+\newblock Optical trapping of dielectric particles in arbitrary fields.
+\newblock {\em Journal of the Optical Society of America A}, 18(4):839, apr
+  2001.
 
 \bibitem{1959a}
 B.~Richards and E.~Wolf.
@@ -187,38 +122,104 @@ B.~Richards and E.~Wolf.
 \newblock {\em Proceedings of the Royal Society of London. Series A.
   Mathematical and Physical Sciences}, 253(1274):358--379, dec 1959.
 
-\bibitem{Rohrbach2001}
-Alexander Rohrbach and Ernst H.~K. Stelzer.
-\newblock Optical trapping of dielectric particles in arbitrary fields.
-\newblock {\em Journal of the Optical Society of America A}, 18(4):839, apr
-  2001.
+\bibitem{Gouesbet1985}
+G~Gouesbet, G~Grehan, and B~Maheu.
+\newblock Scattering of a gaussian beam by a mie scatter center using a
+  bromwich formalism.
+\newblock {\em Journal of Optics}, 16(2):83--93, mar 1985.
 
-\bibitem{Tlusty1998}
-Tsvi Tlusty, Amit Meller, and Roy Bar-Ziv.
-\newblock Optical gradient forces of strongly localized fields.
-\newblock {\em Physical Review Letters}, 81(8):1738--1741, aug 1998.
+\bibitem{Mie1908}
+Gustav Mie.
+\newblock Beitr{\"a}ge zur optik tr{\"u}ber medien, speziell kolloidaler
+  metall{\"o}sungen.
+\newblock {\em Annalen der Physik}, 330(3):377--445, 1908.
+
+\bibitem{Lorenz1890}
+Louis Lorenz.
+\newblock {\em Lysbev{\ae}gelsen i og uden for en af plane Lysb{\o}lger belyst
+  Kugle}.
+\newblock na, 1890.
+
+\bibitem{Nieminen2007}
+Timo~A Nieminen, Vincent L~Y Loke, Alexander~B Stilgoe, Gregor Kn\"{o}ner,
+  Agata~M Bra{\'{n}}czyk, Norman~R Heckenberg, and Halina Rubinsztein-Dunlop.
+\newblock Optical tweezers computational toolbox.
+\newblock {\em Journal of Optics A: Pure and Applied Optics}, 9(8):S196--S203,
+  jul 2007.
+
+\bibitem{Gouesbet2011}
+G{\'{e}}rard Gouesbet and G{\'{e}}rard Gr{\'{e}}han.
+\newblock {\em Generalized Lorenz-Mie Theories}.
+\newblock Springer Berlin Heidelberg, 2011.
+
+\bibitem{Davis1979}
+L.~W. Davis.
+\newblock Theory of electromagnetic beams.
+\newblock {\em Physical Review A}, 19(3):1177--1179, mar 1979.
+
+\bibitem{Mishchenko1996}
+Michael~I. Mishchenko, Larry~D. Travis, and Daniel~W. Mackowski.
+\newblock T-matrix computations of light scattering by nonspherical particles:
+  A review.
+\newblock {\em Journal of Quantitative Spectroscopy and Radiative Transfer},
+  55(5):535--575, may 1996.
+
+\bibitem{Gouesbet2010}
+G.~Gouesbet.
+\newblock T-matrix formulation and generalized lorenz{\textendash}mie theories
+  in spherical coordinates.
+\newblock {\em Optics Communications}, 283(4):517--521, feb 2010.
+
+\bibitem{Neves2019}
+Antonio Alvaro~Ranha Neves and Carlos~Lenz Cesar.
+\newblock Analytical calculation of optical forces on spherical particles in
+  optical tweezers: tutorial.
+\newblock {\em Journal of the Optical Society of America B}, 36(6):1525, may
+  2019.
+
+\bibitem{Biedenharn2008}
+L.~C. Biedenharn, James~D. Louck, and J.~D. Louck.
+\newblock {\em Angular Momentum in Quantum Physics}.
+\newblock Cambridge University Press, 2008.
 
 \bibitem{Hulst1981}
 H.~C. van~de Hulst.
 \newblock {\em Light Scattering by Small Particles}.
 \newblock Dover Publications Inc., 1981.
 
-\bibitem{Kampen2007}
-N.~G. van Kampen.
-\newblock {\em Stochastic Processes in Physics and Chemistry}.
-\newblock NORTH HOLLAND, 2007.
-\newblock pp. 347-349.
-
-\bibitem{Viana2007}
-N.~B. Viana, M.~S. Rocha, O.~N. Mesquita, A.~Mazolli, P.~A.~Maia Neto, and
-  H.~M. Nussenzveig.
-\newblock Towards absolute calibration of optical tweezers.
-\newblock {\em Physical Review E}, 75(2), feb 2007.
-
 \bibitem{Zangwill2013}
 Andrew Zangwill.
 \newblock {\em Modern Electrodynamics}.
 \newblock Cambridge University Pr., 2013.
 \newblock 558-560.
+
+\bibitem{Diniz2019}
+K.~Diniz, R.~S. Dutra, L.~B. Pires, N.~B. Viana, H.~M. Nussenzveig, and
+  P.~A.~Maia Neto.
+\newblock Negative optical torque on a microsphere in optical tweezers.
+\newblock {\em Optics Express}, 27(5):5905, feb 2019.
+
+\bibitem{Born2002}
+Max Born, Emil Wolf, and A.~B. Bhatia.
+\newblock {\em Principles of Optics}.
+\newblock Cambridge University Pr., 2002.
+
+\bibitem{Ma2003}
+Xiaoyan Ma, Jun~Q Lu, R~Scott Brock, Kenneth~M Jacobs, Ping Yang, and Xin-Hua
+  Hu.
+\newblock Determination of complex refractive index of polystyrene microspheres
+  from 370 to 1610 nm.
+\newblock {\em Physics in Medicine and Biology}, 48(24):4165--4172, dec 2003.
+
+\bibitem{Novotny2001}
+Lukas Novotny, Robert~D. Grober, and Khaled Karrai.
+\newblock Reflected image of a strongly focused spot.
+\newblock {\em Optics Letters}, 26(11):789, jun 2001.
+
+\bibitem{Kampen2007}
+N.~G. van Kampen.
+\newblock {\em Stochastic Processes in Physics and Chemistry}.
+\newblock NORTH HOLLAND, 2007.
+\newblock pp. 347-349.
 
 \end{thebibliography}
