@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {2.4}Efeito do perfil gaussiano}{16}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Efeitos de polariza\c c\~ao}{16}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Aberra\c c\~ao esf\'erica produzida por refra\c c\~ao na interface com o porta-amostra}{18}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Outras aberra\c c\~oes do sistema \'otico}{20}{section.2.7}%
-\contentsline {section}{\numberline {2.8}For\c ca \'otica em termos da expans\~ao em multipolos}{23}{section.2.8}%
+\contentsline {section}{\numberline {2.7}Outras aberra\c c\~oes do sistema \'otico}{21}{section.2.7}%
+\contentsline {section}{\numberline {2.8}For\c ca \'otica em termos da expans\~ao em multipolos}{24}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Intera\c c\~ao Spin-\'Orbita}{26}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Caracteriza\c c\~ao de par\^ametros f\IeC {\'\i }sicos}{30}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Caracteriza\c c\~ao do astigmatismo por meio da an\'alise do experimento de transfer\^encia de momento angular}{30}{section.3.1}%

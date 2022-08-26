@@ -1,15 +1,15 @@
 \begin{chapter}{Teoria da Pinça Ótica}
 \label{cap2}
 
-\hspace{5 mm}Esse capítulo será dedicado a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenções dos resultados. Outros modelos importantes serão introduzidos, com a finalidade de gerar uma intuição acerca do assunto. 
+\hspace{5 mm}Esse capítulo será dedicado a apresentar teorias que descrevem o aparato de pinça ótica. A ênfase será no modelo Mie-Debye (MD), que foi usado para as simulações e obtenção dos resultados. Outros modelos importantes serão introduzidos, com a finalidade de gerar uma intuição acerca do assunto. 
 
 Alguns resultados que parecem contra-intuitivos pedem a introdução de alguns efeitos que os explicam. Portanto, a interação de momento angular de spin e orbital do feixe será discutida no contexto da teoria MD, onde a alta abertura numérica da objetiva é a responsável por efeitos de conversão entre os dois tipos de momento angular\cite{Bliokh2015}.
 
 \section{Ótica geométrica e limite de Rayleigh}
 
-\hspace{5 mm}Uma forma intuitiva de entender o aprisionamento ótico de objetos esféricos e transparentes é no regime em que estes possuem um raio muito maior que o comprimento de onda do feixe incidente. Este limite é chamado de ótica geométrica, ou ótica de raios, no qual feixes podem ser tratados de forma geométrica definindo-se sua trajetória.
+\hspace{5 mm}Uma forma intuitiva de entender o aprisionamento de objetos esféricos e transparentes por um feixe ótico é no chamado regime de ótica geométrica, ou ótica de raios. Nesse regime, os objetos que espalham a luz possuem dimensões muito maior que o comprimento de onda dela. Dessa forma, se o raio da esfera é muito maior que o comprimento de onda do campo incidente, tratamos o campo incidente como um conjunto de raios luminosos que ao passarem pela esfera são refratados e refletidos.
 
-Por outro lado, no limite em que o raio é muito menor que o comprimento de onda, temos o limite de Rayleigh, em que nós podemos aproximar a microesfera por um dipolo elétrico.
+Por outro lado, no regime em que o raio é muito menor que o comprimento de onda, temos o limite de Rayleigh, em que nós podemos aproximar a microesfera por um dipolo elétrico.
 
 O feixe presente em uma pinça ótica tem a forma de um cone sólido com um perfil de intensidade radial. Nessa explicação, vamos olhar o comportamento de uma casca desse cone sólido com ângulo de abertura $\theta$ fixo. Dependendo de como os vetores de momento ${\mathbf p}$ diametralmente opostos mudarão ao passar pela esfera, podemos inferir a força que ela sofrerá pela variação dos pares desses vetores. Inicialmente, vamos ignorar efeitos de absorção e reflexão. 
 
@@ -89,7 +89,7 @@ Para descrever esses casos, é necessário um modelo baseado em ótica ondulatória,
 
 \hspace{5 mm}Na tentativa de obter um modelo baseado em ótica ondulatória, o modelo de Gouesbet e Gréhan \cite{Gouesbet1985} faz uma generalização do modelo de Mie para o espalhamento de uma onda plana (circularmente polarizada) por uma esfera \cite{Mie1908,Lorenz1890}, onde o feixe incidente passa a ser definido por uma combinação linear de funções de onda que são soluções da equação de Helmholtz \cite{Nieminen2007}. Os coeficientes da expansão, ou coeficientes de formato do feixe ({\it beam shape coefficients}, ou BSC), são obtidos através de expansões do campo nessas funções, que formam uma base discreta \cite{Gouesbet2011}. 
 
-Na abordagem do artigo de 1985 \cite{Gouesbet1985}, o campo incidente na esfera é um feixe de Davis \cite{Davis1979}, que consiste em um feixe paraxial com correções até quinta ordem no parâmetro $1/(k\thinspace w_0)$ , onde $k$ é módulo do vetor de onda e $w_0$ é a cintura do feixe. Essa aproximação foi usada na tentativa de adequar o formalismo paraxial usual a situações fora do seu regime de validade, tendo em vista que os feixes usados em pinças óticas exigem altos valores de abertura numérica. O método proposto por Gouesbet e Gréhan é atualmente conhecido na literatura como {\it generalized Lerenz-Mie theory} (LGMT), e programas computacionais para o cálculo da força ótica baseados em tal teoria estão disponíveis na internet \cite{Nieminen2007}.
+Na abordagem do artigo de 1985 \cite{Gouesbet1985}, o campo incidente na esfera é um feixe de Davis \cite{Davis1979}, que consiste em um feixe paraxial com correções até quinta ordem no parâmetro $1/(k\thinspace w_0)$ , onde $k$ é módulo do vetor de onda e $w_0$ é o raio da cintura do feixe. Essa aproximação foi usada na tentativa de adequar o formalismo paraxial usual a situações fora do seu regime de validade, tendo em vista que os feixes usados em pinças óticas exigem altos valores de abertura numérica. O método proposto por Gouesbet e Gréhan é atualmente conhecido na literatura como {\it generalized Lerenz-Mie theory} (LGMT), e programas computacionais para o cálculo da força ótica baseados em tal teoria estão disponíveis na internet \cite{Nieminen2007}.
 
 Uma formulação de espalhamento chamada matriz-T (matriz de transferência) é utilizada em conjunto com a expansão em ondas esfericas para obter os campos espalhados para um objeto não esférico\cite{Mishchenko1996,Gouesbet2010}. A discussão desse caso, porém, não está no escopo do trabalho.
 
@@ -243,16 +243,24 @@ onde $\left<{\mathbf F}\right>$ é a média temporal da força, P é a potência do f
 %
 \section{Efeito do perfil gaussiano}
 
-\hspace{5 mm}O modo gaussiano TEM$_{00}$ do feixe laser é o mais amplamente usado nos experimentos de pinça ótica. Para incorporar o efeito do perfil gaussiano no modelo, analisamos o campo paraxial na entrada da objetiva. %Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
+\hspace{5 mm}O modo gaussiano TEM$_{00}$ do feixe laser é o mais amplamente usado nos experimentos de pinça ótica. Para incorporar o efeito do perfil gaussiano no modelo analisamos o campo paraxial na entrada da objetiva. %Trataremos também do efeito da aberração esférica causada pela objetiva quando a lente é imersa em um meio com índice de refração diferente do meio que envolve a microesfera. 
 
-Para introduzir o efeito que o perfil do feixe produz, basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a altura da cintura mínima coincidente com a entrada da objetiva. Isso nos permite tratá-lo como um feixe cilíndrico (de raio de curvartura infinito) \cite{Zangwill2013}. O campo fica:
+Para introduzir o efeito que o perfil do feixe produz basta saber como é o feixe paraxial antes de ser focalizado. Primeiramente, assumimos que tal feixe incidente esteja com a coodenada $z$ do diâmetro mínimo do feixe (região da cintura ou {\it waist}) coincidente com a entrada da objetiva, {\it i.e.} nas coordenadas paraxiais a objetiva está em $z=0$ e o feixe está colimado. Isso nos permite tratá-lo como um feixe cilíndrico (de raio de curvartura infinito) \cite{Zangwill2013}. O campo fica:
 
 \begin{equation}
 {\mathbf E}_{IN}^{antes}(\vec{r},t)=E_0 e^{ikz} e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}(\hat{{\mathbf x}}\pm i\hat{{\mathbf y}}) e^{i\omega t},
 \label{campo_ent}
 \end{equation}
 %
-onde $\omega_0$ é a cintura (waist) mínima, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{1959a}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos na equação \ref{integral_theta} são alteradas.
+onde $\omega_0$ é o raio da cintura do feixe, $f^2\sin^2\theta_k=\rho^2$ (pela condição do seno, ilustrada na figura \ref{condicao_seno}) é a distância ao eixo do feixe ao quadrado. Ao passar pela objetiva, o campo também ganha uma correção de efeitos de difração \cite{1959a}, o fator multiplicativo $-i\frac{f}{\lambda}$. O fator $e^{-\frac{f^2\sin^2\theta_k}{\omega_0^2}}$ deve ser inserido dentro da integral em $\theta_k$. Assim, as expressões para os multipolos na equação \ref{integral_theta} são alteradas.
+%
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=1.]{Presentation/Abbe}
+\caption{Ilustração do efeito da condição do seno de Abbe ($f\sin\theta_k=\rho$), que se difere do caso da aproximação paraxial ao considerar que a lente é descrita por uma esfera de referência ao invés de um plano (que implicaria em $f\tan\theta_k=\rho$).}
+\label{condicao_seno}
+\end{center}
+\end{figure}
 
 %
 %
@@ -462,7 +470,7 @@ f^{(\sigma)}(\rho,\phi,z)=\sum\limits_{s=-\infty}^{\infty}(-i)^sJ_s\Big{(}2\pi A
 %
 onde $J_m$ são as funções de Bessel cilindricas do primeiro tipo. Repare que essa função carrega a dependência de ${\mathbf Q}$ com os parâmetros de astigmatismo $A_{ast}$ e $\varphi_a$, assim como com as coordenadas $z$ e $\rho$.
 
-O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e a cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} a expressão para o coeficiente de multipolo $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_\phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
+O fator $\gamma=f/\omega_0$ é a razão entre a distância focal e o raio da cintura do feixe na entrada da objetiva, enquanto o fator $A$, denominado {\it filling factor}, é a fração de potência que é transmitida pela objetiva. Deixamos para o apêndice \ref{apendicea} a expressão para o coeficiente de multipolo $\G^{C,(\sigma)}_{j,m}$, além das expressões para as componentes radiais e azimutais do fator de eficiência $Q_\rho$ e $Q_\phi$, e dos multipolos $\G^{\pm,(\sigma)}_{j,m}$ dos quais os dois últimos dependem.
 
 No capítulo \ref{cap3} serão descritas as medidas feitas com o aparato da pinça ótica. As forças não são medidas diretamente: como as microesferas estão em movimento Browniano na solução, quando pinçadas elas passam a flutuar ao redor da posição de equilíbrio na pinça. Seu movimento pode ser descrito por meio de um potencial harmônico, caracterizado por valores para as constantes elásticas da pinça. Temos, então, a constante transversa $\kappa_\rho$ definida por\cite{Viana2007}:
 %
