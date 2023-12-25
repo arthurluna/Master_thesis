@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.26)  26 AUG 2022 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.6)  25 DEC 2023 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **tese.tex tese.pdf
 (./tese.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-10>
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
 (/usr/share/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+File: bk12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@chapter=\count186
@@ -20,9 +20,9 @@ File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count191
 \c@figure=\count192
 \c@table=\count193
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
 (/usr/share/texmf-dist/tex/latex/anysize/anysize.sty
 Package: anysize 1994/08/13 setting margin sizes
@@ -30,10 +30,10 @@ Package: anysize 1994/08/13 setting margin sizes
 document style option `anysize' loaded
 Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
 Version 1.0, Aug 13, 1994
-\@Leftmargin=\dimen139
-\@Rightmargin=\dimen140
-\@Topmargin=\dimen141
-\@Bottommargin=\dimen142
+\@Leftmargin=\dimen141
+\@Rightmargin=\dimen142
+\@Topmargin=\dimen143
+\@Bottommargin=\dimen144
 ) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
@@ -43,10 +43,10 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ))
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/02/26 3.73 The Babel package
+Package: babel 2023/02/13 3.86 The Babel package
 \babel@savecnt=\count194
-\U@D=\dimen143
-\l@unhyphenated=\language87
+\U@D=\dimen145
+\l@unhyphenated=\language26
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -54,18 +54,35 @@ Package: babel 2022/02/26 3.73 The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
-Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language70). Reported on input line 111.
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Portuguese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 53.
+
+Package babel Info: Hyphen rules for 'portuges' set to \l@english
+(babel)             (\language0). Reported on input line 54.
+Package babel Info: Hyphen rules for 'brazil' set to \l@english
+(babel)             (\language0). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
-)
-(/usr/share/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+) (/usr/share/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 )
 (/usr/share/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
-Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
-(babel)             (\language70). Reported on input line 111.
+Package babel Info: Hyphen rules for 'brazilian' set to \l@english
+(babel)             (\language0). Reported on input line 111.
 ))
+(/usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian.tex
+Package babel Info: Importing font and identification data for brazilian
+(babel)             from babel-pt-BR.ini. Reported on input line 11.
+)
+(/usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-portuguese.tex
+Package babel Info: Importing font and identification data for portuguese
+(babel)             from babel-pt.ini. Reported on input line 11.
+)
 (/usr/share/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
@@ -74,12 +91,12 @@ nment
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count196
 \float@exts=\toks18
-\float@box=\box50
+\float@box=\box51
 \@float@everytoks=\toks19
-\@floatcapt=\box51
+\@floatcapt=\box52
 )
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks20
 \c@algorithm=\count197
@@ -91,22 +108,22 @@ Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
 (/usr/share/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
 
 (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen144
-\captionmargin=\dimen145
-\caption@leftmargin=\dimen146
-\caption@rightmargin=\dimen147
-\caption@width=\dimen148
-\caption@indent=\dimen149
-\caption@parindent=\dimen150
-\caption@hangindent=\dimen151
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen146
+\captionmargin=\dimen147
+\caption@leftmargin=\dimen148
+\caption@rightmargin=\dimen149
+\caption@width=\dimen150
+\caption@indent=\dimen151
+\caption@parindent=\dimen152
+\caption@hangindent=\dimen153
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count198
@@ -114,22 +131,22 @@ Package caption Info: Standard document class detected.
 Package caption Info: float package is loaded.
 )
 \c@KVtest=\count266
-\sf@farskip=\skip49
-\sf@captopadj=\dimen152
-\sf@capskip=\skip50
-\sf@nearskip=\skip51
+\sf@farskip=\skip50
+\sf@captopadj=\dimen154
+\sf@capskip=\skip51
+\sf@nearskip=\skip52
 \c@subfigure=\count267
 \c@subfigure@save=\count268
 \c@lofdepth=\count269
 \c@subtable=\count270
 \c@subtable@save=\count271
 \c@lotdepth=\count272
-\sf@top=\skip52
-\sf@bottom=\skip53
+\sf@top=\skip53
+\sf@bottom=\skip54
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip54
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -138,31 +155,41 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
-\ex@=\dimen153
+\ex@=\dimen155
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen154
+\pmbraise@=\dimen156
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count273
 LaTeX Info: Redefining \frac on input line 234.
 \uproot@=\count274
 \leftroot@=\count275
 LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
 \classnum@=\count276
 \DOTSCASE@=\count277
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
-\big@size=\dimen155
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen157
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count278
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
 \c@MaxMatrixCols=\count279
 \dotsspace@=\muskip16
 \c@parentequation=\count280
@@ -172,18 +199,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \column@=\count283
 \maxfields@=\count284
 \andhelp@=\toks24
-\eqnshift@=\dimen156
-\alignsep@=\dimen157
-\tagshift@=\dimen158
-\tagwidth@=\dimen159
-\totwidth@=\dimen160
-\lineht@=\dimen161
+\eqnshift@=\dimen158
+\alignsep@=\dimen159
+\tagshift@=\dimen160
+\tagwidth@=\dimen161
+\totwidth@=\dimen162
+\lineht@=\dimen163
 \@envbody=\toks25
-\multlinegap=\skip55
-\multlinetaggap=\skip56
+\multlinegap=\skip56
+\multlinetaggap=\skip57
 \mathdisplay@stack=\toks26
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 )
 (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -203,9 +230,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks29
 \thm@notefont=\toks30
 \thm@headpunct=\toks31
-\thm@preskip=\skip57
-\thm@postskip=\skip58
-\thm@headsep=\skip59
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
 \dth@everypar=\toks32
 )
 (/usr/share/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
@@ -216,7 +243,7 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
@@ -227,33 +254,33 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
 (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen162
-\Gin@req@width=\dimen163
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
 )
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
-\f@nch@headwidth=\skip60
-\f@nch@O@elh=\skip61
-\f@nch@O@erh=\skip62
-\f@nch@O@olh=\skip63
-\f@nch@O@orh=\skip64
-\f@nch@O@elf=\skip65
-\f@nch@O@erf=\skip66
-\f@nch@O@olf=\skip67
-\f@nch@O@orf=\skip68
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip61
+\f@nch@O@elh=\skip62
+\f@nch@O@erh=\skip63
+\f@nch@O@olh=\skip64
+\f@nch@O@orh=\skip65
+\f@nch@O@elf=\skip66
+\f@nch@O@erf=\skip67
+\f@nch@O@olf=\skip68
+\f@nch@O@orf=\skip69
 )
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen164
-\ar@mcellbox=\box54
-\extrarowheight=\dimen165
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen166
+\ar@mcellbox=\box55
+\extrarowheight=\dimen167
 \NC@list=\toks33
-\extratabsurround=\skip69
-\backup@length=\skip70
-\ar@cellbox=\box55
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box56
 )
 (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -267,26 +294,26 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@cnth=\count285
 \Gm@cntv=\count286
 \c@Gm@tempcnt=\count287
-\Gm@bindingoffset=\dimen166
-\Gm@wd@mp=\dimen167
-\Gm@odd@mp=\dimen168
-\Gm@even@mp=\dimen169
-\Gm@layoutwidth=\dimen170
-\Gm@layoutheight=\dimen171
-\Gm@layouthoffset=\dimen172
-\Gm@layoutvoffset=\dimen173
+\Gm@bindingoffset=\dimen168
+\Gm@wd@mp=\dimen169
+\Gm@odd@mp=\dimen170
+\Gm@even@mp=\dimen171
+\Gm@layoutwidth=\dimen172
+\Gm@layoutheight=\dimen173
+\Gm@layouthoffset=\dimen174
+\Gm@layoutvoffset=\dimen175
 \Gm@dimlist=\toks34
 )
 (/usr/share/texmf-dist/tex/latex/simplewick/simplewick.sty
 Package: simplewick 2007/11/23 v1.2a
 
 Package: simplewick v1.2a (2007/11/23)
-\swb@xone=\box56
-\swb@xtwo=\box57
-\swb@xthree=\box58
-\swb@xfour=\box59
-\swdimen@ne=\dimen174
-\swdimentw@=\dimen175
+\swb@xone=\box57
+\swb@xtwo=\box58
+\swb@xthree=\box59
+\swb@xfour=\box60
+\swdimen@ne=\dimen176
+\swdimentw@=\dimen177
 ) (/usr/share/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup7
@@ -303,49 +330,49 @@ docmode, (/usr/share/texmf-dist/tex/generic/xypic/xyrecat.tex)
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen176
-\Y@c=\dimen177
-\U@c=\dimen178
-\D@c=\dimen179
-\L@c=\dimen180
-\R@c=\dimen181
+\X@c=\dimen178
+\Y@c=\dimen179
+\U@c=\dimen180
+\D@c=\dimen181
+\L@c=\dimen182
+\R@c=\dimen183
 \Edge@c=\toks35
-\X@p=\dimen182
-\Y@p=\dimen183
-\U@p=\dimen184
-\D@p=\dimen185
-\L@p=\dimen186
-\R@p=\dimen187
+\X@p=\dimen184
+\Y@p=\dimen185
+\U@p=\dimen186
+\D@p=\dimen187
+\L@p=\dimen188
+\R@p=\dimen189
 \Edge@p=\toks36
-\X@origin=\dimen188
-\Y@origin=\dimen189
-\X@xbase=\dimen190
-\Y@xbase=\dimen191
-\X@ybase=\dimen192
-\Y@ybase=\dimen193
-\X@min=\dimen194
-\Y@min=\dimen195
-\X@max=\dimen196
-\Y@max=\dimen197
-\lastobjectbox@=\box60
-\zerodotbox@=\box61
-\almostz@=\dimen198
+\X@origin=\dimen190
+\Y@origin=\dimen191
+\X@xbase=\dimen192
+\Y@xbase=\dimen193
+\X@ybase=\dimen194
+\Y@ybase=\dimen195
+\X@min=\dimen196
+\Y@min=\dimen197
+\X@max=\dimen198
+\Y@max=\dimen199
+\lastobjectbox@=\box61
+\zerodotbox@=\box62
+\almostz@=\dimen256
  direction,
-\d@X=\dimen199
-\d@Y=\dimen256
+\d@X=\dimen257
+\d@Y=\dimen258
 \K@=\count288
 \KK@=\count289
 \Direction=\count290
-\K@dXdY=\dimen257
-\K@dYdX=\dimen258
+\K@dXdY=\dimen259
+\K@dYdX=\dimen260
 \xyread@=\read3
 \xywrite@=\write3
 \csp@=\count291
-\quotPTK@=\dimen259
+\quotPTK@=\dimen261
 
 utility macros; pictures: \xy, positions,
 \swaptoks@@=\toks37
-\connectobjectbox@@=\box62
+\connectobjectbox@@=\box63
  objects,
 \styletoks@=\toks38
  decorations;
@@ -362,13 +389,13 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: Curve and Spline extension v.3.12 curve,
 \crv@cnt@=\count292
 \crvpts@=\toks39
-\splinebox@=\box63
-\splineval@=\dimen260
-\splinedepth@=\dimen261
-\splinetol@=\dimen262
-\splinelength@=\dimen263
+\splinebox@=\box64
+\splineval@=\dimen262
+\splinedepth@=\dimen263
+\splinetol@=\dimen264
+\splinelength@=\dimen265
  circles,
-\L@=\dimen264
+\L@=\dimen266
  loaded)
 (/usr/share/texmf-dist/tex/generic/xypic/xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
@@ -378,7 +405,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
 (/usr/share/texmf-dist/tex/generic/xypic/xyline.tex
  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen265
+\xylinethick@=\dimen267
  loaded)
 (/usr/share/texmf-dist/tex/generic/xypic/xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
@@ -399,7 +426,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 (/usr/share/texmf-dist/tex/generic/xypic/xygraph.tex
  Xy-pic option: Graph feature v.3.11 loaded) loaded)
 (/usr/share/texmf-dist/tex/generic/xypic/xypdf.tex
- Xy-pic option: PDF driver v.1.9 Xy-pic pdf driver: `color' extension support
+ Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
 (/usr/share/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
 Xy-pic pdf driver: `curve' extension support
 (/usr/share/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
@@ -430,7 +457,7 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -446,8 +473,8 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
 (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -464,15 +491,26 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-\@linkdim=\dimen266
-\Hy@linkcounter=\count298
-\Hy@pagecounter=\count299
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count298
+)
+\@linkdim=\dimen268
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -482,27 +520,27 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count300
+\Hy@SavedSpaceFactor=\count301
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `plainpages' set `false' on input line 4018.
-Package hyperref Info: Hyper figures OFF on input line 4137.
-Package hyperref Info: Link nesting OFF on input line 4142.
-Package hyperref Info: Hyper index ON on input line 4145.
-Package hyperref Info: Plain pages OFF on input line 4152.
-Package hyperref Info: Backreferencing ON on input line 4155.
+Package hyperref Info: Option `plainpages' set `false' on input line 4060.
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing ON on input line 4195.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4390.
+Package hyperref Info: Bookmarks ON on input line 4425.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2021/02/04 v1.41 Bibliographical back referencing
 
 (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
 (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
@@ -517,102 +555,103 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+85.
 ))
-\c@Hy@tempcnt=\count301
+\c@Hy@tempcnt=\count302
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen267
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen269
 
 (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count302
-\Field@Width=\dimen268
-\Fld@charsize=\dimen269
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing ON on input line 6040.
-Package hyperref Info: Link coloring OFF on input line 6047.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
-LaTeX Info: Redefining \ref on input line 6097.
-LaTeX Info: Redefining \pageref on input line 6101.
+\Fld@menulength=\count303
+\Field@Width=\dimen270
+\Fld@charsize=\dimen271
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing ON on input line 6055.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
 
 (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count303
-\c@Item=\count304
-\c@Hfootnote=\count305
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
 )
 Package hyperref Info: Driver: hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
-\Fld@listcount=\count306
-\c@bookmark@seq@number=\count307
-\Hy@SectionHShift=\skip71
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+\Hy@SectionHShift=\skip72
 )
 (/usr/share/texmf-dist/tex/latex/braket/braket.sty)
 (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count308
-\calc@Bcount=\count309
-\calc@Adimen=\dimen270
-\calc@Bdimen=\dimen271
-\calc@Askip=\skip72
-\calc@Bskip=\skip73
+\calc@Acount=\count309
+\calc@Bcount=\count310
+\calc@Adimen=\dimen272
+\calc@Bdimen=\dimen273
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count310
-\calc@Cskip=\skip74
+\calc@Ccount=\count311
+\calc@Cskip=\skip75
 )
 (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen272
-\ESO@tempdimb=\dimen273
+\ESO@tempdima=\dimen274
+\ESO@tempdimb=\dimen275
 
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+
+(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ))
-\AM@pagewidth=\dimen274
-\AM@pageheight=\dimen275
-\AM@fboxrule=\dimen276
+\AM@pagewidth=\dimen276
+\AM@pageheight=\dimen277
+\AM@fboxrule=\dimen278
 
 (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count311
-\AM@pagebox=\box64
+\pdfpages@includegraphics@status=\count312
+\AM@pagebox=\box65
 \AM@global@opts=\toks43
-\AM@pagecnt=\count312
+\AM@pagecnt=\count313
 \AM@toc@title=\toks44
-\c@AM@survey=\count313
-\AM@templatesizebox=\box65
+\AM@lof@heading=\toks45
+\c@AM@survey=\count314
+\AM@templatesizebox=\box66
 )
 (/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -621,45 +660,45 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 Package: nomencl 2021/11/10 v5.6 Nomenclature package
 
 (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks45
-\XKV@tempa@toks=\toks46
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
 )
-\XKV@depth=\count314
+\XKV@depth=\count315
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
+Package: tocbasic 2022/10/12 v3.38 KOMA-Script package (handling toc-files)
 
 (/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent 
+Package: scrbase 2022/10/12 v3.38 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
 (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
+Package: scrlfile 2022/10/12 v3.38 KOMA-Script package (file load hooks)
 
 (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
+Package: scrlfile-hook 2022/10/12 v3.38 KOMA-Script package (using LaTeX hooks)
 
 
 (/usr/share/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
+Package: scrlogo 2022/10/12 v3.38 KOMA-Script package (logo)
 )))
 Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line
  368.
 )
-\scr@dte@tocline@numberwidth=\skip75
-\scr@dte@tocline@numbox=\box66
+\scr@dte@tocline@numberwidth=\skip76
+\scr@dte@tocline@numbox=\box67
 )
 Package tocbasic Info: setting babel extension for `nlo' on input line 187.
 Package tocbasic Info: setting babel extension for `nls' on input line 188.
-\nomlabelwidth=\dimen277
-\nom@tempdim=\dimen278
-\nomitemsep=\skip76
+\nomlabelwidth=\dimen279
+\nom@tempdim=\dimen280
+\nomitemsep=\skip77
 )
 \@nomenclaturefile=\write4
 \openout4 = `tese.nlo'.
@@ -685,9 +724,9 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 43.
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count315
-\l__pdf_internal_box=\box67
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count316
+\l__pdf_internal_box=\box68
 ) (./tese.aux
 
 LaTeX Warning: Label `kphi' multiply defined.
@@ -719,17 +758,17 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
-\scratchdimen=\dimen279
-\scratchbox=\box68
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count319
-\MPscratchDim=\dimen280
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count317
+\scratchdimen=\dimen281
+\scratchbox=\box69
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen282
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -798,35 +837,23 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 Package xypdf Info: Line width: 0.47998pt on input line 46.
 Package hyperref Info: Link coloring ON on input line 46.
-
-(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count322
-)
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
-
-(./tese.out) (./tese.out)
+ (./tese.out) (./tese.out)
 \@outlinefile=\write6
 \openout6 = `tese.out'.
 
 
 (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
 
 (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
+))
 <logo_ufrj.jpg, id=92, 113.67468pt x 135.50626pt>
 File: logo_ufrj.jpg Graphic file (type jpg)
 <use logo_ufrj.jpg>
@@ -943,7 +970,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11] (./tese.lof
-Underfull \vbox (badness 1221) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -957,7 +984,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [12
 
 ]
-Underfull \vbox (badness 1137) has occurred while \output is active []
+Underfull \vbox (badness 1810) has occurred while \output is active []
 
 
 
@@ -1051,12 +1078,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4
 
 ]
-<geom_foco_coincIII.png, id=362, 207.25363pt x 300.42818pt>
+<geom_foco_coincIII.png, id=363, 207.25363pt x 300.42818pt>
 File: geom_foco_coincIII.png Graphic file (type png)
 <use geom_foco_coincIII.png>
 Package pdftex.def Info: geom_foco_coincIII.png  used on input line 20.
 (pdftex.def)             Requested size: 165.80312pt x 240.34286pt.
-<geom_foco_axialIII.png, id=365, 522.61363pt x 405.54819pt>
+<geom_foco_axialIII.png, id=366, 522.61363pt x 405.54819pt>
 File: geom_foco_axialIII.png Graphic file (type png)
 <use geom_foco_axialIII.png>
 Package pdftex.def Info: geom_foco_axialIII.png  used on input line 32.
@@ -1071,7 +1098,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5 <./geom_foco_coincIII.png>]
-<geom_lateralIV.png, id=371, 363.14182pt x 341.64pt>
+<geom_lateralIV.png, id=372, 363.14182pt x 341.64pt>
 File: geom_lateralIV.png Graphic file (type png)
 <use geom_lateralIV.png>
 Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
@@ -1080,7 +1107,7 @@ Package pdftex.def Info: geom_lateralIV.png  used on input line 42.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<reflex_absorII.png, id=373, 962.09438pt x 586.44093pt>
+<reflex_absorII.png, id=374, 962.09438pt x 586.44093pt>
 File: reflex_absorII.png Graphic file (type png)
 <use reflex_absorII.png>
 Package pdftex.def Info: reflex_absorII.png  used on input line 53.
@@ -1134,8 +1161,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 Overfull \hbox (2.17012pt too wide) in paragraph at lines 123--124
-[]\OT1/cmr/m/n/12 Assim, que-re-mos ob-ter os cam-pos in-ci-den-tes na es-fera 
-e es-pa-lha-dos por ela. Come^^Xcamos
+[]\OT1/cmr/m/n/12 Assim, quer-e-mos obter os cam-pos in-ci-dentes na es-fera e 
+es-pal-ha-dos por ela. Come^^Xcamos
  []
 
 
@@ -1186,11 +1213,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-<Presentation/Abbe.png, id=499, 160.06909pt x 77.04819pt>
+<Presentation/Abbe.png, id=500, 160.06909pt x 77.04819pt>
 File: Presentation/Abbe.png Graphic file (type png)
 <use Presentation/Abbe.png>
 Package pdftex.def Info: Presentation/Abbe.png  used on input line 259.
 (pdftex.def)             Requested size: 160.0687pt x 77.04799pt.
+
+Underfull \vbox (badness 3849) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1210,12 +1240,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
-<aberracao_esf4.png, id=517, 355.37727pt x 261.60545pt>
-File: aberracao_esf4.png Graphic file (type png)
-<use aberracao_esf4.png>
-Package pdftex.def Info: aberracao_esf4.png  used on input line 317.
-(pdftex.def)             Requested size: 319.8366pt x 235.44272pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1225,6 +1249,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
+<aberracao_esf4.png, id=522, 355.37727pt x 261.60545pt>
+File: aberracao_esf4.png Graphic file (type png)
+<use aberracao_esf4.png>
+Package pdftex.def Info: aberracao_esf4.png  used on input line 317.
+(pdftex.def)             Requested size: 319.8366pt x 235.44272pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1244,19 +1274,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20]
 Overfull \hbox (25.95111pt too wide) detected at line 398
-[][]\OT1/cmr/m/n/12 ^^H[](\OML/cmm/m/it/12 ^^R; ^^^\OT1/cmr/m/n/12 ) = 2\OML/cm
-m/m/it/12 ^^Y [] ;
+[][][]\OT1/cmr/m/n/12 ^^H[](\OML/cmm/m/it/12 ^^R; ^^^\OT1/cmr/m/n/12 ) = 2\OML/
+cmm/m/it/12 ^^Y [] ;
  []
 
-<feixe_astig.png, id=545, 671.50874pt x 311.66437pt>
-File: feixe_astig.png Graphic file (type png)
-<use feixe_astig.png>
-Package pdftex.def Info: feixe_astig.png  used on input line 407.
-(pdftex.def)             Requested size: 470.05292pt x 218.16356pt.
 
-Overfull \hbox (14.8088pt too wide) in paragraph at lines 407--408
- [] 
- []
+Underfull \vbox (badness 4479) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1267,6 +1291,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
+<feixe_astig.png, id=553, 671.50874pt x 311.66437pt>
+File: feixe_astig.png Graphic file (type png)
+<use feixe_astig.png>
+Package pdftex.def Info: feixe_astig.png  used on input line 407.
+(pdftex.def)             Requested size: 470.05292pt x 218.16356pt.
+
+Overfull \hbox (14.8088pt too wide) in paragraph at lines 407--408
+ [] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1294,16 +1328,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23]
-Overfull \hbox (42.80061pt too wide) detected at line 456
-[][]\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m
-/n/12 ) = [] [] [](2\OML/cmm/m/it/12 j \OT1/cmr/m/n/12 + 1)\OMS/cmsy/m/n/12 G[]
-[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b[]\
-OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \OM
-L/cmm/m/it/12 ^^[ [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ) + (\O
-ML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 )\O
-MS/cmsy/m/n/12 G[] [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  e[][]:
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1313,6 +1337,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
+Overfull \hbox (42.80061pt too wide) detected at line 456
+[][][]\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr
+/m/n/12 ) = [] [] [](2\OML/cmm/m/it/12 j \OT1/cmr/m/n/12 + 1)\OMS/cmsy/m/n/12 G
+[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 b[
+]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \
+OML/cmm/m/it/12 ^^[ [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ) + (
+\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 )
+\OMS/cmsy/m/n/12 G[] [] \OT1/cmr/m/n/12 2\OML/cmm/m/it/12  e[][]:
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1331,7 +1365,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26]
-<so_fig.png, id=610, 475.4291pt x 275.34273pt>
+<so_fig.png, id=611, 475.4291pt x 275.34273pt>
 File: so_fig.png Graphic file (type png)
 <use so_fig.png>
 Package pdftex.def Info: so_fig.png  used on input line 518.
@@ -1356,13 +1390,6 @@ Package pdftex.def Info: Kphi_Artigo_Kaina.png  used on input line 543.
 (pdftex.def)             Requested size: 346.6693pt x 260.28429pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 5832) has occurred while \output is active []
-
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1383,8 +1410,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Cap\'{\i }tulo 3.
 
 Overfull \hbox (19.1397pt too wide) in paragraph at lines 13--13
-[]\OT1/cmr/bx/n/17.28 Caracteriza^^Xc~ao do as-tig-ma-tismo por meio da an^^Sal
-ise
+[]\OT1/cmr/bx/n/17.28 Caracteriza^^Xc~ao do astig-ma-tismo por meio da an^^Sali
+se
  []
 
 
@@ -1398,7 +1425,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [30
 
 ]
-<fig/setup.jpg, id=638, 1129.21875pt x 760.8425pt>
+<fig/setup.jpg, id=639, 1129.21875pt x 760.8425pt>
 File: fig/setup.jpg Graphic file (type jpg)
 <use fig/setup.jpg>
 Package pdftex.def Info: fig/setup.jpg  used on input line 27.
@@ -1413,7 +1440,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 34.
 
 
 Missing character: There is no º in font cmr12!
-<fig/microscopio.jpg, id=639, 495.35063pt x 605.26125pt>
+<fig/microscopio.jpg, id=640, 495.35063pt x 605.26125pt>
 File: fig/microscopio.jpg Graphic file (type jpg)
 <use fig/microscopio.jpg>
 Package pdftex.def Info: fig/microscopio.jpg  used on input line 38.
@@ -1427,7 +1454,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31 <./fig/setup.jpg>]
-<fig/QWP.jpg, id=646, 377.41pt x 375.4025pt>
+<fig/QWP.jpg, id=647, 377.41pt x 375.4025pt>
 File: fig/QWP.jpg Graphic file (type jpg)
 <use fig/QWP.jpg>
 Package pdftex.def Info: fig/QWP.jpg  used on input line 57.
@@ -1466,7 +1493,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34]
-<fig/forcas_estagio.jpg, id=667, 1160.08406pt x 622.57594pt>
+<fig/forcas_estagio.jpg, id=668, 1160.08406pt x 622.57594pt>
 File: fig/forcas_estagio.jpg Graphic file (type jpg)
 <use fig/forcas_estagio.jpg>
 Package pdftex.def Info: fig/forcas_estagio.jpg  used on input line 88.
@@ -1489,7 +1516,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [35 <./fig/forcas_estagio.jpg>]
-<fig/pos_eq_phi.jpg, id=673, 816.04875pt x 490.83376pt>
+<fig/pos_eq_phi.jpg, id=674, 816.04875pt x 490.83376pt>
 File: fig/pos_eq_phi.jpg Graphic file (type jpg)
 <use fig/pos_eq_phi.jpg>
 Package pdftex.def Info: fig/pos_eq_phi.jpg  used on input line 110.
@@ -1525,7 +1552,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37 <./fig/pos_eq_phi.jpg>]
-<zeq_psi_ast25II.png, id=689, 462.2891pt x 347.01546pt>
+<zeq_psi_ast25II.png, id=690, 462.2891pt x 347.01546pt>
 File: zeq_psi_ast25II.png Graphic file (type png)
 <use zeq_psi_ast25II.png>
 Package pdftex.def Info: zeq_psi_ast25II.png  used on input line 161.
@@ -1549,9 +1576,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [39 <./zeq_psi_ast25II.png>]
-Overfull \hbox (11.4217pt too wide) in paragraph at lines 182--182
+Overfull \hbox (29.89171pt too wide) in paragraph at lines 182--182
 []\OT1/cmr/bx/n/17.28 Caracteriza^^Xc~ao do par^ametro de ab-sor^^Xc~ao da amos
--
+tra 
  []
 
 
@@ -1562,8 +1589,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40]
-<Qz_tipico.png, id=708, 462.2891pt x 347.01546pt>
+[40{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<Qz_tipico.png, id=709, 462.2891pt x 347.01546pt>
 File: Qz_tipico.png Graphic file (type png)
 <use Qz_tipico.png>
 Package pdftex.def Info: Qz_tipico.png  used on input line 194.
@@ -1573,7 +1600,7 @@ Package pdftex.def Info: Qz_tipico.png  used on input line 194.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 3128) has occurred while \output is active []
+Underfull \vbox (badness 2245) has occurred while \output is active []
 
 
 
@@ -1585,7 +1612,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41]
-<Regiao_de_pincamentoII.png, id=716, 722.7pt x 578.16pt>
+<Regiao_de_pincamentoII.png, id=717, 722.7pt x 578.16pt>
 File: Regiao_de_pincamentoII.png Graphic file (type png)
 <use Regiao_de_pincamentoII.png>
 Package pdftex.def Info: Regiao_de_pincamentoII.png  used on input line 218.
@@ -1615,14 +1642,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Cap\'{\i }tulo 4.
 
 Overfull \hbox (5.01651pt too wide) in paragraph at lines 4--5
-[] \OT1/cmr/m/n/12 Nesse cap^^S^^Ptulo dis-cu-ti-re-mos os re-sul-ta-dos ob-ti-
-dos nas si-mula^^Xc~oes des-cri-tas no cap^^S^^Ptulo
- []
-
-
-Overfull \hbox (14.72363pt too wide) in paragraph at lines 6--6
-[]\OT1/cmr/bx/n/17.28 Transfer^encia de mo-mento an-gu-lar e ca-rac-te-riza^^Xc
-~ao
+[] \OT1/cmr/m/n/12 Nesse cap^^S^^Ptulo dis-cu-tire-mos os re-sul-ta-dos obti-do
+s nas sim-ula^^Xc~oes de-scritas no cap^^S^^Ptulo
  []
 
 
@@ -1636,7 +1657,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [44
 
 ]
-<Kphi_rho_Aast_dupla.png, id=735, 885.75545pt x 356.57182pt>
+<Kphi_rho_Aast_dupla.png, id=736, 885.75545pt x 356.57182pt>
 File: Kphi_rho_Aast_dupla.png Graphic file (type png)
 <use Kphi_rho_Aast_dupla.png>
 Package pdftex.def Info: Kphi_rho_Aast_dupla.png  used on input line 23.
@@ -1646,7 +1667,7 @@ Overfull \hbox (40.77556pt too wide) in paragraph at lines 23--24
  [] 
  []
 
-<erro_astigII.png, id=737, 462.2891pt x 347.01546pt>
+<erro_astigII.png, id=738, 462.2891pt x 347.01546pt>
 File: erro_astigII.png Graphic file (type png)
 <use erro_astigII.png>
 Package pdftex.def Info: erro_astigII.png  used on input line 33.
@@ -1708,7 +1729,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 39.
 
 
 Missing character: There is no º in font cmr12!
-<Kphi_rho_Aast024III.png, id=740, 457.51091pt x 360.15546pt>
+<Kphi_rho_Aast024III.png, id=741, 457.51091pt x 360.15546pt>
 File: Kphi_rho_Aast024III.png Graphic file (type png)
 <use Kphi_rho_Aast024III.png>
 Package pdftex.def Info: Kphi_rho_Aast024III.png  used on input line 43.
@@ -1765,12 +1786,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [47 <./Kphi_rho_Aast024III.png>]
-<Qz_z_1e-3_79.png, id=763, 900.09pt x 347.01546pt>
+<Qz_z_1e-3_79.png, id=764, 900.09pt x 347.01546pt>
 File: Qz_z_1e-3_79.png Graphic file (type png)
 <use Qz_z_1e-3_79.png>
 Package pdftex.def Info: Qz_z_1e-3_79.png  used on input line 63.
 (pdftex.def)             Requested size: 450.0439pt x 173.5073pt.
-<Qz_z_1e-34II.png, id=767, 882.76909pt x 348.21pt>
+<Qz_z_1e-34II.png, id=768, 882.76909pt x 348.21pt>
 File: Qz_z_1e-34II.png Graphic file (type png)
 <use Qz_z_1e-34II.png>
 Package pdftex.def Info: Qz_z_1e-34II.png  used on input line 75.
@@ -1789,7 +1810,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48 <./Qz_z_1e-3_79.png>]
-<potencial_qz.png, id=774, 464.67818pt x 347.01546pt>
+<potencial_qz.png, id=775, 464.67818pt x 347.01546pt>
 File: potencial_qz.png Graphic file (type png)
 <use potencial_qz.png>
 Package pdftex.def Info: potencial_qz.png  used on input line 91.
@@ -1798,7 +1819,7 @@ Package pdftex.def Info: potencial_qz.png  used on input line 91.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pot_EGII.png, id=777, 462.2891pt x 347.01546pt>
+<Pot_EGII.png, id=778, 462.2891pt x 347.01546pt>
 File: Pot_EGII.png Graphic file (type png)
 <use Pot_EGII.png>
 Package pdftex.def Info: Pot_EGII.png  used on input line 107.
@@ -1931,20 +1952,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Overfull \hbox (30.62813pt too wide) detected at line 41
-[][]\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m
-/n/12 ) = [][] \OML/cmm/m/it/12 d^^R[] [] ^^R[] [] ^^R[][] e[]T\OT1/cmr/m/n/12 
-(\OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/
-cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[];
+[][][]\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr
+/m/n/12 ) = [][] \OML/cmm/m/it/12 d^^R[] [] ^^R[] [] ^^R[][] e[]T\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[];
  []
 
 
 Overfull \hbox (29.78261pt too wide) detected at line 46
-[][]\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m
-/n/12 ) = [][] \OML/cmm/m/it/12 d^^R[] [] ^^R[] [] ^^R[][] e[]T\OT1/cmr/m/n/12 
-(\OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/
-cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[]:
+[][][]\OMS/cmsy/m/n/12 G[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr
+/m/n/12 ) = [][] \OML/cmm/m/it/12 d^^R[] [] ^^R[] [] ^^R[][] e[]T\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 ^^R[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 ^^Z; ^^^; z\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 e[]:
  []
 
 
@@ -1971,34 +1992,34 @@ LaTeX Warning: There were multiply-defined labels.
 Package rerunfilecheck Info: File `tese.out' has not changed.
 (rerunfilecheck)             Checksum: C815FC700969008BE35F50AF8126C8D7;5308.
 Package rerunfilecheck Info: File `tese.brf' has not changed.
-(rerunfilecheck)             Checksum: 98918F992FD91E908939BD38095FC3BE;3459.
+(rerunfilecheck)             Checksum: 219E628C5695393FB25527CCE71EFD37;3459.
  ) 
 Here is how much of TeX's memory you used:
- 19203 strings out of 478238
- 303619 string characters out of 5850456
- 711910 words of memory out of 5000000
- 36814 multiletter control sequences out of 15000+600000
- 480901 words of font info for 76 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 110i,19n,106p,3243b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on tese.pdf (78 pages, 3966914 bytes).
+ 19408 strings out of 477473
+ 308728 string characters out of 5829992
+ 1878388 words of memory out of 5000000
+ 39113 multiletter control sequences out of 15000+600000
+ 523929 words of font info for 80 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 110i,19n,106p,3243b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1
+200.pfb>
+Output written on tese.pdf (78 pages, 3966254 bytes).
 PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 903 compressed objects within 10 object streams
+ 1070 PDF objects out of 1200 (max. 8388607)
+ 901 compressed objects within 10 object streams
  224 named destinations out of 1000 (max. 500000)
  307 words of extra memory for PDF output out of 10000 (max. 10000000)
 

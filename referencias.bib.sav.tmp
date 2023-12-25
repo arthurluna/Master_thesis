@@ -490,4 +490,31 @@
 @Article{Ali2020,
   author    = {Rfaqat Ali and Felipe A. Pinheiro and Rafael S. Dutra and Felipe S. S. Rosa and Paulo A. Maia Neto},
   journal   = {Nanoscale},
-  title     = {Enantioselective manipulation of single chiral nanoparticles using optic
+  title     = {Enantioselective manipulation of single chiral nanoparticles using optical tweezers},
+  year      = {2020},
+  number    = {8},
+  pages     = {5031--5037},
+  volume    = {12},
+  doi       = {10.1039/c9nr09736h},
+  publisher = {Royal Society of Chemistry ({RSC})},
+}
+
+@Book{Bohren1998,
+  author    = {Bohren, Craig F. and Huffman, Donald R.},
+  publisher = {Wiley-Interscience},
+  title     = {Absorption and Scattering of Light by Small Particles (Wiley Science Paperback Series)},
+  year      = {1998},
+  isbn      = {9780471293408},
+  pages     = {544},
+}
+
+@Article{Hosten2008,
+  author    = {Onur Hosten and Paul Kwiat},
+  journal   = {Science},
+  title     = {Observation of the Spin Hall Effect of Light via Weak Measurements},
+  year      = {2008},
+  month     = {feb},
+  number    = {5864},
+  pages     = {787--790},
+  volume    = {319},
+  do

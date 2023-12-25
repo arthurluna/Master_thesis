@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2.2}Uma abordagem de \'otica ondulat\'oria}{9}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Modelo Mie-Debye}{10}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Efeito do perfil gaussiano}{16}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Efeitos de polariza\c c\~ao}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Efeitos de polariza\c c\~ao}{17}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Aberra\c c\~ao esf\'erica produzida por refra\c c\~ao na interface com o porta-amostra}{18}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Outras aberra\c c\~oes do sistema \'otico}{21}{section.2.7}%
 \contentsline {section}{\numberline {2.8}For\c ca \'otica em termos da expans\~ao em multipolos}{24}{section.2.8}%
